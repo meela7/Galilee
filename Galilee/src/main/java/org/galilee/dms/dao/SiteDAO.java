@@ -37,7 +37,8 @@ public class SiteDAO {
 
  public List<Sites> getList() {  
   Session session = sessionFactory.openSession();  
-  List<Sites> siteList = session.createQuery("from Sites").list();  
+  @SuppressWarnings("unchecked")
+List<Sites> siteList = session.createQuery("from Sites").list();  
   //List<Sites> siteList = (List<Sites>)session.createSQLQuery("SELECT * FROM Sites").addEntity(Sites.class).list();
   session.close();  
   return siteList;  
@@ -45,12 +46,14 @@ public class SiteDAO {
  /*
  * http://docs.jboss.org/hibernate/orm/3.3/reference/ko-KR/html/queryhql.html
  */
+ 
  public Sites getSite(int siteid) {  
 	 Session session = sessionFactory.openSession();  
 	 //List<Sites> siteList = session.createQuery("from Sites where SiteID="+siteid).list(); 
 	 //List<Sites> siteList = session.createSQLQuery("SELECT * FROM Sites").addEntity(Sites.class).list();
 	 Query query = session.createQuery("from Sites where SiteID=?");
-	 List<Sites> siteList = query.setInteger(0, siteid).list();
+	 @SuppressWarnings("unchecked")
+	List<Sites> siteList = query.setInteger(0, siteid).list();
 	 session.close(); 
   return siteList.get(0);  
 }
@@ -62,7 +65,9 @@ public class SiteDAO {
   //session.saveOrUpdate(site);  
   Sites loaded = (Sites)session.get(Sites.class, site.getSiteID());
   loaded.setSiteName(site.getSiteName());
+  loaded.setRiver(site.getRiver());
   loaded.setStreamOrder(site.getStreamOrder());
+  loaded.setAddress(site.getAddress());
   session.update(loaded);
   tx.commit();  
   Serializable id = session.getIdentifier(loaded);  

@@ -1,5 +1,6 @@
 package org.galilee.dms.service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.galilee.dms.dao.SiteDAO;
@@ -22,6 +23,16 @@ public class SiteService {
 
 	public List<Sites> getList() {
 		return siteDao.getList();  
+	}
+	
+	public List<Sites> getListByBasin(String basin) {
+		List<Sites> sites = siteDao.getList();
+		List<Sites> res = new ArrayList<Sites>();
+		for(Sites site:sites){
+			if(site.getRiver().getBasin().equals(basin))
+				res.add(site);
+		}
+		return res;
 	}
 
 	public int deleteSite(int siteid) {

@@ -1,29 +1,38 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<% String cp = request.getContextPath(); %> 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>Á¶»ç±¸°£ Á¤º¸ ¼öÁ¤</title>
-<script type="text/javascript">
-function modifySite(site){
-	if(confirm('Á¤¸»·Î Á¶»ç±¸°£ Á¤º¸¸¦ ¼öÁ¤ÇÏ½Ã°Ú¾î¿ä?')){
-		editForm.submit();
-	}
-}
-</script>
-</head>
-<body>
-<h2>Á¶»ç±¸°£ Á¤º¸ ¼öÁ¤</h2>
-<form name="editForm" action="update" method="post">
-<input type="hidden" name="siteid" value="${site.getSiteID()}">
-ID ${site.getSiteID()}<br>
-ÀÌ¸§ ${site.getSiteName()}<br>
-ÇÏÃµID <input type="text" name="riverid" value="${site.getRiver()}"><br>
-ÇÏÃµÂ÷¼ö ${site.getStreamOrder()}<br>
-ÁÖ¼Ò <input type="text" name="address" value="${site.getAddress()}"><br>
-<input type="button" value="¼öÁ¤" onclick="javascript:modifySite(${site})">
-</form>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link href="<%=cp%>/resources/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="<%=cp%>/resources/jquery/jquery-1.11.3.min.js"></script>
+		<script src="<%=cp%>/resources/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 
-</body>
+		<title>ì¡°ì‚¬êµ¬ê°„ ì •ë³´ ìˆ˜ì •</title>
+
+		<script type="text/javascript">
+		function modifySite(site){
+			if(confirm('ì •ë§ë¡œ ì¡°ì‚¬êµ¬ê°„ ì •ë³´ë¥¼ ìˆ˜ì •í•˜ì‹œê² ì–´ìš”?')){
+				editForm.submit();
+			}
+		}
+		</script>
+	</head>
+	<body>
+		<h2>ì¡°ì‚¬êµ¬ê°„ ì •ë³´ ìˆ˜ì •</h2>
+		<form name="editForm" action="update" method="post">
+		<input type="hidden" name="siteid" value="${site.getSiteID()}">
+		ID ${site.getSiteID()}<br>
+		ì´ë¦„ ${site.getSiteName()}<br>
+		í•˜ì²œID <input type="text" name="riverid" value="${site.getRiver()}"><br>
+		í•˜ì²œì°¨ìˆ˜ ${site.getStreamOrder()}<br>
+		ì£¼ì†Œ <input type="text" name="address" value="${site.getAddress()}"><br>
+		<input type="button" value="ìˆ˜ì •" onclick="javascript:modifySite(${site})">
+		</form>
+	
+	</body>
 </html>

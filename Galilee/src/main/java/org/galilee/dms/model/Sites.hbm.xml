@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014. 12. 29 ???? 6:02:58 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="org.galilee.dms.model.Sites" table="Sites">
+        <id name="SiteID" type="int">
+            <column name="SiteID" />
+            <generator class="assigned" />
+        </id>
+        <property name="SiteCode" type="java.lang.String">
+            <column name="SITECODE" />
+        </property>
+        <property name="SiteName" type="java.lang.String">
+            <column name="SiteName" />
+        </property>
+        <many-to-one name="River" class="kr.ac.konkuk.naemp.dataentity.Rivers" fetch="join">
+            <column name="RiverID" />
+        </many-to-one>
+        <property name="Latitute" type="java.lang.String">
+            <column name="LATITUTE" />
+        </property>
+        <property name="Longitude" type="java.lang.String" access="field">
+            <column name="LONGITUDE" />
+        </property>
+        <property name="Elevation_m" type="double">
+            <column name="ELEVATION_M" />
+        </property>
+        <property name="StreamOrder" type="int">
+            <column name="STREAMORDER" />
+        </property>
+        <property name="StreamGrade" type="java.lang.String">
+            <column name="STREAMGRADE" />
+        </property>
+        <property name="AdminArea" type="java.lang.String">
+            <column name="ADMINAREA" />
+        </property>
+        <property name="Structure" type="java.lang.String">
+            <column name="STRUCTURE" />
+        </property>
+        <property name="WQMN" type="java.lang.String">
+            <column name="WQMN" />
+        </property>
+        <property name="Image" type="java.lang.String">
+            <column name="IMAGE" />
+        </property>
+        <property name="Description" type="java.lang.String">
+            <column name="DESCRIPTION" />
+        </property>
+    </class>
+</hibernate-mapping>

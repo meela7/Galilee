@@ -54,9 +54,10 @@
 	     <beans:ref bean="dataSource"/>
 	</beans:property>
 	<beans:property name="annotatedClasses">    
-       	<beans:list>    
-        	<beans:value>org.galilee.dms.Sites</beans:value>
-        	<beans:value>org.galilee.dms.model.Rivers</beans:value>  
+       	<beans:list> 
+        	<beans:value>org.galilee.dms.model.Sites</beans:value>
+        	<beans:value>org.galilee.dms.model.Rivers</beans:value>
+        	<beans:value>org.galilee.dms.model.Fishes</beans:value>     	 
        	</beans:list>    
        </beans:property>   
        <beans:property name="hibernateProperties">  

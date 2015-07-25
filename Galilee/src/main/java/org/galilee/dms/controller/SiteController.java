@@ -37,6 +37,13 @@ public class SiteController {
 	  List<Sites> siteList = (List<Sites>)siteService.getList();
 	  return new ModelAndView("site/siteList", "siteList", siteList);  
 	 }  
+	 
+	 @RequestMapping("/site/basin")  
+	 public ModelAndView getListByBasin(@RequestParam String basin) {  
+	  List<Sites> siteList = siteService.getListByBasin(basin);
+	  System.out.println("SiteController: /site/basin param=" + basin);
+	  return new ModelAndView("site/siteList", "siteList", siteList);  
+	 }
 	  
 	 @RequestMapping("/site/siteInfo")  
 	 public ModelAndView getSite(@RequestParam int siteid,  
@@ -44,6 +51,8 @@ public class SiteController {
 		 site = siteService.getSite(siteid);
 		 return new ModelAndView("site/siteInfo", "site", site);  
 	 }
+	 
+	 
 	 
 	 @RequestMapping("/site/delete")  
 	 public ModelAndView deleteSite(@RequestParam int siteid) {  

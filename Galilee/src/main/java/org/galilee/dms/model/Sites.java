@@ -5,91 +5,88 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "Sites")
 public class Sites {
 	
-	@Id
-	@GeneratedValue
-	@Column (name = "SiteID")
-	private int SiteID;
-	
+	public Sites(){}
+
+	private int SiteID;	
 	private String SiteName;
-	
-//	@JoinColumn(name="RiverID")
-//	private Rivers River;	
-	private int RiverID;
-	private String Latitute;
+	private Rivers river;
+	private String Latitude;
 	private String Longitude;
 	private int StreamOrder;
 	private String StreamGrade;
 	private String Address;
-	@Column (name = "StandardStructure")
-	private String Structure;
+	private String StandardStructure;	
 	private String WQMN;
 	private String Image;
 	private String Description;
 	
-	public Sites(){}
-	
+	@Id
+	@GeneratedValue
+	@Column (name = "SiteID")
 	public int getSiteID() {
 		return SiteID;
 	}
 	public void setSiteID(int siteID) {
-		SiteID = siteID;
+		this.SiteID = siteID;
 	}
 
 	public String getSiteName() {
 		return SiteName;
 	}
 	public void setSiteName(String siteName) {
-		SiteName = siteName;
+		this.SiteName = siteName;
 	}
-	public int getRiver() {
-//		return River;
-		return RiverID;
+	
+	@ManyToOne
+    @JoinColumn(name = "RiverID")
+	public Rivers getRiver() {
+		return this.river;
 	}
-	public void setRiver(int rid) {
-//		River = river;
-		RiverID = rid;
+	public void setRiver(Rivers river) {
+		this.river = river;
 	}
-	public String getLatitute() {
-		return Latitute;
+	public String getLatitude() {
+		return Latitude;
 	}
-	public void setLatitute(String latitute) {
-		Latitute = latitute;
+	public void setLatitude(String latitute) {
+		this.Latitude = latitute;
 	}
-	public String getLongtitude() {
+	public String getLongitude() {
 		return Longitude;
 	}
 	public void setLongitude(String longitude) {
-		Longitude = longitude;
+		this.Longitude = longitude;
 	}
 	public int getStreamOrder() {
 		return StreamOrder;
 	}
 	public void setStreamOrder(int streamOrder) {
-		StreamOrder = streamOrder;
+		this.StreamOrder = streamOrder;
 	}
 	public String getStreamGrade() {
 		return StreamGrade;
 	}
 	public void setStreamGrade(String streamGrade) {
-		StreamGrade = streamGrade;
+		this.StreamGrade = streamGrade;
 	}
 	public String getAddress() {
 		return Address;
 	}
 	public void setAddress(String add) {
-		Address = add;
+		this.Address = add;
 	}
-	public String getStructure() {
-		return Structure;
+	public String getStandardStructure() {
+		return StandardStructure;
 	}
-	public void setStructure(String structure) {
-		Structure = structure;
+	public void setStandardStructure(String structure) {
+		this.StandardStructure = structure;
 	}
 	public String getWQMN() {
 		return WQMN;
@@ -101,21 +98,13 @@ public class Sites {
 		return Image;
 	}
 	public void setImage(String image) {
-		Image = image;
+		this.Image = image;
 	}
 	public String getDescription() {
 		return Description;
 	}
 	public void setDescription(String description) {
-		Description = description;
+		this.Description = description;
 	}
-	@Override
-	public String toString() {
-		return "Sites [SiteID=" + SiteID + ", SiteName=" + SiteName + ", River=" + RiverID
-				+ ", Latitute=" + Latitute + ", Longitude=" + Longitude
-				+ ", StreamOrder="
-				+ StreamOrder + ", StreamGrade=" + StreamGrade + ", AdminArea="
-				+ Address + ", Structure=" + Structure + ", WQMN=" + WQMN
-				+ "]";
-	}	
+	
 }

@@ -36,7 +36,7 @@ public class RiverController {
 	 public ModelAndView getList() {  
 	  List<Rivers> riverList = (List<Rivers>)riverService.getList();
 	  return new ModelAndView("river/riverList", "riverList", riverList);  
-	 }  
+	 }
 	  
 	 @RequestMapping("/river/riverInfo")  
 	 public ModelAndView getRiver(@RequestParam int rid,  

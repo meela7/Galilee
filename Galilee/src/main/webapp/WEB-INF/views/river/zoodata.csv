@@ -1,0 +1,1372 @@
+Phylum,Class,Order,Family,Genus,Species,Common_Name,Status,BRO,TOR,SAN,HEN,IUCN_No,Pop_Trend
+arthropoda,arachnida,araneae,theraphosidae,Aphonopelma,hentzi,Texas brown tarantula,N/A,0,0,0,1,N/A,N/A
+arthropoda,arachnida,araneae,theraphosidae,Avicularia,avicularia,Pinktoe tarantula,N/A,0,0,0,1,N/A,N/A
+arthropoda,arachnida,araneae,theraphosidae,Avicularia,minatrix,Venezuelan red stripe tarantula,N/A,0,1,0,0,N/A,N/A
+arthropoda,arachnida,araneae,theraphosidae,Avicularia,versicolor,Antilles pinktoe tarantula,N/A,0,0,0,1,N/A,N/A
+arthropoda,arachnida,araneae,theraphosidae,Brachypelma,albopilosum,Curlyhair tarantula,N/A,0,1,0,1,N/A,N/A
+arthropoda,arachnida,araneae,theraphosidae,Brachypelma,auratum,Mexican flameknee tarantula,N/A,0,1,0,0,N/A,N/A
+arthropoda,arachnida,araneae,theraphosidae,Brachypelma,boehmei,Mexican fireleg tarantula,N/A,0,1,0,1,N/A,N/A
+arthropoda,arachnida,araneae,theraphosidae,Brachypelma,smithi,Mexican red-kneed tarantula,NT,0,0,0,1,8152,un
+arthropoda,arachnida,araneae,theraphosidae,Brachypelma,vagans,Mexican red rump tarantula,N/A,0,0,0,1,N/A,N/A
+arthropoda,arachnida,araneae,theraphosidae,Chromatopelma,cyaneopubescens,Greenbottle blue tarantula,N/A,0,1,0,0,N/A,N/A
+arthropoda,arachnida,araneae,theraphosidae,Crassicrus,lamanai,Belize cinnamon tarantula,N/A,0,0,0,1,N/A,N/A
+arthropoda,arachnida,araneae,pisauridae,Dolomedes,tenebrosus,Dark fishing spider,N/A,0,1,0,0,N/A,N/A
+arthropoda,arachnida,araneae,theraphosidae,Ephebopus,murinus,Skeleton tarantula,N/A,0,0,0,1,N/A,N/A
+arthropoda,arachnida,araneae,theraphosidae,Grammostola,pulchra,Brazilian black tarantula,N/A,0,1,0,0,N/A,N/A
+arthropoda,arachnida,araneae,theraphosidae,Grammostola,rosea,Chilean rose tarantula,N/A,0,1,0,1,N/A,N/A
+arthropoda,arachnida,araneae,theraphosidae,Haplopelma,lividum,Cobalt blue tarantula,N/A,0,0,0,1,N/A,N/A
+arthropoda,arachnida,araneae,sparassidae,Heteropoda,venatoria,Huntsman spider,N/A,1,0,0,0,N/A,N/A
+arthropoda,arachnida,araneae,theraphosidae,Heteroscodra,maculata,Togo starburst tarantula,N/A,0,0,0,1,N/A,N/A
+arthropoda,arachnida,araneae,theraphosidae,Holothele,incei,Trinidad olive tarantula,N/A,0,0,0,1,N/A,N/A
+arthropoda,arachnida,araneae,theraphosidae,Hysterocrates,gigas,Cameroon red tarantula,N/A,1,1,0,0,N/A,N/A
+arthropoda,arachnida,araneae,theraphosidae,Lasiodora,parahybana,Brazilian salmon tarantula,N/A,0,0,0,1,N/A,N/A
+arthropoda,arachnida,araneae,theridiidae,Latrodectus,hesperus,Western black widow,N/A,0,0,0,1,N/A,N/A
+arthropoda,arachnida,araneae,theridiidae,Latrodectus,mactans,Southern black widow,N/A,0,1,0,0,N/A,N/A
+arthropoda,arachnida,araneae,theridiidae,Latrodectus,variolus,Northern black widow,N/A,0,1,0,0,N/A,N/A
+arthropoda,arachnida,araneae,theraphosidae,Megaphobema,robustum,Colombian giant tarantula,N/A,0,1,0,0,N/A,N/A
+arthropoda,arachnida,araneae,nephilidae,Nephila,clavipes,Golden silk orb-weaver,N/A,0,0,0,1,N/A,N/A
+arthropoda,arachnida,araneae,oxypidae,Peucetia,viridans,Green lynx spider,N/A,0,0,0,1,N/A,N/A
+arthropoda,arachnida,araneae,theraphosidae,Poecilotheria,fasciata,Sri Lankan ornamental tarantula,N/A,0,0,0,1,N/A,N/A
+arthropoda,arachnida,araneae,theraphosidae,Poecilotheria,ornata,Fringed ornamental tarantula,N/A,0,0,0,1,N/A,N/A
+arthropoda,arachnida,araneae,theraphosidae,Poecilotheria,regalis,Indian ornamental tarantula,LC,1,1,0,0,63566,de
+arthropoda,arachnida,araneae,theraphosidae,Poecilotheria,subfusca,Ivory ornamental tarantula,N/A,0,1,0,0,N/A,N/A
+arthropoda,arachnida,araneae,theraphosidae,Psalmopoeus,cambridgei,Trinidad chevron tarantula,N/A,0,0,0,1,N/A,N/A
+arthropoda,arachnida,araneae,theraphosidae,Pterinochilus,murinus,Mombasa golden starburst tarantula,N/A,0,0,0,1,N/A,N/A
+arthropoda,arachnida,araneae,theraphosidae,Selenocosmia,crassipes,Queensland whistling tarantula,N/A,1,0,0,0,N/A,N/A
+arthropoda,arachnida,araneae,atypidae,Sphodros,niger,Black purse-web spider,N/A,0,1,0,0,N/A,N/A
+arthropoda,arachnida,araneae,theraphosidae,Theraphosa,blondi,Goliath birdeating tarantula,N/A,0,0,0,1,N/A,N/A
+chordata,amphibia,anura,hylidae,Acris,crepitans blanchardi,Northern cricket frog,LC,0,1,0,0,55286,st
+chordata,amphibia,anura,dendrobatidae,Adelphobates,galactonotus,Splash-backed poison frog,LC,0,0,1,0,55185,st
+chordata,amphibia,anura,hylidae,Agalychnis,callidryas,Red-eyed treefrog,LC,1,0,0,1,55290,de
+chordata,amphibia,caudata,ambystomatidae,Ambystoma,laterale,Blue-spotted salamander,LC,0,0,0,1,59060,st
+chordata,amphibia,caudata,ambystomatidae,Ambystoma,maculatum,Spotted salamander,LC,1,0,1,0,59064,st
+chordata,amphibia,caudata,ambystomatidae,Ambystoma,mexicanum,Axolotl,CR,0,1,0,1,1095,de
+chordata,amphibia,caudata,ambystomatidae,Ambystoma,opacum,Marbled salamander,LC,0,0,0,1,59065,st
+chordata,amphibia,caudata,ambystomatidae,Ambystoma,tigrinum,Eastern tiger salamander,LC,0,1,0,1,59072,st
+chordata,amphibia,anura,bufonidae,Anaxyrus,americanus,American toad,LC,0,1,0,0,54570,st
+chordata,amphibia,anura,bufonidae,Anaxyrus,baxteri,Wyoming toad,EW,0,0,0,1,54583,de
+chordata,amphibia,anura,bufonidae,Anaxyrus,boreas,Western toad,NT,0,0,1,0,3179,de
+chordata,amphibia,anura,bufonidae,Anaxyrus,terrestris,Southern toad,LC,0,0,0,1,54777,st
+chordata,amphibia,anura,bufonidae,Anaxyrus,woodhousii,Woodhouse's toad,LC,0,0,0,1,54798,st
+chordata,amphibia,caudata,cryptobranchidae,Andrias,japonicus,Japanese giant salamander,NT,0,0,0,1,1273,de
+chordata,amphibia,anura,bufonidae,Atelopus,varius,Harlequin frog,CR,0,1,0,1,54560,de
+chordata,amphibia,anura,bombinatoridae,Bombina,orientalis,Oriental fire-bellied toad,LC,1,0,1,1,54449,de
+chordata,amphibia,anura,brevicipitidae,Breviceps,mossambicus,Mozambique rain frog,LC,0,0,0,1,57716,un
+chordata,amphibia,anura,ceratobatrachidae,Ceratobatrachus,guentheri,Solomon Island leaf frog,LC,0,1,0,1,58242,st
+chordata,amphibia,anura,ceratophryidae,Ceratophrys,cornuta,Amazonian horned frog,LC,1,0,0,0,56337,st
+chordata,amphibia,anura,ceratophryidae,Ceratophrys,cranwelli,Chacoan horned frog,LC,1,0,0,0,56338,de
+chordata,amphibia,anura,ceratophryidae,Ceratophrys,ornata,Ornate horned frog,NT,0,0,0,1,56340,de
+chordata,amphibia,caudata,cryptobranchidae,Cryptobranchus,alleganiensis,Hellbender,NT,1,0,0,0,59077,de
+chordata,amphibia,anura,dendrobatidae,Dendrobates,auratus,Green and black poison dart frog,LC,1,1,1,0,55174,un
+chordata,amphibia,anura,dendrobatidae,Dendrobates,leucomelas,Yellow-banded poison dart frog,LC,1,1,0,1,55191,st
+chordata,amphibia,anura,dendrobatidae,Dendrobates,tinctorius,Dyeing dart frog,LC,1,1,1,1,55204,st
+chordata,amphibia,anura,hylidae,Dendropsophus,ebraccatus,Hourglass treefrog,LC,1,0,0,0,55470,st
+chordata,amphibia,anura,hylidae,Dendropsophus,marmoratus,Marbled treefrog,LC,0,0,0,1,55548,st
+chordata,amphibia,anura,microhylidae,Dyscophus,antongilii,Madagascar tomato frog,NT,1,1,1,1,6937,un
+chordata,amphibia,anura,microhylidae,Dyscophus,guineti,False tomato frog,LC,1,1,0,1,57805,un
+chordata,amphibia,caudata,salamandridae,Echinotriton,andersoni,Anderson's crocodile newt,EN,1,0,0,0,59446,de
+chordata,amphibia,anura,eleutherodactylidae,Eleutherodactylus,coqui,Common coquí,LC,1,0,0,0,56522,st
+chordata,amphibia,caudata,plethodontidae,Eurycea,bislineata,Northern two-lined salamander,LC,0,0,0,1,59261,st
+chordata,amphibia,anura,hyperoliidae,Heterixalus,madagascariensis,Blue-back reed frog,LC,0,0,0,1,56102,st
+chordata,amphibia,anura,hylidae,Hyla,cinerea,Green treefrog,LC,1,0,0,1,55449,st
+chordata,amphibia,anura,hylidae,Hyla,versicolor,Gray treefrog,LC,0,1,0,1,55687,st
+chordata,amphibia,anura,hylidae,Hylomantis,lemur,Lemur leaf frog,CR,1,1,0,0,55855,de
+chordata,amphibia,anura,hyperoliidae,Hyperolius,marmoratus,Marbled reed frog,LC,0,0,1,0,56163,in
+chordata,amphibia,anura,bufonidae,Incilius,alvarius,Colorado River toad,LC,1,1,0,1,54567,st
+chordata,amphibia,anura,leptodactylidae,Leptodactylus,fallax,Giant ditch frog,CR,0,0,0,1,57125,de
+chordata,amphibia,anura,leptodactylidae,Leptodactylus,pentadactylus,Smoky jungle frog,LC,0,0,0,1,57154,st
+chordata,amphibia,anura,arthroleptidae,Leptopelis,vermiculatus,Big-eyed tree frog,VU,0,0,1,0,56284,de
+chordata,amphibia,anura,ranidae,Lithobates,capito,Gopher frog,NT,0,0,0,1,58564,de
+chordata,amphibia,anura,ranidae,Lithobates,catesbeianus,American bullfrog,LC,0,0,0,1,58565,in
+chordata,amphibia,anura,ranidae,Lithobates,clamitans,Green frog,LC,0,1,0,0,58578,st
+chordata,amphibia,anura,ranidae,Lithobates,sylvaticus,Wood frog,LC,1,0,0,0,58728,st
+chordata,amphibia,anura,hylidae,Litoria,caerulea,Australian green tree frog,LC,0,1,0,1,41082,st
+chordata,amphibia,anura,hylidae,Litoria,infrafrenata,White-lipped tree frog,LC,0,1,0,0,41095,st
+chordata,amphibia,anura,mantellidae,Mantella,aurantiaca,Golden mantella,CR,0,0,1,0,12776,de
+chordata,amphibia,anura,mantellidae,Mantella,baroni,Baron's mantella,LC,0,1,0,1,57438,un
+chordata,amphibia,anura,mantellidae,Mantella,betsileo,Brown mantella,LC,1,1,1,0,57440,st
+chordata,amphibia,anura,mantellidae,Mantella,crocea,Yellow mantella,EN,0,1,0,0,57442,de
+chordata,amphibia,anura,mantellidae,Mantella,expectata,Blue-legged mantella,EN,0,0,0,1,57443,de
+chordata,amphibia,anura,mantellidae,Mantella,laevigata,Climbing mantella,NT,1,1,0,1,57445,de
+chordata,amphibia,anura,mantellidae,Mantella,pulchra,Beautiful mantella,VU,1,0,0,1,57450,de
+chordata,amphibia,anura,mantellidae,Mantella,viridis,Green mantella,EN,1,0,0,1,57451,de
+chordata,amphibia,anura,megophryidae,Megophrys,montana,Javan horned frog,LC,1,1,0,0,57581,de
+chordata,amphibia,anura,bufonidae,Melanophryniscus,stelzneri,Bumble bee toad,LC,0,0,0,1,54831,st
+chordata,amphibia,anura,bufonidae,Nectophrynoides,asperginis,Kihansi spray toad,EW,1,0,0,1,54837,N/A
+chordata,amphibia,caudata,proteidae,Necturus,maculosus,Mudpuppy,LC,1,1,0,0,59433,st
+chordata,amphibia,caudata,salamandridae,Neurergus,kaiseri,Kaiser's spotted newt,CR,0,0,1,0,59450,de
+chordata,amphibia,caudata,salamandridae,Notophthalmus,perstriatus,Striped newt,NT,0,0,0,1,14872,de
+chordata,amphibia,anura,dendrobatidae,Oophaga,histrionica,Harlequin poison frog,LC,0,1,0,0,55187,de
+chordata,amphibia,anura,hylidae,Osteopilus,septentrionalis,Cuban treefrog,LC,0,0,0,1,55811,in
+chordata,amphibia,anura,hylidae,Pachymedusa,dacnicolor,Mexican leaf frog,LC,0,0,1,0,55813,st
+chordata,amphibia,anura,bufonidae,Peltophryne,lemur,Puerto Rican crested toad,CR,1,1,0,1,54345,de
+chordata,amphibia,anura,dendrobatidae,Phyllobates,bicolor,Black-legged dart frog,NT,0,0,1,0,55262,de
+chordata,amphibia,anura,hylidae,Phyllomedusa,bicolor,Giant leaf frog,LC,1,1,1,1,55841,st
+chordata,amphibia,anura,pipidae,Pipa,parva,Sabana Surinam toad,LC,0,1,0,1,58192,in
+chordata,amphibia,anura,pipidae,Pipa,pipa,Common Surinam toad,LC,0,1,1,0,58163,st
+chordata,amphibia,anura,rhacophoridae,Polypedates,otilophus,Borneo eared frog,LC,0,0,1,1,58962,de
+chordata,amphibia,anura,hylidae,Pseudacris,cadaverina,California treefrog,LC,0,0,1,0,55890,st
+chordata,amphibia,anura,hylidae,Pseudacris,regilla,Pacific tree frog,LC,0,0,1,0,55897,st
+chordata,amphibia,anura,pyxicephalidae,Pyxicephalus,adspersus,African bullfrog,LC,1,0,0,1,58535,de
+chordata,amphibia,anura,pyxicephalidae,Pyxicephalus,edulis,Edible bullfrog,LC,0,0,0,1,58536,un
+chordata,amphibia,anura,ranidae,Rana,pretiosa,Oregon spotted frog,VU,0,1,0,0,19179,de
+chordata,amphibia,anura,dendrobatidae,Ranitomeya,fantastica,Red-headed poison frog,NT,0,0,0,1,55182,un
+chordata,amphibia,anura,rhacophoridae,Rhacophorus,reinwardtii,Green flying frog,NT,1,0,0,1,59107,de
+chordata,amphibia,anura,bufonidae,Rhaebo,guttatus,Smooth-sided toad,LC,1,0,1,1,54658,st
+chordata,amphibia,anura,bufonidae,Rhinella,marina,Cane toad,LC,1,1,0,1,41065,in
+chordata,amphibia,caudata,salamandridae,Salamandra,salamandra,Fire salamander,LC,0,0,1,0,59467,de
+chordata,amphibia,anura,microhylidae,Scaphiophryne,gottlebei,Painted burrowing frog,EN,1,0,0,0,57998,de
+chordata,amphibia,anura,microhylidae,Scaphiophryne,marmorata,Marbled burrowing frog,VU,0,0,0,1,58000,de
+chordata,amphibia,caudata,salamandridae,Taricha,torosa,California newt,LC,0,0,1,0,59471,un
+chordata,amphibia,anura,rhacophoridae,Theloderma,corticale,Mossy frog,DD,1,0,1,0,59033,un
+chordata,amphibia,anura,hylidae,Trachycephalus,resinifictrix,Mission golden-eyed tree frog,LC,0,0,1,1,55823,un
+chordata,amphibia,caudata,salamandridae,Tylototriton,verrucosus,Himalayan newt,LC,1,1,1,1,59487,un
+chordata,amphibia,anura,pipidae,Xenopus,laevis,African clawed frog,LC,0,1,0,0,58174,in
+chordata,amphibia,anura,pipidae,Xenopus,tropicalis,Western clawed frog,LC,1,0,0,0,58167,st
+chordata,aves,anseriformes,anatidae,Aix,galericulata,Mandarin duck,LC,1,1,1,1,22680107,de
+chordata,aves,anseriformes,anatidae,Aix,sponsa,Wood duck,LC,1,0,1,1,22680104,in
+chordata,aves,anseriformes,anatidae,Alopochen,aegyptiaca,Egyptian goose,LC,0,1,0,1,22679993,de
+chordata,aves,anseriformes,anatidae,Anas,acuta,Northern pintail,LC,0,0,1,1,22680301,de
+chordata,aves,anseriformes,anatidae,Anas,americana,American wigeon,LC,0,0,0,1,22680163,st
+chordata,aves,anseriformes,anatidae,Anas,bahamensis,White-cheeked pintail,LC,1,0,1,1,22680287,de
+chordata,aves,anseriformes,anatidae,Anas,bernieri,Bernier's teal,EN,0,0,0,1,22680252,de
+chordata,aves,anseriformes,anatidae,Anas,capensis,Cape teal,LC,0,0,0,1,22680145,de
+chordata,aves,anseriformes,anatidae,Anas,castanea,Chestnut teal,LC,0,0,0,1,22680277,st
+chordata,aves,anseriformes,anatidae,Anas,clypeata,Northern shoveler,LC,0,0,1,1,22680247,de
+chordata,aves,anseriformes,anatidae,Anas,cyanoptera,Cinnamon teal,LC,0,0,0,1,22680233,de
+chordata,aves,anseriformes,anatidae,Anas,erythrorhyncha,Red-billed teal,LC,0,0,1,0,22680290,de
+chordata,aves,anseriformes,anatidae,Anas,falcata,Falcated teal,NT,0,0,1,0,22680153,de
+chordata,aves,anseriformes,anatidae,Anas,platyrhynchos,Mallard,LC,0,0,0,1,22680186,de
+chordata,aves,anseriformes,anatidae,Anas,rhynchotis,Australasian shoveler,LC,0,1,0,0,22680243,st
+chordata,aves,anseriformes,anatidae,Anas,sibilatrix,Chiloe wigeon,LC,0,0,1,1,22680167,st
+chordata,aves,anseriformes,anatidae,Anas,sparsa,African black duck,LC,0,0,1,0,22680170,de
+chordata,aves,anseriformes,anatidae,Anas,strepera,Gadwall,LC,0,0,0,1,22680149,un
+chordata,aves,anseriformes,anatidae,Anas,versicolor,Silver teal,LC,0,0,1,0,22680329,st
+chordata,aves,anseriformes,anatidae,Anser,albifrons,Greater white-fronted goose,LC,1,0,0,0,22679881,un
+chordata,aves,anseriformes,anatidae,Anser,indicus,Bar-headed goose,LC,0,0,0,1,22679893,de
+chordata,aves,anseriformes,anatidae,Aythya,affinis,Lesser scaup,LC,0,0,0,1,22680402,de
+chordata,aves,anseriformes,anatidae,Aythya,americana,Redhead,LC,1,0,1,0,22680367,in
+chordata,aves,anseriformes,anatidae,Aythya,collaris,Ring-necked duck,LC,0,0,1,1,22680370,in
+chordata,aves,anseriformes,anatidae,Aythya,nyroca,Ferruginous duck,NT,1,0,1,0,22680373,de
+chordata,aves,anseriformes,anatidae,Aythya,valisineria,Canvasback,LC,1,0,0,0,22680364,de
+chordata,aves,anseriformes,anatidae,Branta,canadensis,Canada goose,LC,1,0,0,0,22679935,in
+chordata,aves,anseriformes,anatidae,Branta,leucopsis,Barnacle goose,LC,1,0,0,1,22679943,in
+chordata,aves,anseriformes,anatidae,Branta,ruficollis,Red-breasted goose,EN,1,0,1,0,22679954,de
+chordata,aves,anseriformes,anatidae,Bucephala,albeola,Bufflehead,LC,1,0,1,0,22680462,in
+chordata,aves,anseriformes,anatidae,Bucephala,clangula,Common goldeneye,LC,1,0,0,0,22680455,st
+chordata,aves,anseriformes,anatidae,Bucephala,islandica,Barrow's goldeneye,LC,0,0,1,0,22680459,in
+chordata,aves,anseriformes,anatidae,Callonetta,leucophrys,Ringed teal,LC,0,0,1,1,22680101,st
+chordata,aves,anseriformes,anatidae,Chen,caerulescens,Snow goose,LC,0,1,0,1,22679896,in
+chordata,aves,anseriformes,anatidae,Chloephaga,picta picta,Upland goose,LC,0,0,0,1,22679975,de
+chordata,aves,anseriformes,anatidae,Clangula,hyemalis,Long-tailed duck,VU,0,0,1,0,22680427,de
+chordata,aves,anseriformes,anatidae,Cyanochen,cyanoptera,Blue-winged goose,VU,1,0,0,1,22679961,de
+chordata,aves,anseriformes,anatidae,Cygnus,atratus,Black swan,LC,0,0,0,1,22679843,st
+chordata,aves,anseriformes,anatidae,Cygnus,buccinator,Trumpeter swan,LC,1,0,0,1,22679859,in
+chordata,aves,anseriformes,anatidae,Cygnus,melancoryphus,Black-necked swan,LC,1,0,1,1,22679846,st
+chordata,aves,anseriformes,anatidae,Cygnus,olor,Mute swan,LC,0,0,0,1,22679839,in
+chordata,aves,anseriformes,anatidae,Dendrocygna,arcuata,Wandering whistling duck,LC,0,0,1,0,22679753,de
+chordata,aves,anseriformes,anatidae,Dendrocygna,javanica,Lesser whistling duck,LC,0,1,0,0,22679758,de
+chordata,aves,anseriformes,anatidae,Dendrocygna,viduata,White-faced whistling duck,LC,0,0,1,0,22679763,in
+chordata,aves,anseriformes,anatidae,Deroptyus,accipitrinus,Red-fan parrot,LC,0,0,0,1,22686416,de
+chordata,aves,anseriformes,anatidae,Histrionicus,histrionicus,Harlequin duck,LC,0,0,1,0,22680423,in
+chordata,aves,anseriformes,anatidae,Lophodytes,cucullatus,Hooded merganser,LC,1,0,1,1,22680472,in
+chordata,aves,anseriformes,anatidae,Malacorhynchus,membranaceus,Pink-eared duck,LC,0,0,1,0,22680336,st
+chordata,aves,anseriformes,anatidae,Marmaronetta,angustirostris,Marbled duck,VU,0,0,1,0,22680339,de
+chordata,aves,anseriformes,anatidae,Mergellus,albellus,Smew,LC,0,0,1,0,22680465,de
+chordata,aves,anseriformes,anatidae,Mergus,merganser,Common merganser,LC,1,0,0,0,22680492,in
+chordata,aves,anseriformes,anatidae,Neochen,jubata,Orinoco goose,NT,1,0,0,0,22679987,de
+chordata,aves,anseriformes,anatidae,Netta,peposaca,Rosy-billed pochard,LC,1,0,1,0,22680351,in
+chordata,aves,anseriformes,anatidae,Netta,rufina,Red-crested pochard,LC,1,0,0,1,22680348,un
+chordata,aves,anseriformes,anatidae,Nettapus,auritus,African pygmy goose,LC,1,0,1,1,22680095,de
+chordata,aves,anseriformes,anatidae,Nettapus,coromandelianus,Cotton pygmy goose,LC,1,0,1,0,22680090,st
+chordata,aves,anseriformes,anatidae,Nettapus,pulchellus,Green pygmy goose,LC,0,0,1,0,22680086,de
+chordata,aves,anseriformes,anatidae,Oxyura,jamaicensis,Ruddy duck,LC,1,0,1,1,22679798,de
+chordata,aves,anseriformes,anatidae,Plectropterus,gambensis niger,Spur-winged goose,LC,0,0,1,0,22680057,in
+chordata,aves,anseriformes,anatidae,Speculanas,specularis,Bronze-winged duck,NT,0,0,1,0,22680136,st
+chordata,aves,anseriformes,anatidae,Stictonetta,naevosa,Freckled duck,LC,1,0,0,0,22679836,st
+chordata,aves,anseriformes,anatidae,Tachyeres,patachonicus,Flying steamer duck,LC,1,0,0,0,22680052,de
+chordata,aves,anseriformes,anatidae,Tadorna,ferruginea,Ruddy shelduck,LC,0,0,0,1,22680003,un
+chordata,aves,anseriformes,anatidae,Tadorna,radjah,Raja shelduck,LC,1,0,1,1,22680029,de
+chordata,aves,anseriformes,anatidae,Tadorna,tadorna,Common shelduck,LC,0,0,1,1,22680024,in
+chordata,aves,anseriformes,anatidae,Tadorna,variegata,Paradise shelduck,LC,1,0,0,0,22680015,st
+chordata,aves,anseriformes,anhimidae,Chauna,torquata,Southern screamer,LC,0,0,1,1,22679729,st
+chordata,aves,anseriformes,anseranatidae,Anseranas,semipalmata,Magpie goose,LC,0,0,0,1,22679732,st
+chordata,aves,apodiformes,trochilidae,Amazilia,tzacatl,Rufous-tailed hummingbird,LC,0,0,1,0,22730168,un
+chordata,aves,apodiformes,trochilidae,Archilochus,alexandri,Black-chinned hummingbird,LC,0,0,0,1,22688196,in
+chordata,aves,apodiformes,trochilidae,Archilochus,colubris,Ruby-throated hummingbird,LC,0,0,0,1,22688193,in
+chordata,aves,apodiformes,trochilidae,Calypte,anna,Anna's hummingbird,LC,0,0,1,0,22688199,in
+chordata,aves,apodiformes,trochilidae,Calypte,costae,Costa's hummingbird,LC,0,0,1,0,22688202,st
+chordata,aves,apodiformes,trochilidae,Colibri,coruscans,Sparkling violetear,LC,0,0,1,0,22687114,un
+chordata,aves,apodiformes,trochilidae,Cynanthus,latirostris,Broad-billed hummingbird,LC,0,0,1,1,22687371,in
+chordata,aves,caprimulgiformes,podargidae,Podargus,strigoides,Tawny frogmouth,LC,1,1,0,1,22689580,st
+chordata,aves,charadriiformes,alcidae,Cerorhinca,monocerata,Rhinoceros auklet,LC,0,0,0,1,22694924,de
+chordata,aves,charadriiformes,alcidae,Fratercula,cirrhata,Tufted puffin,LC,1,0,0,1,22694934,de
+chordata,aves,charadriiformes,burhinidae,Burhinus,bistriatus,Double-striped thick-knee,LC,0,1,0,0,22693594,st
+chordata,aves,charadriiformes,burhinidae,Burhinus,capensis,Spotted thick-knee,LC,0,0,0,1,22693589,st
+chordata,aves,charadriiformes,charadriidae,Vanellus,albiceps,White-crowned lapwing,LC,0,0,1,0,22694021,st
+chordata,aves,charadriiformes,charadriidae,Vanellus,miles,Masked lapwing,LC,1,0,1,0,22693970,in
+chordata,aves,charadriiformes,charadriidae,Vanellus,spinosus,Spur-winged lapwing,LC,0,0,0,1,22693983,in
+chordata,aves,charadriiformes,glareolidae,Pluvianus,aegyptius,Egyptian plover,LC,1,0,1,0,22694086,de
+chordata,aves,charadriiformes,haematopodidae,Haematopus,bachmani,Black oystercatcher,LC,1,0,0,0,22693638,st
+chordata,aves,charadriiformes,jacanidae,Actophilornis,africanus,African jacana,LC,0,0,0,1,22693528,st
+chordata,aves,charadriiformes,laridae,Larosterna,inca,Inca tern,NT,1,0,0,1,22694834,de
+chordata,aves,charadriiformes,laridae,Leucophaeus,atricilla,Laughing gull,LC,1,0,1,0,22694455,in
+chordata,aves,charadriiformes,laridae,Rissa,tridactyla,Black-legged kittiwake,LC,0,0,1,0,22694497,de
+chordata,aves,charadriiformes,laridae,Sterna,caspia,Caspian tern,LC,0,0,1,0,22694524,in
+chordata,aves,charadriiformes,laridae,Sterna,forsteri,Forster's tern,LC,1,0,0,0,22694646,in
+chordata,aves,charadriiformes,laridae,Sterna,hirundo,Common tern,LC,1,0,0,0,22694623,de
+chordata,aves,charadriiformes,laridae,Thalasseus,sandvicensis,Sandwich tern,LC,0,0,1,0,22694591,st
+chordata,aves,charadriiformes,recurvirostridae,Recurvirostra,avosetta,Pied avocet,LC,1,0,0,0,22693712,un
+chordata,aves,charadriiformes,scolopacidae,Actitis,macularius,Spotted sandpiper,LC,1,0,0,0,22693277,de
+chordata,aves,charadriiformes,scolopacidae,Calidris,pusilla,Semipalmated sandpiper,NT,1,0,0,0,22693373,de
+chordata,aves,charadriiformes,scolopacidae,Philomachus,pugnax,Ruff,LC,0,0,1,0,22693468,de
+chordata,aves,ciconiiformes,ardeidae,Ardea,alba,Great egret,LC,0,0,1,0,22697043,un
+chordata,aves,ciconiiformes,ardeidae,Ardea,herodias,Great blue heron,LC,0,0,0,1,22696998,in
+chordata,aves,ciconiiformes,ardeidae,Ardeola,speciosa,Javan pond heron,LC,1,0,1,1,22697138,un
+chordata,aves,ciconiiformes,ardeidae,Cochlearius,cochlearius,Boat-billed heron,LC,1,0,0,0,22697250,un
+chordata,aves,ciconiiformes,ardeidae,Egretta,caerulea,Little blue heron,LC,0,0,1,1,22696944,de
+chordata,aves,ciconiiformes,ardeidae,Egretta,rufescens,Reddish egret,NT,0,0,1,0,22696916,in
+chordata,aves,ciconiiformes,ardeidae,Egretta,thula,Snowy egret,LC,1,0,0,1,22696974,in
+chordata,aves,ciconiiformes,ardeidae,Nycticorax,nycticorax,Black-crowned night-heron,LC,1,0,0,0,22697211,de
+chordata,aves,ciconiiformes,ciconiidae,Anastomus,lamelligerus,African openbill,LC,0,0,1,0,22697664,de
+chordata,aves,ciconiiformes,ciconiidae,Ciconia,ciconia,White stork,LC,0,0,0,1,22697691,in
+chordata,aves,ciconiiformes,ciconiidae,Ciconia,stormi,Storm's stork,EN,1,0,1,0,22697685,de
+chordata,aves,ciconiiformes,ciconiidae,Ephippiorhynchus,senegalensis,Saddle-billed stork,LC,0,0,1,1,22697706,de
+chordata,aves,ciconiiformes,ciconiidae,Leptoptilos,crumeniferus,Marabou stork,LC,1,1,0,1,22697716,in
+chordata,aves,ciconiiformes,ciconiidae,Leptoptilos,javanicus,Lesser adjutant,VU,1,0,0,0,22697713,de
+chordata,aves,ciconiiformes,ciconiidae,Mycteria,cinerea,Milky stork,EN,0,0,1,0,22697651,de
+chordata,aves,ciconiiformes,threskiornithidae,Eudocimus,ruber,Scarlet ibis,LC,1,1,1,1,22697415,de
+chordata,aves,ciconiiformes,threskiornithidae,Geronticus,calvus,Southern bald ibis,VU,0,0,1,0,22697496,de
+chordata,aves,ciconiiformes,threskiornithidae,Geronticus,eremita,Northern bald ibis,CR,1,0,0,0,22697488,de
+chordata,aves,ciconiiformes,threskiornithidae,Lophotibis,cristata,Madagascar ibis,NT,1,0,1,1,22697504,de
+chordata,aves,ciconiiformes,threskiornithidae,Platalea,ajaja,Roseate spoonbill,LC,1,0,0,1,22697574,st
+chordata,aves,ciconiiformes,threskiornithidae,Platalea,alba,African spoonbill,LC,0,0,1,0,22697564,st
+chordata,aves,ciconiiformes,threskiornithidae,Platalea,leucorodia,Eurasian spoonbill,LC,0,0,1,0,22697555,un
+chordata,aves,ciconiiformes,threskiornithidae,Threskiornis,aethiopicus,Sacred ibis,LC,0,1,0,0,22697510,de
+chordata,aves,ciconiiformes,threskiornithidae,Threskiornis,spinicollis,Straw-necked ibis,LC,0,0,0,1,22697525,st
+chordata,aves,coliiformes,coliidae,Colius,colius colius,White-backed mousebird,LC,0,0,1,0,22683788,in
+chordata,aves,coliiformes,coliidae,Colius,striatus,Speckled mousebird,LC,1,1,1,1,22683776,in
+chordata,aves,coliiformes,coliidae,Urocolius,macrourus,Blue-naped mousebird,LC,0,0,1,0,22683792,de
+chordata,aves,columbiformes,columbidae,Caloenas,nicobarica,Nicobar pigeon,NT,1,1,1,1,22690974,de
+chordata,aves,columbiformes,columbidae,Chalcophaps,indica,Common emerald dove,LC,0,1,1,0,22690649,de
+chordata,aves,columbiformes,columbidae,Columba,arquatrix,African olive pigeon,LC,0,0,1,0,22690145,de
+chordata,aves,columbiformes,columbidae,Columba,guinea,Speckled pigeon,LC,0,1,0,1,22690080,st
+chordata,aves,columbiformes,columbidae,Columba,vitiensis,Metallic pigeon,LC,0,0,1,0,22690211,st
+chordata,aves,columbiformes,columbidae,Columbina,inca,Inca dove,LC,0,0,0,1,22690762,in
+chordata,aves,columbiformes,columbidae,Ducula,aenea,Green imperial pigeon,LC,0,0,1,1,22691639,st
+chordata,aves,columbiformes,columbidae,Ducula,bicolor,Pief imperial pigeon,LC,1,1,1,1,22691799,de
+chordata,aves,columbiformes,columbidae,Ducula,forsteni,White-bellied imperial pigeon,LC,0,0,1,0,22691617,st
+chordata,aves,columbiformes,columbidae,Ducula,mullerii,Collared imperial pigeon,LC,0,0,1,0,22691770,st
+chordata,aves,columbiformes,columbidae,Ducula,pickeringii,Grey imperial pigeon,VU,0,0,1,0,22691710,de
+chordata,aves,columbiformes,columbidae,Ducula,rufigaster,Purple-tailed imperial pigeon,LC,0,0,1,0,22691724,st
+chordata,aves,columbiformes,columbidae,Gallicolumba,crinigera,Mindanao bleeding-heart,VU,0,0,1,0,22690991,de
+chordata,aves,columbiformes,columbidae,Gallicolumba,jobiensis,Purple ground dove,LC,0,0,1,0,22691019,st
+chordata,aves,columbiformes,columbidae,Gallicolumba,luzonica,Luzon bleeding-heart,NT,1,0,1,0,22690979,de
+chordata,aves,columbiformes,columbidae,Gallicolumba,xanthonura,White-throated ground dove,NT,1,0,1,0,22691037,de
+chordata,aves,columbiformes,columbidae,Geopelia,cuneata,Diamond dove,LC,0,0,0,1,22690705,st
+chordata,aves,columbiformes,columbidae,Geopelia,striata,Zebra dove,LC,0,1,0,0,22690708,st
+chordata,aves,columbiformes,columbidae,Goura,cristata,Western crowned pigeon,VU,0,0,1,1,22691865,de
+chordata,aves,columbiformes,columbidae,Goura,victoria,Victoria crowned pigeon,NT,1,1,1,0,22691874,de
+chordata,aves,columbiformes,columbidae,Gymnophaps,albertisii,Papuan mountain pigeon,LC,0,0,1,0,22691850,st
+chordata,aves,columbiformes,columbidae,Nesoenas,mayeri,Pink pigeon,EN,1,0,1,0,22690392,de
+chordata,aves,columbiformes,columbidae,Ocyphaps,lophotes,Crested pigeon,LC,0,0,0,1,22690676,in
+chordata,aves,columbiformes,columbidae,Oena,capensis,Namaqua dove,LC,0,0,1,0,22690645,in
+chordata,aves,columbiformes,columbidae,Otidiphaps,nobilis,Pheasant pigeon,LC,1,1,1,0,22691094,st
+chordata,aves,columbiformes,columbidae,Patagioenas,oenops,Maranon pigeon,VU,0,0,0,1,22690302,de
+chordata,aves,columbiformes,columbidae,Ptilinopus,coronulatus,Coroneted fruit dove,LC,0,0,1,0,22691420,st
+chordata,aves,columbiformes,columbidae,Ptilinopus,iozonus,Orange-bellied fruit dove,LC,0,0,1,0,22691544,st
+chordata,aves,columbiformes,columbidae,Ptilinopus,jambu ,Jambu fruit dove,NT,0,0,1,0,22691341,de
+chordata,aves,columbiformes,columbidae,Ptilinopus,leclancheri,Black-chinned fruit dove,LC,0,0,1,0,22691346,st
+chordata,aves,columbiformes,columbidae,Ptilinopus,magnificus,Wompoo fruit dove,LC,0,0,1,0,22691367,de
+chordata,aves,columbiformes,columbidae,Ptilinopus,melanospilus,Black-naped fruit dove,LC,1,0,1,0,22691558,st
+chordata,aves,columbiformes,columbidae,Ptilinopus,occipitalis,Yellow-breasted fruit dove,LC,0,0,1,0,22691327,st
+chordata,aves,columbiformes,columbidae,Ptilinopus,ornatus,Ornate fruit dove,LC,0,0,1,0,22691377,st
+chordata,aves,columbiformes,columbidae,Ptilinopus,perlatus perlatus,Pink-spotted fruit dove,LC,0,0,1,0,22691372,st
+chordata,aves,columbiformes,columbidae,Ptilinopus,pulchellus,Beautiful fruit dove,LC,0,0,1,0,22691425,st
+chordata,aves,columbiformes,columbidae,Ptilinopus,roseicapilla,Mariana fruit dove,EN,1,0,1,0,22691435,de
+chordata,aves,columbiformes,columbidae,Ptilinopus,superbus temminckii,Superb fruit dove,LC,0,0,1,0,22691401,st
+chordata,aves,columbiformes,columbidae,Stigmatopelia,senegalensis,Laughing dove,LC,0,0,1,0,22690445,st
+chordata,aves,columbiformes,columbidae,Streptopelia,bitorquata,Island collared dove,LC,0,0,1,0,22690536,de
+chordata,aves,columbiformes,columbidae,Streptopelia,decaocto,Eurasian collared dove,LC,1,0,0,0,22690503,in
+chordata,aves,columbiformes,columbidae,Streptopelia,risoria,Ringneck dove,NE,1,0,1,0,N/A,N/A
+chordata,aves,columbiformes,columbidae,Streptopelia,semitorquata,Red-eyed dove,LC,0,0,1,0,22690499,in
+chordata,aves,columbiformes,columbidae,Treron,vernans,Pink-necked green pigeon,LC,0,0,1,0,22691137,st
+chordata,aves,columbiformes,columbidae,Trugon,terrestris terrestris,Thick-billed ground pigeon,LC,0,0,1,0,22691081,st
+chordata,aves,columbiformes,columbidae,Turtur,abyssinicus,Black-billed wood dove,LC,0,0,1,0,22690614,st
+chordata,aves,columbiformes,columbidae,Turtur,tympanistria,Tambourine dove,LC,0,0,1,0,22690635,st
+chordata,aves,columbiformes,columbidae,Zenaida,asiatica,White-winged dove,LC,0,0,0,1,22733956,in
+chordata,aves,columbiformes,columbidae,Zenaida,macroura,Mourning dove,LC,1,0,0,0,22690736,in
+chordata,aves,columbiformes,pteroclididae,Pterocles,exustus,Chestnut-bellied sandgrouse,LC,0,0,1,0,22692990,st
+chordata,aves,coraciiformes,alcedinidae,Dacelo,novaeguineae,Laughing kookaburra,LC,1,1,1,1,22683189,st
+chordata,aves,coraciiformes,alcedinidae,Halcyon,malimbica,Blue-breasted kingfisher,LC,1,0,1,0,22683269,de
+chordata,aves,coraciiformes,alcedinidae,Halcyon,senegalensis,Woodland kingfisher,LC,0,0,1,0,22683260,st
+chordata,aves,coraciiformes,alcedinidae,Halcyon,smyrnensis,White-throated kingfisher,LC,0,0,1,0,22683241,in
+chordata,aves,coraciiformes,alcedinidae,Todiramphus,chloris,Collared kingfisher,LC,0,0,1,0,22683399,de
+chordata,aves,coraciiformes,alcedinidae,Todiramphus,cinnamominus cinnamominus,Micronesian kingfisher,LC,1,0,1,0,22683374,de
+chordata,aves,coraciiformes,bucerotidae,Aceros,cassidix,Knobbed hornbill,VU,1,0,1,0,22682525,de
+chordata,aves,coraciiformes,bucerotidae,Aceros,corrugatus,Wrinkled hornbill,NT,0,1,1,0,22682514,de
+chordata,aves,coraciiformes,bucerotidae,Aceros,undulatus,Wreathed hornbill,LC,0,0,1,0,22682528,de
+chordata,aves,coraciiformes,bucerotidae,Buceros,bicornis,Great hornbill,NT,1,1,1,0,22682453,de
+chordata,aves,coraciiformes,bucerotidae,Buceros,rhinoceros,Rhinoceros hornbill,NT,0,0,1,0,22682450,de
+chordata,aves,coraciiformes,bucerotidae,Bycanistes,brevis,Silvery-cheeked hornbill,LC,0,0,0,1,22682570,st
+chordata,aves,coraciiformes,bucerotidae,Bycanistes,bucinator,Trumpeter hornbill,LC,1,0,0,0,22682548,st
+chordata,aves,coraciiformes,bucerotidae,Penelopides,exarhatus,Sulawesi hornbill,VU,0,0,1,0,22682504,de
+chordata,aves,coraciiformes,bucerotidae,Tockus,erythrorhynchus,Red-billed hornbill,LC,0,0,0,1,22682371,st
+chordata,aves,coraciiformes,bucerotidae,Tropicranus,albocristatus,White-crested hornbill,LC,1,0,1,0,22682341,st
+chordata,aves,coraciiformes,bucorvidae,Bucorvus,abyssinicus,Abyssinian ground hornbill,LC,0,1,0,1,22682632,st
+chordata,aves,coraciiformes,bucorvidae,Bucorvus,leadbeateri,Southern ground hornbill,VU,0,1,1,0,22682638,de
+chordata,aves,coraciiformes,coraciidae,Coracias,abyssinicus,Abyssinian roller,LC,0,0,1,0,22682865,in
+chordata,aves,coraciiformes,coraciidae,Coracias,caudatus,Lilac-brested roller,LC,0,0,0,1,22682874,st
+chordata,aves,coraciiformes,coraciidae,Coracias,cyanogaster,Blue-bellied roller,LC,1,1,1,1,22682908,de
+chordata,aves,coraciiformes,coraciidae,Coracias,naevia,Rufous-crowned roller,LC,0,0,1,0,22682892,de
+chordata,aves,coraciiformes,coraciidae,Coracias,spatulatus,Racket-tailed roller,LC,1,0,1,0,22682883,de
+chordata,aves,coraciiformes,coraciidae,Eurystomus,orientalis,Asian dollarbird,LC,1,0,1,0,22682920,de
+chordata,aves,coraciiformes,meropidae,Merops,albicollis,White-throated bee-eater,LC,1,1,0,0,22683714,st
+chordata,aves,coraciiformes,meropidae,Merops,nubicus,Northern carmine bee-eater,LC,1,0,0,0,22683768,de
+chordata,aves,coraciiformes,momotidae,Momotus,momota,Blue-crowned motmot,LC,1,1,1,0,22730203,de
+chordata,aves,coraciiformes,phoeniculidae,Phoeniculus,purpureus,Green wood hoopoe,LC,1,0,1,1,22682667,de
+chordata,aves,cuculiformes,cuculidae,Coua,cristata,Crested coua,LC,1,0,1,1,22684176,st
+chordata,aves,cuculiformes,cuculidae,Guira,guira,Guira cuckoo,LC,1,0,0,0,22684441,in
+chordata,aves,cuculiformes,cuculidae,Phaenicophaeus,javanicus,Red-billed malkoha,LC,0,0,1,0,22684110,st
+chordata,aves,cuculiformes,musophagidae,Corythaeola,cristata,Great blue turaco,LC,1,0,1,0,22688425,st
+chordata,aves,cuculiformes,musophagidae,Corythaixoides,concolor,Grey go-away-bird,LC,0,0,1,0,22688396,st
+chordata,aves,cuculiformes,musophagidae,Corythaixoides,leucogaster,White-bellied go-away-bird,LC,0,0,1,0,22688410,st
+chordata,aves,cuculiformes,musophagidae,Musophaga,rossae,Ross's turaco,LC,1,0,1,0,22688391,st
+chordata,aves,cuculiformes,musophagidae,Musophaga,violacea,Violet turaco,LC,0,1,1,0,22688387,st
+chordata,aves,cuculiformes,musophagidae,Tauraco,erythrolophus,Red-crested turaco,LC,0,0,1,0,22688346,de
+chordata,aves,cuculiformes,musophagidae,Tauraco,leucotis,White-cheeked turaco,LC,0,1,0,1,22688355,st
+chordata,aves,cuculiformes,musophagidae,Tauraco,livingstonii,Livingstone's turaco,LC,0,0,1,0,22688331,st
+chordata,aves,cuculiformes,musophagidae,Tauraco,porphyreolophus,Purple-crested turaco,LC,0,0,1,0,22688380,de
+chordata,aves,falconiformes,accipitridae,Aegypius,monachus,Cinereous vulture,NT,1,0,0,0,22695231,de
+chordata,aves,falconiformes,accipitridae,Aquila,chrysaetos,Golden eagle,LC,1,0,0,1,22696060,st
+chordata,aves,falconiformes,accipitridae,Buteo,jamaicensis,Red-tailed hawk,LC,0,0,1,1,22695933,in
+chordata,aves,falconiformes,accipitridae,Buteo,lagopus,Rough-legged hawk,LC,0,0,0,1,22695973,st
+chordata,aves,falconiformes,accipitridae,Circus,cyaneus,Northern harrier,LC,0,0,1,0,22695384,de
+chordata,aves,falconiformes,accipitridae,Gypaetus,barbatus,Bearded vulture,LC,0,0,1,0,22695174,de
+chordata,aves,falconiformes,accipitridae,Haliaeetus,leucocephalus,Bald eagle,LC,1,1,1,1,22695144,in
+chordata,aves,falconiformes,accipitridae,Haliaeetus,pelagicus,Steller's sea-eagle,VU,0,0,1,0,22695147,de
+chordata,aves,falconiformes,accipitridae,Harpia,harpyja,Harpy eagle,NT,0,0,1,0,22695998,de
+chordata,aves,falconiformes,accipitridae,Parabuteo,unicinctus,Harris's hawk,LC,1,1,1,1,22695838,de
+chordata,aves,falconiformes,accipitridae,Sagittarius,serpentarius,Secretarybird,VU,0,1,1,0,22696221,de
+chordata,aves,falconiformes,accipitridae,Spizaetus,ornatus,Ornate hawk-eagle,NT,0,0,1,0,22696197,de
+chordata,aves,falconiformes,accipitridae,Stephanoaetus,coronatus,Crowned eagle,NT,0,0,1,0,22696201,de
+chordata,aves,falconiformes,accipitridae,Terathopius,ecaudatus,Bateleur,NT,0,0,1,0,22695289,de
+chordata,aves,falconiformes,accipitridae,Trigonoceps,occipitalis,White-headed vulture,VU,0,1,0,0,22695250,de
+chordata,aves,falconiformes,cathartidae,Cathartes,aura,Turkey vulture,LC,0,1,0,1,22697627,st
+chordata,aves,falconiformes,cathartidae,Coragyps,atratus,Black vulture,LC,1,0,0,0,22697624,in
+chordata,aves,falconiformes,cathartidae,Gymnogyps,californianus,California condor,CR,0,0,1,0,22697636,in
+chordata,aves,falconiformes,cathartidae,Vultur,gryphus,Andean condor,NT,1,0,1,0,22697641,de
+chordata,aves,falconiformes,falconidae,Falco,biarmicus,Lanner falcon,LC,0,1,0,0,22696487,in
+chordata,aves,falconiformes,falconidae,Falco,jugger,Laggar falcon,NT,0,1,0,0,22696492,de
+chordata,aves,falconiformes,falconidae,Falco,peregrinus,Peregrine falcon,LC,0,1,1,0,22696507,st
+chordata,aves,falconiformes,falconidae,Falco,sparverius,American kestrel,LC,1,0,0,1,22696395,st
+chordata,aves,falconiformes,falconidae,Polihierax,semitorquatus,Pygmy falcon,LC,0,0,1,0,22696313,st
+chordata,aves,galliformes,cracidae,Crax,alberti,Blue-billed curassow,CR,1,0,1,0,22678525,de
+chordata,aves,galliformes,cracidae,Mitu,tuberosum,Razor-billed curassow,LC,0,0,1,0,22678478,de
+chordata,aves,galliformes,cracidae,Pauxi,pauxi,Northern helmeted curassow,EN,1,0,0,0,22678497,de
+chordata,aves,galliformes,cracidae,Pipile,pipile,Trinidad piping guan,CR,0,1,0,0,22678401,de
+chordata,aves,galliformes,megapodiidae,Macrocephalon,maleo,Maleo,EN,1,0,0,0,22678576,de
+chordata,aves,galliformes,megapodiidae,Megapodius,pritchardii,Tongan megapode,EN,0,0,1,0,22678625,de
+chordata,aves,galliformes,numididae,Acryllium,vulturinum,Vulturine guineafowl,LC,0,1,1,1,22679572,st
+chordata,aves,galliformes,numididae,Guttera,pucherani,Crested guineafowl,LC,0,0,1,0,22679564,st
+chordata,aves,galliformes,numididae,Numida,meleagris,Helmeted guineafowl,LC,0,1,1,0,22679555,st
+chordata,aves,galliformes,odontophoridae,Callipepla,californica,California quail,LC,0,0,0,1,22679603,in
+chordata,aves,galliformes,odontophoridae,Callipepla,douglasii,Elegant quail,LC,0,0,0,1,22679597,in
+chordata,aves,galliformes,odontophoridae,Callipepla,gambelii,Gambel's quail,LC,0,0,0,1,22679609,st
+chordata,aves,galliformes,odontophoridae,Callipepla,squamata,Scaled quail,LC,0,0,0,1,22679594,de
+chordata,aves,galliformes,odontophoridae,Colinus,virginianus,Northern bobwhite,NT,0,0,0,1,22728956,de
+chordata,aves,galliformes,odontophoridae,Cyrtonyx,montezumae,Montezuma quail,LC,1,0,0,0,22679711,st
+chordata,aves,galliformes,phasianidae,Afropavo,congensis,Congo peafowl,VU,1,0,1,0,22679430,de
+chordata,aves,galliformes,phasianidae,Alectoris,chukar,Chukar partridge,LC,1,0,0,1,22678691,st
+chordata,aves,galliformes,phasianidae,Arborophila,javanica,Chestnut-bellied partridge,LC,0,0,1,0,22679044,de
+chordata,aves,galliformes,phasianidae,Argusianus,argus,Great argus,NT,1,0,1,0,22725006,de
+chordata,aves,galliformes,phasianidae,Bambusicola,fytchii fytchii,Mountain bamboo partridge,LC,0,0,1,1,22679114,de
+chordata,aves,galliformes,phasianidae,Chrysolophus,amherstiae,Lady Amherst's pheasant,LC,1,0,1,1,22679358,de
+chordata,aves,galliformes,phasianidae,Chrysolophus,pictus,Golden pheasant,LC,1,0,0,1,22679355,de
+chordata,aves,galliformes,phasianidae,Coturnix,japonica,Japanese quail,NT,0,0,1,0,22678949,de
+chordata,aves,galliformes,phasianidae,Crossoptilon,auritum,Blue eared pheasant,LC,1,0,0,0,22679307,st
+chordata,aves,galliformes,phasianidae,Crossoptilon,crossoptilon,White eared pheasant,NT,1,0,0,0,22679292,de
+chordata,aves,galliformes,phasianidae,Francolinus,erckelii,Erckel's francolin,LC,0,0,0,1,22678865,st
+chordata,aves,galliformes,phasianidae,Gallus,gallus domestic,Red junglefowl,LC,1,0,0,1,22679199,de
+chordata,aves,galliformes,phasianidae,Gallus,varius,Green junglefowl,LC,1,0,0,0,22679213,st
+chordata,aves,galliformes,phasianidae,Lophophorus,impejanus,Himalayan monal,LC,1,1,1,0,22679182,de
+chordata,aves,galliformes,phasianidae,Lophura,bulweri,Bulwer's pheasant,VU,0,0,1,0,22679278,de
+chordata,aves,galliformes,phasianidae,Lophura,edwardsi,Edwards's pheasant,CR,0,0,1,0,22679230,de
+chordata,aves,galliformes,phasianidae,Lophura,ignita,Crested fireback,NT,0,1,0,0,22679264,de
+chordata,aves,galliformes,phasianidae,Lophura,nycthemera,Silver pheasant,LC,1,0,0,0,22679220,de
+chordata,aves,galliformes,phasianidae,Lophura,swinhoii,Swinhoe's pheasant,NT,1,0,0,0,22679241,de
+chordata,aves,galliformes,phasianidae,Margaroperdix,madagascariensis,Madagascan partridge,LC,0,0,1,0,22678927,de
+chordata,aves,galliformes,phasianidae,Meleagris,gallopavo,Wild turkey,LC,0,1,0,0,22679525,in
+chordata,aves,galliformes,phasianidae,Meleagris,ocellata,Ocellated turkey,NT,1,0,0,0,22679529,de
+chordata,aves,galliformes,phasianidae,Pavo,cristatus,Indian peafowl,LC,1,1,0,0,22679435,st
+chordata,aves,galliformes,phasianidae,Pavo,muticus,Green peafowl,EN,1,0,0,0,22679440,de
+chordata,aves,galliformes,phasianidae,Phasianus,colchicus,Ring-necked pheasant,LC,0,1,0,1,22679349,de
+chordata,aves,galliformes,phasianidae,Polyplectron,inopinatum,Mountain Peacock-pheasant,VU,0,0,1,0,22679365,de
+chordata,aves,galliformes,phasianidae,Polyplectron,napoleonis,Palawan Peacock-pheasant,VU,1,0,1,1,22679398,de
+chordata,aves,galliformes,phasianidae,Rollulus,rouloul,Crested partridge,NT,1,1,1,1,22679106,de
+chordata,aves,galliformes,phasianidae,Syrmaticus,ellioti,Elliot's pheasant,NT,1,0,0,0,22679325,de
+chordata,aves,galliformes,phasianidae,Syrmaticus,mikado,Mikado pheasant,NT,1,0,0,0,22679336,de
+chordata,aves,galliformes,phasianidae,Syrmaticus,reevesii,Reeves's pheasant,VU,1,0,0,1,22679346,de
+chordata,aves,galliformes,phasianidae,Tragopan,blythii,Blyth's tragopan,VU,0,0,1,0,22679163,de
+chordata,aves,galliformes,phasianidae,Tragopan,caboti,Cabot's tragopan,VU,1,0,1,0,22679172,de
+chordata,aves,galliformes,phasianidae,Tragopan,satyra,Satyr tragopan,NT,1,0,0,0,22679157,de
+chordata,aves,galliformes,phasianidae,Tragopan,temminckii,Temminck's tragopan,LC,0,1,1,0,22679169,de
+chordata,aves,gruiformes,cariamidae,Cariama,cristata,Red-legged seriema,LC,0,1,0,0,22692205,st
+chordata,aves,gruiformes,eurypygidae,Eurypyga,helias,Sunbittern,LC,1,1,1,1,22691893,de
+chordata,aves,gruiformes,gruidae,Anthropoides,paradiseus,Blue crane,VU,0,0,0,1,22692109,st
+chordata,aves,gruiformes,gruidae,Anthropoides,virgo,Demoiselle crane,LC,0,1,0,1,22692081,in
+chordata,aves,gruiformes,gruidae,Balearica,pavonina,Black crowned crane,VU,0,0,0,1,22692039,de
+chordata,aves,gruiformes,gruidae,Balearica,regulorum,Grey crowned crane ,EN,0,1,0,1,22692046,de
+chordata,aves,gruiformes,gruidae,Bugeranus,carunculatus,Wattled crane,VU,0,0,0,0,22692129,de
+chordata,aves,gruiformes,gruidae,Grus,canadensis,Sandhill crane,LC,0,0,0,1,22692078,in
+chordata,aves,gruiformes,gruidae,Grus,grus,Common crane,LC,1,0,0,0,22692146,un
+chordata,aves,gruiformes,gruidae,Grus,japonensis,Red-crowned crane,EN,0,0,1,0,22692167,de
+chordata,aves,gruiformes,gruidae,Grus,nigricollis,Black-necked crane,VU,1,0,0,0,22692162,de
+chordata,aves,gruiformes,gruidae,Grus,vipio,White-naped crane,VU,1,0,1,0,22692073,de
+chordata,aves,gruiformes,psophiidae,Psophia,crepitans,Grey-winged trumpeter,LC,0,1,1,0,22692195,de
+chordata,aves,gruiformes,rallidae,Amaurornis,flavirostra,Black crake,LC,1,0,1,1,22692643,un
+chordata,aves,gruiformes,rallidae,Amaurornis,phoenicurus,White-breasted waterhen,LC,0,0,0,1,22692640,un
+chordata,aves,gruiformes,rallidae,Aramides,cajaneus,Grey-necked wood rail,LC,1,0,0,1,22692570,st
+chordata,aves,gruiformes,rallidae,Gallirallus,owstoni,Guam rail,EW,0,0,1,0,22692441,N/A
+chordata,aves,gruiformes,rallidae,Porphyrio,martinicus,Purple gallinule,LC,0,1,0,0,22692827,de
+chordata,aves,gruiformes,rallidae,Porphyrio,porphyrio,Purple swamphen,LC,1,0,0,0,22692792,un
+chordata,aves,gruiformes,rhynochetidae,Rhynochetos,jubatus,Kagu,EN,0,0,1,0,22692211,st
+chordata,aves,gruiformes,turnicidae,Turnix,nigricollis,Madagascar buttonquail,LC,1,0,1,1,22680552,st
+chordata,aves,passeriformes,bombycillidae,Bombycilla,cedrorum,Cedar waxwing,LC,1,0,0,0,22708153,in
+chordata,aves,passeriformes,campephagidae,Coracina,novaehollandiae,Black-faced cuckooshrike,LC,0,0,1,0,22706495,de
+chordata,aves,passeriformes,cardinalidae,Cardinalis,cardinalis,Northern cardinal,LC,1,0,0,0,22723819,st
+chordata,aves,passeriformes,cardinalidae,Pheucticus,aureoventris,Black-backed grosbeak,LC,0,0,1,0,22723810,un
+chordata,aves,passeriformes,cardinalidae,Pheucticus,ludovicianus,Rose-breasted grosbeak,LC,1,0,0,0,22723813,de
+chordata,aves,passeriformes,cardinalidae,Piranga,olivacea,Scarlet tanager,LC,1,0,0,0,22722466,st
+chordata,aves,passeriformes,chloropseidae,Chloropsis,cochinchinensis,Blue-winged leafbird,LC,0,0,1,0,22734235,de
+chordata,aves,passeriformes,cisticolidae,Hypergerus,atriceps,Oriole warbler,LC,0,0,1,0,22713842,st
+chordata,aves,passeriformes,coerebidae,Coereba,flaveola,Bananaquit,LC,1,0,1,0,22722080,st
+chordata,aves,passeriformes,corvidae,Cissa,chinensis,Common green magpie,LC,0,1,0,0,22705809,st
+chordata,aves,passeriformes,corvidae,Corvus,albicollis,White-necked raven,LC,0,0,1,0,22706077,de
+chordata,aves,passeriformes,corvidae,Corvus,albus,Pied crow,LC,0,0,1,0,22735894,st
+chordata,aves,passeriformes,corvidae,Corvus,frugilegus,Rook,LC,0,1,0,0,22705983,de
+chordata,aves,passeriformes,corvidae,Cyanocorax,chrysops,Plush-crested jay,LC,1,1,0,0,22705729,st
+chordata,aves,passeriformes,corvidae,Cyanopica,cyana,Azure-winged magpie,LC,1,0,0,1,22705827,in
+chordata,aves,passeriformes,corvidae,Garrulus,glandarius,Eurasian jay,LC,0,1,0,0,22705764,st
+chordata,aves,passeriformes,corvidae,Pica,pica,Eurasian magpie,LC,1,1,1,1,22705865,st
+chordata,aves,passeriformes,corvidae,Urocissa,erythrorhyncha,Red-billed blue magpie,LC,1,1,0,0,22705802,in
+chordata,aves,passeriformes,cotingidae,Cotinga,cayana,Spangled cotinga,LC,0,0,1,0,22700891,st
+chordata,aves,passeriformes,cotingidae,Rupicola,peruvianus,Andean cock-of-the-rock,LC,0,0,1,0,22700974,st
+chordata,aves,passeriformes,cracticidae,Peltops,blainvillii,Clicking shieldbill,LC,0,0,1,0,22706339,un
+chordata,aves,passeriformes,emberizidae,Arremon,aurantiirostris,Orange-billed sparrow,LC,0,0,1,0,22721367,de
+chordata,aves,passeriformes,emberizidae,Arremonops,conirostris,Black-striped sparrow,LC,0,0,1,0,22721401,st
+chordata,aves,passeriformes,emberizidae,Coryphospingus,cucullatus,Red pileated finch,LC,0,0,0,1,22723051,st
+chordata,aves,passeriformes,emberizidae,Junco,hyemalis,Dark-eyed junco,LC,1,0,0,0,22735032,st
+chordata,aves,passeriformes,emberizidae,Melozone,fuscus,Canyon towhee,LC,0,0,0,1,22721331,st
+chordata,aves,passeriformes,emberizidae,Sicalis,flaveola,Saffron finch,LC,1,0,0,1,22723346,st
+chordata,aves,passeriformes,emberizidae,Tiaris,olivaceus olivacea,Yellow-faced grassquit,LC,0,0,1,0,22723603,in
+chordata,aves,passeriformes,estrildidae,Amadina,erythrocephala,Red-headed finch,LC,0,0,0,1,22719932,st
+chordata,aves,passeriformes,estrildidae,Erythrura,gouldiae,Gouldian finch,NT,0,0,0,1,22719744,st
+chordata,aves,passeriformes,estrildidae,Erythrura,hyperythra,Tawny-breasted parrotfinch,LC,0,0,1,0,22719695,st
+chordata,aves,passeriformes,estrildidae,Erythrura,prasina,Pin-tailed parrotfinch,LC,0,0,1,0,22719699,st
+chordata,aves,passeriformes,estrildidae,Erythrura,tricolor,Tricolored parrotfinch,LC,0,0,1,0,22719707,st
+chordata,aves,passeriformes,estrildidae,Estrilda,melanotis,Swee waxbill,LC,0,0,1,0,22719537,st
+chordata,aves,passeriformes,estrildidae,Estrilda,melpoda,Orange-cheeked waxbill,LC,0,0,0,1,22719558,st
+chordata,aves,passeriformes,estrildidae,Lonchura,cucullata cucullata,Bronze mannikin,LC,0,0,1,0,22719782,st
+chordata,aves,passeriformes,estrildidae,Lonchura,griseicapilla,Grey-headed silverbill,LC,0,0,1,0,22719778,st
+chordata,aves,passeriformes,estrildidae,Lonchura,maja,White-headed munia,LC,0,0,1,0,22719851,st
+chordata,aves,passeriformes,estrildidae,Lonchura,malabarica,Indian silverbill,LC,0,0,0,1,22719770,st
+chordata,aves,passeriformes,estrildidae,Lonchura,punctulata,Scaly-brested munia,LC,0,0,0,1,22719821,st
+chordata,aves,passeriformes,estrildidae,Neochmia,ruficauda,Star finch,LC,0,0,0,1,22719673,de
+chordata,aves,passeriformes,estrildidae,Padda,oryzivora,Java sparrow,VU,0,0,1,1,22719912,de
+chordata,aves,passeriformes,estrildidae,Poephila,cincta,Black-throated finch,LC,0,0,0,1,22719692,de
+chordata,aves,passeriformes,estrildidae,Pytilia,melba,Green-winged pytilia,LC,0,0,1,0,22719344,st
+chordata,aves,passeriformes,estrildidae,Uraeginthus,ianthinogaster,Purple grenadier,LC,0,0,1,0,22719504,st
+chordata,aves,passeriformes,eurylaimidae,Psarisomus,dalhousiae,Long-tailed broadbill,LC,0,0,1,0,22698747,de
+chordata,aves,passeriformes,fringillidae,Carduelis,tristis,American goldfinch,LC,1,0,0,0,22720407,in
+chordata,aves,passeriformes,fringillidae,Carpodacus,mexicanus,House finch,LC,1,0,0,0,22720563,in
+chordata,aves,passeriformes,hirundinidae,Hirundo,rustica,Barn swallow,LC,1,0,0,0,22712252,de
+chordata,aves,passeriformes,icteridae,Amblyramphus,holosericeus,Scarlet-headed blackbird,LC,0,1,0,0,22724265,st
+chordata,aves,passeriformes,icteridae,Chrysomus,icterocephalus,Yellow-hooded blackbird,LC,1,0,0,0,22724200,st
+chordata,aves,passeriformes,icteridae,Dolichonyx,oryzivorus,Bobolink,LC,1,0,0,0,22724367,de
+chordata,aves,passeriformes,icteridae,Icterus,cucullatus,Hooded oriole,LC,0,0,0,1,22724131,in
+chordata,aves,passeriformes,icteridae,Icterus,galbula,Baltimore oriole,LC,1,1,0,0,22724126,st
+chordata,aves,passeriformes,icteridae,Icterus,parisorum,Scott's oriole,LC,0,0,0,1,22724160,in
+chordata,aves,passeriformes,icteridae,Psarocolius,decumanus,Crested oropendola,LC,0,0,0,1,22723982,st
+chordata,aves,passeriformes,icteridae,Psarocolius,montezuma,Montezuma oropendola,LC,1,0,0,0,22724004,st
+chordata,aves,passeriformes,irenidae,Irena,puella,Asian fairy-bluebird,LC,1,1,1,1,22704933,de
+chordata,aves,passeriformes,laniidae,Corvinella,melanoleucus,Magpie shrike,LC,1,0,0,0,22705107,de
+chordata,aves,passeriformes,laniidae,Eurocephalus,rueppelli,Northern white-crowned shrike,LC,0,0,1,0,22705114,st
+chordata,aves,passeriformes,laniidae,Lanius,collaris,Common fiscal,LC,0,0,1,0,22705074,in
+chordata,aves,passeriformes,laniidae,Lanius,ludovicianus,Loggerhead shrike,LC,1,1,0,0,22705042,de
+chordata,aves,passeriformes,malaconotidae,Laniarius,barbarus,Yellow-crowned gonolek,LC,0,0,1,0,22707575,st
+chordata,aves,passeriformes,meliphagidae,Melidectes,belfordi,Belford's honeyeater,LC,0,0,1,0,22704276,un
+chordata,aves,passeriformes,meliphagidae,Philemon,buceroides,Helmeted friarbird,LC,0,0,1,0,22704204,st
+chordata,aves,passeriformes,monarchidae,Terpsiphone,rufiventer,Black-headed paradise-flycatcher,LC,0,0,1,0,22731073,de
+chordata,aves,passeriformes,muscicapidae,Copsychus,malabaricus,White-rumped shama,LC,0,0,1,1,22734262,de
+chordata,aves,passeriformes,muscicapidae,Copsychus,saularis,Oriental magpie-robin,LC,0,0,1,0,22709988,st
+chordata,aves,passeriformes,muscicapidae,Cossypha,albicapilla,White-crowned robin-chat,LC,0,0,1,0,22709853,st
+chordata,aves,passeriformes,muscicapidae,Cossypha,niveicapilla,Snowy-crowned robin-chat,LC,1,0,1,0,22709847,st
+chordata,aves,passeriformes,muscicapidae,Niltava,davidi,Fujian niltava,LC,0,0,1,0,22709470,st
+chordata,aves,passeriformes,nectariniidae,Nectarinia,coccinigaster,Splendid sunbird,LC,1,0,0,0,22718027,st
+chordata,aves,passeriformes,nectariniidae,Nectarinia,pulchella,Beautiful sunbird,LC,1,0,0,0,22718039,st
+chordata,aves,passeriformes,nectariniidae,Nectarinia,venusta,Variable sunbird,LC,0,0,1,0,22717826,st
+chordata,aves,passeriformes,oriolidae,Oriolus,auratus,African golden oriole,LC,0,0,1,0,22706389,st
+chordata,aves,passeriformes,oriolidae,Oriolus,chinensis,Black-naped oriole,LC,0,0,1,0,22706394,un
+chordata,aves,passeriformes,oriolidae,Oriolus,cruentus,Black-and-crimson oriole,LC,0,0,1,0,22706443,un
+chordata,aves,passeriformes,paradisaeidae,Lophorina,superba,Superb bird-of-paradise,LC,0,0,1,0,22706167,st
+chordata,aves,passeriformes,paradisaeidae,Paradisaea,minor,Lesser bird-of-paradise,LC,1,0,0,0,22706245,st
+chordata,aves,passeriformes,paradisaeidae,Paradisaea,raggiana,Raggiana bird-of-paradise,LC,0,0,1,0,22706253,st
+chordata,aves,passeriformes,paradisaeidae,Paradisaea,rubra,Red bird-of-paradise,NT,1,0,1,0,22706241,de
+chordata,aves,passeriformes,parulidae,Dendroica,pensylvanica,Chestnut-sided warbler,LC,1,0,0,0,22721664,de
+chordata,aves,passeriformes,passeridae,Philetairus,socius socius,Sociable weaver,LC,0,0,1,0,22718731,st
+chordata,aves,passeriformes,passeridae,Pseudonigrita,cabanisi,Black-capped social weaver,LC,1,0,0,0,22718725,st
+chordata,aves,passeriformes,pipridae,Manacus,manacus,White-bearded manakin,LC,0,0,1,0,22701112,st
+chordata,aves,passeriformes,pipridae,Pipra,erythrocephala,Golden-headed manakin,LC,0,0,1,0,22700997,st
+chordata,aves,passeriformes,pipridae,Pipra,pipra pipra,White-crowned manakin,LC,0,0,1,0,22701009,de
+chordata,aves,passeriformes,pittidae,Pitta,elegans,Elegant pitta,LC,0,0,1,0,22698694,de
+chordata,aves,passeriformes,pittidae,Pitta,sordida,Hooded pitta,LC,0,1,1,0,22698634,de
+chordata,aves,passeriformes,ploceidae,Dinemellia,dinemelli,White-headed buffalo weaver,LC,0,0,1,0,22718674,st
+chordata,aves,passeriformes,ploceidae,Euplectes,afer,Yellow-crowned bishop,LC,0,0,0,1,22719164,st
+chordata,aves,passeriformes,ploceidae,Euplectes,orix,Red bishop,LC,1,0,0,1,22719186,st
+chordata,aves,passeriformes,ploceidae,Foudia,madagascariensis,Red fody,LC,1,0,0,0,22719132,st
+chordata,aves,passeriformes,ploceidae,Ploceus,baglafecht,Baglafecht weaver,LC,0,0,1,1,22718761,st
+chordata,aves,passeriformes,ploceidae,Ploceus,castaneiceps,Taveta weaver,LC,1,0,0,0,22718841,st
+chordata,aves,passeriformes,ploceidae,Ploceus,manyar,Streaked weaver,LC,0,0,1,0,22719002,st
+chordata,aves,passeriformes,ploceidae,Ploceus,rubiginosus,Chestnut weaver,LC,1,0,0,0,22718975,st
+chordata,aves,passeriformes,ptilonorhynchidae,Ailuroedus,buccoides,White-eared catbird,LC,0,0,1,0,22703618,st
+chordata,aves,passeriformes,ptilonorhynchidae,Chlamydera,cerviniventris,Fawn-breasted bowerbird,LC,0,0,1,0,22703703,st
+chordata,aves,passeriformes,pycnonotidae,Pycnonotus,aurigaster,Sooty-headed bulbul,LC,0,0,0,1,22712699,de
+chordata,aves,passeriformes,pycnonotidae,Pycnonotus,barbatus,Common bulbul,LC,0,1,0,1,22712650,in
+chordata,aves,passeriformes,pycnonotidae,Pycnonotus,cafer,Red-vented bulbul,LC,0,0,0,1,22712695,in
+chordata,aves,passeriformes,pycnonotidae,Pycnonotus,goiavier,Yellow-vented bulbul,LC,1,0,0,0,22712731,in
+chordata,aves,passeriformes,pycnonotidae,Pycnonotus,melanicterus,Black-crested bulbul,LC,0,0,1,0,22712625,de
+chordata,aves,passeriformes,pycnonotidae,Pycnonotus,sinensis,Light-vented bulbul,LC,0,0,0,1,22712643,in
+chordata,aves,passeriformes,pycnonotidae,Spizixos,semitorques,Collared finchbill,LC,1,0,1,0,22712600,st
+chordata,aves,passeriformes,sturnidae,Aplonis,metallica,Metallic starling,LC,1,0,1,0,22710553,un
+chordata,aves,passeriformes,sturnidae,Cinnyricinclus,leucogaster,Violet-backed starling,LC,1,0,1,0,22710791,de
+chordata,aves,passeriformes,sturnidae,Cosmopsarus,regius,Golden-breasted starling,LC,0,1,1,0,22710817,st
+chordata,aves,passeriformes,sturnidae,Creatophora,cinerea,Wattled starling,LC,0,0,1,1,22710832,st
+chordata,aves,passeriformes,sturnidae,Lamprotornis,purpuroptera,Ruppell's long-tailed starling,LC,0,1,0,0,22710751,un
+chordata,aves,passeriformes,sturnidae,Leucopsar,rothschildi,Bali myna,CR,1,0,1,0,22710912,de
+chordata,aves,passeriformes,sturnidae,Scissirostrum,dubium,Grosbeak starling,LC,1,0,1,0,22711001,de
+chordata,aves,passeriformes,sturnidae,Streptocitta,albicollis albicollis,White-necked myna,LC,0,0,1,0,22710978,de
+chordata,aves,passeriformes,sturnidae,Sturnus,roseus,Rosy starling,LC,1,0,0,0,22710881,un
+chordata,aves,passeriformes,thraupidae,Chlorophonia,callophrys,Golden-browed chlorophonia,LC,0,0,1,0,22722790,de
+chordata,aves,passeriformes,thraupidae,Cyanerpes,caeruleus,Purple honeycreeper,LC,0,0,1,0,22723009,st
+chordata,aves,passeriformes,thraupidae,Cyanerpes,cyaneus,Red-legged honeycreeper,LC,0,1,0,1,22723012,st
+chordata,aves,passeriformes,thraupidae,Dacnis,cayana,Blue dacnis,LC,1,1,1,0,22722991,st
+chordata,aves,passeriformes,thraupidae,Paroaria,coronata,Red-crested cardinal,LC,1,0,0,0,22721582,st
+chordata,aves,passeriformes,thraupidae,Paroaria,gularis,Red-capped cardinal,LC,0,0,1,0,22736352,st
+chordata,aves,passeriformes,thraupidae,Ramphocelus,carbo,Silver-beaked tanager,LC,0,1,0,0,22722507,st
+chordata,aves,passeriformes,thraupidae,Schistochlamys,melanopis,Black-faced tanager,LC,0,0,1,0,22722123,st
+chordata,aves,passeriformes,thraupidae,Tachyphonus,rufus,White-lined tanager,LC,0,1,0,0,22722400,st
+chordata,aves,passeriformes,thraupidae,Tangara,arthus,Golden tanager,LC,0,1,0,0,22722848,de
+chordata,aves,passeriformes,thraupidae,Tangara,chilensis,Paradise tanager,LC,0,0,1,0,22722820,de
+chordata,aves,passeriformes,thraupidae,Tangara,cyanicollis,Blue-necked tanager,LC,0,0,1,0,22722915,st
+chordata,aves,passeriformes,thraupidae,Tangara,gyrola,Bay-headed tanager,LC,0,0,1,0,22722878,de
+chordata,aves,passeriformes,thraupidae,Tangara,mexicana mexicana,Turquoise tanager,LC,0,0,1,0,22722807,st
+chordata,aves,passeriformes,thraupidae,Tangara,punctata punctata,Spotted tanager,LC,0,0,1,0,22722866,de
+chordata,aves,passeriformes,thraupidae,Tangara,schrankii,Green-and-gold tanager,LC,1,0,1,0,22722842,de
+chordata,aves,passeriformes,thraupidae,Thraupis,bonariensis,Blue-and-yellow tanager,LC,0,0,0,1,22722552,st
+chordata,aves,passeriformes,thraupidae,Thraupis,episcopus,Blue-grey tanager,LC,1,1,0,1,22722527,st
+chordata,aves,passeriformes,timaliidae,Garrulax,leucolophus,White-crested laughingthrush,LC,1,1,0,1,22734757,de
+chordata,aves,passeriformes,timaliidae,Garrulax,pectoralis,Greater necklaced laughingthrush,LC,0,0,1,0,22715611,de
+chordata,aves,passeriformes,timaliidae,Garrulax,strepitans,White-necked laughingthrush,LC,0,0,1,0,22735097,de
+chordata,aves,passeriformes,timaliidae,Leiothrix,argentauris,Silver-eared leiothrix,LC,0,0,1,0,22716518,de
+chordata,aves,passeriformes,timaliidae,Leiothrix,lutea,Red-billed leiothrix,LC,1,1,0,0,22716522,de
+chordata,aves,passeriformes,timaliidae,Minla,cyanouroptera,Blue-winged minla,LC,0,1,1,0,22716576,de
+chordata,aves,passeriformes,timaliidae,Minla,ignotincta mariae,Red-tailed minla,LC,0,0,1,0,22716582,de
+chordata,aves,passeriformes,timaliidae,Paradoxornis,webbianus elisabethae,Vinous-throated parrotbill,LC,0,0,1,0,22716804,st
+chordata,aves,passeriformes,timaliidae,Phyllanthus,atripennis,Capuchin babbler,LC,0,0,1,0,22716686,un
+chordata,aves,passeriformes,timaliidae,Pomatorhinus,montanus,Chestnut-backed scimitar babbler,LC,0,0,1,0,22715972,st
+chordata,aves,passeriformes,timaliidae,Turdoides,jardineii emini,Arrow-marked babbler,LC,0,0,1,0,22716501,st
+chordata,aves,passeriformes,turdidae,Sialia,sialis,Eastern bluebird,LC,0,1,0,0,22708550,in
+chordata,aves,passeriformes,turdidae,Turdus,dissimilis,Black-breasted thrush,LC,0,1,0,0,22708759,st
+chordata,aves,passeriformes,turdidae,Turdus,migratorius,American robin,LC,1,0,0,0,22708958,in
+chordata,aves,passeriformes,turdidae,Turdus,pelios,African thrush,LC,0,0,1,0,22708702,un
+chordata,aves,passeriformes,tyrannidae,Sayornis,phoebe,Eastern phoebe,LC,1,0,0,0,22699886,in
+chordata,aves,passeriformes,tyrannidae,Tyrannus,tyrannus,Eastern kingbird,LC,1,0,0,0,22700506,de
+chordata,aves,passeriformes,viduidae,Vidua,paradisaea,Long-tailed paradise whydah,LC,0,0,1,0,22720012,st
+chordata,aves,passeriformes,zosteropidae,Zosterops,senegalensis,African yellow white-eye,LC,0,1,0,0,22713934,st
+chordata,aves,pelecaniformes,anhingidae,Anhinga,anhinga,Anhinga,LC,1,0,0,0,22696702,de
+chordata,aves,pelecaniformes,anhingidae,Anhinga,rufa,African darter,LC,0,0,1,0,22696705,de
+chordata,aves,pelecaniformes,pelecanidae,Pelecanus,erythrorhynchos,American white pelican,LC,1,0,0,1,22697611,in
+chordata,aves,pelecaniformes,pelecanidae,Pelecanus,occidentalis,Brown pelican,LC,1,0,1,0,22733989,in
+chordata,aves,pelecaniformes,phalacrocoracidae,Microcarbo,melanoleucos,Little pied cormorant,LC,0,1,0,0,22696743,un
+chordata,aves,pelecaniformes,phalacrocoracidae,Phalacrocorax,auritus,Double-crested cormorant,LC,1,0,0,0,22696776,in
+chordata,aves,pelecaniformes,phalacrocoracidae,Phalacrocorax,bougainvillii,Guanay cormorant,NT,1,0,0,0,22696810,de
+chordata,aves,pelecaniformes,scopidae,Scopus,umbretta,Hamerkop,LC,1,1,1,1,22697356,st
+chordata,aves,phoenicopteriformes,phoenicopteridae,Phoeniconaias,minor,Lesser flamingo,NT,0,0,1,0,22697369,de
+chordata,aves,phoenicopteriformes,phoenicopteridae,Phoenicopterus,chilensis,Chilean flamingo,NT,1,0,0,0,22697365,de
+chordata,aves,phoenicopteriformes,phoenicopteridae,Phoenicopterus,ruber,American flamingo,LC,1,1,1,1,22729706,in
+chordata,aves,piciformes,picidae,Colaptes,auratus,Northern flicker,LC,1,0,0,0,22681282,st
+chordata,aves,piciformes,picidae,Dinopium,benghalense,Lesser goldenback,LC,0,0,1,0,22681508,st
+chordata,aves,piciformes,picidae,Melanerpes,uropygialis,Gila woodpecker,LC,0,0,0,1,22680853,st
+chordata,aves,piciformes,picidae,Picoides,pubescens,Downy woodpecker,LC,1,0,0,0,22681155,st
+chordata,aves,piciformes,picidae,Picus,flavinucha,Greater yellownape,LC,0,0,1,0,22681437,st
+chordata,aves,piciformes,ramphastidae,Aulacorhynchus,prasinus,Emerald toucanet,LC,1,0,0,0,22681959,de
+chordata,aves,piciformes,ramphastidae,Lybius,bidentatus,Double-toothed barbet,LC,0,0,1,0,22681861,st
+chordata,aves,piciformes,ramphastidae,Lybius,dubius,Bearded barbet,LC,1,0,1,0,22681865,un
+chordata,aves,piciformes,ramphastidae,Psilopogon,pyrolophus,Fire-tufted barbet,LC,0,0,1,0,22681588,de
+chordata,aves,piciformes,ramphastidae,Pteroglossus,viridis,Green aracari,LC,1,1,1,0,22681994,st
+chordata,aves,piciformes,ramphastidae,Ramphastos,sulfuratus,Keel-billed toucan,LC,1,0,0,0,22682102,de
+chordata,aves,piciformes,ramphastidae,Ramphastos,swainsonii,Chestnut-mandibled toucan,LC,0,0,1,1,22682133,de
+chordata,aves,piciformes,ramphastidae,Ramphastos,toco,Toco Toucan,LC,1,0,0,0,22682164,de
+chordata,aves,psittaciformes,psittacidae,Agapornis,canus,Grey-headed lovebird,LC,1,0,0,0,22685326,st
+chordata,aves,psittaciformes,psittacidae,Agapornis,lilianae,Lilian's lovebird,NT,0,0,1,0,22685356,de
+chordata,aves,psittaciformes,psittacidae,Agapornis,nigrigenis,Black-cheeked lovebird,VU,0,0,1,0,22685360,de
+chordata,aves,psittaciformes,psittacidae,Agapornis,pullarius,Red-headed lovebird,LC,0,0,1,0,22685330,de
+chordata,aves,psittaciformes,psittacidae,Agapornis,roseicollis,Rosy-faced lovebird,LC,0,1,0,0,22685342,de
+chordata,aves,psittaciformes,psittacidae,Amazona,aestiva,Turquoise-fronted amazon,LC,1,0,0,1,22686332,de
+chordata,aves,psittaciformes,psittacidae,Amazona,amazonica,Orange-winged amazon,LC,0,0,0,1,22686350,de
+chordata,aves,psittaciformes,psittacidae,Amazona,finschi,Lilac-crowned amazon,VU,1,0,1,0,22686268,de
+chordata,aves,psittaciformes,psittacidae,Amazona,leucocephala caymanensis,Cuban amazon,NT,1,0,1,0,22686201,de
+chordata,aves,psittaciformes,psittacidae,Amazona,ochrocephala,Yellow-crowned parrot,LC,0,0,0,1,22686346,de
+chordata,aves,psittaciformes,psittacidae,Amazona,oratrix,Yellow-headed amazon,EN,0,0,1,1,22686337,de
+chordata,aves,psittaciformes,psittacidae,Amazona,ventralis,Hispaniolan amazon,VU,1,0,0,0,22686215,de
+chordata,aves,psittaciformes,psittacidae,Amazona,viridigenalis,Red-crowned amazon,EN,0,0,0,1,22686259,de
+chordata,aves,psittaciformes,psittacidae,Anodorhynchus,hyacinthinus,Hyacinth macaw,EN,0,0,1,1,22685516,de
+chordata,aves,psittaciformes,psittacidae,Ara,ambiguus,Great green macaw,EN,0,0,1,0,22685553,de
+chordata,aves,psittaciformes,psittacidae,Ara,ararauna,Blue-and-yellow macaw,LC,0,1,1,1,22685539,de
+chordata,aves,psittaciformes,psittacidae,Ara,chloropterus,Red-and-green macaw,LC,0,0,1,1,22685566,de
+chordata,aves,psittaciformes,psittacidae,Ara,macao,Scarlet macaw,LC,0,1,1,1,22685563,de
+chordata,aves,psittaciformes,psittacidae,Ara,militaris,Military macaw,VU,0,0,0,1,22685548,de
+chordata,aves,psittaciformes,psittacidae,Ara,rubrogenys,Red-fronted macaw,EN,0,0,0,1,22685572,de
+chordata,aves,psittaciformes,psittacidae,Ara,severus,Chestnut-fronted macaw,LC,1,0,0,0,22685577,st
+chordata,aves,psittaciformes,psittacidae,Aratinga,solstitialis,Sun parakeet,EN,0,0,0,1,22685701,de
+chordata,aves,psittaciformes,psittacidae,Cacatua,alba,White cockatoo,EN,1,0,1,1,22684789,de
+chordata,aves,psittaciformes,psittacidae,Cacatua,galerita,Sulphur-crested cockatoo,LC,1,0,1,1,22684781,de
+chordata,aves,psittaciformes,psittacidae,Cacatua,leadbeateri,Major Mitchell's cockatoo,LC,1,0,0,0,22684767,st
+chordata,aves,psittaciformes,psittacidae,Cacatua,moluccensis,Salmon-crested cockatoo,VU,1,0,0,1,22684784,de
+chordata,aves,psittaciformes,psittacidae,Cacatua,sulphurea,Yellow-crested cockatoo,CR,0,0,1,1,22684777,de
+chordata,aves,psittaciformes,psittacidae,Callocephalon,fimbriatum,Gang-gang cockatoo,LC,0,0,1,0,22684755,in
+chordata,aves,psittaciformes,psittacidae,Calyptorhynchus,banksii,Red-tailed black cockatoo,LC,0,1,1,0,22684744,de
+chordata,aves,psittaciformes,psittacidae,Chalcopsitta,cardinalis,Cardinal lory,LC,0,0,1,0,22684499,st
+chordata,aves,psittaciformes,psittacidae,Chalcopsitta,sintillata,Streaked lory,LC,0,0,1,0,22684494,st
+chordata,aves,psittaciformes,psittacidae,Charmosyna,papou,Papuan lorikeet,LC,0,0,1,0,22684707,st
+chordata,aves,psittaciformes,psittacidae,Charmosyna,placentis,Red-flanked lorikeet,LC,0,0,1,0,22684686,st
+chordata,aves,psittaciformes,psittacidae,Coracopsis,nigra,Black parrot,LC,1,0,0,1,22685266,st
+chordata,aves,psittaciformes,psittacidae,Cyclopsitta,diophthalma,Double-eyed fig parrot,LC,0,0,1,0,22684885,st
+chordata,aves,psittaciformes,psittacidae,Eclectus,roratus,Eclectus parrot,LC,0,0,1,1,22685022,de
+chordata,aves,psittaciformes,psittacidae,Eolophus,roseicapilla,Galah,LC,0,0,1,1,22684758,in
+chordata,aves,psittaciformes,psittacidae,Eos,bornea,Red lory,LC,0,0,0,1,22684509,de
+chordata,aves,psittaciformes,psittacidae,Eos,histrio,Red-and-blue lory,EN,0,0,1,0,22684502,de
+chordata,aves,psittaciformes,psittacidae,Eos,semilarvata,Blue-eared lory,LC,0,0,1,0,22684524,de
+chordata,aves,psittaciformes,psittacidae,Eunymphicus,cornutus,Horned parakeet,VU,0,0,1,0,22685185,in
+chordata,aves,psittaciformes,psittacidae,Forpus,coelestis,Pacific parrotlet,LC,0,0,1,0,22685949,st
+chordata,aves,psittaciformes,psittacidae,Loriculus,galgulus,Blue-crowned hanging parrot,LC,0,0,1,0,22685384,de
+chordata,aves,psittaciformes,psittacidae,Loriculus,philippensis,Philippine hanging parrot,LC,0,0,1,0,22685376,de
+chordata,aves,psittaciformes,psittacidae,Lorius,domicella,Purple-naped lory,EN,0,0,1,0,22684586,de
+chordata,aves,psittaciformes,psittacidae,Lorius,lory,Black-capped lory,LC,0,0,1,0,22684594,st
+chordata,aves,psittaciformes,psittacidae,Melopsittacus,undulatus,Budgerigar,LC,0,1,0,1,22685223,in
+chordata,aves,psittaciformes,psittacidae,Nestor,notabilis,Kea,VU,0,0,1,0,22684831,de
+chordata,aves,psittaciformes,psittacidae,Nymphicus,hollandicus,Cockatiel,LC,1,0,0,1,22684828,st
+chordata,aves,psittaciformes,psittacidae,Phigys,solitarius,Collared lory,LC,0,0,1,0,22684624,st
+chordata,aves,psittaciformes,psittacidae,Pionus,maximiliani,Scaly-headed parrot,LC,0,0,0,1,22686181,de
+chordata,aves,psittaciformes,psittacidae,Poicephalus,senegalus,Senegal parrot,LC,0,0,0,1,22685295,st
+chordata,aves,psittaciformes,psittacidae,Polytelis,anthopeplus,Regent parrot,LC,0,0,1,0,22685078,de
+chordata,aves,psittaciformes,psittacidae,Primolius,auricollis,Yellow-collared macaw,LC,0,0,0,1,22685628,in
+chordata,aves,psittaciformes,psittacidae,Primolius,couloni,Blue-headed macaw,VU,1,0,0,0,22685593,de
+chordata,aves,psittaciformes,psittacidae,Probosciger,aterrimus,Palm cockatoo,LC,1,0,0,0,22684723,de
+chordata,aves,psittaciformes,psittacidae,Prosopeia,tabuensis,Maroon shining parrot,LC,0,0,1,0,22685041,de
+chordata,aves,psittaciformes,psittacidae,Psittacella,brehmii,Brehm's tiger parrot,LC,0,0,1,0,22684925,st
+chordata,aves,psittaciformes,psittacidae,Psittacula,cyanocephala,Plum-headed parakeet,LC,0,0,0,1,22685481,de
+chordata,aves,psittaciformes,psittacidae,Psittacula,krameri,Rose-ringed parakeet,LC,0,0,1,0,22685441,in
+chordata,aves,psittaciformes,psittacidae,Psittacula,longicauda,Long-tailed parakeet,NT,0,0,1,0,22685513,de
+chordata,aves,psittaciformes,psittacidae,Psittaculirostris,edwardsii,Scarlet-cheeked fig parrot,LC,0,0,1,0,22684903,st
+chordata,aves,psittaciformes,psittacidae,Psittacus,erithacus,Grey parrot,VU,1,0,0,1,22724813,de
+chordata,aves,psittaciformes,psittacidae,Psitteuteles,goldiei,Goldie's lorikeet,LC,0,0,1,0,22684578,st
+chordata,aves,psittaciformes,psittacidae,Psitteuteles,iris,Iris lorikeet,NT,0,0,1,0,22684573,de
+chordata,aves,psittaciformes,psittacidae,Psittrichas,fulgidus,Pesquet's parrot,VU,0,0,1,0,22685025,de
+chordata,aves,psittaciformes,psittacidae,Rhynchopsitta,pachyrhyncha,Thick-billed parrot,EN,0,0,1,0,22685766,de
+chordata,aves,psittaciformes,psittacidae,Trichoglossus,capistratus,Marigold lorikeet,NE,0,1,0,0,N/A,N/A
+chordata,aves,psittaciformes,psittacidae,Trichoglossus,forsteni,Sunset lorikeet,NE,0,0,1,0,N/A,N/A
+chordata,aves,psittaciformes,psittacidae,Trichoglossus,haematodus,Rainbow lorikeet,LC,1,1,0,0,22733510,de
+chordata,aves,psittaciformes,psittacidae,Trichoglossus,johnstoniae,Mindanao lorikeet,NT,0,0,1,0,22684559,de
+chordata,aves,psittaciformes,psittacidae,Trichoglossus,rubritorquis,Red-collared lorikeet,NE,0,0,1,0,N/A,N/A
+chordata,aves,psittaciformes,psittacidae,Vini,australis,Blue-crowned lorikeet,LC,0,0,1,0,22684627,de
+chordata,aves,psittaciformes,psittacidae,Vini,peruviana,Violet lorikeet,VU,0,0,1,0,22684641,de
+chordata,aves,sphenisciformes,spheniscidae,Aptenodytes,patagonicus,King penguin,LC,0,0,0,1,22697748,in
+chordata,aves,sphenisciformes,spheniscidae,Eudyptes,chrysocome,Rockhopper penguin,VU,0,0,0,1,22735250,de
+chordata,aves,sphenisciformes,spheniscidae,Eudyptes,chrysolophus,Macaroni penguin,VU,0,0,0,1,22697793,de
+chordata,aves,sphenisciformes,spheniscidae,Eudyptula,minor,Fairy penguin,LC,0,0,0,1,22697805,de
+chordata,aves,sphenisciformes,spheniscidae,Pygoscelis,papua,Gentoo penguin,NT,0,0,0,1,22697755,de
+chordata,aves,sphenisciformes,spheniscidae,Spheniscus,demersus,Jackass penguin,EN,0,1,0,1,22697810,de
+chordata,aves,sphenisciformes,spheniscidae,Spheniscus,magellanicus,Magellanic penguin,NT,1,0,0,0,22697822,de
+chordata,aves,strigiformes,strigidae,Asio,otus,Long-eared owl,LC,0,0,0,1,22689507,de
+chordata,aves,strigiformes,strigidae,Athene,cunicularia,Burrowing owl,LC,0,1,0,1,22689353,de
+chordata,aves,strigiformes,strigidae,Bubo,bubo,Eurasian eagle-owl,LC,0,1,1,1,22688927,de
+chordata,aves,strigiformes,strigidae,Bubo,scandiacus,Snowy owl,LC,1,0,0,0,22689055,de
+chordata,aves,strigiformes,strigidae,Bubo,virginianus,Great horned owl,LC,1,1,1,1,22688923,st
+chordata,aves,strigiformes,strigidae,Megascops,asio,Eastern screech owl,LC,1,0,0,1,22688758,in
+chordata,aves,strigiformes,strigidae,Megascops,kennicottii,Western screech owl,LC,0,0,1,0,22688747,de
+chordata,aves,strigiformes,strigidae,Ptilopsis,leucotis,Northern white-faced owl,LC,1,0,0,0,22688741,st
+chordata,aves,strigiformes,strigidae,Pulsatrix,perspicillata,Spectacled owl,LC,0,1,1,1,22689180,st
+chordata,aves,strigiformes,strigidae,Strix,albitarsis,Rufous-banded owl,LC,0,1,0,0,22689154,st
+chordata,aves,strigiformes,strigidae,Strix,varia,Barred owl,LC,1,0,0,1,22689094,in
+chordata,aves,strigiformes,strigidae,Surnia,ulula,Northern hawk owl,LC,0,0,1,0,22689189,st
+chordata,aves,strigiformes,tytonidae,Tyto,alba,Barn owl,LC,1,1,1,1,22688504,st
+chordata,aves,struthioniformes,apterygidae,Apteryx,mantelli,North Island brown kiwi,EN,0,0,1,0,22724574,de
+chordata,aves,struthioniformes,dromaiidae,Dromaius,novaehollandiae,Emu,LC,1,1,1,1,22678117,st
+chordata,aves,struthioniformes,rheidae,Rhea,americana,Greater rhea,NT,0,0,0,1,22678073,de
+chordata,aves,struthioniformes,rheidae,Rhea,pennata,Lesser rhea,NT,0,0,1,0,22678081,de
+chordata,aves,struthioniformes,struthionidae,Struthio,camelus,Ostrich,LC,1,1,1,1,22678068,de
+chordata,aves,tinamiformes,tinamidae,Crypturellus,soui,Little tinamou,LC,0,0,1,0,22678169,de
+chordata,aves,tinamiformes,tinamidae,Eudromia,elegans,Elegant created tinamou,LC,1,1,0,0,22678289,de
+chordata,aves,trogoniformes,trogonidae,Pharomachrus,auriceps,Golden-headed quetzal,LC,1,0,0,0,22682738,st
+chordata,aves,trogoniformes,trogonidae,Trogon,viridis,White-tailed trogon,LC,1,0,0,0,22736238,st
+chordata,mammalia,afrosoricida,tenrecidae,Echinops,telfairi,Lesser hedgehog tenrec,LC,1,0,1,1,40592,st
+chordata,mammalia,afrosoricida,tenrecidae,Setifer,setosus,Greater hedgehog tenrec,LC,0,0,0,1,40594,st
+chordata,mammalia,artiodactyla,bovidae,Bos,frontalis,Gayal,NE,1,1,0,1,N/A,N/A
+chordata,mammalia,artiodactyla,bovidae,Ovis,aries,Sheep,NE,1,1,1,0,N/A,N/A
+chordata,mammalia,artiodactyla,camelidae,Camelus,dromedarius,Dromedary,NE,1,0,1,0,N/A,N/A
+chordata,mammalia,artiodactyla,camelidae,Lama,glama,Llama,NE,1,1,1,1,N/A,N/A
+chordata,mammalia,artiodactyla,camelidae,Lama,pacos,Alpaca,NE,0,1,0,0,N/A,N/A
+chordata,mammalia,carnivora,ailuridae,Ailurus,fulgens,Red panda,VU,1,1,1,0,714,de
+chordata,mammalia,carnivora,canidae,Alopex,lagopus,Arctic fox,LC,0,1,0,0,899,st
+chordata,mammalia,carnivora,canidae,Canis,lupus,Wolf,LC,0,1,1,1,3746,st
+chordata,mammalia,carnivora,canidae,Canis,mesomelas,Black-backed jackal,LC,0,0,1,0,3755,st
+chordata,mammalia,carnivora,canidae,Cuon,alpinus,Dhole,EN,0,1,1,0,5953,de
+chordata,mammalia,carnivora,canidae,Lycaon,pictus,African wild dog,EN,1,0,1,1,12436,de
+chordata,mammalia,carnivora,canidae,Otocyon,megalotis,Bat-eared fox,LC,0,0,1,1,15642,un
+chordata,mammalia,carnivora,canidae,Vulpes,corsac,Corsac fox,LC,0,0,1,0,23051,un
+chordata,mammalia,carnivora,canidae,Vulpes,velox,Swift fox,LC,0,0,0,1,23059,st
+chordata,mammalia,carnivora,canidae,Vulpes,zerda,Fennec fox,LC,1,0,1,0,41588,un
+chordata,mammalia,carnivora,eupleridae,Cryptoprocta,ferox,Fossa,VU,1,0,1,1,5760,de
+chordata,mammalia,carnivora,eupleridae,Galidia,elegans,Ring-tailed mongoose,LC,1,0,0,0,39426,un
+chordata,mammalia,carnivora,felidae,Acinonyx,jubatus,Cheetah,VU,0,1,1,1,219,de
+chordata,mammalia,carnivora,felidae,Caracal,caracal,Caracal,LC,0,1,1,0,3847,un
+chordata,mammalia,carnivora,felidae,Felis,nigripes,Black-footed cat,VU,0,0,0,1,8542,de
+chordata,mammalia,carnivora,felidae,Felis,silvestris,Wildcat,LC,0,0,1,0,8543,de
+chordata,mammalia,carnivora,felidae,Leopardus,geoffroyi,Geoffroy's cat,NT,0,0,1,0,15310,de
+chordata,mammalia,carnivora,felidae,Leopardus,pardalis,Ocelot,LC,0,0,1,1,11509,de
+chordata,mammalia,carnivora,felidae,Leopardus,wiedii,Margay,NT,0,0,1,0,11511,de
+chordata,mammalia,carnivora,felidae,Leptailurus,serval,Serval,LC,0,0,1,1,11638,st
+chordata,mammalia,carnivora,felidae,Lynx,canadensis,Lynx,LC,0,1,0,0,12518,st
+chordata,mammalia,carnivora,felidae,Lynx,lynx,Eurasian lynx,LC,0,0,1,0,12519,st
+chordata,mammalia,carnivora,felidae,Lynx,rufus,Bobcat,LC,0,0,0,1,12521,st
+chordata,mammalia,carnivora,felidae,Neofelis,nebulosa,Clouded leopard,VU,0,1,1,1,14519,de
+chordata,mammalia,carnivora,felidae,Panthera,leo,Lion,VU,1,1,1,1,15951,de
+chordata,mammalia,carnivora,felidae,Panthera,onca,Jaguar,NT,0,1,1,1,15953,de
+chordata,mammalia,carnivora,felidae,Panthera,pardus,Leopard,NT,1,0,1,0,15954,de
+chordata,mammalia,carnivora,felidae,Panthera,pardus orientalis,Amur leopard,CR,1,0,0,1,15957,de
+chordata,mammalia,carnivora,felidae,Panthera,tigris,Tiger,EN,0,0,0,1,15955,de
+chordata,mammalia,carnivora,felidae,Panthera,tigris altaica,Amur tiger,EN,1,1,0,1,15956,st
+chordata,mammalia,carnivora,felidae,Panthera,tigris corbetti,Indochinese tiger,EN,0,0,1,0,136853,de
+chordata,mammalia,carnivora,felidae,Panthera,tigris jacksoni,Malayan tiger,EN,1,0,1,1,136893,de
+chordata,mammalia,carnivora,felidae,Panthera,tigris sumatrae,Sumatran tiger,CR,0,1,0,0,15966,de
+chordata,mammalia,carnivora,felidae,Panthera,tigris tigris,Bengal tiger,EN,0,0,0,1,136899,de
+chordata,mammalia,carnivora,felidae,Panthera,uncia,Snow leopard,EN,1,1,1,1,22732,de
+chordata,mammalia,carnivora,felidae,Prionailurus,viverrinus,Fishing cat,EN,0,0,1,1,18150,de
+chordata,mammalia,carnivora,felidae,Puma,concolor,Puma,LC,0,1,1,1,18868,de
+chordata,mammalia,carnivora,herpestidae,Helogale,parvula,Common dwarf mongoose,LC,1,0,1,1,41609,st
+chordata,mammalia,carnivora,herpestidae,Mungos,mungo,Banded mongoose,LC,0,0,1,0,41621,st
+chordata,mammalia,carnivora,herpestidae,Suricata,suricatta,Meerkat,LC,0,1,1,1,41624,un
+chordata,mammalia,carnivora,hyaenidae,Crocuta,crocuta,Spotted hyena,LC,1,1,1,0,5674,de
+chordata,mammalia,carnivora,hyaenidae,Hyaena,brunnea,Brown hyena,NT,0,0,1,0,10276,de
+chordata,mammalia,carnivora,hyaenidae,Hyaena,hyaena,Striped hyena,NT,0,0,1,0,10274,de
+chordata,mammalia,carnivora,mephitidae,Mephitis,mephitis,Striped skunk,LC,1,1,0,0,41635,st
+chordata,mammalia,carnivora,mephitidae,Spilogale,gracilis,Western spotted skunk,LC,1,0,0,0,136797,de
+chordata,mammalia,carnivora,mustelidae,Aonyx,capensis,African clawless otter,LC,0,0,1,0,1793,st
+chordata,mammalia,carnivora,mustelidae,Aonyx,cinerea,Oriental small-clawed otter,VU,1,0,1,1,44166,de
+chordata,mammalia,carnivora,mustelidae,Lontra,canadensis,North American river otter,LC,0,1,1,1,12302,st
+chordata,mammalia,carnivora,mustelidae,Lutra,maculicollis,Spotted-necked otter,LC,0,1,1,1,12420,de
+chordata,mammalia,carnivora,mustelidae,Mellivora,capensis,Honey badger,LC,0,0,1,0,41629,de
+chordata,mammalia,carnivora,mustelidae,Mustela,nigripes,Black-footed ferret,EN,0,1,0,0,14020,in
+chordata,mammalia,carnivora,mustelidae,Mustela,putorius,European polecat,LC,1,1,1,0,41658,de
+chordata,mammalia,carnivora,mustelidae,Poecilogale,albinucha,African striped weasel,LC,0,0,0,1,41662,un
+chordata,mammalia,carnivora,mustelidae,Taxidea,taxus,American badger,LC,0,0,1,0,41663,de
+chordata,mammalia,carnivora,otariidae,Callorhinus,ursinus,Northern fur seal,VU,0,0,1,0,3590,de
+chordata,mammalia,carnivora,otariidae,Zalophus,californianus,California sea lion,LC,1,0,1,1,41666,in
+chordata,mammalia,carnivora,phocidae,Mirounga,angustirostris,Northern elephant seal,LC,0,0,1,0,13581,in
+chordata,mammalia,carnivora,phocidae,Phoca,vitulina,Harbor seal,LC,0,0,1,0,17013,st
+chordata,mammalia,carnivora,procyonidae,Bassariscus,astutus,Ringtail,LC,0,0,0,1,41680,un
+chordata,mammalia,carnivora,procyonidae,Nasua,narica,White-nosed coati,LC,0,0,1,1,41683,de
+chordata,mammalia,carnivora,procyonidae,Potos,flavus,Kinkajou,LC,1,0,1,1,41679,de
+chordata,mammalia,carnivora,procyonidae,Procyon,lotor,Raccoon,LC,0,0,1,1,41686,in
+chordata,mammalia,carnivora,ursidae,Ailuropoda,melanoleuca,Giant panda,EN,0,0,1,0,712,de
+chordata,mammalia,carnivora,ursidae,Helarctos,malayanus,Sun bear,VU,0,0,1,1,9760,de
+chordata,mammalia,carnivora,ursidae,Melursus,ursinus,Sloth bear,VU,0,0,1,0,13143,de
+chordata,mammalia,carnivora,ursidae,Tremarctos,ornatus,Spectacled bear,VU,0,0,1,1,22066,de
+chordata,mammalia,carnivora,ursidae,Ursus,americanus,American black bear,LC,0,0,0,1,41687,in
+chordata,mammalia,carnivora,ursidae,Ursus,arctos,Grizzly bear,LC,1,1,1,0,41688,st
+chordata,mammalia,carnivora,ursidae,Ursus,maritimus,Polar bear,VU,1,1,1,1,22823,de
+chordata,mammalia,carnivora,viverridae,Arctictis,binturong,Binturong,VU,0,0,1,0,41690,de
+chordata,mammalia,carnivora,viverridae,Arctogalidia,trivirgata,Small-toothed palm civet,LC,1,0,1,0,41691,de
+chordata,mammalia,carnivora,viverridae,Civettictis,civetta,African civet,LC,0,0,1,0,41695,un
+chordata,mammalia,carnivora,viverridae,Genetta,genetta,Common genet,LC,0,0,1,0,41698,st
+chordata,mammalia,carnivora,viverridae,Viverra,civettina,Malabar large-spotted civet,CR,0,0,1,0,23036,un
+chordata,mammalia,cetartiodactyla,antilocapridae,Antilocapra,americana,Pronghorn,LC,0,0,1,0,1677,st
+chordata,mammalia,cetartiodactyla,bovidae,Addax,nasomaculatus,Addax,CR,0,0,0,1,512,de
+chordata,mammalia,cetartiodactyla,bovidae,Aepyceros,melampus,Impala,LC,0,1,0,0,550,st
+chordata,mammalia,cetartiodactyla,bovidae,Aepyceros,melampus petersi,Black-faced impala,VU,0,0,1,0,549,st
+chordata,mammalia,cetartiodactyla,bovidae,Ammotragus,lervia,Aoudad,VU,0,1,1,0,1151,de
+chordata,mammalia,cetartiodactyla,bovidae,Antilope,cervicapra,Blackbuck,NT,1,0,1,0,1681,st
+chordata,mammalia,cetartiodactyla,bovidae,Bison,bison,American bison,NT,1,1,1,1,2815,st
+chordata,mammalia,cetartiodactyla,bovidae,Bos,gaurus,Gaur,VU,0,0,0,1,2891,de
+chordata,mammalia,cetartiodactyla,bovidae,Bos,grunniens grunniens,Yak (domestic),VU,0,1,1,0,2892,de
+chordata,mammalia,cetartiodactyla,bovidae,Bos,indicus,Zebu,NE,0,0,0,1,N/A,N/A
+chordata,mammalia,cetartiodactyla,bovidae,Boselaphus,tragocamelus,Nilgai,LC,1,0,0,0,2893,st
+chordata,mammalia,cetartiodactyla,bovidae,Bubalus,bubalis,Water buffalo,NE,0,0,1,0,N/A,N/A
+chordata,mammalia,cetartiodactyla,bovidae,Bubalus,depressicornis,Anoa,EN,0,0,1,0,3126,de
+chordata,mammalia,cetartiodactyla,bovidae,Budorcas,taxicolor,Takin,VU,0,0,1,0,3160,de
+chordata,mammalia,cetartiodactyla,bovidae,Capra,aegagrus hircus,Domestic goat,VU,1,1,1,1,3786,de
+chordata,mammalia,cetartiodactyla,bovidae,Capra,caucasica,West Caucasian tur,EN,0,1,1,0,3794,de
+chordata,mammalia,cetartiodactyla,bovidae,Capra,falconeri heptneri,Markhor,EN,1,0,0,0,3787,de
+chordata,mammalia,cetartiodactyla,bovidae,Capra,nubiana,Nubian ibex,VU,1,0,1,0,3796,de
+chordata,mammalia,cetartiodactyla,bovidae,Capra,pyrenaica,Spanish ibex,LC,0,0,1,0,3798,in
+chordata,mammalia,cetartiodactyla,bovidae,Capra,sibirica,Siberian ibex,LC,0,0,1,0,42398,un
+chordata,mammalia,cetartiodactyla,bovidae,Cephalophus,dorsalis,Bay duiker,LC,1,0,0,0,4139,de
+chordata,mammalia,cetartiodactyla,bovidae,Cephalophus,niger,Black duiker,LC,0,1,1,0,4145,de
+chordata,mammalia,cetartiodactyla,bovidae,Cephalophus,rufilatus,Red-flanked duiker,LC,0,0,1,0,4149,de
+chordata,mammalia,cetartiodactyla,bovidae,Cephalophus,silvicultor,Yellow-backed duiker,LC,0,0,1,1,4150,de
+chordata,mammalia,cetartiodactyla,bovidae,Damaliscus,pygargus,Blesbok,LC,0,0,1,0,30208,st
+chordata,mammalia,cetartiodactyla,bovidae,Gazella,cuvieri,Cuvier's gazelle,EN,0,0,1,0,8967,un
+chordata,mammalia,cetartiodactyla,bovidae,Gazella,dorcas,Dorcas gazelle,VU,0,0,1,0,8969,de
+chordata,mammalia,cetartiodactyla,bovidae,Gazella,leptoceros,Rhim gazelle,EN,1,0,1,0,8972,de
+chordata,mammalia,cetartiodactyla,bovidae,Gazella,spekei,Speke's gazelle,EN,0,0,1,0,8975,de
+chordata,mammalia,cetartiodactyla,bovidae,Gazella,subgutturosa,Goitered gazelle,VU,0,0,1,0,8976,de
+chordata,mammalia,cetartiodactyla,bovidae,Hemitragus,jemlahicus,Himalayan tahr,NT,1,1,0,0,9919,de
+chordata,mammalia,cetartiodactyla,bovidae,Hippotragus,equinus,Roan antelope,LC,0,0,1,0,10167,de
+chordata,mammalia,cetartiodactyla,bovidae,Hippotragus,niger,Sable antelope,LC,0,1,1,1,10170,st
+chordata,mammalia,cetartiodactyla,bovidae,Kobus,megaceros,Nile lechwe,EN,0,0,0,1,11034,de
+chordata,mammalia,cetartiodactyla,bovidae,Litocranius,walleri,Gerenuk,NT,0,0,1,0,12142,de
+chordata,mammalia,cetartiodactyla,bovidae,Madoqua,kirkii,Kirk's dik-dik,LC,0,0,1,0,12670,st
+chordata,mammalia,cetartiodactyla,bovidae,Neotragus,pygmaeus,Royal antelope,LC,0,0,1,0,14602,de
+chordata,mammalia,cetartiodactyla,bovidae,Oreotragus,oreotragus,Klipspringer,LC,0,0,1,1,15485,st
+chordata,mammalia,cetartiodactyla,bovidae,Oryx,dammah,Scimitar-horned oryx,EW,0,1,1,1,15568,N/A
+chordata,mammalia,cetartiodactyla,bovidae,Ovibos,moschatus,Muskox,LC,0,1,0,0,29684,st
+chordata,mammalia,cetartiodactyla,bovidae,Pelea,capreolus,Gray rhebok,LC,0,0,1,0,16484,st
+chordata,mammalia,cetartiodactyla,bovidae,Pseudois,nayaur,Bharal,LC,0,0,1,0,18536,un
+chordata,mammalia,cetartiodactyla,bovidae,Raphicerus,campestris,Steenbok,LC,0,0,1,0,19308,st
+chordata,mammalia,cetartiodactyla,bovidae,Rupicapra,rupicapra,Northern chamois,LC,0,1,0,0,39255,un
+chordata,mammalia,cetartiodactyla,bovidae,Sylvicapra,grimmia,Commer duiker,LC,0,0,1,0,21203,st
+chordata,mammalia,cetartiodactyla,bovidae,Syncerus,caffer,African buffalo,LC,0,0,1,0,21251,de
+chordata,mammalia,cetartiodactyla,bovidae,Tragelaphus,angasii,Nyala,LC,1,0,1,0,22052,st
+chordata,mammalia,cetartiodactyla,bovidae,Tragelaphus,eurycerus,Bongo,NT,0,0,1,0,22047,de
+chordata,mammalia,cetartiodactyla,bovidae,Tragelaphus,eurycerus isaaci,Eastern bongo,CR,0,0,0,1,22057,de
+chordata,mammalia,cetartiodactyla,bovidae,Tragelaphus,imberbis,Lesser kudu,NT,1,0,1,0,22053,de
+chordata,mammalia,cetartiodactyla,bovidae,Tragelaphus,spekii,Sitatunga,LC,0,1,1,0,22050,de
+chordata,mammalia,cetartiodactyla,bovidae,Tragelaphus,strepsiceros,Greater kudu,LC,0,1,1,0,22054,st
+chordata,mammalia,cetartiodactyla,camelidae,Camelus,bactrianus,Bactrian camel (domestic),CR,0,1,0,0,63543,de
+chordata,mammalia,cetartiodactyla,camelidae,Lama,guanicoe,Guanaco,LC,0,0,1,0,11186,st
+chordata,mammalia,cetartiodactyla,cervidae,Axis,axis,Chital,LC,1,0,1,0,41783,un
+chordata,mammalia,cetartiodactyla,cervidae,Axis,calamianensis,Calamian deer,EN,0,0,1,0,2446,de
+chordata,mammalia,cetartiodactyla,cervidae,Axis,porcinus,Hog deer,EN,1,0,0,0,41784,de
+chordata,mammalia,cetartiodactyla,cervidae,Capreolus,capreolus,Roe deer,LC,0,0,1,0,42395,in
+chordata,mammalia,cetartiodactyla,cervidae,Cervus,elaphus,Red deer,LC,0,1,1,1,41785,in
+chordata,mammalia,cetartiodactyla,cervidae,Cervus,nippon,Sika deer,LC,1,1,1,0,41788,in
+chordata,mammalia,cetartiodactyla,cervidae,Elaphodus,cephalophus,Tufted deer,NT,1,0,1,1,7112,de
+chordata,mammalia,cetartiodactyla,cervidae,Elaphurus,davidianus,Père David's deer,EW,1,0,0,0,7121,in
+chordata,mammalia,cetartiodactyla,cervidae,Hydropotes,inermis,Chinese water deer,VU,0,0,1,0,10329,de
+chordata,mammalia,cetartiodactyla,cervidae,Muntiacus,muntjak,Indian muntjac,LC,1,0,1,0,42190,de
+chordata,mammalia,cetartiodactyla,cervidae,Muntiacus,reevesi,Reeves's muntjac,LC,0,1,0,0,42191,de
+chordata,mammalia,cetartiodactyla,cervidae,Odocoileus,hemionus,Mule deer,LC,0,0,1,0,42393,st
+chordata,mammalia,cetartiodactyla,cervidae,Odocoileus,virginianus,White-tailed deer,LC,0,0,1,1,42394,st
+chordata,mammalia,cetartiodactyla,cervidae,Ozotoceros,bezoarticus,Pampas deer,NT,0,0,1,0,15803,de
+chordata,mammalia,cetartiodactyla,cervidae,Pudu,puda,Southern pudu,VU,1,0,0,0,18848,de
+chordata,mammalia,cetartiodactyla,cervidae,Rangifer,tarandus,Reindeer,LC,0,1,1,0,29742,st
+chordata,mammalia,cetartiodactyla,giraffidae,Giraffa,camelopardalis,Giraffe,LC,0,1,1,1,9194,de
+chordata,mammalia,cetartiodactyla,giraffidae,Giraffa,camelopardalis rothschildi,Rothschild's giraffe,EN,1,0,0,0,174469,de
+chordata,mammalia,cetartiodactyla,giraffidae,Okapia,johnstoni,Okapi,EN,1,0,1,1,15188,de
+chordata,mammalia,cetartiodactyla,hippopotamidae,Hexaprotodon,liberiensis,Pygmy hippopotamus,EN,0,1,1,1,10032,de
+chordata,mammalia,cetartiodactyla,hippopotamidae,Hippopotamus,amphibius,Hippopotamus,VU,0,1,1,0,10103,de
+chordata,mammalia,cetartiodactyla,moschidae,Moschus,moschiferus,Siberian musk deer,VU,0,0,1,0,13897,de
+chordata,mammalia,cetartiodactyla,suidae,Hylochoerus,meinertzhageni,Forest hog,LC,0,0,1,0,41769,de
+chordata,mammalia,cetartiodactyla,suidae,Phacochoerus,africanus,Warthog,LC,0,1,1,0,41768,st
+chordata,mammalia,cetartiodactyla,suidae,Potamochoerus,larvatus,Bushpig,LC,0,0,1,0,41770,st
+chordata,mammalia,cetartiodactyla,suidae,Potamochoerus,porcus,Red river hog,LC,1,1,1,1,41771,de
+chordata,mammalia,cetartiodactyla,suidae,Sus,barbatus,Bearded pig,VU,0,0,1,0,41772,de
+chordata,mammalia,cetartiodactyla,suidae,Sus,cebifrons,Visayan warty pig,CR,0,0,1,0,21175,de
+chordata,mammalia,cetartiodactyla,suidae,Sus,scrofa,Wild boar,LC,1,0,1,1,41775,un
+chordata,mammalia,cetartiodactyla,tayassuidae,Catagonus,wagneri,Chacoan peccary,EN,0,0,1,0,4015,de
+chordata,mammalia,cetartiodactyla,tayassuidae,Pecari,tajacu,Collared peccary,LC,0,0,1,1,41777,st
+chordata,mammalia,cetartiodactyla,tragulidae,Tragulus,napu,Greater mouse-deer,LC,1,0,0,0,41781,de
+chordata,mammalia,chiroptera,noctilionidae,Noctilio,leporinus,Greater bulldog bat,LC,0,0,0,1,14830,un
+chordata,mammalia,chiroptera,phyllostomidae,Carollia,perspicillata,Seba's short-tailed bat,LC,1,0,0,1,3905,st
+chordata,mammalia,chiroptera,phyllostomidae,Desmodus,rotundus,Common vampire bat,LC,0,0,0,1,6510,st
+chordata,mammalia,chiroptera,phyllostomidae,Glossophaga,soricina,Pallas's long-tongued bat,LC,1,0,0,0,9277,st
+chordata,mammalia,chiroptera,phyllostomidae,Phyllostomus,hastatus,Greater spear-nosed bat,LC,0,0,0,1,17218,st
+chordata,mammalia,chiroptera,pteropodidae,Eidolon,helvum,Straw-colored fruit bat,NT,0,1,0,1,7084,de
+chordata,mammalia,chiroptera,pteropodidae,Pteropus,giganteus,Indian flying fox,LC,0,0,1,1,18725,de
+chordata,mammalia,chiroptera,pteropodidae,Pteropus,pumilus,Little golden-mantled flying fox,NT,0,0,0,1,18753,de
+chordata,mammalia,chiroptera,pteropodidae,Pteropus,rodricensis,Rodrigues flying fox,CR,1,0,0,0,18755,in
+chordata,mammalia,chiroptera,pteropodidae,Rousettus,aegyptiacus,Egyptian fruit bat,LC,0,1,0,1,29730,st
+chordata,mammalia,chiroptera,pteropodidae,Rousettus,lanosus,Long-haired rousette,LC,0,0,0,1,19758,de
+chordata,mammalia,cingulata,dasypodidae,Chaetophractus,vellerosus,Screaming hairy armadillo,LC,0,0,0,1,4368,st
+chordata,mammalia,cingulata,dasypodidae,Chaetophractus,villosus,Large hairy armadillo,LC,0,0,0,1,4369,in
+chordata,mammalia,cingulata,dasypodidae,Dasypus,novemcinctus,Nine-banded armadillo,LC,1,0,0,0,6290,in
+chordata,mammalia,cingulata,dasypodidae,Tolypeutes,matacus,Southern three-banded armadillo,NT,0,0,1,1,21974,de
+chordata,mammalia,didelphimorpha,didelphidae,Didelphis,virginiana,Virginia opossum,LC,0,0,1,1,40502,in
+chordata,mammalia,didelphimorpha,didelphidae,Monodelphis,domestica,Gray short-tailed opossum,LC,0,0,0,1,40514,st
+chordata,mammalia,didelphimorpha,didelphidae,Thylamys,elegans,Elegant fat-tailed mouse opossum,LC,0,0,0,1,40517,de
+chordata,mammalia,diprotodontia,acrobatidae,Acrobates,pygmaeus,Feathertail glider,LC,0,0,1,0,40584,st
+chordata,mammalia,diprotodontia,macropodidae,Dendrolagus,goodfellowi,Goodfellow's tree kangaroo,EN,0,0,1,0,6429,de
+chordata,mammalia,diprotodontia,macropodidae,Dendrolagus,matschiei,Huon tree kangaroo,EN,1,1,0,1,6433,de
+chordata,mammalia,diprotodontia,macropodidae,Macropus,fuliginosus,Western gray kangaroo,LC,0,1,0,0,40563,in
+chordata,mammalia,diprotodontia,macropodidae,Macropus,giganteus,Eastern gray kangaroo,LC,0,0,1,0,41513,st
+chordata,mammalia,diprotodontia,macropodidae,Macropus,parma,Parma wallaby,NT,0,0,1,1,12627,un
+chordata,mammalia,diprotodontia,macropodidae,Macropus,rufogriseus,Red-necked wallaby,LC,1,1,1,0,40566,st
+chordata,mammalia,diprotodontia,macropodidae,Macropus,rufus,Red kangaroo,LC,0,0,1,0,40567,st
+chordata,mammalia,diprotodontia,macropodidae,Petrogale,xanthopus,Yellow-footed rock-wallaby,NT,0,0,1,1,16750,un
+chordata,mammalia,diprotodontia,macropodidae,Wallabia,bicolor,Swamp wallaby,LC,0,1,0,0,40575,in
+chordata,mammalia,diprotodontia,petauridae,Petaurus,breviceps,Sugar glider,LC,0,1,1,1,16731,st
+chordata,mammalia,diprotodontia,phalangeridae,Trichosurus,vulpecula,Common brushtail possum,LC,0,0,1,0,40585,de
+chordata,mammalia,diprotodontia,phascolarctidae,Phascolarctos,cinereus,Koala,LC,0,0,1,0,16892,un
+chordata,mammalia,diprotodontia,vombatidae,Lasiorhinus,latifrons,Southern hairy-nosed wombat,LC,0,1,1,0,40555,un
+chordata,mammalia,eulipotyphla,erinaceidae,Atelerix,albiventris,Four-toed hedgehog,LC,1,0,1,1,40602,st
+chordata,mammalia,eulipotyphla,erinaceidae,Atelerix,algirus,North African Hedgehog,LC,1,0,0,0,27926,un
+chordata,mammalia,eulipotyphla,erinaceidae,Atelerix,frontalis,Southern African hedgehog,LC,0,0,1,0,2274,st
+chordata,mammalia,hyracoidea,procaviidae,Procavia,capensis,Rock hyrax,LC,1,0,1,1,41766,un
+chordata,mammalia,lagomorpha,leporidae,Lepus,californicus,Black-tailed jackrabbit,LC,0,0,0,1,41276,st
+chordata,mammalia,lagomorpha,leporidae,Oryctolagus,cuniculus,European rabbit,NT,0,1,1,1,41291,de
+chordata,mammalia,lagomorpha,leporidae,Sylvilagus,audubonii,Desert cottontail,LC,0,0,0,1,41297,st
+chordata,mammalia,lagomorpha,leporidae,Sylvilagus,floridanus,Eastern cottontail,LC,1,0,0,0,41299,in
+chordata,mammalia,macroscelidea,macroscelididae,Macroscelides,proboscideus,Short-eared elephant shrew,LC,0,0,1,0,12643,un
+chordata,mammalia,monotremata,tachyglossidae,Tachyglossus,aculeatus,Short-beaked echidna,LC,0,1,1,0,41312,st
+chordata,mammalia,perissodactyla,equidae,Equus,africanus,African wild ass,CR,1,1,0,0,7949,de
+chordata,mammalia,perissodactyla,equidae,Equus,ferus caballus,Horse,EN,1,0,1,0,41763,in
+chordata,mammalia,perissodactyla,equidae,Equus,ferus przewalskii,Przewalski's horse,EN,1,1,0,0,7961,in
+chordata,mammalia,perissodactyla,equidae,Equus,grevyi,Grevy's zebra,EN,1,1,1,1,7950,st
+chordata,mammalia,perissodactyla,equidae,Equus,hemionus,Asiatic wild ass,EN,0,0,1,0,7951,de
+chordata,mammalia,perissodactyla,equidae,Equus,quagga,Plains zebra,LC,0,0,1,0,41013,st
+chordata,mammalia,perissodactyla,rhinocerotidae,Ceratotherium,simum simum,Southern white rhinoceros,NT,0,1,0,1,39317,in
+chordata,mammalia,perissodactyla,rhinocerotidae,Rhinoceros,unicornis,Indian rhinoceros,VU,1,1,1,0,19496,in
+chordata,mammalia,perissodactyla,tapiridae,Tapirus,bairdii,Baird's tapir,EN,0,0,1,1,21471,de
+chordata,mammalia,perissodactyla,tapiridae,Tapirus,indicus,Malayan tapir,EN,1,1,1,1,21472,de
+chordata,mammalia,pholidota,manidae,Phataginus,tricuspis,Tree pangolin,NT,0,0,1,0,12767,de
+chordata,mammalia,pilosa,megalonychidae,Choloepus,didactylus,Linnaeus's two-toed sloth,LC,0,1,1,1,4777,un
+chordata,mammalia,pilosa,megalonychidae,Choloepus,hoffmanni,Hoffmann's two-toed sloth,LC,1,0,0,1,4778,un
+chordata,mammalia,pilosa,myrmecophagidae,Myrmecophaga,tridactyla,Giant anteater,VU,0,0,1,0,14224,de
+chordata,mammalia,pilosa,myrmecophagidae,Tamandua,tetradactyla,Southern tamandua,LC,0,0,1,0,21350,un
+chordata,mammalia,primates,aotidae,Aotus,griseimembra,Gray-handed night monkey,VU,1,0,0,1,1807,de
+chordata,mammalia,primates,aotidae,Aotus,lemurinus,Gray-bellied night monkey,VU,0,0,0,1,1808,de
+chordata,mammalia,primates,atelidae,Alouatta,caraya,Black howler,LC,0,0,0,1,41545,de
+chordata,mammalia,primates,atelidae,Ateles,fusciceps,Brown-headed spider monkey,CR,0,0,1,1,135446,de
+chordata,mammalia,primates,atelidae,Ateles,geoffroyi,Geoffroy's spider monkey,EN,0,0,0,1,2279,de
+chordata,mammalia,primates,atelidae,Ateles,geoffroyi geoffroyi,Nicaraguan spider monkey,CR,0,1,0,1,43901,de
+chordata,mammalia,primates,callitrichidae,Callimico,goeldii,Goeldi's monkey,VU,1,0,1,0,3564,de
+chordata,mammalia,primates,callitrichidae,Callithrix,geoffroyi,White-headed marmoset,LC,0,0,1,0,3572,st
+chordata,mammalia,primates,callitrichidae,Callithrix,jacchus,Common marmoset,LC,0,1,1,1,41518,st
+chordata,mammalia,primates,callitrichidae,Callithrix,kuhlii,Weid's marmoset,NT,1,0,0,0,3575,de
+chordata,mammalia,primates,callitrichidae,Cebuella,pygmaea,Pygmy marmoset,LC,1,1,1,0,41535,de
+chordata,mammalia,primates,callitrichidae,Leontopithecus,chrysomelas,Golden-headed lion tamarin,EN,1,0,0,0,40643,de
+chordata,mammalia,primates,callitrichidae,Leontopithecus,rosalia,Golden lion tamarin,EN,1,1,1,1,11506,st
+chordata,mammalia,primates,callitrichidae,Mico,argentatus,Silvery marmoset,LC,1,0,0,0,41520,de
+chordata,mammalia,primates,callitrichidae,Saguinus,bicolor,Pied tamarin,EN,1,0,0,0,40644,de
+chordata,mammalia,primates,callitrichidae,Saguinus,imperator imperator,Black-chinned emperor tamarin,LC,1,0,0,0,19827,de
+chordata,mammalia,primates,callitrichidae,Saguinus,mystax,Mustached tamarin,LC,1,0,0,0,41526,st
+chordata,mammalia,primates,callitrichidae,Saguinus,oedipus,Cotton-top tamarin,CR,1,0,0,1,19823,de
+chordata,mammalia,primates,cebidae,Cebus,albifrons albrifrons,White-fronted capuchin,LC,0,0,1,1,39951,de
+chordata,mammalia,primates,cebidae,Cebus,capucinus,White-faced capuchin,LC,1,0,0,0,40020,un
+chordata,mammalia,primates,cebidae,Saimiri,boliviensis,Bolivian squirrel monkey,LC,0,0,0,1,41536,de
+chordata,mammalia,primates,cebidae,Saimiri,boliviensis peruviensis,Peruvian squirrel monkey,LC,0,0,0,1,43965,de
+chordata,mammalia,primates,cebidae,Saimiri,sciureus,South American squirrel monkey,LC,1,0,0,1,41537,de
+chordata,mammalia,primates,cebidae,Saimiri,sciureus sciureus,South American squirrel monkey,LC,1,0,0,1,43968,de
+chordata,mammalia,primates,cercopithecidae,Allenopithecus,nigroviridis,Allen's swamp monkey,LC,0,0,1,0,865,un
+chordata,mammalia,primates,cercopithecidae,Cercopithecus,ascanius schmidti,Schmidt's guenon,LC,0,0,1,0,136917,un
+chordata,mammalia,primates,cercopithecidae,Cercopithecus,campbelli,Campbell's monkey,LC,0,0,1,0,4213,un
+chordata,mammalia,primates,cercopithecidae,Cercopithecus,diana,Diana monkey,VU,0,0,1,1,4215,de
+chordata,mammalia,primates,cercopithecidae,Cercopithecus,diana diana,Diana monkey,VU,0,0,0,1,4245,de
+chordata,mammalia,primates,cercopithecidae,Cercopithecus,lhoesti,L'Hoest's monkey,VU,0,0,1,0,4220,de
+chordata,mammalia,primates,cercopithecidae,Cercopithecus,mitis stuhlmanni,Stuhlmann's blue monkey,LC,0,0,0,1,39991,de
+chordata,mammalia,primates,cercopithecidae,Cercopithecus,neglectus,De Brazza's monkey,LC,1,0,1,1,4223,un
+chordata,mammalia,primates,cercopithecidae,Cercopithecus,petaurista petaurista,Lesser spot-nosed monkey,LC,0,0,1,0,136905,un
+chordata,mammalia,primates,cercopithecidae,Cercopithecus,pogonias wolfi,Wolf's monkey,LC,1,0,1,1,40646,de
+chordata,mammalia,primates,cercopithecidae,Chlorocebus,aethiops,Grivet,LC,0,0,1,0,4233,st
+chordata,mammalia,primates,cercopithecidae,Colobus,angolensis palliates,Peters's Angola colobus,LC,0,0,1,0,5148,un
+chordata,mammalia,primates,cercopithecidae,Colobus,guereza,Guereza,LC,1,0,1,1,5143,un
+chordata,mammalia,primates,cercopithecidae,Erythrocebus,patas,Patas monkey,LC,0,0,1,0,8073,de
+chordata,mammalia,primates,cercopithecidae,Macaca,fuscata,Japanese macaque,LC,0,1,0,0,12552,st
+chordata,mammalia,primates,cercopithecidae,Macaca,nigra,Celebes crested macaque,CR,0,0,0,1,12556,de
+chordata,mammalia,primates,cercopithecidae,Macaca,silenus,Lion-tailed macaque,EN,0,1,1,0,12559,de
+chordata,mammalia,primates,cercopithecidae,Macaca,sylvanus,Barbary macaque,EN,0,1,0,0,12561,de
+chordata,mammalia,primates,cercopithecidae,Mandrillus,leucophaeus,Drill,EN,0,0,1,0,12753,un
+chordata,mammalia,primates,cercopithecidae,Mandrillus,sphinx,Mandrill,VU,1,1,1,0,12754,un
+chordata,mammalia,primates,cercopithecidae,Papio,hamadryas,Hamadryas baboon,LC,0,0,1,0,16019,in
+chordata,mammalia,primates,cercopithecidae,Pygathrix,nemaeus,Red-shanked douc,EN,0,0,1,0,39826,de
+chordata,mammalia,primates,cercopithecidae,Semnopithecus,entellus,Northern plains gray langur,LC,0,0,1,0,39832,de
+chordata,mammalia,primates,cercopithecidae,Theropithecus,gelada,Gelada baboon,LC,1,0,0,0,21744,de
+chordata,mammalia,primates,cercopithecidae,Trachypithecus,auratus,Javan lutung,VU,1,0,0,1,22034,de
+chordata,mammalia,primates,cercopithecidae,Trachypithecus,cristatus,Silvery lutung,NT,1,0,0,0,22035,de
+chordata,mammalia,primates,cercopithecidae,Trachypithecus,cristatus cristatus,Silvery lutung,NT,0,0,1,0,136914,de
+chordata,mammalia,primates,cercopithecidae,Trachypithecus,francoisi,François' langur,EN,0,0,1,1,39853,de
+chordata,mammalia,primates,cheirogaleidae,Cheirogaleus,medius,Fat-tailed dwarf lemur,LC,1,0,0,0,4599,un
+chordata,mammalia,primates,cheirogaleidae,Microcebus,murinus,Gray mouse-lemur,LC,1,0,0,0,13323,de
+chordata,mammalia,primates,daubentoniidae,Daubentonia,madagascariensis,Aye-aye,NT,0,0,0,1,6302,de
+chordata,mammalia,primates,galagidae,Galago,moholi,Southern lesser galago,LC,1,0,0,0,8788,st
+chordata,mammalia,primates,galagidae,Otolemur,garnettii,Greater galago,LC,0,0,1,1,15644,st
+chordata,mammalia,primates,hominidae,Gorilla,gorilla gorilla,Gorilla,CR,1,1,1,1,9406,de
+chordata,mammalia,primates,hominidae,Pan,paniscus,Bonobo,EN,0,0,1,0,15932,de
+chordata,mammalia,primates,hominidae,Pongo,abelii,Sumatran orangutan,CR,0,1,1,0,39780,de
+chordata,mammalia,primates,hominidae,Pongo,pygmaeus,Bornean orangutan,EN,0,0,1,1,17975,de
+chordata,mammalia,primates,hominidae,Pongo,pygmaeus pygmaeus,Western Bornean orangutan,EN,0,0,0,1,39781,de
+chordata,mammalia,primates,hylobatidae,Hylobates,agilis,Agile gibbon,EN,0,0,0,1,10543,de
+chordata,mammalia,primates,hylobatidae,Hylobates,lar,Lar gibbon,EN,0,1,0,1,10548,de
+chordata,mammalia,primates,hylobatidae,Hylobates,muelleri muelleri,Muller's gray gibbon,EN,0,0,0,1,39888,de
+chordata,mammalia,primates,lemuridae,Eulemur,fulvus,Common brown lemur,NT,0,0,0,1,8207,de
+chordata,mammalia,primates,lemuridae,Eulemur,macaco,Black lemur,VU,0,0,1,1,8212,de
+chordata,mammalia,primates,lemuridae,Eulemur,mongoz,Mongoose lemur,VU,0,0,0,1,8202,de
+chordata,mammalia,primates,lemuridae,Lemur,catta,Ring-tailed lemur,NT,1,0,1,1,11496,de
+chordata,mammalia,primates,lemuridae,Varecia,variegata variegata,Black and white ruffed lemur,CR,1,0,1,1,22919,de
+chordata,mammalia,primates,lorisidae,Loris,tardigradus,Red slender loris,EN,1,0,1,0,12375,de
+chordata,mammalia,primates,lorisidae,Nycticebus,coucang,Sunda slow loris,VU,0,0,1,0,39759,de
+chordata,mammalia,primates,lorisidae,Nycticebus,pygmaeus,Pygmy slow loris,VU,1,0,1,1,14941,de
+chordata,mammalia,primates,pitheciidae,Callicebus,donacophilus,White-eared titi,LC,1,0,1,0,41548,de
+chordata,mammalia,primates,pitheciidae,Pithecia,monachus monachus,Monk saki,LC,0,0,1,0,43944,un
+chordata,mammalia,primates,pitheciidae,Pithecia,pithecia,White-faced saki,LC,1,1,1,0,41569,st
+chordata,mammalia,primates,tarsiidae,Tarsius,syrichta,Philippine tarsier,NT,0,0,1,0,21492,de
+chordata,mammalia,proboscidea,elephantidae,Elephas,maximus,Asian elephant,EN,1,0,1,0,7140,de
+chordata,mammalia,proboscidea,elephantidae,Loxodonta,africana,African elephant,VU,0,1,1,0,12392,in
+chordata,mammalia,rodentia,bathyergidae,Cryptomys,damarensis,Damara mole-rat,LC,1,0,0,0,5753,st
+chordata,mammalia,rodentia,bathyergidae,Heterocephalus,glaber,Naked mole rat,LC,0,1,1,1,9987,st
+chordata,mammalia,rodentia,calomyscidae,Calomyscus,bailwardi,Mouse-like hamster,LC,1,0,0,0,3618,un
+chordata,mammalia,rodentia,castoridae,Castor,canadensis,American beaver,LC,1,1,0,1,4003,st
+chordata,mammalia,rodentia,caviidae,Cavia,aperea,Brazilian guinea pig,LC,1,0,0,0,4064,st
+chordata,mammalia,rodentia,caviidae,Cavia,porcellus,Guinea pig,NE,0,0,1,0,N/A,N/A
+chordata,mammalia,rodentia,caviidae,Dolichotis,patagonum,Patagonian cavy,NT,0,1,0,0,6785,de
+chordata,mammalia,rodentia,caviidae,Hydrochaeris,hydrochaeris,Capybara,LC,0,1,1,0,10300,un
+chordata,mammalia,rodentia,caviidae,Kerodon,rupestris,Rock cavy,LC,1,0,0,0,10988,st
+chordata,mammalia,rodentia,chinchillidae,Chinchilla,lanigera,Chinchilla,CR,1,0,1,1,4652,de
+chordata,mammalia,rodentia,cricetidae,Neotoma,cinerea,Bushy-tailed woodrat,LC,0,0,0,1,42673,st
+chordata,mammalia,rodentia,cricetidae,Ondatra,zibethicus,Muskrat,LC,0,0,0,1,15324,st
+chordata,mammalia,rodentia,cricetidae,Peromyscus,californicus,California mouse,LC,1,0,0,0,16654,st
+chordata,mammalia,rodentia,cricetidae,Peromyscus,eremicus,Cactus mouse,LC,1,0,0,0,16659,st
+chordata,mammalia,rodentia,cricetidae,Peromyscus,maniculatus,North American deer mouse,LC,1,0,0,1,16672,st
+chordata,mammalia,rodentia,cricetidae,Phodopus,sungorus,Dzhungarian hamster,LC,1,0,0,0,17037,un
+chordata,mammalia,rodentia,cricetidae,Phyllotis,darwini,Darwin's leaf-eared mouse,LC,1,0,0,0,17224,st
+chordata,mammalia,rodentia,dasyproctidae,Dasyprocta,leporina,Red-rumped agouti,LC,0,1,0,1,6284,st
+chordata,mammalia,rodentia,dinomyidae,Dinomys,branickii,Pacarana,VU,0,0,1,0,6608,de
+chordata,mammalia,rodentia,erethizontidae,Coendou,prehensilis,Brazilian porcupine,LC,1,1,1,1,5085,st
+chordata,mammalia,rodentia,erethizontidae,Erethizon,dorsatum,North American porcupine,LC,1,0,1,1,8004,st
+chordata,mammalia,rodentia,gliridae,Graphiurus,murinus,Woodland dormouse,LC,1,0,0,1,9487,st
+chordata,mammalia,rodentia,heteromyidae,Dipodomys,deserti,Desert kangaroo rat,LC,0,0,0,1,6686,st
+chordata,mammalia,rodentia,heteromyidae,Dipodomys,merriami,Merriam's kangaroo rat,LC,1,0,0,0,6689,st
+chordata,mammalia,rodentia,heteromyidae,Dipodomys,spectabilis,Banner-tailed kangaroo rat,NT,1,0,0,0,6693,de
+chordata,mammalia,rodentia,hystricidae,Atherurus,africanus,African brush-tailed porcupine,LC,1,0,0,1,2353,un
+chordata,mammalia,rodentia,hystricidae,Hystrix,africaeaustralis,Cape porcupine,LC,0,1,0,0,10748,st
+chordata,mammalia,rodentia,hystricidae,Hystrix,brachyura,Malayan porcupine,LC,0,0,1,0,10749,de
+chordata,mammalia,rodentia,hystricidae,Hystrix,cristata,Crested porcupine,LC,0,0,1,0,10746,un
+chordata,mammalia,rodentia,hystricidae,Hystrix,indica,Indian crested porcupine,LC,0,0,1,1,10751,st
+chordata,mammalia,rodentia,muridae,Acomys,dimidiatus,Eastern spiny mouse,LC,1,1,0,1,136471,un
+chordata,mammalia,rodentia,muridae,Gerbillus,perpallidus,Pale gerbil,LC,1,0,0,1,9140,st
+chordata,mammalia,rodentia,muridae,Lemniscomys,barbarus,Barbary striped grass mouse,LC,1,0,0,0,11487,st
+chordata,mammalia,rodentia,muridae,Meriones,unguiculatus,Mongolian gerbil,LC,0,0,1,0,13171,un
+chordata,mammalia,rodentia,muridae,Micromys,minutus,Eurasian harvest mouse,LC,1,0,0,1,13373,st
+chordata,mammalia,rodentia,muridae,Mus,musculus,House mouse,LC,1,0,0,0,13972,st
+chordata,mammalia,rodentia,muridae,Phloeomys,pallidus,Northern Luzon giant cloud rat,LC,1,0,0,0,17004,st
+chordata,mammalia,rodentia,muridae,Rattus,norvegicus,Brown rat,LC,1,0,0,0,19353,st
+chordata,mammalia,rodentia,muridae,Rhabdomys,pumilio,Four-striped grass mouse,LC,1,0,0,1,19436,st
+chordata,mammalia,rodentia,muridae,Sekeetamys,calurus,Bushy-tailed jird,LC,1,0,0,1,20089,st
+chordata,mammalia,rodentia,myocastoridae,Myocastor,coypus,Coypu,LC,0,0,0,1,14085,de
+chordata,mammalia,rodentia,nesomyidae,Hypogeomys,antimena,Malagasy giant rat,EN,1,0,0,1,10714,de
+chordata,mammalia,rodentia,nesomyidae,Malacothrix,typica,Gerbil mouse,LC,1,0,1,0,12712,st
+chordata,mammalia,rodentia,octodontidae,Octodon,degus,Degu,LC,1,0,0,1,15088,un
+chordata,mammalia,rodentia,pedetidae,Pedetes,capensis,Spring hare,LC,1,0,0,1,16467,un
+chordata,mammalia,rodentia,sciuridae,Ammospermophilus,harrisii,Harris's antelope squirrel,LC,1,0,0,0,42399,st
+chordata,mammalia,rodentia,sciuridae,Callosciurus,prevostii,Prevost's squirrel,LC,1,1,1,1,3603,de
+chordata,mammalia,rodentia,sciuridae,Cynomys,ludovicianus,Black-tailed prairie dog,LC,1,1,1,1,6091,de
+chordata,mammalia,rodentia,sciuridae,Glaucomys,volans,Southern flying squirrel,LC,1,0,0,1,9240,st
+chordata,mammalia,rodentia,sciuridae,Marmota,monax,Woodchuck,LC,0,1,0,0,42458,st
+chordata,mammalia,rodentia,sciuridae,Marmota,vancouverensis,Vancouver Island marmot,CR,0,1,0,0,12828,de
+chordata,mammalia,rodentia,sciuridae,Petaurista,philippensis,Indian giant flying squirrel,LC,0,0,1,0,16724,de
+chordata,mammalia,rodentia,sciuridae,Ratufa,affinis,Pale giant squirrel,NT,0,0,0,1,19376,de
+chordata,mammalia,rodentia,sciuridae,Sciurus,vulgaris,Eurasian red squirrel,LC,0,0,1,0,20025,de
+chordata,mammalia,scandentia,tupaiidae,Tupaia,belangeri,Northern treeshrew,LC,0,0,1,1,41492,st
+chordata,mammalia,scandentia,tupaiidae,Tupaia,glis,Common treeshrew,LC,1,1,0,1,41494,de
+chordata,mammalia,tubulidentata,orycteropodidae,Orycteropus,afer,Aardvark,LC,1,0,1,1,41504,un
+chordata,reptilia,crocodylia,alligatoridae,Alligator,mississippiensis,American alligator,LC,1,1,1,1,46583,un
+chordata,reptilia,crocodylia,alligatoridae,Alligator,sinensis,Chinese alligator,CR,1,0,0,0,867,un
+chordata,reptilia,crocodylia,alligatoridae,Caiman,crocodilus,Common caiman,LC,0,0,0,1,46584,un
+chordata,reptilia,crocodylia,alligatoridae,Paleosuchus,palpebrosus,Dwarf caiman,LC,1,1,0,0,46587,un
+chordata,reptilia,crocodylia,crocodylidae,Crocodylus,acutus,American crocodile,VU,0,0,0,1,5659,in
+chordata,reptilia,crocodylia,crocodylidae,Crocodylus,johnsoni,Australian freshwater crocodile,LC,0,0,1,1,46589,un
+chordata,reptilia,crocodylia,crocodylidae,Crocodylus,mindorensis,Philippines crocodile,CR,0,0,0,1,5672,un
+chordata,reptilia,crocodylia,crocodylidae,Crocodylus,rhombifer,Cuban crocodile,CR,1,0,0,0,5670,un
+chordata,reptilia,crocodylia,crocodylidae,Mecistops,cataphractus,African slender-snouted crocodile,CR,0,0,1,0,5660,de
+chordata,reptilia,crocodylia,crocodylidae,Osteolaemus,tetraspis,Dwarf crocodile,VU,0,1,1,0,15635,un
+chordata,reptilia,crocodylia,crocodylidae,Tomistoma,schlegelii,False gharial,VU,1,0,0,0,21981,de
+chordata,reptilia,crocodylia,gavialidae,Gavialis,gangeticus,Gharial,CR,0,0,1,0,8966,de
+chordata,reptilia,rhynchocephalia,sphenodontidae,Sphenodon,guntheri,Brothers Island tuatara,VU,0,0,1,0,20612,un
+chordata,reptilia,squamata,agamidae,Acanthocercus,atricollis,Black-necked agama,LC,0,0,1,1,170364,st
+chordata,reptilia,squamata,agamidae,Agama,agama,Common agama,NE,1,0,1,0,N/A,N/A
+chordata,reptilia,squamata,agamidae,Chlamydosaurus,kingii,Frilled lizard,LC,1,1,0,1,170384,un
+chordata,reptilia,squamata,agamidae,Gonocephalus,chamaeleontinus,Javan humphead lizard,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,agamidae,Physignathus,cocincinus,Chinese water dragon,NE,1,1,0,0,N/A,N/A
+chordata,reptilia,squamata,agamidae,Pogona,vitticeps,Central bearded dragon,NE,0,1,0,1,N/A,N/A
+chordata,reptilia,squamata,agamidae,Saara,hardwickii,Hardwicke's spiny-tailed lizard,NE,1,0,0,0,N/A,N/A
+chordata,reptilia,squamata,agamidae,Xenagama,taylori,Taylor's strange agama,NE,1,0,0,0,N/A,N/A
+chordata,reptilia,squamata,anguidae,Celestus,warreni,Giant Hispaniolan galliwasp ,CR,0,0,1,1,39260,de
+chordata,reptilia,squamata,anguidae,Diploglossus,millepunctatus,Dotted galliwasp,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,anguidae,Pseudopus,apodus,European glass lizard,NE,0,0,1,1,N/A,N/A
+chordata,reptilia,squamata,anolis,Norops,sagrei,Brown anole,NE,0,0,0,1,N/A,N/A
+chordata,reptilia,squamata,boidae,Acrantophis,dumerili,Dumeril's boa,LC,0,0,0,1,282,st
+chordata,reptilia,squamata,boidae,Acrantophis,madagascariensis,Madagascar ground boa,LC,0,0,1,1,283,st
+chordata,reptilia,squamata,boidae,Boa,constrictor,Boa constrictor,NE,1,1,1,1,N/A,N/A
+chordata,reptilia,squamata,boidae,Calabaria,reinhardtii,Calabar python,NE,1,0,0,0,N/A,N/A
+chordata,reptilia,squamata,boidae,Candoia,carinata,Pacific ground boa,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,boidae,Corallus,annulatus,Ringed tree boa,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,boidae,Corallus,caninus,Emerald tree boa,NE,1,1,1,1,N/A,N/A
+chordata,reptilia,squamata,boidae,Epicrates,striatus,Hispaniolan boa,NE,0,0,0,1,N/A,N/A
+chordata,reptilia,squamata,boidae,Epicrates,subflavus,Jamaican boa,VU,0,0,0,1,7826,un
+chordata,reptilia,squamata,boidae,Eunectes,notaeus,Yellow anaconda,NE,0,0,0,1,N/A,N/A
+chordata,reptilia,squamata,boidae,Gongylophis,conicus,Rough-scaled sand boa,NE,0,0,0,1,N/A,N/A
+chordata,reptilia,squamata,boidae,Lichanura,trivirgata,Rosy boa,LC,0,0,1,1,63726,st
+chordata,reptilia,squamata,boidae,Sanzinia,madagascariensis,Madagascar tree boa,LC,1,0,1,1,19900,st
+chordata,reptilia,squamata,chamaeleonidae,Chamaeleo,calyptratus,Veiled chameleon,LC,0,1,0,0,176306,st
+chordata,reptilia,squamata,chamaeleonidae,Chamaeleo,jacksonii,Jackson's chameleon,NE,0,1,1,0,N/A,N/A
+chordata,reptilia,squamata,chamaeleonidae,Chamaeleo,melleri,Meller's chameleon,NE,0,1,0,0,N/A,N/A
+chordata,reptilia,squamata,chamaeleonidae,Furcifer,lateralis,Jeweled chameleon,LC,0,0,0,1,172835,st
+chordata,reptilia,squamata,chamaeleonidae,Furcifer,oustaleti,Oustalet's chameleon,LC,0,0,0,1,172866,st
+chordata,reptilia,squamata,chamaeleonidae,Furcifer,pardalis,Panther chameleon,LC,0,0,0,1,172955,st
+chordata,reptilia,squamata,chamaeleonidae,Rhampholeon,kerstenii,Kenya stumptail chameleon,NE,0,0,0,1,N/A,N/A
+chordata,reptilia,squamata,colubridae,Ahaetulla,nasuta,Green vine snake,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,colubridae,Bogertophis,rosaliae,Baja California rat snake,LC,0,0,1,1,63736,st
+chordata,reptilia,squamata,colubridae,Bogertophis,subocularis,Trans-pecos rat snake,LC,0,0,0,1,63737,de
+chordata,reptilia,squamata,colubridae,Boiga,irregularis,Brown tree snake,NE,0,0,1,1,N/A,N/A
+chordata,reptilia,squamata,colubridae,Dispholidus,typus,Boomslang,NE,0,0,0,1,N/A,N/A
+chordata,reptilia,squamata,colubridae,Drymarchon,couperi,Eastern indigo snake,LC,0,0,0,1,63773,de
+chordata,reptilia,squamata,colubridae,Gonyosoma,oxycephalum,Red-tailed green ratsnake,LC,1,1,0,0,183196,de
+chordata,reptilia,squamata,colubridae,Hydrodynastes,gigas,False water cobra,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,colubridae,Lampropeltis,getula,Common kingsnake,LC,1,0,1,0,63828,st
+chordata,reptilia,squamata,colubridae,Lampropeltis,triangulum,Milk snake,NE,0,1,1,1,N/A,N/A
+chordata,reptilia,squamata,colubridae,Lampropeltis,zonata,California mountain kingsnake,LC,0,0,1,0,63834,de
+chordata,reptilia,squamata,colubridae,Masticophis,flagellum,San Joaquin coachwhip,LC,0,0,1,0,62235,st
+chordata,reptilia,squamata,colubridae,Masticophis,lateralis,Almeda striped racer,LC,0,0,1,0,62236,st
+chordata,reptilia,squamata,colubridae,Orthriophis,taeniurus,Beauty snake ,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,colubridae,Pantherophis,obsoletus,Western rat snake,LC,1,1,0,1,63864,st
+chordata,reptilia,squamata,colubridae,Pantherophis,vulpinus,Western fox snake,LC,0,1,0,1,63866,st
+chordata,reptilia,squamata,colubridae,Philothamnus,punctatus,Spotted green snake,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,colubridae,Pituophis,catenifer,Gopher snake,LC,0,0,1,0,63869,st
+chordata,reptilia,squamata,colubridae,Salvadora,bairdi,Baird's patchnose snake,LC,0,0,0,1,63910,st
+chordata,reptilia,squamata,colubridae,Spilotes,pullatus,Chicken snake,NE,0,1,0,1,N/A,N/A
+chordata,reptilia,squamata,colubridae,Telescopus,semiannulatus,Tiger snake,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,colubridae,Thelotornis,capensis,Twig snake,LC,0,0,1,0,177476,st
+chordata,reptilia,squamata,cordylidae,Cordylus,cataphractus,Armadillo girdled lizard,VU,0,0,1,0,5333,un
+chordata,reptilia,squamata,cordylidae,Cordylus,giganteus,Giant girdled lizard,VU,0,0,1,0,5336,un
+chordata,reptilia,squamata,cordylidae,Cordylus,mossambicus,Mozambique girdled lizard,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,cordylidae,Cordylus,tropidosternum,East African spiny-tailed lizard,NE,1,0,1,0,N/A,N/A
+chordata,reptilia,squamata,corytophanidae,Basiliscus,plumifrons,Green basilisk,LC,0,1,1,1,203046,st
+chordata,reptilia,squamata,corytophanidae,Laemanctus,serratus,Serrated cssquehead iguana,LC,0,0,0,1,64004,st
+chordata,reptilia,squamata,dactyloidae,Anolis,ricordi,Haitian green anole,NE,0,0,0,1,N/A,N/A
+chordata,reptilia,squamata,dactyloidae,Anolis,smallwoodi,Smallwood's anole,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,diplodactylidae,Rhacodactylus,auriculatus,New Caledonian bumpy gecko,LC,0,0,0,1,176132,st
+chordata,reptilia,squamata,diplodactylidae,Rhacodactylus,leachianus,New Caledonian giant gecko,LC,0,0,1,1,176166,st
+chordata,reptilia,squamata,dipsadidae,Heterodon,nasicus,Western hognose snake,LC,0,0,0,1,63819,st
+chordata,reptilia,squamata,elapidae,Dendroaspis,viridis,Western green mamba,LC,0,0,1,0,13265799,st
+chordata,reptilia,squamata,elapidae,Hemachatus,haemachatus,Rinkhals,LC,0,0,1,0,177556,st
+chordata,reptilia,squamata,elapidae,Naja,annulata,Ringed water cobra,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,elapidae,Naja,annulifera,Snouted cobra,NE,1,0,0,0,N/A,N/A
+chordata,reptilia,squamata,elapidae,Naja,naja,Indian cobra,NE,1,1,1,0,N/A,N/A
+chordata,reptilia,squamata,elapidae,Naja,nivea,Cape cobra,NE,0,0,0,1,N/A,N/A
+chordata,reptilia,squamata,elapidae,Ophiophagus,hannah,King cobra,VU,1,0,1,0,177540,de
+chordata,reptilia,squamata,elapidae,Oxyuranus,microlepidotus,Inland taipan,NE,0,0,0,1,N/A,N/A
+chordata,reptilia,squamata,elapidae,Pseudechis,colletti,Collett's snake,NE,0,0,0,1,N/A,N/A
+chordata,reptilia,squamata,eublepharidae,Coleonyx,brevis,Texas banded gecko,LC,0,0,0,1,64034,st
+chordata,reptilia,squamata,gekkonidae,Chondrodactylus,angulifer,Giant ground gecko,LC,0,0,0,1,178743,un
+chordata,reptilia,squamata,gekkonidae,Gekko,gecko,Tokay gecko,NE,0,1,0,1,N/A,N/A
+chordata,reptilia,squamata,gekkonidae,Gekko,vittatus,Lined gecko,NE,0,0,0,1,N/A,N/A
+chordata,reptilia,squamata,gekkonidae,Homopholis,fasciata,African banded velvet gecko,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,gekkonidae,Lygodactylus,williamsi,Turquoise dwarf gecko,CR,0,0,0,1,14665363,de
+chordata,reptilia,squamata,gekkonidae,Nephrurus,amyae,Rough knob-tailed gecko,NE,0,0,0,1,N/A,N/A
+chordata,reptilia,squamata,gekkonidae,Pachydactylus,rangei,Namib sand gecko,NE,0,0,0,1,N/A,N/A
+chordata,reptilia,squamata,gekkonidae,Phelsuma,abbotti,Abbott's day gecko,LC,0,0,0,1,61431,st
+chordata,reptilia,squamata,gekkonidae,Phelsuma,flavigularis,Yellow-throated day gecko,EN,0,0,0,1,178689,de
+chordata,reptilia,squamata,gekkonidae,Phelsuma,laticauda,Broad-tailed day gecko,LC,0,0,0,1,61433,st
+chordata,reptilia,squamata,gekkonidae,Phelsuma,lineata,Lined day gecko,LC,0,0,0,1,172826,st
+chordata,reptilia,squamata,gekkonidae,Phelsuma,standingi,Standing's day gecko,VU,1,0,1,1,16947,un
+chordata,reptilia,squamata,gekkonidae,Phyllurus,platurus,Broad-tailed gecko,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,gekkonidae,Uroplatus,fimbriatus,Common flat-tail gecko,LC,0,0,1,1,172939,de
+chordata,reptilia,squamata,gekkonidae,Uroplatus,guentheri,Gunther's fIat-tail gecko,EN,0,0,0,1,172927,de
+chordata,reptilia,squamata,gekkonidae,Uroplatus,henkeli,Frilled leaf-tailed gecko,VU,1,0,1,0,178653,un
+chordata,reptilia,squamata,gekkonidae,Uroplatus,lineatus,Lined flat-tail gecko,LC,0,0,0,1,172769,de
+chordata,reptilia,squamata,gekkonidae,Uroplatus,phantasticus,Satanic leaf-tailed gecko,LC,0,0,0,1,172906,de
+chordata,reptilia,squamata,gekkonidae,Uroplatus,pietschmanni,Spiny leaf-tailed gecko,EN,0,0,0,1,172943,un
+chordata,reptilia,squamata,gekkonidae,Uroplatus,sikorae,Southern flat-tail gecko,LC,0,0,0,1,172820,de
+chordata,reptilia,squamata,gerrhosauridae,Gerrhosaurus,flavigularis,Yellow-throated plated lizard,NE,0,0,1,1,N/A,N/A
+chordata,reptilia,squamata,gerrhosauridae,Gerrhosaurus,major,Sudan plated lizard,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,gerrhosauridae,Gerrhosaurus,validus,Giant plated lizard,NE,0,0,1,1,N/A,N/A
+chordata,reptilia,squamata,gerrhosauridae,Tracheloptychus,petersi,Peter's keeled plated lizard,VU,0,0,1,0,172745,de
+chordata,reptilia,squamata,gerrhosauridae,Zonosaurus,karsteni,Karsten's girdled lizard,LC,0,0,0,1,178585,un
+chordata,reptilia,squamata,gerrhosauridae,Zonosaurus,madagascariensis,Madagascar girdled lizard,LC,1,0,0,0,61436,st
+chordata,reptilia,squamata,gerrhosauridae,Zonosaurus,quadrilineatus,Four-lined girdled lizard,VU,1,0,0,0,178326,un
+chordata,reptilia,squamata,helodermatidae,Heloderma,horridum,Beaded lizard,LC,0,1,1,1,9864,de
+chordata,reptilia,squamata,helodermatidae,Heloderma,suspectum,Gila monster,NT,1,1,1,1,9865,de
+chordata,reptilia,squamata,homalopsidae,Erpeton,tentaculatum,Tentacled snake,LC,1,1,1,0,176697,un
+chordata,reptilia,squamata,iguanidae,Brachylophus,fasciatus,Fiji banded iguana,EN,0,0,1,1,19243030,de
+chordata,reptilia,squamata,iguanidae,Ctenosaura,hemilopha,Cape spinytail iguana,NE,0,0,0,1,N/A,N/A
+chordata,reptilia,squamata,iguanidae,Ctenosaura,pectinata,Mexican spinytail iguana,NE,0,0,0,1,N/A,N/A
+chordata,reptilia,squamata,iguanidae,Cyclura,cychlura figginsi,Exuma Island rock iguana,CR,0,0,1,0,6040,de
+chordata,reptilia,squamata,iguanidae,Cyclura,nubila,Clouded rock iguana,VU,0,0,1,0,6030,un
+chordata,reptilia,squamata,iguanidae,Cyclura,nubila nubila,Cuban rock iguana,VU,0,0,1,0,6045,de
+chordata,reptilia,squamata,iguanidae,Cyclura,pinguis,Anegada rock iguana,CR,0,0,1,0,6031,un
+chordata,reptilia,squamata,iguanidae,Dipsosaurus,dorsalis,Desert iguana,NE,1,0,0,1,N/A,N/A
+chordata,reptilia,squamata,iguanidae,Iguana,iguana,Green iguana,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,iguanidae,Sauromalus,ater,Common chuckwalla,LC,1,1,0,1,64054,st
+chordata,reptilia,squamata,iguanidae,Sauromalus,varius,San Esteban chuckwalla,NE,0,1,0,0,N/A,N/A
+chordata,reptilia,squamata,lacertidae,Holaspis,guentheri,Neon blue-tailed tree lizard,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,lacertidae,Nucras,boulengeri,Uganda savannah lizard,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,lacertidae,Timon,lepidus,Ocellated lizard,NT,0,0,1,0,61583,de
+chordata,reptilia,squamata,natricidae,Nerodia,cyclopion,Mississippi green water snake,LC,0,0,0,1,63853,st
+chordata,reptilia,squamata,natricidae,Nerodia,erythrogaster,Plain-bellied water snake,LC,0,0,0,1,63854,st
+chordata,reptilia,squamata,natricidae,Nerodia,fasciata,Southern water snake,LC,0,0,0,1,62237,st
+chordata,reptilia,squamata,natricidae,Nerodia,sipedon,Northern water snake,LC,0,0,0,1,62239,st
+chordata,reptilia,squamata,natricidae,Storeria,dekayi,Brown snake,LC,1,0,0,0,63928,st
+chordata,reptilia,squamata,natricidae,Thamnophis,radix,Plains garter snake,LC,0,0,0,1,63988,st
+chordata,reptilia,squamata,natricidae,Thamnophis,sirtalis,Common garter snake,LC,0,1,0,0,62240,st
+chordata,reptilia,squamata,opluridae,Chalarodon,madagascariensis,Madagascar iguana,LC,0,0,0,1,172849,st
+chordata,reptilia,squamata,opluridae,Oplurus,cuvieri,Cuvier's Madagascar swift,LC,1,0,0,1,172763,st
+chordata,reptilia,squamata,phrynosomatidae,Petrosaurus,thalassinus,Baja blue rock lizard,LC,0,0,1,0,64070,st
+chordata,reptilia,squamata,phrynosomatidae,Phrynosoma,asio,Giant horned lizard,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,phrynosomatidae,Sceloporus,magister,Desert spiny lizard,LC,0,0,0,1,64123,st
+chordata,reptilia,squamata,phrynosomatidae,Sceloporus,occidentalis,Western fence lizard,LC,0,0,1,0,64131,st
+chordata,reptilia,squamata,phrynosomatidae,Sceloporus,serrifer,Blue spiny lizard,LC,0,0,0,1,64143,st
+chordata,reptilia,squamata,phrynosomatidae,Uta,stansburiana,Side-blotched lizard,LC,0,0,1,0,64180,st
+chordata,reptilia,squamata,pseudoxyrhophiidae,Leioheterodon,madagascariensis,Malagasy giant hognose snake,LC,1,0,0,1,172892,st
+chordata,reptilia,squamata,pseudoxyrhophiidae,Leioheterodon,modestus,Blonde hognose snake,LC,0,0,0,1,176824,st
+chordata,reptilia,squamata,pygopodidae,Lialis,jicari,Papua snake lizard,NE,1,0,0,0,N/A,N/A
+chordata,reptilia,squamata,pythonidae,Aspidites,melanocephalus,Black-headed python,NE,0,0,1,1,N/A,N/A
+chordata,reptilia,squamata,pythonidae,Aspidites,ramsayi,Woma,EN,0,0,1,1,2176,un
+chordata,reptilia,squamata,pythonidae,Leiopython,albertisii,D'Albertis python,NE,0,1,0,0,N/A,N/A
+chordata,reptilia,squamata,pythonidae,Morelia,amethistina,Amethyst python,LC,0,0,1,1,177501,un
+chordata,reptilia,squamata,pythonidae,Morelia,boeleni,Boelen's python,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,pythonidae,Morelia,bredli,Centralian carpet python,NE,0,0,0,1,N/A,N/A
+chordata,reptilia,squamata,pythonidae,Morelia,viridis,Green tree python,LC,1,1,1,1,177524,un
+chordata,reptilia,squamata,pythonidae,Python,anchietae,Anchieta's dwarf python,LC,0,0,1,1,177539,un
+chordata,reptilia,squamata,pythonidae,Python,breitensteini,Bornean short-tailed python,LC,1,0,0,0,192013,un
+chordata,reptilia,squamata,pythonidae,Python,brongersmai,Blood python,LC,1,0,0,1,192169,in
+chordata,reptilia,squamata,pythonidae,Python,curtus,Sumatran short-tailed python,LC,0,0,1,0,192244,un
+chordata,reptilia,squamata,pythonidae,Python,regius,Ball python,LC,1,1,1,1,177562,un
+chordata,reptilia,squamata,scincidae,Corucia,zebrata,Solomon Islands skink,NE,1,1,1,1,N/A,N/A
+chordata,reptilia,squamata,scincidae,Egernia,cunninghami,Cunningham's skink,NE,0,0,0,1,N/A,N/A
+chordata,reptilia,squamata,scincidae,Egernia,kingii,King's skink,LC,0,0,1,0,178540,st
+chordata,reptilia,squamata,scincidae,Egernia,stokesii,Gidgee spiny-tailed skink,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,scincidae,Egernia,striolata,Tree-crevice skink,NE,0,0,0,1,N/A,N/A
+chordata,reptilia,squamata,scincidae,Eumeces,schneideri,Schneider's skink,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,scincidae,Lepidothyris,fernandi,True fire skink,NE,0,1,0,0,N/A,N/A
+chordata,reptilia,squamata,scincidae,Plestiodon,obsoletus,Great Plains skink,LC,0,0,0,1,64235,st
+chordata,reptilia,squamata,scincidae,Plestiodon,skiltonianus,Western skink,LC,0,0,1,0,64240,st
+chordata,reptilia,squamata,scincidae,Tiliqua,adelaidensis,Adelaide pygmy blue-tongue skink,EN,0,0,0,1,21902,un
+chordata,reptilia,squamata,scincidae,Tiliqua,rugosa,Shingleback,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,scincidae,Tiliqua,scincoides,Australian blue-tongued skink,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,scincidae,Trachylepis,margaritifera,Rainbow mabuya,LC,0,0,1,0,178196,un
+chordata,reptilia,squamata,scincidae,Trachylepis,striata,African striped skink,NE,0,0,0,1,N/A,N/A
+chordata,reptilia,squamata,scincidae,Tribolonotus,gracilis,Red-eyed crocodile skink,NE,1,0,0,1,N/A,N/A
+chordata,reptilia,squamata,shinisauridae,Shinisaurus,crocodilurus,Chinese crocodile lizard,EN,0,1,1,1,57287221,de
+chordata,reptilia,squamata,teiidae,Ameiva,fuscata,Dominican ameiva,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,teiidae,Cnemidophorus,uniparens,Desert grassland whiptail lizard,NE,0,1,0,0,N/A,N/A
+chordata,reptilia,squamata,teiidae,Dracaena,guianensis,Northern caiman lizard,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,teiidae,Tupinambis,merianae,Argentine black and white tegu,LC,0,0,0,1,178340,st
+chordata,reptilia,squamata,varanidae,Varanus,acanthurus,Ridge-tailed monitor,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,varanidae,Varanus,albigularis,White-throated monitor,NE,1,0,0,1,N/A,N/A
+chordata,reptilia,squamata,varanidae,Varanus,doreanus,Blue-tailed monitor,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,varanidae,Varanus,dumerilii,Dumeril's monitor,NE,1,1,0,0,N/A,N/A
+chordata,reptilia,squamata,varanidae,Varanus,exanthematicus,Savannah monitor,LC,1,0,0,0,178346,un
+chordata,reptilia,squamata,varanidae,Varanus,komodoensis,Komodo dragon,VU,1,1,1,0,22884,un
+chordata,reptilia,squamata,varanidae,Varanus,macraei,Blue-spotted tree monitor,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,varanidae,Varanus,melinus,Quince monitor,NE,1,0,1,1,N/A,N/A
+chordata,reptilia,squamata,varanidae,Varanus,mertensi,Mertens's water monitor,NE,1,0,0,1,N/A,N/A
+chordata,reptilia,squamata,varanidae,Varanus,salvadorii,Crocodile monitor,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,varanidae,Varanus,storri,Storr's monitor,NE,0,0,0,1,N/A,N/A
+chordata,reptilia,squamata,varanidae,Varanus,tristis,Black-headed monitor,NE,0,0,0,1,N/A,N/A
+chordata,reptilia,squamata,varanidae,Varanus,varius,Lace monitor,NE,1,0,0,0,N/A,N/A
+chordata,reptilia,squamata,viperidae,Agkistrodon,bilineatus,Cantil,NT,0,0,0,1,64296,de
+chordata,reptilia,squamata,viperidae,Agkistrodon,contortrix,Copperhead,LC,1,0,1,0,64297,st
+chordata,reptilia,squamata,viperidae,Agkistrodon,taylori,Taylor's cantil,LC,1,0,0,0,64299,un
+chordata,reptilia,squamata,viperidae,Bitis,cornuta,Many-horned adder,NE,0,0,0,1,N/A,N/A
+chordata,reptilia,squamata,viperidae,Bitis,gabonica,Gaboon viper,NE,1,0,1,0,N/A,N/A
+chordata,reptilia,squamata,viperidae,Bitis,parviocula,Ethiopian mountain adder,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,viperidae,Bothriechis,lateralis,Coffee palm viper,LC,0,0,1,0,203658,st
+chordata,reptilia,squamata,viperidae,Bothriechis,rowleyi,Rowley's palm pit viper,VU,0,0,1,0,64304,de
+chordata,reptilia,squamata,viperidae,Bothriechis,schlegelii,Eyelash viper,NE,1,1,1,0,N/A,N/A
+chordata,reptilia,squamata,viperidae,Bothrops,erythromelas,Caatinga lancehead,LC,0,0,1,0,178643,un
+chordata,reptilia,squamata,viperidae,Bothrops,moojeni,Brazilian Lancehead,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,viperidae,Cerastes,vipera,Sahara sand viper,LC,0,0,1,0,178210,st
+chordata,reptilia,squamata,viperidae,Crotalus,adamanteus,Eastern diamondback rattlesnake,LC,1,0,1,0,64308,de
+chordata,reptilia,squamata,viperidae,Crotalus,atrox,Western diamondback rattlesnake,LC,0,0,1,1,64311,st
+chordata,reptilia,squamata,viperidae,Crotalus,catalinensis,Santa Catalina Island rattlesnake,CR,0,0,1,0,64314,de
+chordata,reptilia,squamata,viperidae,Crotalus,cerastes,Sidewinder,LC,0,0,1,0,64315,st
+chordata,reptilia,squamata,viperidae,Crotalus,durissus,Cascabel rattlesnake,LC,1,0,1,0,178477,un
+chordata,reptilia,squamata,viperidae,Crotalus,horridus,Timber rattlesnake ,LC,1,0,0,0,64318,de
+chordata,reptilia,squamata,viperidae,Crotalus,lepidus,Rock rattlesnake,LC,0,0,1,1,64321,st
+chordata,reptilia,squamata,viperidae,Crotalus,mitchelli,Speckled rattlesnake,LC,0,0,1,1,64323,st
+chordata,reptilia,squamata,viperidae,Crotalus,oreganus,Western rattlesnake,LC,0,1,1,0,64326,st
+chordata,reptilia,squamata,viperidae,Crotalus,polystictus,Mexican Lance-headed rattlesnake,LC,0,0,1,0,64327,de
+chordata,reptilia,squamata,viperidae,Crotalus,pricei,Twin-spotted rattlesnake,LC,0,0,1,0,64328,st
+chordata,reptilia,squamata,viperidae,Crotalus,ruber,Red diamond rattlesnake,LC,0,0,1,0,64331,de
+chordata,reptilia,squamata,viperidae,Crotalus,scutulatus,Majove rattlesnake,LC,0,0,1,1,64332,st
+chordata,reptilia,squamata,viperidae,Crotalus,tigris,Tiger rattlesnake,LC,0,0,0,1,64335,st
+chordata,reptilia,squamata,viperidae,Crotalus,willardi,Ridge-nosed rattlesnake,LC,0,0,1,0,62253,st
+chordata,reptilia,squamata,viperidae,Deinagkistrodon,acutus,Chinese moccasin,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,viperidae,Lachesis,muta,Bushmaster,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,viperidae,Protobothrops,jerdonii,Yellow speckled lancehead,LC,0,0,1,0,178419,st
+chordata,reptilia,squamata,viperidae,Protobothrops,mangshanensis,Mangshan pit viper,EN,1,0,1,0,192140,de
+chordata,reptilia,squamata,viperidae,Trimeresurus,flavomaculatus,Philippine pit viper,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,squamata,viperidae,Trimeresurus,trigonocephalus,Sri Lankan green pit viper,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,testudines,carettochelyidae,Carettochelys,insculpta,Pig-nosed turtle,VU,1,1,1,1,3898,un
+chordata,reptilia,testudines,chelidae,Chelodina,mccordi,Roti Island snake-necked turtle,CR,0,0,1,0,4606,un
+chordata,reptilia,testudines,chelidae,Chelodina,oblonga,Northern snake-necked turtle,NT,0,0,1,0,4607,un
+chordata,reptilia,testudines,chelidae,Chelus,fimbriatus,Mata mata,NE,1,1,1,1,N/A,N/A
+chordata,reptilia,testudines,chelidae,Emydura,macquarii,Murray river turtle,NE,0,0,0,1,N/A,N/A
+chordata,reptilia,testudines,chelidae,Emydura,subglobosa,Red-bellied short-necked turtle,LC,1,1,1,1,46582,un
+chordata,reptilia,testudines,chelidae,Hydromedusa,tectifera,Argentine snake-necked turtle,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,testudines,chelidae,Phrynops,hilarii,Hilaire's toadhead turtle,NE,0,0,0,1,N/A,N/A
+chordata,reptilia,testudines,cheloniidae,Caretta,caretta,Loggerhead,EN,0,0,0,1,3897,un
+chordata,reptilia,testudines,chelydridae,Chelydra,serpentina,Common snapping turtle,LC,0,1,1,1,163424,st
+chordata,reptilia,testudines,chelydridae,Macrochelys,temminckii,Alligator snapping turtle,VU,1,0,1,1,12589,un
+chordata,reptilia,testudines,emydidae,Actinemys,marmorata,Pacific pond turtle,VU,0,0,1,0,4969,un
+chordata,reptilia,testudines,emydidae,Chrysemys,picta,Painted turtle,LC,0,1,0,1,163467,st
+chordata,reptilia,testudines,emydidae,Clemmys,guttata,Spotted turtle,EN,0,1,0,1,4968,de
+chordata,reptilia,testudines,emydidae,Emydoidea,blandingii,Blanding's turtle,EN,0,1,0,0,7709,de
+chordata,reptilia,testudines,emydidae,Emys,orbicularis,European pond turtle,NT,0,0,1,0,7717,un
+chordata,reptilia,testudines,emydidae,Graptemys,versa,Texas map turtle,LC,0,0,0,1,9503,st
+chordata,reptilia,testudines,emydidae,Pseudemys,concinna,River cooter,LC,0,0,0,1,163444,un
+chordata,reptilia,testudines,emydidae,Terrapene,carolina,Common box turtle,VU,1,1,0,1,21641,de
+chordata,reptilia,testudines,emydidae,Trachemys,scripta,Pond slider,LC,0,0,1,1,22028,st
+chordata,reptilia,testudines,emydidae,Trachemys,stejnegeri,Central Antillean slider,NT,0,0,0,1,22026,un
+chordata,reptilia,testudines,geoemydidae,Batagur,baska,Northern river terrapin,CR,0,0,1,0,2614,un
+chordata,reptilia,testudines,geoemydidae,Cuora,aurocapitata,Yellow-headed box turtle,CR,1,0,0,0,5959,un
+chordata,reptilia,testudines,geoemydidae,Cuora,galbinifrons,Indochinese box turtle,CR,1,1,0,0,5955,un
+chordata,reptilia,testudines,geoemydidae,Cuora,mccordi,McCord's box turtle,CR,1,0,0,0,5961,un
+chordata,reptilia,testudines,geoemydidae,Cuora,trifasciata,Chinese three-striped box turtle,CR,0,0,1,0,5962,un
+chordata,reptilia,testudines,geoemydidae,Cyclemys,dentata,Asian leaf turtle,NT,0,0,1,0,39551,un
+chordata,reptilia,testudines,geoemydidae,Geoclemys,hamiltonii,Black pond turtle,VU,1,0,1,0,9029,un
+chordata,reptilia,testudines,geoemydidae,Geoemyda,spengleri,Black-breasted leaf turtle,EN,1,1,1,0,39552,un
+chordata,reptilia,testudines,geoemydidae,Heosemys,grandis,Giant Asian pond turtle,VU,0,0,0,1,9943,un
+chordata,reptilia,testudines,geoemydidae,Heosemys,spinosa,Spiny turtle,EN,0,1,1,0,9942,un
+chordata,reptilia,testudines,geoemydidae,Leucocephalon,yuwonoi,Sulawesi forest turtle,CR,0,0,1,0,40761,un
+chordata,reptilia,testudines,geoemydidae,Mauremys,mutica,Yellow pond turtle,EN,0,0,1,0,39613,un
+chordata,reptilia,testudines,geoemydidae,Mauremys,sinensis,Chinese stripe-necked turtle,EN,0,0,1,0,15026,un
+chordata,reptilia,testudines,geoemydidae,Orlitia,borneensis,Malaysian giant turtle,EN,1,0,1,0,15509,un
+chordata,reptilia,testudines,geoemydidae,Sacalia,quadriocellata,Four-eyed turtle,EN,0,0,1,0,19797,un
+chordata,reptilia,testudines,kinosternidae,Staurotypus,triporcatus,Mexican musk turtle,NT,1,0,0,1,20716,un
+chordata,reptilia,testudines,kinosternidae,Sternotherus,carinatus,Razor-backed musk turtle,LC,0,0,0,1,170492,un
+chordata,reptilia,testudines,pelomedusidae,Pelomedusa,subrufa,African helmeted turtle,NE,0,0,0,1,N/A,N/A
+chordata,reptilia,testudines,pelomedusidae,Pelusios,castanoides,Yellowbelly mud turtle,LC,1,0,0,0,41601,un
+chordata,reptilia,testudines,pelomedusidae,Pelusios,subniger,East African black mud turtle,LC,1,0,1,1,41602,un
+chordata,reptilia,testudines,podocnemididae,Erymnochelys,madagascariensis,Madagascar big-headed turtle,CR,0,0,0,1,8070,de
+chordata,reptilia,testudines,podocnemididae,Podocnemis,erythrocephala,Red-headed Amazon River turtle,VU,1,0,1,0,17821,un
+chordata,reptilia,testudines,podocnemididae,Podocnemis,expansa,South American river turtle,LC,1,0,0,1,17822,un
+chordata,reptilia,testudines,testudinidae,Astrochelys,radiata,Radiated tortoise ,CR,1,1,0,1,9014,de
+chordata,reptilia,testudines,testudinidae,Centrochelys,sulcata,African spurred tortoise,VU,0,0,1,1,163423,un
+chordata,reptilia,testudines,testudinidae,Chelonoidis,denticulata,Yellow-footed tortoise,VU,1,0,0,0,9008,un
+chordata,reptilia,testudines,testudinidae,Chelonoidis,nigra,Galapagos giant tortoise,VU,0,0,1,0,9011,un
+chordata,reptilia,testudines,testudinidae,Chelonoidis,nigra microphyes,Volcan Darwin tortoise,VU,1,0,0,1,9025,un
+chordata,reptilia,testudines,testudinidae,Chersina,angulata,Angulate tortoise,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,testudines,testudinidae,Geochelone,elegans,Indian star tortoise,LC,1,1,0,0,39430,un
+chordata,reptilia,testudines,testudinidae,Geochelone,platynota,Burmese starred tortoise,CR,0,1,1,0,9013,un
+chordata,reptilia,testudines,testudinidae,Gopherus,polyphemus,Gopher tortoise,VU,0,0,0,1,9403,un
+chordata,reptilia,testudines,testudinidae,Homopus,areolatus,Parrot-beaked tortoise,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,testudines,testudinidae,Indotestudo,travancorica,Travancore tortoise,VU,1,0,0,0,39548,un
+chordata,reptilia,testudines,testudinidae,Kinixys,erosa,Forest hinge-back tortoise,DD,0,0,0,1,11002,un
+chordata,reptilia,testudines,testudinidae,Kinixys,homeana,Home's hinge-back tortoise,VU,0,1,0,1,11003,de
+chordata,reptilia,testudines,testudinidae,Malacochersus,tornieri,Pancake tortoise,VU,1,0,1,1,12696,un
+chordata,reptilia,testudines,testudinidae,Manouria,emys,Brown tortoise,EN,0,1,1,0,12774,un
+chordata,reptilia,testudines,testudinidae,Psammobates,pardalis,Leopard tortoise,NE,0,0,1,0,N/A,N/A
+chordata,reptilia,testudines,testudinidae,Pyxis,arachnoides,Spider tortoise,CR,1,1,1,0,19035,de
+chordata,reptilia,testudines,testudinidae,Pyxis,planicauda,Flat-tailed tortoise,CR,0,1,1,1,19036,de
+chordata,reptilia,testudines,testudinidae,Testudo,hermanni,Hermann's tortoise,NT,0,1,0,1,21648,de
+chordata,reptilia,testudines,testudinidae,Testudo,hermanni hermanni,Western Hermann's tortoise,EN,0,1,0,0,21650,un
+chordata,reptilia,testudines,testudinidae,Testudo,horsfieldii,Afghan tortoise,VU,0,0,1,0,21651,un
+chordata,reptilia,testudines,testudinidae,Testudo,marginata,Marginated tortoise,LC,0,0,1,0,21653,st
+chordata,reptilia,testudines,trionychidae,Apalone,ferox,Florida softshell turtle,LC,0,0,0,1,165597,un
+chordata,reptilia,testudines,trionychidae,Apalone,spinifera,Spiny softshell turtle,LC,0,1,0,1,163451,st
+chordata,reptilia,testudines,trionychidae,Lissemys,punctata,Indian flap-shelled turtle,LC,0,0,1,0,46579,un
+chordata,reptilia,testudines,trionychidae,Pelodiscus,sinensis,Chinese softshell turtle,VU,0,1,0,0,39620,de
+chordata,reptilia,testudines,trionychidae,Trionyx,triunguis,Nile softshell turtle,NE,0,1,1,1,N/A,N/A

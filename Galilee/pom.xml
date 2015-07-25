@@ -24,7 +24,7 @@
 				<exclusion>
 					<groupId>commons-logging</groupId>
 					<artifactId>commons-logging</artifactId>
-				 </exclusion>
+				</exclusion>
 			</exclusions>
 		</dependency>
 		<dependency>
@@ -32,7 +32,7 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
-		
+
 		<!-- Spring 관련 jar -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -40,92 +40,97 @@
 			<version>${org.springframework-version}</version>
 		</dependency>
 		<dependency>
-	      <groupId>org.springframework</groupId>
-	      <artifactId>spring-tx</artifactId>
-	      <version>${org.springframework-version}</version>
-	    </dependency>
-	    <dependency>
-	      <groupId>org.springframework</groupId>
-	      <artifactId>spring-context</artifactId>
-	      <version>${org.springframework-version}</version>
-	    </dependency>
-	    <dependency>
-	      <groupId>org.springframework</groupId>
-	      <artifactId>spring-jdbc</artifactId>
-	      <version>${org.springframework-version}</version>
-	    </dependency>
-		
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-jpa</artifactId>
+			<version>1.8.1.RELEASE</version>
+		</dependency>
+
 		<!-- Hibernate -->
-	    <dependency>
-	      <groupId>org.hibernate</groupId>
-	      <artifactId>hibernate-core</artifactId>
-	      <version>4.3.7.Final</version>
-	    </dependency>
-    	
-    	<!-- for JPA, use hibernate-entitymanager instead of hibernate-core -->
 		<dependency>
-		    <groupId>org.hibernate</groupId>
-		    <artifactId>hibernate-entitymanager</artifactId>
-		    <version>4.3.7.Final</version>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>4.3.7.Final</version>
 		</dependency>
-		
+
+		<!-- for JPA, use hibernate-entitymanager instead of hibernate-core -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>4.3.7.Final</version>
+		</dependency>
+
 		<!-- optional -->
-		
+
 		<dependency>
-		    <groupId>org.hibernate</groupId>
-		    <artifactId>hibernate-osgi</artifactId>
-		    <version>4.3.7.Final</version>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-osgi</artifactId>
+			<version>4.3.7.Final</version>
 		</dependency>
 		<dependency>
-		    <groupId>org.hibernate</groupId>
-		    <artifactId>hibernate-envers</artifactId>
-		    <version>4.3.7.Final</version>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-envers</artifactId>
+			<version>4.3.7.Final</version>
 		</dependency>
 		<dependency>
-		    <groupId>org.hibernate</groupId>
-		    <artifactId>hibernate-c3p0</artifactId>
-		    <version>4.3.7.Final</version>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-c3p0</artifactId>
+			<version>4.3.7.Final</version>
 		</dependency>
 		<dependency>
-		    <groupId>org.hibernate</groupId>
-		    <artifactId>hibernate-proxool</artifactId>
-		    <version>4.3.7.Final</version>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-proxool</artifactId>
+			<version>4.3.7.Final</version>
 		</dependency>
 		<dependency>
-		    <groupId>org.hibernate</groupId>
-		    <artifactId>hibernate-infinispan</artifactId>
-		    <version>4.3.7.Final</version>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-infinispan</artifactId>
+			<version>4.3.7.Final</version>
 		</dependency>
 		<dependency>
-		    <groupId>org.hibernate</groupId>
-		    <artifactId>hibernate-ehcache</artifactId>
-		    <version>4.3.7.Final</version>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-ehcache</artifactId>
+			<version>4.3.7.Final</version>
 		</dependency>
-		
-    	<!-- boneCP 관련 jar (connection pool)--> 
-	    <dependency>
-	      <groupId>com.jolbox</groupId>
-	      <artifactId>bonecp</artifactId>
-	      <version>0.7.1.RELEASE</version>
-	    </dependency>
-	    <dependency>
-	      <groupId>com.google.guava</groupId>
-	      <artifactId>guava</artifactId>
-	      <version>14.0</version>
-	    </dependency>
-	    <dependency>
-	      <groupId>org.slf4j</groupId>
-	      <artifactId>slf4j-api</artifactId>
-	      <version>1.7.2</version>
-	    </dependency>
-    	
+
+		<!-- boneCP 관련 jar (connection pool) -->
+		<dependency>
+			<groupId>com.jolbox</groupId>
+			<artifactId>bonecp</artifactId>
+			<version>0.7.1.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>14.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.2</version>
+		</dependency>
+
 		<!-- AspectJ -->
 		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjrt</artifactId>
 			<version>${org.aspectj-version}</version>
-		</dependency>	
-		
+		</dependency>
+
 		<!-- Logging -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -175,7 +180,7 @@
 			<artifactId>javax.inject</artifactId>
 			<version>1</version>
 		</dependency>
-				
+
 		<!-- Servlet -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -194,7 +199,7 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-    
+
 		<!-- Test -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -203,54 +208,73 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-	      <groupId>org.springframework</groupId>
-	      <artifactId>spring-test</artifactId>
-	      <version>3.2.1.RELEASE</version>
-	      <scope>test</scope>
-	    </dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>3.2.1.RELEASE</version>
+			<scope>test</scope>
+		</dependency>
 		<dependency>
-	      	<groupId>mysql</groupId>
-	      	<artifactId>mysql-connector-java</artifactId>
-	     	<version>5.1.22</version>
-    	</dependency>
-    	        
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.22</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.5.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.5.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>2.5.0</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.transaction</groupId>
+			<artifactId>jta</artifactId>
+			<version>1.1</version>
+		</dependency>
 	</dependencies>
-    <build>
-        <plugins>
-            <plugin>
-                <artifactId>maven-eclipse-plugin</artifactId>
-                <version>2.9</version>
-                <configuration>
-                    <additionalProjectnatures>
-                        <projectnature>org.springframework.ide.eclipse.core.springnature</projectnature>
-                    </additionalProjectnatures>
-                    <additionalBuildcommands>
-                        <buildcommand>org.springframework.ide.eclipse.core.springbuilder</buildcommand>
-                    </additionalBuildcommands>
-                    <downloadSources>true</downloadSources>
-                    <downloadJavadocs>true</downloadJavadocs>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.5.1</version>
-                <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
-                    <compilerArgument>-Xlint:all</compilerArgument>
-                    <showWarnings>true</showWarnings>
-                    <showDeprecation>true</showDeprecation>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <version>1.2.1</version>
-                <configuration>
-                    <mainClass>org.test.int1.Main</mainClass>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-eclipse-plugin</artifactId>
+				<version>2.9</version>
+				<configuration>
+					<additionalProjectnatures>
+						<projectnature>org.springframework.ide.eclipse.core.springnature</projectnature>
+					</additionalProjectnatures>
+					<additionalBuildcommands>
+						<buildcommand>org.springframework.ide.eclipse.core.springbuilder</buildcommand>
+					</additionalBuildcommands>
+					<downloadSources>true</downloadSources>
+					<downloadJavadocs>true</downloadJavadocs>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.5.1</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+					<compilerArgument>-Xlint:all</compilerArgument>
+					<showWarnings>true</showWarnings>
+					<showDeprecation>true</showDeprecation>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.2.1</version>
+				<configuration>
+					<mainClass>org.test.int1.Main</mainClass>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>

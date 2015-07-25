@@ -35,11 +35,11 @@
 		      <tr>
 		        <td>${e.getRiverID()}</td>
 		        <td>${e.getBasin()}</td>
-		        <td>${e.getWaterBone()}</td>
-		        <td>${e.getStream()}</td>
-		        <td>${e.getCatchment()}</td>
+		        <td>${e.getWaterSystem()}</td>
+		        <td>${e.getMidWatershed()}</td>
+		        <td>${e.getSubWatershed()}</td>
 		        <td>${e.getRiverName()}</td>
-		        <td>${e.getDivision()}</td>
+		        <td>${e.getClassification()}</td>
 		      </tr>
 		      </c:forEach>
 		    </tbody>

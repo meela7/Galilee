@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014. 12. 29 ???? 4:54:56 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="kr.ac.konkuk.naemp.dataentity.Variables" table="Variables">
+        <id name="VariableID" type="int">
+            <column name="VariableID" />
+            <generator class="assigned" />
+        </id>
+        <property name="UnitID" type="int">
+            <column name="UnitID" />
+        </property>
+        <property name="VariableName" type="java.lang.String">
+            <column name="VariableName" />
+        </property>
+        <property name="ValueType" type="java.lang.String">
+            <column name="ValueType" />
+        </property>
+        <property name="GeneralCategory" type="java.lang.String">
+            <column name="GeneralCategory" />
+        </property>
+        <property name="SampleMedium" type="java.lang.String">
+            <column name="SampleMedium" />
+        </property>
+        <property name="Speciation" type="java.lang.String">
+            <column name="Speciation" />
+        </property>
+        <property name="Description" type="java.lang.String">
+            <column name="Description" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014. 12. 29 ???? 9:40:08 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="kr.ac.konkuk.naemp.dataentity.Fishes" table="Fishes">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="Kingdom" type="java.lang.String">
+            <column name="KINGDOM" />
+        </property>
+        <property name="Phylum" type="java.lang.String">
+            <column name="PHYLUM" />
+        </property>
+        <property name="FishClass" type="java.lang.String">
+            <column name="CLASS" />
+        </property>
+        <property name="Order" type="java.lang.String">
+            <column name="ORDER" />
+        </property>
+        <property name="Family" type="java.lang.String">
+            <column name="FAMILY" />
+        </property>
+        <property name="ScientificName" type="java.lang.String" access="field">
+            <column name="SCIENTIFICNAME" />
+        </property>
+        <property name="Species" type="java.lang.String">
+            <column name="SPECIES" />
+        </property>
+        <property name="ToleranceGuild" type="java.lang.String" access="field">
+            <column name="TOLERANCEGUILD" />
+        </property>
+        <property name="TrophicGuild" type="java.lang.String">
+            <column name="TROPHICGUILD" />
+        </property>
+        <property name="HabitatGuild" type="java.lang.String">
+            <column name="HABITATGUILD" />
+        </property>
+        <property name="InvasiveSpecies" type="java.lang.String">
+            <column name="INVASIVESPECIES" />
+        </property>
+        <property name="Endangered" type="java.lang.String">
+            <column name="ENDANGERED" />
+        </property>
+        <property name="Monument" type="java.lang.String">
+            <column name="MONUMENT" />
+        </property>
+        <property name="OutLink" type="java.lang.String">
+            <column name="OUTLINK" />
+        </property>
+        <property name="Image" type="java.lang.String">
+            <column name="IMAGE" />
+        </property>
+        <property name="Movie" type="java.lang.String">
+            <column name="MOVIE" />
+        </property>
+        <property name="Description" type="java.lang.String">
+            <column name="DESCRIPTION" />
+        </property>
+    </class>
+</hibernate-mapping>

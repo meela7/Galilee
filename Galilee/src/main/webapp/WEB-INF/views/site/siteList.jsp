@@ -18,35 +18,36 @@
 		<div class="panel panel-default">
 		<div class="panel-heading">조사구간 리스트</div>
 		
-		
-		
 		<!-- Table -->
-		<table class="table">
+		<table class="table table-condensed">
 		    <thead>
-		      <tr>
-		        <th>SiteID</th>
-		        <th>SiteName</th>
-		        <th>RiverID</th>
-		        <th>StreamOrder</th>
-		        <th>StandardStructure</th>
-		        <th>Address</th>
+		      <tr class="success">
+		        <th>수계</th>
+		        <th>중권역</th>
+		        <th>하천명</th>
+		        <th>조사구간명</th>
+		        <th>하천구분</th>
+		        <th>하천차수</th>
 		      </tr>
 		    </thead>
 		    
 		    <tbody>
 			  <c:forEach var="e" items="${siteList}" >
 		      <tr>
-		        <td>${e.getSiteID()}</td>
-		        <td>${e.getSiteName()}</td>
-		        <td>${e.getRiver()}</td>
+		        <td>${e.getRiver().getWaterSystem()}</td>		        
+		        <td>${e.getRiver().getMidWatershed()}</td>
+		        <td>${e.getRiver().getRiverName()}</td>
+		        <td><a href="siteInfo?siteid=${e.getSiteID()}">${e.getSiteName()}</td>
+		        <td>${e.getRiver().getClassification()}</td>
 		        <td>${e.getStreamOrder()}</td>
-		        <td>${e.getStructure()}</td>
-		        <td>${e.getAddress()}</td>
 		      </tr>
 		      </c:forEach>
 		    </tbody>
 		</table>
 		</div>
-
+		<ul class="pager">
+		  <li class="previous"><a href="#">Previous</a></li>
+		  <li class="next"><a href="#">Next</a></li>
+		</ul>
 	</body>
 </html>
