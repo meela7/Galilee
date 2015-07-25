@@ -22,7 +22,7 @@ public class Fishes {
 	private String ToleranceGuild;
 	private String TrophicGuild;
 	private String HabitatGuild;
-	private String ExoticSpecies;
+	private String InvasiveSpecies;
 	private String EndangeredSpecies;
 	private String NatureMonument;
 	private String ImageLink;
@@ -90,11 +90,11 @@ public class Fishes {
 	public void setHabitatGuild(String habitatGuild) {
 		HabitatGuild = habitatGuild;
 	}
-	public String getExoticSpecies() {
-		return ExoticSpecies;
+	public String getInvasiveSpecies() {
+		return InvasiveSpecies;
 	}
-	public void setExoticSpecies(String exoticSpecies) {
-		ExoticSpecies = exoticSpecies;
+	public void setInvasiveSpecies(String invasiveSpecies) {
+		InvasiveSpecies = invasiveSpecies;
 	}
 	public String getEndangeredSpecies() {
 		return EndangeredSpecies;
@@ -128,7 +128,7 @@ public class Fishes {
 				+ ", ScientificName=" + ScientificName + ", Species=" + Species
 				+ ", ToleranceGuild=" + ToleranceGuild + ", TrophicGuild="
 				+ TrophicGuild + ", HabitatGuild=" + HabitatGuild
-				+ ", ExoticSpecies=" + ExoticSpecies + ", EndangeredSpecies="
+				+ ", InvasiveSpecies=" + InvasiveSpecies + ", EndangeredSpecies="
 				+ EndangeredSpecies + ", NatureMonument=" + NatureMonument
 				+ ", ImageLink=" + ImageLink + ", Description=" + Description
 				+ "]";

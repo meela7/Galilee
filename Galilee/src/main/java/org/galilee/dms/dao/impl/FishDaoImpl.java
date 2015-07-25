@@ -5,7 +5,6 @@ import java.util.List;
 
 import javax.transaction.Transactional;
 
-import org.galilee.dms.model.Taxon;
 import org.galilee.dms.model.Fishes;
 import org.hibernate.Query;
 import org.hibernate.Session;

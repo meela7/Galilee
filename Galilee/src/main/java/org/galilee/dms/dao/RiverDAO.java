@@ -5,15 +5,11 @@ import java.util.List;
 
 import javax.transaction.Transactional;
 
-import org.galilee.dms.model.Basin;
 import org.galilee.dms.model.Rivers;
-import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import org.hibernate.criterion.ProjectionList;
-import org.hibernate.criterion.Projections;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -89,23 +85,6 @@ public class RiverDAO {
 				"select distinct SubWatershed from Rivers where WaterSystem = '" + ws +"' ").list();
 		logger.info("SUBWS:{},Result#:{}", ws, subWS.size());
 		return subWS;
-	}
-	
-	@SuppressWarnings("unchecked")
-	public List<Basin> getTaxom() {
-		Session session = sessionFactory.openSession();
-//		Criteria cr = session.createCriteria(Rivers.class);
-//		ProjectionList proList = Projections.projectionList();
-//		proList.add(Projections.property("Basin"));
-//		proList.add(Projections.property("WaterSystem"));
-//		proList.add(Projections.property("MidWatershed"));
-//		proList.add(Projections.property("SubWatershed"));
-//		cr.setProjection(proList);
-//		List<RiverTaxom> rt = cr.list();
-		List<Basin> rt = session.createSQLQuery(
-				"select Basin, WaterSystem, MidWatershed,SubWatershed, RiverName from Rivers").list();
-		logger.info("Result#:{}", rt.size());
-		return rt;
 	}
 
 	/*

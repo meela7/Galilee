@@ -1,19 +1,19 @@
 package org.galilee.dms.dao;
 
-import java.io.Serializable;  
-import java.util.List;  
+import java.io.Serializable;
+import java.util.List;
 
-import javax.transaction.Transactional;  
+import javax.transaction.Transactional;
 
+import org.galilee.dms.model.*;
 import org.galilee.dms.model.Sites;
 import org.hibernate.Query;
-import org.hibernate.Session;  
-import org.hibernate.SessionFactory;  
-import org.hibernate.Transaction;  
-import org.springframework.beans.factory.annotation.Autowired;  
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@Service("siteDao")
 public class SiteDAO {
   
  SessionFactory sessionFactory;
@@ -34,7 +34,6 @@ public class SiteDAO {
   return (Integer) id;  
  }  
   
-
  public List<Sites> getList() {  
   Session session = sessionFactory.openSession();  
   @SuppressWarnings("unchecked")
@@ -43,9 +42,12 @@ List<Sites> siteList = session.createQuery("from Sites").list();
   session.close();  
   return siteList;  
  }  
- /*
- * http://docs.jboss.org/hibernate/orm/3.3/reference/ko-KR/html/queryhql.html
- */
+
+ public List<List> getBasin(){
+	Session session = sessionFactory.openSession();
+	List<List> basins = session.createSQLQuery("Select s.River.Basin, s.River.WaterSystem, s.River.MidWatershed, s.River.SubWatershed, s.River.RiverName, s.SiteName from Sites as s").list();
+	return basins;
+ }
  
  public Sites getSite(int siteid) {  
 	 Session session = sessionFactory.openSession();  

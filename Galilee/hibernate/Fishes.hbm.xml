@@ -1,19 +1,13 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<!-- Generated 2014. 12. 29 ???? 9:40:08 by Hibernate Tools 3.4.0.CR1 -->
+<!-- Generated 2015. 07. 25 18:40:08 by meela -->
 <hibernate-mapping>
-    <class name="kr.ac.konkuk.naemp.dataentity.Fishes" table="Fishes">
-        <id name="id" type="int">
-            <column name="ID" />
+    <class name="org.galilee.dms.model.Fishes" table="Fishes">
+        <id name="FishId" type="int">
+            <column name="FISHID" />
             <generator class="assigned" />
         </id>
-        <property name="Kingdom" type="java.lang.String">
-            <column name="KINGDOM" />
-        </property>
-        <property name="Phylum" type="java.lang.String">
-            <column name="PHYLUM" />
-        </property>
         <property name="FishClass" type="java.lang.String">
             <column name="CLASS" />
         </property>
@@ -38,23 +32,17 @@
         <property name="HabitatGuild" type="java.lang.String">
             <column name="HABITATGUILD" />
         </property>
-        <property name="InvasiveSpecies" type="java.lang.String">
+        <property name="InvesiveSpecies" type="java.lang.String">
             <column name="INVASIVESPECIES" />
         </property>
         <property name="Endangered" type="java.lang.String">
             <column name="ENDANGERED" />
         </property>
-        <property name="Monument" type="java.lang.String">
-            <column name="MONUMENT" />
+        <property name="NatureMonument" type="java.lang.String">
+            <column name="NATUREMONUMENT" />
         </property>
-        <property name="OutLink" type="java.lang.String">
-            <column name="OUTLINK" />
-        </property>
-        <property name="Image" type="java.lang.String">
-            <column name="IMAGE" />
-        </property>
-        <property name="Movie" type="java.lang.String">
-            <column name="MOVIE" />
+        <property name="ImageLink" type="java.lang.String">
+            <column name="IMAGELINK" />
         </property>
         <property name="Description" type="java.lang.String">
             <column name="DESCRIPTION" />

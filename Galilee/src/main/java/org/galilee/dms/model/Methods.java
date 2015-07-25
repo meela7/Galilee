@@ -15,7 +15,6 @@ public class Methods {
 	private int MethodID ;
 	
 	private String Method;
-	private String Tool;
 	private String MethodLink;
 	private String Description;
 	public int getMethodID() {
@@ -29,12 +28,6 @@ public class Methods {
 	}
 	public void setMethod(String method) {
 		Method = method;
-	}
-	public String getTool() {
-		return Tool;
-	}
-	public void setTool(String tool) {
-		Tool = tool;
 	}
 	public String getMethodLink() {
 		return MethodLink;
@@ -51,7 +44,7 @@ public class Methods {
 	@Override
 	public String toString() {
 		return "Methods [MethodID=" + MethodID + ", Method=" + Method
-				+ ", Tool=" + Tool + ", MethodLink=" + MethodLink + "]";
+				+ ", MethodLink=" + MethodLink + "]";
 	}
 	
 }

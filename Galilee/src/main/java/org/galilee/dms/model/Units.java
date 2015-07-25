@@ -14,15 +14,8 @@ public class Units {
 	@Column(name="UnitID")
 	@GeneratedValue
 	private int UnitID ;	
-	
-	@Column(name="UnitName")
 	private String UnitName;
-	
-	@Column(name="UnitType")
-	private String UnitType;
-	
-	@Column(name="UnitAbbreviation")
-	private String UnitAbbreviation;
+	private String UnitNameLong;
 	
 	public Units() {}
 	
@@ -43,26 +36,19 @@ public class Units {
 	public void setUnitName(String unitName) {
 		UnitName = unitName;
 	}
-	public String getUnitType() {
-		return UnitType;
+
+	public String getUnitNameLong() {
+		return UnitNameLong;
 	}
-	public void setUnitType(String unitType) {
-		UnitType = unitType;
+
+	public void setUnitNameLong(String unitNameLong) {
+		UnitNameLong = unitNameLong;
 	}
-	public String getUnitAbbreviation() {
-		return UnitAbbreviation;
-	}
-	public void setUnitAbbreviation(String unitAbbreviation) {
-		UnitAbbreviation = unitAbbreviation;
-	}
+
 	@Override
 	public String toString() {
-		return "<Units> "
-				+ "<UnitID>" + UnitID + "</UnitID>" 
-				+ "<UnitName>" + UnitName + "</UnitName>"
-				+ "<UnitType>" + UnitType + "</UnitType>"
-				+ "<UnitAbbreviation>" + UnitAbbreviation + "</UnitAbbreviation>"
-				+ "</Units>";
+		return "Units [UnitID=" + UnitID + ", UnitName=" + UnitName
+				+ ", UnitNameLong=" + UnitNameLong + "]";
 	}
 	
 }

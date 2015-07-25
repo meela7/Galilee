@@ -31,16 +31,6 @@ public class DataValues {
 	
 	@JoinColumn(name="VariableID")
 	private Variables Variable;
-	
-	@JoinColumn(name="OffsetTypeID")
-	private OffsetTypes OffsetType;
-	private double OffsetValue;
-	
-	@JoinColumn(name="SampleID")
-	private Samples Sample;
-	
-	@JoinColumn(name="DerivedFromID")
-	private int DerivedFrom;	
 
 	public int getValueID() {
 		return ValueID;
@@ -66,8 +56,6 @@ public class DataValues {
 		DateTime = dateTime;
 	}
 
-	@ManyToOne
-    @JoinColumn(name = "SiteID")
 	public Sites getSite() {
 		return Site;
 	}
@@ -108,37 +96,6 @@ public class DataValues {
 		Variable = variable;
 	}
 
-	public OffsetTypes getOffsetType() {
-		return OffsetType;
-	}
-
-	public void setOffsetType(OffsetTypes offsetType) {
-		OffsetType = offsetType;
-	}
-
-	public double getOffsetValue() {
-		return OffsetValue;
-	}
-
-	public void setOffsetValue(double offsetValue) {
-		OffsetValue = offsetValue;
-	}
-
-	public Samples getSample() {
-		return Sample;
-	}
-
-	public void setSample(Samples sample) {
-		Sample = sample;
-	}
-
-	public int getDerivedFrom() {
-		return DerivedFrom;
-	}
-
-	public void setDerivedFrom(int derivedFrom) {
-		DerivedFrom = derivedFrom;
-	}
 
 	public String getDescription() {
 		return Description;
@@ -150,19 +107,6 @@ public class DataValues {
 
 	private String Description;
 
-
-
-	@Override
-	public String toString() {
-		return "DataValues [ValueID=" + ValueID + ", DataValue=" + DataValue
-				+ ", DateTime=" + DateTime + ", Site=" + Site + ", Latitude="
-				+ Latitude + ", Longitude=" + Longitude + ", Source=" + Source
-				+ ", Variable=" + Variable + ", OffsetType=" + OffsetType
-				+ ", OffsetValue=" + OffsetValue + ", Sample=" + Sample
-				+ ", DerivedFrom=" + DerivedFrom + ", Description="
-				+ Description + "]";
-	}
-
 	public Features getFeature() {
 		return Feature;
 	}
@@ -170,4 +114,15 @@ public class DataValues {
 	public void setFeature(Features feature) {
 		Feature = feature;
 	}
+
+	@Override
+	public String toString() {
+		return "DataValues [ValueID=" + ValueID + ", DataValue=" + DataValue
+				+ ", DateTime=" + DateTime + ", Site=" + Site + ", Latitude="
+				+ Latitude + ", Longitude=" + Longitude + ", Source=" + Source
+				+ ", Feature=" + Feature + ", Variable=" + Variable
+				+ ", Description=" + Description + "]";
+	}
+	
+	
 }

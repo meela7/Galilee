@@ -43,4 +43,9 @@ public class Features {
 		FeatureType = featureType;
 	}
 
+	@Override
+	public String toString() {
+		return "Features [FeatureID=" + FeatureID + ", FeatureType="
+				+ FeatureType + ", FeatureName=" + FeatureName + "]";
+	}	
 }

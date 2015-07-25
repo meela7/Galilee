@@ -1,18 +1,6 @@
 package org.galilee.dms.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
-
-@Entity
-@Table(name = "Sites")
 public class Sites {
-	
-	public Sites(){}
 
 	private int SiteID;	
 	private String SiteName;
@@ -27,9 +15,10 @@ public class Sites {
 	private String Image;
 	private String Description;
 	
-	@Id
-	@GeneratedValue
-	@Column (name = "SiteID")
+	public Sites(){
+		
+	}
+	
 	public int getSiteID() {
 		return SiteID;
 	}
@@ -44,8 +33,6 @@ public class Sites {
 		this.SiteName = siteName;
 	}
 	
-	@ManyToOne
-    @JoinColumn(name = "RiverID")
 	public Rivers getRiver() {
 		return this.river;
 	}
@@ -106,5 +93,13 @@ public class Sites {
 	public void setDescription(String description) {
 		this.Description = description;
 	}
-	
+	@Override
+	public String toString() {
+		return "Sites [SiteID=" + SiteID + ", SiteName=" + SiteName
+				+ ", river=" + river + ", Latitude=" + Latitude
+				+ ", Longitude=" + Longitude + ", StreamOrder=" + StreamOrder
+				+ ", StreamGrade=" + StreamGrade + ", Address=" + Address
+				+ ", StandardStructure=" + StandardStructure + ", WQMN=" + WQMN
+				+ ", Image=" + Image + ", Description=" + Description + "]";
+	}
 }

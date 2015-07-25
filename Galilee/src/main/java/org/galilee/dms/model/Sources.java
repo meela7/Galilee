@@ -1,17 +1,10 @@
 package org.galilee.dms.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import java.io.Serializable;
 
-@Entity
-@Table (name="Sources")
-public class Sources {
-	@Id
-	@GeneratedValue
-	@Column (name="SourceID")
+public class Sources implements Serializable{
+	
+	private static final long SerialVersionUID = 1L;  
 	private int SourceID;
 	
 	private String Organization;
