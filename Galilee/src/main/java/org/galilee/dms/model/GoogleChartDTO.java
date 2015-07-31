@@ -69,6 +69,7 @@ public class GoogleChartDTO {
 		addCell(rowCount, value, null);
 	}
 	
+	@SuppressWarnings("unchecked")
 	public void addCell(int rowCount, Object value, String format){
 		HashMap<String, Object> row = this.rows.get(rowCount);
 		List<HashMap<String, Object>> cells = (List<HashMap<String, Object>>)row.get("c");

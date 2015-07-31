@@ -1,49 +1,15 @@
 package org.galilee.dms.service;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import org.galilee.dms.dao.SiteDAO;
 import org.galilee.dms.model.Sites;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
-@Service("siteService")
-public class SiteService {
-	SiteDAO siteDao; 
+public interface SiteService {	
 	
-	@Autowired  
-	public SiteService(SiteDAO siteDao) {
-		this.siteDao = siteDao;
-	}
+	public Sites add(Sites site);
+	public Sites update(Sites site);	
+	public void delete(int siteID);
+	public Sites findByID(int siteID);
+	public List<Sites> findAll();
 	
-	public int insertSite(Sites site) {
-		return siteDao.insertSite(site);  
-	}
-
-	public List<Sites> getList() {
-		return siteDao.getList();  
-	}
-	
-	public List<Sites> getListByBasin(String basin) {
-		List<Sites> sites = siteDao.getList();
-		List<Sites> res = new ArrayList<Sites>();
-		for(Sites site:sites){
-			if(site.getRiver().getBasin().equals(basin))
-				res.add(site);
-		}
-		return res;
-	}
-
-	public int deleteSite(int siteid) {
-		return siteDao.deleteSite(siteid);  
-	}
-
-	public Sites getSite(int siteid) {
-		return siteDao.getSite(siteid);  
-	}
-
-	public int updateSite(Sites site) {
-		return siteDao.updateSite(site);  
-	}
 }

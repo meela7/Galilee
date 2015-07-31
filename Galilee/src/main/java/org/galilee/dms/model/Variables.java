@@ -1,19 +1,7 @@
 package org.galilee.dms.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.Table;
-
-@Entity
-@Table(name = "Variables")
 public class Variables {
 
-	@Id 
-	@Column(name="VariableID")
-	@GeneratedValue
 	private int VariableID;
 	private VariableNameCV VariableName;
 	private Units Unit;	

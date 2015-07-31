@@ -1,18 +1,7 @@
 package org.galilee.dms.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-@Entity
-@Table(name = "Units")
 public class Units {
 
-	@Id 
-	@Column(name="UnitID")
-	@GeneratedValue
 	private int UnitID ;	
 	private String UnitName;
 	private String UnitNameLong;

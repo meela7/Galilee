@@ -1,18 +1,7 @@
 package org.galilee.dms.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-@Entity
-@Table(name = "Features")
 public class Features {
-	
-	@Id 
-	@Column(name="FeatureID")
-	@GeneratedValue
+
 	private int FeatureID;
 	private int FeatureType;
 	private String FeatureName;

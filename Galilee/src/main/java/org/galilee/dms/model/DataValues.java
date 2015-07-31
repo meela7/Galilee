@@ -1,35 +1,17 @@
 package org.galilee.dms.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
+import org.galilee.dms.model.Sites;
 
-@Entity
-@Table (name="DataValues")
 public class DataValues {
-	@Id
-	@GeneratedValue
-	@Column (name="ValueID")
-	private int ValueID;
-	
+
+	private int ValueID;	
 	private double DataValue;
 	private String DateTime;
-	private Sites Site;
-	
+	private Sites Site;	
 	private String Latitude;
-	private String Longitude;
-	
-	@JoinColumn(name="SourceID")
+	private String Longitude;	
 	private Sources Source;
-	
-	@JoinColumn(name="FeatureID")
 	private Features Feature;
-	
-	@JoinColumn(name="VariableID")
 	private Variables Variable;
 
 	public int getValueID() {
@@ -123,6 +105,5 @@ public class DataValues {
 				+ ", Feature=" + Feature + ", Variable=" + Variable
 				+ ", Description=" + Description + "]";
 	}
-	
 	
 }

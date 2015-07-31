@@ -1,24 +1,17 @@
 package org.galilee.dms.model;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.io.Serializable;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
-
-@Entity
-@Table(name = "Rivers")
-public class Rivers {
+public class Rivers implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public Rivers(){}
 	
-	private int riverID;
+	private int RiverID;
 	private String RiverName;
 	private String Basin;
 	private String WaterSystem;
@@ -27,17 +20,12 @@ public class Rivers {
 	private String Classification;
 	private String Image;
 	private String Description;
-	 
-	private List<Sites> sites = new ArrayList<Sites>();
 
-	@Id
-	@GeneratedValue
-	@Column (name = "RiverID")
 	public int getRiverID() {
-		return riverID;
+		return RiverID;
 	}
 	public void setRiverID(int rid) {
-		this.riverID = rid;
+		this.RiverID = rid;
 	}
 	
 	public String getRiverName() {
@@ -96,12 +84,5 @@ public class Rivers {
 	public void setDescription(String description) {
 		this.Description = description;
 	}
-	
-	@OneToMany(mappedBy = "river")
-	public List<Sites> getSites(){
-		return sites;
-	}
-	public void setSites(List<Sites> sites){
-		this.sites = sites;
-	}
+
 }

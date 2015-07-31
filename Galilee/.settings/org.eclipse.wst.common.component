@@ -4,11 +4,11 @@
 		<wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
 		<wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
 		<wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/hibernate"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/webapp/resources/spring/config"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources/spring"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources/spring/database"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources/spring/database/properties"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources/hibernate"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources/database"/>
 		<property name="java-output-path" value="target/classes"/>
         <property name="context-root" value="dms"/>
 	</wb-module>
