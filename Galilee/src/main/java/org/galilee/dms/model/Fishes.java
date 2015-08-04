@@ -1,38 +1,27 @@
 package org.galilee.dms.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-@Entity
-@Table (name="Fishes")
 public class Fishes {
 	
-	@Id
-	@GeneratedValue
 	private int FishID;
-
 	private String FishClass;
 	private String Order;
 	private String Family;
 	private String ScientificName;
 	private String Species;
-	private String ToleranceGuild;
-	private String TrophicGuild;
-	private String HabitatGuild;
+	private FishCharacterCV ToleranceGuild;
+	private FishCharacterCV TrophicGuild;
+	private FishCharacterCV HabitatGuild;
 	private String InvasiveSpecies;
 	private String EndangeredSpecies;
-	private String NatureMonument;
+	private String NaturalMonument;
 	private String ImageLink;
 	private String Description;
+	private Features Feature;
 	
 	public Fishes(){
 		
 	}
-	
-	@Column (name = "Class")
+
 	public int getFishID() {
 		return FishID;
 	}
@@ -72,22 +61,22 @@ public class Fishes {
 	public void setSpecies(String species) {
 		Species = species;
 	}
-	public String getToleranceGuild() {
+	public FishCharacterCV getToleranceGuild() {
 		return ToleranceGuild;
 	}
-	public void setToleranceGuild(String toleranceGuild) {
+	public void setToleranceGuild(FishCharacterCV toleranceGuild) {
 		ToleranceGuild = toleranceGuild;
 	}
-	public String getTrophicGuild() {
+	public FishCharacterCV getTrophicGuild() {
 		return TrophicGuild;
 	}
-	public void setTrophicGuild(String trophicGuild) {
+	public void setTrophicGuild(FishCharacterCV trophicGuild) {
 		TrophicGuild = trophicGuild;
 	}
-	public String getHabitatGuild() {
+	public FishCharacterCV getHabitatGuild() {
 		return HabitatGuild;
 	}
-	public void setHabitatGuild(String habitatGuild) {
+	public void setHabitatGuild(FishCharacterCV habitatGuild) {
 		HabitatGuild = habitatGuild;
 	}
 	public String getInvasiveSpecies() {
@@ -102,11 +91,11 @@ public class Fishes {
 	public void setEndangeredSpecies(String endangeredSpecies) {
 		EndangeredSpecies = endangeredSpecies;
 	}
-	public String getNatureMonument() {
-		return NatureMonument;
+	public String getNaturalMonument() {
+		return NaturalMonument;
 	}
-	public void setNatureMonument(String natureMonument) {
-		NatureMonument = natureMonument;
+	public void setNaturalMonument(String natureMonument) {
+		NaturalMonument = natureMonument;
 	}
 	public String getImageLink() {
 		return ImageLink;
@@ -120,17 +109,13 @@ public class Fishes {
 	public void setDescription(String description) {
 		Description = description;
 	}
-	
-	@Override
-	public String toString() {
-		return "Fishes [FishID=" + FishID + ", FishClass=" + FishClass
-				+ ", Order=" + Order + ", Family=" + Family
-				+ ", ScientificName=" + ScientificName + ", Species=" + Species
-				+ ", ToleranceGuild=" + ToleranceGuild + ", TrophicGuild="
-				+ TrophicGuild + ", HabitatGuild=" + HabitatGuild
-				+ ", InvasiveSpecies=" + InvasiveSpecies + ", EndangeredSpecies="
-				+ EndangeredSpecies + ", NatureMonument=" + NatureMonument
-				+ ", ImageLink=" + ImageLink + ", Description=" + Description
-				+ "]";
+
+	public Features getFeature() {
+		return Feature;
 	}
+
+	public void setFeature(Features feature) {
+		Feature = feature;
+	}	
+	
 }

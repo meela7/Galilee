@@ -1,9 +1,16 @@
 package org.galilee.dms.model;
 
-public class Features {
+import java.io.Serializable;
 
+public class Features implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
 	private int FeatureID;
-	private int FeatureType;
+	private String FeatureType;
 	private String FeatureName;
 	
 	public Features(){}
@@ -24,17 +31,11 @@ public class Features {
 		FeatureName = featureName;
 	}
 
-	public int getFeatureType() {
+	public String getFeatureType() {
 		return FeatureType;
 	}
 
-	public void setFeatureType(int featureType) {
+	public void setFeatureType(String featureType) {
 		FeatureType = featureType;
 	}
-
-	@Override
-	public String toString() {
-		return "Features [FeatureID=" + FeatureID + ", FeatureType="
-				+ FeatureType + ", FeatureName=" + FeatureName + "]";
-	}	
 }

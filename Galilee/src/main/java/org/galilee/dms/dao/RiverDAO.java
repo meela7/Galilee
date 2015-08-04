@@ -6,9 +6,10 @@ import org.galilee.dms.model.Rivers;
 
 public interface RiverDAO {
 	
-	void create(Rivers river);
-	List<Rivers> read();
-	void update(Rivers river);
-	void delete(Rivers river);
-	Rivers getByID(int riverID);
+	public void insert(Rivers river);
+	public void update(Rivers river);
+	public void delete(Rivers river);
+	public Rivers selectByID(int riverID);
+	public List<Rivers> selectAll();
+
 }

@@ -1,8 +1,5 @@
 package org.galilee.dms.model;
 
-
-
-
 public class Sites {
 	
 	private int SiteID;

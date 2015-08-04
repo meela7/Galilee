@@ -6,10 +6,11 @@ import org.galilee.dms.model.Sites;
 
 public interface SiteService {	
 	
-	public Sites add(Sites site);
-	public Sites update(Sites site);	
+	public void add(Sites site);
+	public void update(Sites site);	
 	public void delete(int siteID);
 	public Sites findByID(int siteID);
 	public List<Sites> findAll();
+	public List<Sites> findByRiverID(List<Integer> rivers);
 	
 }

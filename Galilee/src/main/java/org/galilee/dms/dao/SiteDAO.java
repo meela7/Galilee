@@ -11,5 +11,6 @@ public interface SiteDAO {
 	public void delete(Sites site);
 	public Sites selectByID(int siteID);
 	public List<Sites> selectAll();
+	public List<Sites> selectByRiverID(List<Integer> riverIDs);
 	
 }

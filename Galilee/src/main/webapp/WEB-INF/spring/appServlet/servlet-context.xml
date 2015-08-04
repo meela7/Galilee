@@ -19,19 +19,10 @@
 
 	<!-- Enables the Spring MVC @Controller programming model -->
 	<mvc:annotation-driven />
-	<!-- 
-		<mvc:message-converters>
-			<beans:bean
-				class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
-				<beans:property name="objectMapper">
-					<beans:bean
-						class="com.pastelstudios.json.HibernateAwareObjectMapper" />
-				</beans:property>
-			</beans:bean>
-		</mvc:message-converters>
-	</mvc:annotation-driven>
- -->
- 
+	<!-- <mvc:message-converters> <beans:bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"> 
+		<beans:property name="objectMapper"> <beans:bean class="com.pastelstudios.json.HibernateAwareObjectMapper" 
+		/> </beans:property> </beans:bean> </mvc:message-converters> </mvc:annotation-driven> -->
+
 	<mvc:resources mapping="/resources/**" location="/resources/"></mvc:resources>
 
 	<!-- Handles HTTP GET requests for /resources/** by efficiently serving 
@@ -100,6 +91,7 @@
 		<beans:property name="riverDao" ref="riverDao" />
 	</beans:bean>
 
+	<!-- Sites -->
 	<beans:bean id="siteDao" class="org.galilee.dms.dao.impl.SiteDAOImpl">
 		<beans:constructor-arg>
 			<beans:ref bean="sessionFactory" />
@@ -111,6 +103,31 @@
 		<beans:property name="siteDao" ref="siteDao" />
 	</beans:bean>
 
+	<!-- Features -->
+	<beans:bean id="featureDao" class="org.galilee.dms.dao.impl.FeatureDAOImpl">
+		<beans:constructor-arg>
+			<beans:ref bean="sessionFactory" />
+		</beans:constructor-arg>
+	</beans:bean>
+
+	<beans:bean id="featureService"
+		class="org.galilee.dms.service.impl.FeatureServiceImpl">
+		<beans:property name="featureDao" ref="featureDao" />
+	</beans:bean>
+	
+	<!-- Fishes -->
+	<beans:bean id="fishDao" class="org.galilee.dms.dao.impl.FishDAOImpl">
+		<beans:constructor-arg>
+			<beans:ref bean="sessionFactory" />
+		</beans:constructor-arg>
+	</beans:bean>
+
+	<beans:bean id="fishService"
+		class="org.galilee.dms.service.impl.FishServiceImpl">
+		<beans:property name="fishDao" ref="fishDao" />
+	</beans:bean>
+	
+	
 	<!-- Configure to plugin JSON as request and response in method handler -->
 	<beans:bean
 		class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
