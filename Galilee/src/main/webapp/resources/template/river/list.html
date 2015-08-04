@@ -1,0 +1,62 @@
+<div class="panel panel-primary">
+	<div class="panel-heading">River List</div>
+	<div class="panel-body">
+		<div class="form-group">
+			<label for="basinSearch">Basin:</label> <input type="text"
+				ng-model="search.waterSystem" placeholder="수계 "> <label
+				for="classSearch">Classification:</label> <input type="text"
+				ng-model="search.classification" placeholder="하천구분">
+			<button type="button" ng-click="findSiteByRiver(filteredRivers)"
+				class="btn btn-info btn-sm">
+				<span class="glyphicon glyphicon-search"></span> Search Site
+			</button>
+		</div>
+		<table class="table table-hover">
+			<thead>
+				<tr class="paginationclass">
+					<th>RiverID</th>
+					<th>Basin</th>
+					<th>WaterSystem</th>
+					<th>Mid-Watershed</th>
+					<th>Sub-Watershed</th>
+					<th>RiverName</th>
+					<th>Classification</th>
+
+					<th colspan="2">
+						<button ng-click="createRiver()" class="btn btn-sm btn-info">
+							<span class="glyphicon glyphicon-plus"></span> Add New River
+						</button>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="paginationclass"
+					ng-repeat="river in searchResult = (rivers | filter:search) | pagination: (currentPage-1) * numPerPage | limitTo: numPerPage">
+					<td>{{ river.riverID }}</td>
+					<td>{{ river.basin }}</td>
+					<td>{{ river.waterSystem }}</td>
+					<td>{{ river.midWatershed }}</td>
+					<td>{{ river.subWatershed }}</td>
+					<td>{{ river.riverName }}</td>
+					<td>{{ river.classification }}</td>
+					<td><button type="button" ng-click="editRiver(river.riverID)"
+							class="btn btn-sm btn-primary">
+							<span class="glyphicon glyphicon-edit"></span> Edit
+						</button></td>
+					<td><button type="button"
+							ng-click="deleteRiver(river.riverID)"
+							class="btn btn-sm btn-warning">
+							<span class="glyphicon glyphicon-trash"></span> Delete
+						</button></td>
+
+				</tr>
+			</tbody>
+		</table>
+		<p ng-hide="searchResult">There is no result</p>
+		<div align="center">
+			<pagination ng-model="currentPage" total-items="rivers.length"
+				max-size="maxSize" items-per-page="numPerPage" boundary-links="true">
+			</pagination>
+		</div>
+	</div>
+</div>

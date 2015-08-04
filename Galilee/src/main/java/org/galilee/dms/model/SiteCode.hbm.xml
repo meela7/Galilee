@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015. 7. 25 ???? 7:04:35 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="org.galilee.dms.model.SiteCode" table="SITECODE">
+        <id name="SiteCodeID" type="int">
+            <column name="SITECODEID" />
+            <generator class="assigned" />
+        </id>
+        <property name="SiteCode" type="java.lang.String">
+            <column name="SITECODE" />
+        </property>
+        <many-to-one name="Site" class="org.galilee.dms.model.Sites" fetch="join">
+            <column name="SITE" />
+        </many-to-one>
+        <property name="SurveyYear" type="int">
+            <column name="SURVEYYEAR" />
+        </property>
+        <property name="SurveyTerm" type="int">
+            <column name="SURVEYTERM" />
+        </property>
+    </class>
+</hibernate-mapping>

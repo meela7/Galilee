@@ -1,0 +1,53 @@
+<div class="panel panel-primary">
+	<div class="panel-heading">Create New Source</div>
+	<div class="panel-body">
+		<form novalidate="novalidate" class="form-horizontal">
+			<div class="form-group">
+				<label for="siteName" class="col-sm-2 control-label">SiteName:</label>
+				<div class="col-sm-10">
+					<input type="text" ng-model="site.siteName" class="form-control"
+						id="siteName" placeholder="" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="basin" class="col-sm-2 control-label">Basin:</label>
+				<div class="col-sm-10">
+					<input type="text" ng-model="site.river.basin" class="form-control"
+						id="basin" placeholder="Select a River from list." />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="riverName" class="col-sm-2 control-label">RiverName:</label>
+				<div class="col-sm-10">
+					<input type="text" ng-model="site.river.riverName"
+						class="form-control" id="riverName" placeholder="" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="streamOrder" class="col-sm-2 control-label">StreamOrder:</label>
+				<div class="col-sm-10">
+					<input type="text" ng-model="site.streamOrder" class="form-control"
+						id="streamOrder" placeholder="" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="classification" class="col-sm-2 control-label">Classification:</label>
+				<div class="col-sm-10">
+					<input type="text" ng-model="site.river.classification"
+						class="form-control" id="classification" placeholder="" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="address" class="col-sm-2 control-label">Address:</label>
+				<div class="col-sm-10">
+					<input type="text" ng-model="site.address" class="form-control"
+						id="address" placeholder="" />
+				</div>
+			</div>
+			<div class="btn-group btn-md pull-right">
+				<button type="button" ng-click="createSite()" class="btn btn-primary ">Create</button>
+				<button type="button" ng-click="cancel()" class="btn btn-warning">Cancel</button>
+			</div>
+		</form>
+	</div>
+</div>

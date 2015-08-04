@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015. 7. 26 ???? 6:05:54 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="org.galilee.dms.model.DataValues" table="DATAVALUES">
+        <id name="ValueID" type="int">
+            <column name="VALUEID" />
+            <generator class="assigned" />
+        </id>
+        <property name="DataValue" type="double">
+            <column name="DATAVALUE" />
+        </property>
+        <property name="DateTime" type="java.lang.String">
+            <column name="DATETIME" />
+        </property>
+        <many-to-one name="Site" class="org.galilee.dms.model.Sites" fetch="join">
+            <column name="SITE" />
+        </many-to-one>
+        <property name="Latitude" type="java.lang.String">
+            <column name="LATITUDE" />
+        </property>
+        <property name="Longitude" type="java.lang.String">
+            <column name="LONGITUDE" />
+        </property>
+        <many-to-one name="Source" class="org.galilee.dms.model.Sources" fetch="join">
+            <column name="SOURCE" />
+        </many-to-one>
+        <many-to-one name="Feature" class="org.galilee.dms.model.Features" fetch="join">
+            <column name="FEATURE" />
+        </many-to-one>
+        <many-to-one name="Variable" class="org.galilee.dms.model.Variables" fetch="join">
+            <column name="VARIABLE" />
+        </many-to-one>
+        <property name="Description" type="java.lang.String">
+            <column name="DESCRIPTION" />
+        </property>
+    </class>
+</hibernate-mapping>
