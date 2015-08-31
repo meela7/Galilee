@@ -50,7 +50,7 @@ public class SourceController {
 	
 	@RequestMapping(value="/source/delete", method=RequestMethod.POST)
 	public void delete(@RequestBody int sourceID){
-		sourceService.delete(sourceID);
+		this.sourceService.delete(sourceID);
 		logger.info("delete() proces has been called.");
 	}
 }

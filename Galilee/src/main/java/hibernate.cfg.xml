@@ -11,5 +11,12 @@
 		<mapping resource="org/galilee/dms/model/Features.hbm.xml" />
 		<mapping resource="org/galilee/dms/model/Fishes.hbm.xml" />
 		<mapping resource="org/galilee/dms/model/FishCharacterCV.hbm.xml" />
+		<mapping resource="org/galilee/dms/model/Variables.hbm.xml" />
+		<mapping resource="org/galilee/dms/model/Units.hbm.xml" />
+		<mapping resource="org/galilee/dms/model/VariableNameCV.hbm.xml" />
+		<mapping resource="org/galilee/dms/model/ValueTypeCV.hbm.xml" />
+		<mapping resource="org/galilee/dms/model/Methods.hbm.xml" />
+		<mapping resource="org/galilee/dms/model/SiteCode.hbm.xml" />
+		<mapping resource="org/galilee/dms/model/DataValues.hbm.xml" />
 	</session-factory>
 </hibernate-configuration>

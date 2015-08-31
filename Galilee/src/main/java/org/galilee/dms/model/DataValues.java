@@ -1,18 +1,20 @@
 package org.galilee.dms.model;
 
-import org.galilee.dms.model.Sites;
-
 public class DataValues {
 
 	private int ValueID;	
 	private double DataValue;
 	private String DateTime;
+	private int Duration;
+	private int SurveyYear;
+	private int SurveyTerm;
 	private Sites Site;	
 	private String Latitude;
 	private String Longitude;	
 	private Sources Source;
 	private Features Feature;
 	private Variables Variable;
+	private Methods Method;
 
 	public int getValueID() {
 		return ValueID;
@@ -78,17 +80,6 @@ public class DataValues {
 		Variable = variable;
 	}
 
-
-	public String getDescription() {
-		return Description;
-	}
-
-	public void setDescription(String description) {
-		Description = description;
-	}
-
-	private String Description;
-
 	public Features getFeature() {
 		return Feature;
 	}
@@ -97,13 +88,36 @@ public class DataValues {
 		Feature = feature;
 	}
 
-	@Override
-	public String toString() {
-		return "DataValues [ValueID=" + ValueID + ", DataValue=" + DataValue
-				+ ", DateTime=" + DateTime + ", Site=" + Site + ", Latitude="
-				+ Latitude + ", Longitude=" + Longitude + ", Source=" + Source
-				+ ", Feature=" + Feature + ", Variable=" + Variable
-				+ ", Description=" + Description + "]";
+	public int getDuration() {
+		return Duration;
 	}
-	
+
+	public void setDuration(int duration) {
+		Duration = duration;
+	}
+
+	public int getSurveyYear() {
+		return SurveyYear;
+	}
+
+	public void setSurveyYear(int surveyYear) {
+		SurveyYear = surveyYear;
+	}
+
+	public int getSurveyTerm() {
+		return SurveyTerm;
+	}
+
+	public void setSurveyTerm(int surveyTerm) {
+		SurveyTerm = surveyTerm;
+	}
+
+	public Methods getMethod() {
+		return Method;
+	}
+
+	public void setMethod(Methods method) {
+		Method = method;
+	}
+
 }

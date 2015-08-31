@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.galilee.dms.dao.FishDAO;
 import org.galilee.dms.model.Fishes;
-import org.hibernate.Criteria;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Order;
 import org.springframework.transaction.annotation.Propagation;

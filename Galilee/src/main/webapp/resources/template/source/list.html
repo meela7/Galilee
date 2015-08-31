@@ -1,13 +1,26 @@
 <div class="panel panel-primary">
-	<div class="panel-heading">Source Detail</div>
+	<div class="panel-heading">
+		<h3>Source List</h3>
+		<hr class="divider">
+		<div class="form-inline">
+			<label for="institution">Institution:</label> <input type="text"
+				id="institution" class="form-control" ng-model="search.institution"
+				placeholder="institution"> <label for="researcher">Researcher:</label>
+			<input type="text" id="researcher" class="form-control"
+				ng-model="search.investigator" placeholder="researcher">
+			<button type="button" class="btn btn-sm btn-info" ng-click="cancel()">
+				<span class="glyphicon glyphicon-remove-circle"></span> Cancel
+			</button>
+		</div>
+	</div>
 	<div class="panel-body">
 		<table class="table table-hover">
 			<thead>
-				<tr>
-					<th>Institution</th>
-					<th>Investigator</th>
-					<th>Phone</th>
-					<th>Email</th>
+				<tr class="paginationclass">
+					<th style="min-width: 100px;">Institution</th>
+					<th style="min-width: 100px;">Investigator</th>
+					<th style="min-width: 200px;">Phone</th>
+					<th style="min-width: 200px;">Email</th>
 					<th colspan="2">
 						<button ng-click="createSource()" class="btn btn-sm btn-info">
 							<span class="glyphicon glyphicon-plus"></span> Add New Source
@@ -16,7 +29,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr ng-repeat="source in sources">
+				<tr class="paginationclass" ng-repeat="source in sources | filter:search | pagination: (currentPage-1) * numPerPage | limitTo: numPerPage">
 					<td>{{ source.institution }}</td>
 					<td>{{ source.investigator }}</td>
 					<td>{{ source.phone }}</td>
@@ -26,7 +39,9 @@
 							class="btn btn-sm btn-primary">
 							<span class="glyphicon glyphicon-edit"></span> Edit
 						</button></td>
-					<td><button type="button" ng-click="deleteSource(source)"
+					<td><button type="button"
+							confirmed-click="deleteSource(source.sourceID)"
+							ng-confirm-box-click="Are you sure to Delete?"
 							class="btn btn-sm btn-warning">
 							<span class="glyphicon glyphicon-trash"></span> Delete
 						</button></td>

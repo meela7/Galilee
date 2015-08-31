@@ -6,9 +6,9 @@ import org.galilee.dms.model.Features;
 
 public interface FeatureDAO {
 	
-	public Features insert(Features feature);
-	public Features update(Features feature);
-	public void delete(Features feature);
+	public boolean insert(Features feature);
+	public boolean update(Features feature);
+	public boolean delete(Features feature);
 	public Features selectByID(int featureID);
 	public List<Features> selectAll();
 	

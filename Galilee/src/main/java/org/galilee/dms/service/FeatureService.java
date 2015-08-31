@@ -6,9 +6,9 @@ import org.galilee.dms.model.Features;
 
 public interface FeatureService {	
 	
-	public void add(Features feature);
-	public void update(Features feature);	
-	public void delete(Features feature);
+	public boolean add(Features feature);
+	public boolean update(Features feature);	
+	public boolean delete(Features feature);
 	public Features findByID(int featureID);
 	public List<Features> findAll();
 	

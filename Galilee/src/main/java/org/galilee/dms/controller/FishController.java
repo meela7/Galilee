@@ -32,6 +32,7 @@ public class FishController {
 	public void update(@RequestBody Fishes fish) {
 
 		logger.info("update() proces has been called.");
+		logger.info("IMAGE:{}" + fish.getImageLink());
 		this.fishService.update(fish);
 	}
 

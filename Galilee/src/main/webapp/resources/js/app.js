@@ -2,8 +2,71 @@
  * 
  */
 
-var dmsApp = angular.module("dmsApp", [ 'ngResource', 'ngRoute', 'ui.bootstrap']);
+var dmsApp = angular.module("dmsApp", [ 'ngResource', 'ngRoute', 'ui.bootstrap', 'ui.map']);
 
+// metadata search management
+
+dmsApp.config(['$routeProvider', function($routeProvider) {
+	$routeProvider
+		.when('/site-map/:id', {
+			templateUrl : 'resources/template/search/sitemap.html',
+			controller : 'MapCtrl'
+		})
+		.when('/river-search/', {
+			templateUrl : 'resources/template/search/riverlist.html',
+			controller : 'RiverSearchCtrl'
+		})
+		.when('/river-site/:id', {
+			templateUrl : 'resources/template/search/sitelist.html',
+			controller : 'RiverSiteCtrl'
+		})
+		.when('/site-search/', {
+			templateUrl : 'resources/template/search/sitelist.html',
+			controller : 'SiteSearchCtrl'
+		})		
+		.when('/site-value/:year/:term/:id', {
+			templateUrl : 'resources/template/search/values.html',
+			controller : 'SiteValueCtrl'
+		})
+		.when('/feature-search/', {
+			templateUrl : 'resources/template/search/featurelist.html',
+			controller : 'FeatureSearchCtrl'
+		})
+		.when('/feature-fish/:id', {
+			templateUrl : 'resources/template/search/fishlist.html',
+			controller : 'FeatureFishCtrl'
+		})
+		.when('/fish-search/', {
+			templateUrl : 'resources/template/search/fishlist.html',
+			controller : 'FishSearchCtrl'
+		})
+		.when('/fish-value/:year/:term/:id', {
+			templateUrl : 'resources/template/search/values.html',
+			controller : 'FishValueCtrl'
+		})
+		.when('/value-search/:id/:id/:id/time', {
+			templateUrl : 'resources/template/search/values.html',
+			controller : 'ValueSearchCtrl'
+		})
+		.when('/value-feature/:id/', {
+			templateUrl : 'resources/template/search/featurelist.html',
+			controller : 'ValueFeatureCtrl'
+		})
+		.when('/value-fish/:id/', {
+			templateUrl : 'resources/template/search/fishlist.html',
+			controller : 'ValueFishCtrl'
+		})
+		.when('/value-site/:id/', {
+			templateUrl : 'resources/template/search/sitelist.html',
+			controller : 'SiteFindCtrl'
+		})
+		.when('/value-river/:id/', {
+			templateUrl : 'resources/template/search/riverlist.html',
+			controller : 'RiverFindCtrl'
+		});
+}]);
+
+//data model management
 dmsApp.config([ '$routeProvider', function($routeProvider) {
 	$routeProvider.
 	when('/source-list', {
@@ -42,9 +105,17 @@ dmsApp.config([ '$routeProvider', function($routeProvider) {
 		templateUrl : 'resources/template/river/creation.html',
 		controller : 'RiverCreationCtrl'
 	})
-	.when('/river-site/:id', {
-		templateUrl : 'resources/template/site/list.html',
-		controller : 'RiverSiteCtrl'
+	.when('/siteCode-list', {
+		templateUrl : 'resources/template/siteCode/list.html',
+		controller : 'SiteCodeListCtrl'
+	}).
+	when('/siteCode-detail/:id', {
+		templateUrl : 'resources/template/siteCode/detail.html',
+		controller : 'SiteCodeDetailCtrl'
+	}).
+	when('/siteCode-creation', {
+		templateUrl : 'resources/template/siteCode/creation.html',
+		controller : 'SiteCodeCreationCtrl'
 	})
 	.when('/feature-list', {
 		templateUrl : 'resources/template/feature/list.html',
@@ -61,6 +132,54 @@ dmsApp.config([ '$routeProvider', function($routeProvider) {
 	.when('/feature-fish/:id', {
 		templateUrl : 'resources/template/fish/detail.html',
 		controller : 'FeatureFishDetailCtrl'
+	})
+	.when('/variable-list', {
+		templateUrl : 'resources/template/variable/list.html',
+		controller : 'VariableListCtrl'
+	})
+	.when('/variable-detail/:id', {
+		templateUrl : 'resources/template/variable/detail.html',
+		controller : 'VariableDetailCtrl'
+	})
+	.when('/variable-creation', {
+		templateUrl : 'resources/template/variable/creation.html',
+		controller : 'VariableCreationCtrl'
+	})
+	.when('/fish-list', {
+		templateUrl : 'resources/template/fish/list.html',
+		controller : 'FishListCtrl'
+	})
+	.when('/fish-detail/:id', {
+		templateUrl : 'resources/template/fish/detail.html',
+		controller : 'FishDetailCtrl'
+	})
+	.when('/fish-creation', {
+		templateUrl : 'resources/template/fish/creation.html',
+		controller : 'FishCreationCtrl'
+	})
+	.when('/method-list', {
+		templateUrl : 'resources/template/method/list.html',
+		controller : 'MethodListCtrl'
+	})
+	.when('/method-detail/:id', {
+		templateUrl : 'resources/template/method/detail.html',
+		controller : 'MethodDetailCtrl'
+	})
+	.when('/method-creation', {
+		templateUrl : 'resources/template/method/creation.html',
+		controller : 'MethodCreationCtrl'
+	})
+	.when('/unit-list', {
+		templateUrl : 'resources/template/unit/list.html',
+		controller : 'UnitListCtrl'
+	})
+	.when('/unit-detail/:id', {
+		templateUrl : 'resources/template/unit/detail.html',
+		controller : 'UnitDetailCtrl'
+	})
+	.when('/unit-creation', {
+		templateUrl : 'resources/template/unit/creation.html',
+		controller : 'UnitCreationCtrl'
 	});
 	
 } ]);

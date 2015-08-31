@@ -11,5 +11,6 @@ public interface RiverService {
 	public void delete(int riverID);
 	public Rivers findByID(int riverID);
 	public List<Rivers> findAll();
+	public List<Rivers> findByIDs(List<Integer> riverIDs);
 	
 }

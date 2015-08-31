@@ -1,22 +1,26 @@
 <div class="panel panel-primary">
-	<div class="panel-heading">Feature List</div>
-	<div class="panel-body">
-		<div class="form-group">
-			<label for="typeSearch">Type:</label> <input type="text"
-				ng-model="search.featureType" placeholder="type "> <label
-				for="addSearch">Feature:</label> <input type="text"
-				ng-model="search.featureName" placeholder="name">
+	<div class="panel-heading">
+		<h3>Feature List</h3>
+		<hr class="divider">
+		<div class="form-inline">
+			<label for="type">Type:</label> <input type="text"
+				id="type" class="form-control" ng-model="search.featureType" placeholder="type "> <label
+				for="name">Feature:</label> <input type="text"
+				id="name" class="form-control"ng-model="search.featureName" placeholder="name">
 			<button type="button" ng-click="cancel()" class="btn btn-sm">Cancel</button>
 		</div>
-		<table class="table table-striped">
+	</div>
+	<div class="panel-body">
+
+		<table class="table table-condensed table-striped">
 			<thead>
 				<tr class="paginationclass">
-					<th style="min-width: 200px;">FeatureID</th>
-					<th style="min-width: 200px;">Feature Type</th>
-					<th style="min-width: 200px;">Feature Name</th>
-					<th colspan="2">
+					<th class="col-sm-1">FeatureID</th>
+					<th class="col-sm-1">Feature Type</th>
+					<th class="col-sm-1">Feature Name</th>
+					<th colspan="2" class="col-sm-2">
 						<button ng-click="createFeature()" class="btn btn-sm btn-info">
-							<span class="glyphicon glyphicon-plus"></span> Create Source
+							<span class="glyphicon glyphicon-plus"></span> Create Feature
 						</button>
 					</th>
 				</tr>
@@ -29,19 +33,19 @@
 					<td>{{ feature.featureName }}</td>
 					<td><button type="button"
 							ng-click="editFeature(feature.featureID)"
-							class="btn btn-sm btn-primary">
+							class="btn btn-sm btn-info">
 							<span class="glyphicon glyphicon-edit"></span> Edit
 						</button></td>
-					<td><button type="button"
-							ng-click="findFishByFeature(feature.featureID)"
-							class="btn btn-sm btn-primary">
-							<span class="glyphicon glyphicon-list-alt"></span> Detail
-						</button></td>
 					<!-- <td><button type="button"
+							ng-click="findFishByFeature(feature.featureID)"
+							class="btn btn-sm btn-info">
+							<span class="glyphicon glyphicon-list-alt"></span> Detail
+						</button></td> -->
+					<td><button type="button"
 							ng-click="deleteFeature(feature.featrueID)"
 							class="btn btn-sm btn-warning">
 							<span class="glyphicon glyphicon-trash"></span> Delete
-						</button></td> -->
+						</button></td>
 				</tr>
 			</tbody>
 		</table>

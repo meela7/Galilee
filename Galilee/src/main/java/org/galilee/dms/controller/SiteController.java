@@ -49,13 +49,20 @@ public class SiteController {
 		logger.info("find() proces has been called.");
 		return this.siteService.findByID(siteID);
 	}
+	
+	@RequestMapping(value = "/sites/{id}", method = RequestMethod.GET)
+	public List<Sites> findSites(@PathVariable("id") List<Integer> siteIDs) {
+		
+		logger.info("findAll() proces has been called.");
+		return this.siteService.findByIDs(siteIDs);
+	}
 
 	@RequestMapping(value = "/sites", method = RequestMethod.GET)
 	public List<Sites> findAll() {
 
 		logger.info("findAll() proces has been called.");
 		return this.siteService.findAll();
-	}
+	}	
 	
 	// parse riverID string to array and get List<Sites> by riverIDs 
 	@RequestMapping(value = "/sites/river/{id}", method = RequestMethod.GET)
@@ -69,7 +76,7 @@ public class SiteController {
 			rivers.add(Integer.valueOf(s));
 		}
 		logger.info("RIVERIDS:{}",rIDs);
-		return this.siteService.findByRiverID(rivers);
+		return this.siteService.findByRivers(rivers);
 				
 	}
 

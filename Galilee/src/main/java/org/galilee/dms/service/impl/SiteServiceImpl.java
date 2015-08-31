@@ -1,5 +1,6 @@
 package org.galilee.dms.service.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.galilee.dms.dao.SiteDAO;
@@ -49,9 +50,13 @@ public class SiteServiceImpl implements SiteService {
 	}
 
 	@Override
-	public List<Sites> findByRiverID(List<Integer> riverIDs) {
+	public List<Sites> findByRivers(List<Integer> riverIDs) {
 		// TODO Auto-generated method stub
 		return this.siteDao.selectByRiverID(riverIDs);
 	}
 
+	@Override
+	public List<Sites> findByIDs(List<Integer> siteIDs) {
+		return this.siteDao.selectByIDs(siteIDs);
+	}
 }

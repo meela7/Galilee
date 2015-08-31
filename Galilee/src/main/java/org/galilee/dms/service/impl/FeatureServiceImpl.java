@@ -15,35 +15,32 @@ public class FeatureServiceImpl implements FeatureService {
 	}
 
 	@Override
-	public void add(Features feature) {
-		// TODO Auto-generated method stub
-		this.featureDao.insert(feature);
-	}
-
-	@Override
-	public void update(Features feature) {
-		// TODO Auto-generated method stub
-		this.featureDao.update(feature);
-	}
-
-	@Override
-	public void delete(Features feature) {
-		// TODO Auto-generated method stub
+	public boolean add(Features feature) {
 		
-		this.featureDao.delete(feature);
+		return this.featureDao.insert(feature);
 	}
 
 	@Override
-	public Features findByID(int featureID) {
-		// TODO Auto-generated method stub		
+	public boolean update(Features feature) {
+		
+		return this.featureDao.update(feature);
+	}
+
+	@Override
+	public boolean delete(Features feature) {
+		
+		return this.featureDao.delete(feature);
+	}
+
+	@Override
+	public Features findByID(int featureID) {	
 		
 		return this.featureDao.selectByID(featureID);
 	}
 
 	@Override
 	public List<Features> findAll() {
-		// TODO Auto-generated method stub
+
 		return this.featureDao.selectAll();
-	}
-	
+	}	
 }

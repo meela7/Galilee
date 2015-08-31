@@ -1,4 +1,4 @@
-package org.galilee.dms.model;
+package org.galilee.dms.util;
 
 public class ResponseMap {
 	

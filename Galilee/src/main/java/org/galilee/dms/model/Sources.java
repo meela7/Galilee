@@ -1,7 +1,13 @@
 package org.galilee.dms.model;
 
-public class Sources {
+import java.io.Serializable;
 
+public class Sources implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int SourceID;
 	private String Institution;
 	private String Investigator;
@@ -60,10 +66,4 @@ public class Sources {
 		Description = description;
 	}
 
-	@Override
-	public String toString() {
-		return "Sources [SourceID=" + SourceID + ", Institution="
-				+ Institution + ", Investigator=" + Investigator + ", Phone="
-				+ Phone + ", Email=" + Email + "]";
-	}
 }

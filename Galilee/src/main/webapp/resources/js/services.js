@@ -1,17 +1,60 @@
-/**
- * cacheFactory
- */
-
-////Set up the cache ‘dmsCache’
-//dmsApp.factory('dmsCache', function($cacheFactory) {
-// return $cacheFactory('siteList');
-//});
-
-/**
- * Sources
- */
 
 var contextRoot = '/dms';
+
+dmsApp.factory('SiteByRiver', function($resource) {
+	return $resource(contextRoot + '/sites/river/:id', {}, {
+		find : {
+			method: 'GET',
+			params : {
+				id : '@id'
+			},
+			isArray : true
+		}
+	})
+});
+dmsApp.factory('ValueBySite', function($resource) {
+	return $resource(contextRoot + '/values/:year/:term/site/:id', {}, {
+		find : {
+			method: 'GET',
+			params : {
+				year : '@year',
+				term : '@term',
+				id : '@id'
+			},
+			cache : true,
+			isArray : true
+		}
+	})
+});
+
+dmsApp.factory('ValueByFish', function($resource) {
+	return $resource(contextRoot + '/values/:year/:term/fish/:id', {}, {
+		find : {
+			method: 'GET',
+			params : {
+				year : '@year',
+				term : '@term',
+				id : '@id'
+			},
+			isArray : true
+		}
+	})
+});
+
+dmsApp.factory('SurveyYear', function($resource) {
+	return $resource(contextRoot + '/value/years', {}, {
+		find : {
+			method: 'GET',
+			cache : true,
+			isArray : true			
+		}
+	})
+});
+
+/**
+ * Data Management
+ * Sources
+ */
 dmsApp.factory('SourceFindAll', function($resource) {
 	return $resource(contextRoot + '/sources', {}, {
 		findall : {
@@ -74,7 +117,19 @@ dmsApp.factory('SiteFind', function($resource) {
 			}
 		}
 	})
+})
+dmsApp.factory('SiteListFind', function($resource) {
+	return $resource(contextRoot + '/sites/:id', {}, {
+		find : {
+			method : 'GET',
+			params : {
+				id : '@id'
+			},
+			isArray : true
+		}
+	})
 });
+
 dmsApp.factory('SiteCreate', function($resource) {
 	return $resource(contextRoot + '/site/create', {}, {
 		create : {
@@ -117,7 +172,6 @@ dmsApp.factory('RiverFindAll', function($resource) {
 	return $resource(contextRoot + '/rivers', {}, {
 		findall : {
 			method : 'GET',
-			cache : true,
 			isArray : true
 		}
 	})
@@ -129,6 +183,17 @@ dmsApp.factory('RiverFind', function($resource) {
 			params : {
 				id : '@id'
 			}
+		}
+	})
+});
+dmsApp.factory('RiverListFind', function($resource) {
+	return $resource(contextRoot + '/rivers/:id', {}, {
+		find : {
+			method : 'GET',
+			params : {
+				id : '@id'
+			},
+			isArray : true
 		}
 	})
 });
@@ -155,10 +220,54 @@ dmsApp.factory('RiverDelete', function($resource) {
 });
 
 /**
+ * SiteCode
+ */
+
+dmsApp.factory('SiteCodeFindAll', function($resource) {
+	return $resource(contextRoot + '/siteCodes', {}, {
+		findall : {
+			method : 'GET',
+			cache : true,
+			isArray : true
+		}
+	})
+});
+dmsApp.factory('SiteCodeFind', function($resource) {
+	return $resource(contextRoot + '/siteCode/:id', {}, {
+		find : {
+			method : 'GET',
+			params : {
+				id : '@id'
+			}
+		}
+	})
+});
+dmsApp.factory('SiteCodeCreate', function($resource) {
+	return $resource(contextRoot + '/siteCode/create', {}, {
+		create : {
+			method : 'POST'
+		}
+	})
+});
+dmsApp.factory('SiteCodeUpdate', function($resource) {
+	return $resource(contextRoot + '/siteCode/update', {}, {
+		update : {
+			method : 'POST'
+		}
+	})
+});
+dmsApp.factory('SiteCodeDelete', function($resource) {
+	return $resource(contextRoot + '/siteCode/delete', {}, {
+		del : {
+			method : 'POST'
+		}
+	})
+});
+
+/**
  * Features
  */
 
-var contextRoot = '/dms';
 dmsApp.factory('FeatureFindAll', function($resource) {
 	return $resource(contextRoot + '/features', {}, {
 		findall : {
@@ -207,6 +316,183 @@ dmsApp.factory('FishByFeature', function($resource) {
 				id : '@id'
 			}, 
 			isArray: false
+		}
+	})
+});
+
+/**
+ * Fishes
+ */
+
+dmsApp.factory('FishFindAll', function($resource) {
+	return $resource(contextRoot + '/fishes', {}, {
+		findall : {
+			method : 'GET',
+			cache : true,
+			isArray : true
+		}
+	})
+});
+dmsApp.factory('FishFind', function($resource) {
+	return $resource(contextRoot + '/fish/:id', {}, {
+		find : {
+			method : 'GET',
+			params : {
+				id : '@id'
+			}
+		}
+	})
+});
+dmsApp.factory('FishCreate', function($resource) {
+	return $resource(contextRoot + '/fish/create', {}, {
+		create : {
+			method : 'POST'
+		}
+	})
+});
+dmsApp.factory('FishUpdate', function($resource) {
+	return $resource(contextRoot + '/fish/update', {}, {
+		update : {
+			method : 'POST'
+		}
+	})
+});
+dmsApp.factory('FishDelete', function($resource) {
+	return $resource(contextRoot + '/fish/delete', {}, {
+		del : {
+			method : 'POST'
+		}
+	})
+});
+
+/**
+ * Methods
+ */
+
+dmsApp.factory('MethodFindAll', function($resource) {
+	return $resource(contextRoot + '/methods', {}, {
+		findall : {
+			method : 'GET',
+			isArray : true
+		}
+	})
+});
+dmsApp.factory('MethodFind', function($resource) {
+	return $resource(contextRoot + '/method/:id', {}, {
+		find : {
+			method : 'GET',
+			params : {
+				id : '@id'
+			}
+		}
+	})
+});
+dmsApp.factory('MethodCreate', function($resource) {
+	return $resource(contextRoot + '/method/create', {}, {
+		create : {
+			method : 'POST'
+		}
+	})
+});
+dmsApp.factory('MethodUpdate', function($resource) {
+	return $resource(contextRoot + '/method/update', {}, {
+		update : {
+			method : 'POST'
+		}
+	})
+});
+dmsApp.factory('MethodDelete', function($resource) {
+	return $resource(contextRoot + '/method/delete', {}, {
+		del : {
+			method : 'POST'
+		}
+	})
+});
+
+/**
+ * Variables
+ */
+
+dmsApp.factory('VariableFindAll', function($resource) {
+	return $resource(contextRoot + '/variables', {}, {
+		findall : {
+			method : 'GET',
+			isArray : true
+		}
+	})
+});
+dmsApp.factory('VariableFind', function($resource) {
+	return $resource(contextRoot + '/variable/:id', {}, {
+		find : {
+			method : 'GET',
+			params : {
+				id : '@id'
+			}
+		}
+	})
+});
+dmsApp.factory('VariableCreate', function($resource) {
+	return $resource(contextRoot + '/variable/create', {}, {
+		create : {
+			method : 'POST'
+		}
+	})
+});
+dmsApp.factory('VariableUpdate', function($resource) {
+	return $resource(contextRoot + '/variable/update', {}, {
+		update : {
+			method : 'POST'
+		}
+	})
+});
+dmsApp.factory('VariableDelete', function($resource) {
+	return $resource(contextRoot + '/variable/delete', {}, {
+		del : {
+			method : 'POST'
+		}
+	})
+});
+
+/**
+ * Units
+ */
+
+dmsApp.factory('UnitFindAll', function($resource) {
+	return $resource(contextRoot + '/units', {}, {
+		findall : {
+			method : 'GET',
+			isArray : true
+		}
+	})
+});
+dmsApp.factory('UnitFind', function($resource) {
+	return $resource(contextRoot + '/unit/:id', {}, {
+		find : {
+			method : 'GET',
+			params : {
+				id : '@id'
+			}
+		}
+	})
+});
+dmsApp.factory('UnitCreate', function($resource) {
+	return $resource(contextRoot + '/unit/create', {}, {
+		create : {
+			method : 'POST'
+		}
+	})
+});
+dmsApp.factory('UnitUpdate', function($resource) {
+	return $resource(contextRoot + '/unit/update', {}, {
+		update : {
+			method : 'POST'
+		}
+	})
+});
+dmsApp.factory('UnitDelete', function($resource) {
+	return $resource(contextRoot + '/unit/delete', {}, {
+		del : {
+			method : 'POST'
 		}
 	})
 });

@@ -1,6 +1,12 @@
 package org.galilee.dms.model;
 
-public class ValueTypeCV {
+import java.io.Serializable;
+
+public class ValueTypeCV implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String Term;
 	private String Definition;
 	
@@ -19,9 +25,5 @@ public class ValueTypeCV {
 	public void setDefinition(String definition) {
 		Definition = definition;
 	}
-	
-	@Override
-	public String toString() {
-		return "ValueTypeCV [Term=" + Term + ", Definition=" + Definition + "]";
-	}
+
 }

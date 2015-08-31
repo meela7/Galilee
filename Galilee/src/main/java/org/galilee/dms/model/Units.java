@@ -1,5 +1,7 @@
 package org.galilee.dms.model;
 
+import java.io.Serializable;
+
 public class Units {
 
 	private int UnitID ;	

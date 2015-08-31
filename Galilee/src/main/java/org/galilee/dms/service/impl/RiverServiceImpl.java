@@ -13,7 +13,7 @@ public class RiverServiceImpl implements RiverService {
 	public void setRiverDao(RiverDAO riverDao) {
 		this.riverDao = riverDao;
 	}
-
+	
 	@Override
 	public void add(Rivers river) {
 		// TODO Auto-generated method stub
@@ -43,6 +43,12 @@ public class RiverServiceImpl implements RiverService {
 	public List<Rivers> findAll() {
 		// TODO Auto-generated method stub
 		return this.riverDao.selectAll();
+	}
+
+	@Override
+	public List<Rivers> findByIDs(List<Integer> riverIDs) {
+		// TODO Auto-generated method stub
+		return this.riverDao.selectByIDs(riverIDs);
 	}
 
 

@@ -1,6 +1,12 @@
 package org.galilee.dms.model;
 
-public class VariableNameCV {
+import java.io.Serializable;
+
+public class VariableNameCV implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String Term;
 	private String Definition;
 	
@@ -18,10 +24,5 @@ public class VariableNameCV {
 	}
 	public void setDefinition(String definition) {
 		Definition = definition;
-	}
-	
-	@Override
-	public String toString() {
-		return "VariableNameCV [Term=" + Term + ", Definition=" + Definition + "]";
 	}
 }

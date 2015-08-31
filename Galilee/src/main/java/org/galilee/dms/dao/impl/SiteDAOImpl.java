@@ -1,9 +1,9 @@
 package org.galilee.dms.dao.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.galilee.dms.dao.SiteDAO;
-import org.galilee.dms.model.Rivers;
 import org.galilee.dms.model.Sites;
 import org.hibernate.FetchMode;
 import org.hibernate.Session;
@@ -74,11 +74,20 @@ public class SiteDAOImpl implements SiteDAO {
 		
 		Session session = this.sessionFactory.getCurrentSession();
 		@SuppressWarnings("unchecked")
+		List<Sites> sites = session.createCriteria(Sites.class).add(Restrictions.in("River.RiverID", riverIDs)).addOrder(Order.asc("SiteID")).list();
+
+		return sites;
+	}
+
+	@Override
+	@Transactional(propagation = Propagation.REQUIRED)
+	public List<Sites> selectByIDs(List<Integer> siteIDs) {
+		
+		Session session = this.sessionFactory.getCurrentSession();
+		@SuppressWarnings("unchecked")
 		List<Sites> sites = session.createCriteria(Sites.class)
-		.add(Restrictions.in("River.RiverID", riverIDs)).addOrder(Order.asc("SiteID")).list();
-		for(Sites s: sites){
-			System.out.println(s.getSiteName());
-		}
+		.add(Restrictions.in("SiteID", siteIDs)).addOrder(Order.asc("SiteID")).list();
+		
 		return sites;
 	}
 }

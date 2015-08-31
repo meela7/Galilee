@@ -11,6 +11,6 @@ public interface SiteService {
 	public void delete(int siteID);
 	public Sites findByID(int siteID);
 	public List<Sites> findAll();
-	public List<Sites> findByRiverID(List<Integer> rivers);
-	
+	public List<Sites> findByRivers(List<Integer> rivers);
+	public List<Sites> findByIDs(List<Integer> siteIDs);	
 }

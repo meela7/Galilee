@@ -1,16 +1,25 @@
 <div class="panel panel-primary">
-	<div class="panel-heading">River List</div>
-	<div class="panel-body">
-		<div class="form-group">
+	<div class="panel-heading">
+		<h3>River List</h3>
+		<hr class="divider">
+		<div class="form-inline">
 			<label for="basinSearch">Basin:</label> <input type="text"
-				ng-model="search.waterSystem" placeholder="수계 "> <label
-				for="classSearch">Classification:</label> <input type="text"
+				id="basinSearch" class="form-control" ng-model="search.basin"
+				placeholder="대권역 "> <label for="midSearch">Mid:</label> <input
+				type="text" id="midSearch" class="form-control"
+				ng-model="search.midWatershed" placeholder="중권역"> <label
+				for="subSearch">Sub:</label> <input type="text" id="subSearch"
+				class="form-control" ng-model="search.subWatershed"
+				placeholder="소권역"> <label for="classSearch">Classification:</label>
+			<input type="text" id="classSearch" class="form-control"
 				ng-model="search.classification" placeholder="하천구분">
-			<button type="button" ng-click="findSiteByRiver(filteredRivers)"
-				class="btn btn-info btn-sm">
-				<span class="glyphicon glyphicon-search"></span> Search Site
+			<button type="button" class="btn btn-sm btn-info" ng-click="cancel()">
+				<span class="glyphicon glyphicon-remove-circle"></span> Cancel
 			</button>
 		</div>
+	</div>
+	<div class="panel-body">
+
 		<table class="table table-hover">
 			<thead>
 				<tr class="paginationclass">
@@ -31,7 +40,7 @@
 			</thead>
 			<tbody>
 				<tr class="paginationclass"
-					ng-repeat="river in searchResult = (rivers | filter:search) | pagination: (currentPage-1) * numPerPage | limitTo: numPerPage">
+					ng-repeat="river in rivers | filter:search | pagination: (currentPage-1) * numPerPage | limitTo: numPerPage">
 					<td>{{ river.riverID }}</td>
 					<td>{{ river.basin }}</td>
 					<td>{{ river.waterSystem }}</td>
@@ -41,10 +50,11 @@
 					<td>{{ river.classification }}</td>
 					<td><button type="button" ng-click="editRiver(river.riverID)"
 							class="btn btn-sm btn-primary">
-							<span class="glyphicon glyphicon-edit"></span> Edit
+							<span class="glyphicon glyphicon-edit"></span> Detail
 						</button></td>
 					<td><button type="button"
-							ng-click="deleteRiver(river.riverID)"
+							confirmed-click="deleteRiver(river.riverID)"
+							ng-confirm-box-click="Are you sure to Delete?"
 							class="btn btn-sm btn-warning">
 							<span class="glyphicon glyphicon-trash"></span> Delete
 						</button></td>
@@ -52,7 +62,6 @@
 				</tr>
 			</tbody>
 		</table>
-		<p ng-hide="searchResult">There is no result</p>
 		<div align="center">
 			<pagination ng-model="currentPage" total-items="rivers.length"
 				max-size="maxSize" items-per-page="numPerPage" boundary-links="true">

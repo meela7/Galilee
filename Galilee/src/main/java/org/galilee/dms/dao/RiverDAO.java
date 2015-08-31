@@ -11,5 +11,6 @@ public interface RiverDAO {
 	public void delete(Rivers river);
 	public Rivers selectByID(int riverID);
 	public List<Rivers> selectAll();
+	public List<Rivers> selectByIDs(List<Integer> riverIDs);
 
 }

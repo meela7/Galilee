@@ -48,6 +48,13 @@ public class RiverController {
 		return this.riverService.findByID(riverID);
 	}
 	
+	@RequestMapping(value="/rivers/{id}", method=RequestMethod.GET)
+	public List<Rivers> findRivers(@PathVariable("id") List<Integer> riverIDs){
+		
+		logger.info("findAll() proces has been called.");
+        return this.riverService.findByIDs(riverIDs);
+	}
+	
 	@RequestMapping(value="/rivers", method=RequestMethod.GET)
 	public List<Rivers> findAll(){
 		

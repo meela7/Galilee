@@ -12,6 +12,7 @@ public class Fishes {
 	private FishCharacterCV TrophicGuild;
 	private FishCharacterCV HabitatGuild;
 	private String InvasiveSpecies;
+	private String EndemicSpecies;
 	private String EndangeredSpecies;
 	private String NaturalMonument;
 	private String ImageLink;
@@ -85,6 +86,15 @@ public class Fishes {
 	public void setInvasiveSpecies(String invasiveSpecies) {
 		InvasiveSpecies = invasiveSpecies;
 	}
+	
+	public String getEndemicSpecies() {
+		return EndemicSpecies;
+	}
+
+	public void setEndemicSpecies(String endemicSpecies) {
+		EndemicSpecies = endemicSpecies;
+	}
+
 	public String getEndangeredSpecies() {
 		return EndangeredSpecies;
 	}
@@ -116,6 +126,6 @@ public class Fishes {
 
 	public void setFeature(Features feature) {
 		Feature = feature;
-	}	
+	}
 	
 }

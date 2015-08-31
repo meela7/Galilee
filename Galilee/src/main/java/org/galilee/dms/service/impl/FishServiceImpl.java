@@ -16,32 +16,31 @@ public class FishServiceImpl implements FishService {
 	
 	@Override
 	public void add(Fishes fish) {
-		// TODO Auto-generated method stub
+
 		this.fishDao.insert(fish);
 	}
 
 	@Override
 	public void update(Fishes fish) {
-		// TODO Auto-generated method stub
+
+		
 		this.fishDao.update(fish);
 	}
 
 	@Override
 	public void delete(Fishes fish) {
-		// TODO Auto-generated method stub
+
 		this.fishDao.delete(fish);
 	}
 
 	@Override
 	public Fishes findByID(int fishID) {
-		// TODO Auto-generated method stub
 		
 		return this.fishDao.selectByID(fishID);
 	}
 
 	@Override
 	public List<Fishes> findAll() {
-		// TODO Auto-generated method stub
 		
 		return this.fishDao.selectAll();
 	}
