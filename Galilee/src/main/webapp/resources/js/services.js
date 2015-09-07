@@ -12,8 +12,8 @@ dmsApp.factory('SiteByRiver', function($resource) {
 		}
 	})
 });
-dmsApp.factory('ValueBySite', function($resource) {
-	return $resource(contextRoot + '/values/:year/:term/site/:id', {}, {
+dmsApp.factory('TermValueBySite', function($resource) {
+	return $resource(contextRoot + '/values/term/:year/:term/site/:id', {}, {
 		find : {
 			method: 'GET',
 			params : {
@@ -26,6 +26,21 @@ dmsApp.factory('ValueBySite', function($resource) {
 		}
 	})
 });
+dmsApp.factory('ValueBySite', function($resource) {
+	return $resource(contextRoot + '/values/:start/:end/site/:id', {}, {
+		find : {
+			method: 'GET',
+			params : {
+				start : '@start',
+				end : '@end',
+				id : '@id'
+			},
+			cache : true,
+			isArray : true
+		}
+	})
+});
+
 
 dmsApp.factory('ValueByFish', function($resource) {
 	return $resource(contextRoot + '/values/:year/:term/fish/:id', {}, {

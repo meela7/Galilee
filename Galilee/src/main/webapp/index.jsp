@@ -25,7 +25,7 @@
 <link
 	href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.14.30/css/bootstrap-datetimepicker.min.css"
 	rel="stylesheet">
-	
+
 <style type="text/css">
 .top-buffer {
 	margin-top: 10px;
@@ -48,7 +48,19 @@ a.nodecoration {
 			$('.dropdown-menu', this).stop().fadeOut("fast");
 		});
 	});
+
+	//Needle in Haystack
+	function inArray(needle, haystack) {
+		var count = haystack.length;
+		for (var i = 0; i < count; i++) {
+			if (haystack[i] === needle) {
+				return true;
+			}
+		}
+		return false;
+	};
 </script>
+
 
 <script
 	src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
@@ -56,17 +68,15 @@ a.nodecoration {
 <script src="//code.angularjs.org/1.3.1/angular-route.min.js"></script>
 <script src="//code.angularjs.org/1.3.1/angular-resource.min.js"></script>
 <script src="//code.angularjs.org/1.3.1/angular-cookies.min.js"></script>
-<script
-	src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.1.js"></script>
-<script
-	src="//www.flocations.com/static/vendor/angular-ui/event/event.js"></script>
-<script
-	src="//www.flocations.com/static/vendor/angular-ui/map/ui-map.min.js"></script>
+<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.1.js"></script>
+<script	src="//www.flocations.com/static/vendor/angular-ui/event/event.js"></script>
+<script	src="//www.flocations.com/static/vendor/angular-ui/map/ui-map.min.js"></script>
 <script src="//maps.googleapis.com/maps/api/js?sensor=false&.js"></script>
-<script
-	src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script>
-<script
-	src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.14.30/js/bootstrap-datetimepicker.min.js"></script>
+<script	src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script>
+<script	src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.14.30/js/bootstrap-datetimepicker.min.js"></script>
+<!-- <script src="//angular-ui.github.io/ui-router/release/angular-ui-router.min.js"></script> -->
+<!-- Smart Table Script -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.0/lodash.js"></script>
 
 </head>
 <body>
@@ -86,7 +96,8 @@ a.nodecoration {
 					<ul class="nav navbar-nav">
 
 						<li class="dropdown menu-large"><a href="#"
-							class="dropdown-toggle" data-toggle="dropdown"> Domain Data Management <b class="caret"></b>
+							class="dropdown-toggle" data-toggle="dropdown"> Domain Data
+								Management <b class="caret"></b>
 						</a>
 							<ul class="dropdown-menu megamenu row">
 								<li class="col-sm-3">
@@ -115,8 +126,8 @@ a.nodecoration {
 								</li>
 							</ul></li>
 						<li class="dropdown menu-large"><a href="#"
-							class="dropdown-toggle" data-toggle="dropdown"> Data
-								Search <b class="caret"></b>
+							class="dropdown-toggle" data-toggle="dropdown"> Data Search <b
+								class="caret"></b>
 						</a>
 							<ul class="dropdown-menu megamenu row">
 								<li class="col-sm-3">
@@ -133,9 +144,29 @@ a.nodecoration {
 										<!-- <li><a href="#feature-search"> by Feature </a></li> -->
 									</ul>
 								</li>
-								
+
 							</ul></li>
-						<li><a href="#"> </a></li>
+						<li class="dropdown menu-large"><a href="#data-analysis"
+							class="dropdown-toggle" data-toggle="dropdown"> Data Analysis
+								<b class="caret"></b>
+						</a>
+							<ul class="dropdown-menu megamenu row">
+								<li class="col-sm-3">
+									<ul>
+										<li class="dropdown-header">FAI</li>
+										<li><a href="#river-search"> 법정보호종 </a></li>
+										<li><a href="#site-search"> 분류군도 </a></li>
+									</ul>
+								</li>
+								<li class="col-sm-3">
+									<ul>
+										<li class="dropdown-header"> Report </li>
+										<li><a href="#fish-search"> 대권역 </a></li>
+										<li><a href="#feature-search"> 어류</a></li>
+									</ul>
+								</li>
+
+							</ul></li>
 					</ul>
 				</div>
 			</div>
@@ -143,16 +174,19 @@ a.nodecoration {
 		</nav>
 	</div>
 	<div class="container">
+		<div ng-model="searchRequest"></div>
+
 		<div ng-view></div>
-		
+
 	</div>
 
 	<script src="resources/js/app.js"></script>
-	<script src="resources/js/controllers.js"></script>
+	<script src="resources/js/model-controllers.js"></script>
+	<script src="resources/js/search-controllers.js"></script>
 	<script src="resources/js/services.js"></script>
 	<script src="resources/js/directives.js"></script>
 	<script src="resources/js/filters.js"></script>
-	<script src="resources/js/smart-table.debug.js"></script>
+	<script src="resources/js/smart-table.js"></script>
 
 </body>
 </html>

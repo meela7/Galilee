@@ -3,15 +3,28 @@
 		<h3>Site List</h3>
 		<hr class="divider">
 		<div class="form-inline">
-			<label for="river">River: </label> <input type="text"
-				id="river" class="form-control" ng-model="search.river.riverName" placeholder="river"> 
-			<labelfor="site">Site: </label> <input type="text"
-				id="site" class="form-control" ng-model="search.siteName" placeholder="site"> 
-			<label for="sid">Site ID: </label> <input type="text"
-				id="sid" class="form-control" ng-model="search.siteID" placeholder="id"> 
-			<label for="add">Address: </label> <input type="text"
-				id="add" class="form-control" ng-model="search.address" placeholder="address">
-			<button type="button" class="btn btn-sm btn-info" ng-click="cancel()">
+			<label for="basin" class="control-label">Basin: </label> <input
+				type="text" id="basin" class="form-control hasclear"
+				ng-model="search.river.basin" placeholder="대권역"> <label
+				for="river" class="control-label ">River: </label> <input
+				type="text" id="river" class="form-control hasclear"
+				ng-model="search.river.riverName" placeholder="하천 이름"> <label
+				for="divition" class="control-label">Classification: </label> <input
+				type="text" id="divition" class="form-control hasclear"
+				ng-model="search.river.classification" placeholder="지류/본류/기타">
+			<p></p>
+			<label for="site" class="control-label">Site: </label> <input
+				type="text" id="site" class="form-control hasclear"
+				ng-model="search.siteName" placeholder="조사구간 이름"> <label
+				for="order" class="control-label">Order: </label> <input type="text"
+				id="order" class="form-control hasclear"
+				ng-model="search.streamOrder" placeholder="하천 차수"> <label
+				for="sid" class="control-label">Site ID: </label> <input type="text"
+				id="sid" class="form-control hasclear" ng-model="search.siteID"
+				placeholder="조사구간 ID">
+
+			<button type="button" class="btn btn-sm btn-warning"
+				ng-click="cancel()">
 				<span class="glyphicon glyphicon-remove-circle"></span> Cancel
 			</button>
 		</div>
@@ -21,9 +34,11 @@
 		<table class="table table-hover">
 			<thead>
 				<tr class="paginationclass">
-					<th>SiteID</th>
+					<th>Index</th>
 					<th>SiteName</th>
+					<th>Basin</th>
 					<th>RiverName</th>
+					<th>Classification</th>
 					<th>StreamOrder</th>
 					<th>Address</th>
 					<th colspan="2">
@@ -36,13 +51,15 @@
 			<tbody>
 				<tr class="paginationclass"
 					ng-repeat="site in sites | filter:search | pagination: (currentPage-1) * numPerPage | limitTo: numPerPage">
-					<td>{{ site.siteID }}</td>
+					<td>{{ $index + 1 + (currentPage-1)*10}}</td>
 					<td>{{ site.siteName }}</td>
+					<td>{{ site.river.basin }}</td>
 					<td>{{ site.river.riverName }}</td>
+					<td>{{ site.river.classification }}</td>
 					<td>{{ site.streamOrder }}</td>
 					<td>{{ site.address }}</td>
 					<td><button type="button" ng-click="editSite(site.siteID)"
-							class="btn btn-sm btn-primary">
+							class="btn btn-sm btn-info">
 							<span class="glyphicon glyphicon-edit"></span> Detail
 						</button></td>
 					<td><button type="button"
@@ -63,3 +80,17 @@
 		</div>
 	</div>
 </div>
+
+<script type="text/javascript">
+	$(".hasclear").keyup(function() {
+		var t = $(this);
+		t.next('span').toggle(Boolean(t.val()));
+	});
+	$(".clearer").hide($(this).prev('input').val());
+
+	$(".clearer").click(function() {
+		alert("icon clicked!");
+		$(this).prev('input').val('').focus();
+		$(this).hide();
+	});
+</script>

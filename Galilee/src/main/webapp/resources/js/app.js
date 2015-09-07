@@ -2,8 +2,8 @@
  * 
  */
 
-var dmsApp = angular.module("dmsApp", [ 'ngResource', 'ngRoute', 'ui.bootstrap', 'ui.map']);
-
+var dmsApp = angular.module("dmsApp", [ 'ngResource', 'ngRoute', 'ui.bootstrap', 'ui.map', 'smart-table']);
+var contextRoot = "resources/template"; 
 // metadata search management
 
 dmsApp.config(['$routeProvider', function($routeProvider) {
@@ -24,7 +24,11 @@ dmsApp.config(['$routeProvider', function($routeProvider) {
 			templateUrl : 'resources/template/search/sitelist.html',
 			controller : 'SiteSearchCtrl'
 		})		
-		.when('/site-value/:year/:term/:id', {
+		.when('/site-value/term/:year/:term/:id', {
+			templateUrl : 'resources/template/search/termvalues.html',
+			controller : 'SiteTermValueCtrl'
+		})
+		.when('/site-value/:start/:end/:id', {
 			templateUrl : 'resources/template/search/values.html',
 			controller : 'SiteValueCtrl'
 		})
