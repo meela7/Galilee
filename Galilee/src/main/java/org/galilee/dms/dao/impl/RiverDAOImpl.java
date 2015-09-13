@@ -21,28 +21,24 @@ private SessionFactory sessionFactory;
 	@Override
 	@Transactional(propagation = Propagation.REQUIRED)
 	public void insert(Rivers river) {
-		// TODO Auto-generated method stub
 		sessionFactory.getCurrentSession().save(river);
 	}
 
 	@Override
 	@Transactional(propagation = Propagation.REQUIRED)
 	public void update(Rivers river) {
-		// TODO Auto-generated method stub
 		sessionFactory.getCurrentSession().update(river);
 	}
 
 	@Override
 	@Transactional(propagation = Propagation.REQUIRED)
 	public void delete(Rivers river) {
-		// TODO Auto-generated method stub
 		sessionFactory.getCurrentSession().delete(river);
 	}
 
 	@Override
 	@Transactional(propagation = Propagation.REQUIRED)
 	public Rivers selectByID(int riverID) {
-		// TODO Auto-generated method stub
 		Rivers river = (Rivers) sessionFactory.getCurrentSession().get(
 				Rivers.class, riverID);
 		return river;
@@ -51,7 +47,6 @@ private SessionFactory sessionFactory;
 	@Override
 	@Transactional(propagation = Propagation.REQUIRED)
 	public List<Rivers> selectAll() {
-		// TODO Auto-generated method stub
 		@SuppressWarnings("unchecked")
 		List<Rivers> riverList = sessionFactory.getCurrentSession()
 				.createCriteria(Rivers.class).addOrder(Order.asc("RiverID")).list();
@@ -63,7 +58,6 @@ private SessionFactory sessionFactory;
 	@Override
 	@Transactional(propagation = Propagation.REQUIRED)
 	public List<Rivers> selectByIDs(List<Integer> riverIDs) {
-		// TODO Auto-generated method stub
 		return this.sessionFactory.getCurrentSession()
 				.createCriteria(Rivers.class)
 				.add(Restrictions.in("RiverID", riverIDs))

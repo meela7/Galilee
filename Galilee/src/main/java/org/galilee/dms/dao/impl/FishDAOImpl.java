@@ -6,6 +6,7 @@ import org.galilee.dms.dao.FishDAO;
 import org.galilee.dms.model.Fishes;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Order;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -20,7 +21,6 @@ public class FishDAOImpl implements FishDAO {
 	@Override
 	@Transactional(propagation = Propagation.REQUIRED)
 	public Fishes insert(Fishes fish) {
-		// TODO Auto-generated method stub
 		
 		this.sessionFactory.getCurrentSession().save(fish);
 		return fish;
@@ -29,7 +29,6 @@ public class FishDAOImpl implements FishDAO {
 	@Override
 	@Transactional(propagation = Propagation.REQUIRED)
 	public Fishes update(Fishes fish) {
-		// TODO Auto-generated method stub
 		this.sessionFactory.getCurrentSession().update(fish);
 		return fish;
 	}
@@ -37,27 +36,36 @@ public class FishDAOImpl implements FishDAO {
 	@Override
 	@Transactional(propagation = Propagation.REQUIRED)
 	public void delete(Fishes fish) {
-		// TODO Auto-generated method stub
 		this.sessionFactory.getCurrentSession().delete(fish);
 	}
 
 	@Override
 	@Transactional(propagation = Propagation.REQUIRED)
 	public Fishes selectByID(int featureID) {
-		// TODO Auto-generated method stub
 		
 		Fishes fish = (Fishes) this.sessionFactory.getCurrentSession().get(Fishes.class, featureID);
 		return fish;
 	}
 
-	@Override
+	@Override	
 	@Transactional(propagation = Propagation.REQUIRED)
 	public List<Fishes> selectAll() {
-		// TODO Auto-generated method stub
 		
 		@SuppressWarnings("unchecked")
 		List<Fishes> fishList = this.sessionFactory.getCurrentSession()
 				.createCriteria(Fishes.class).addOrder(Order.asc("FishID")).list();
+		return fishList;
+	}
+
+	@Override
+	@Transactional(propagation = Propagation.REQUIRED)
+	public List<Fishes> selectByIDs(List<Integer> fishIDList) {
+
+		@SuppressWarnings("unchecked")
+		List<Fishes> fishList = this.sessionFactory.getCurrentSession()
+				.createCriteria(Fishes.class)
+				.add(Restrictions.in("FishID", fishIDList))
+				.addOrder(Order.asc("FishID")).list();
 		return fishList;
 	}
 

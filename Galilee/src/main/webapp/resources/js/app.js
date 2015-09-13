@@ -2,7 +2,7 @@
  * 
  */
 
-var dmsApp = angular.module("dmsApp", [ 'ngResource', 'ngRoute', 'ui.bootstrap', 'ui.map', 'smart-table']);
+var dmsApp = angular.module("dmsApp", [ 'ngResource', 'ngRoute', 'ui.bootstrap', 'ui.map', 'smart-table', 'highcharts-ng']);
 var contextRoot = "resources/template"; 
 // metadata search management
 
@@ -16,14 +16,22 @@ dmsApp.config(['$routeProvider', function($routeProvider) {
 			templateUrl : 'resources/template/search/riverlist.html',
 			controller : 'RiverSearchCtrl'
 		})
+		.when('/river-search/:id', {
+			templateUrl : 'resources/template/search/riverlist.html',
+			controller : 'RiverSearchCtrl'
+		})
 		.when('/river-site/:id', {
 			templateUrl : 'resources/template/search/sitelist.html',
-			controller : 'RiverSiteCtrl'
+			controller : 'RiverSiteInfoCtrl'
 		})
 		.when('/site-search/', {
 			templateUrl : 'resources/template/search/sitelist.html',
 			controller : 'SiteSearchCtrl'
-		})		
+		})
+		.when('/site-search/:id/:query', {
+			templateUrl : 'resources/template/search/sitelist.html',
+			controller : 'SiteSearchCtrl'
+		})
 		.when('/site-value/term/:year/:term/:id', {
 			templateUrl : 'resources/template/search/termvalues.html',
 			controller : 'SiteTermValueCtrl'
@@ -44,9 +52,21 @@ dmsApp.config(['$routeProvider', function($routeProvider) {
 			templateUrl : 'resources/template/search/fishlist.html',
 			controller : 'FishSearchCtrl'
 		})
-		.when('/fish-value/:year/:term/:id', {
+		.when('/fish-search/:id', {
+			templateUrl : 'resources/template/search/fishlist.html',
+			controller : 'FishSearchCtrl'
+		})
+		.when('/fish-value/:start/:end/:id', {
 			templateUrl : 'resources/template/search/values.html',
 			controller : 'FishValueCtrl'
+		})
+		.when('/fish-value/term/:year/:term/:id', {
+			templateUrl : 'resources/template/search/termvalues.html',
+			controller : 'FishTermValueCtrl'
+		})
+		.when('/value-fish/term/:year/:term/:id', {
+			templateUrl : 'resources/template/search/termvalue4fish.html',
+			controller : 'Value4FishCtrl'
 		})
 		.when('/value-search/:id/:id/:id/time', {
 			templateUrl : 'resources/template/search/values.html',

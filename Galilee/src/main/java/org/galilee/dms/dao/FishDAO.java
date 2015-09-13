@@ -11,5 +11,5 @@ public interface FishDAO {
 	public void delete(Fishes fish);
 	public Fishes selectByID(int fishID);
 	public List<Fishes> selectAll();
-	
+	public List<Fishes> selectByIDs(List<Integer> fishIDList);	
 }

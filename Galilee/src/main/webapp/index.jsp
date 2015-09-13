@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <%
 	response.setHeader("Cache-Control", "no-store");
 	response.setHeader("Pragma", "no-cache");
@@ -6,9 +5,10 @@
 	if (request.getProtocol().equals("HTTP/1.1"))
 		response.setHeader("Cache-Control", "no-cache");
 %>
+<%@ page contentType="text/html; Charset=UTF-8" %>
+
 <html ng-app="dmsApp">
 <head>
-<meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -38,6 +38,7 @@
 a.nodecoration {
 	text-decoration: none;
 }
+
 </style>
 <script type="text/javascript">
 	//Dropdown Menu Fade    
@@ -77,7 +78,9 @@ a.nodecoration {
 <!-- <script src="//angular-ui.github.io/ui-router/release/angular-ui-router.min.js"></script> -->
 <!-- Smart Table Script -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.0/lodash.js"></script>
-
+<script src="//code.highcharts.com/highcharts.js"></script>
+<script src="//rawgit.com/pablojim/highcharts-ng/master/dist/highcharts-ng.js"></script>
+<script src="//code.highcharts.com/modules/exporting.js"></script>
 </head>
 <body>
 	<div class="container">

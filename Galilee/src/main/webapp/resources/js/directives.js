@@ -12,7 +12,32 @@ dmsApp.directive('back', ['$window', function($window) {
         }
     };
 }]);
+// smart table select button
+dmsApp.directive('csSelect', function () {
+    return {
+        require: '^stTable',
+        template: '<input type="checkbox" >',
+        scope: {
+            row: '=csSelect'
+        },
+        link: function (scope, element, attr, ctrl) {
 
+            element.bind('change', function (evt) {
+                scope.$apply(function () {
+                    ctrl.select(scope.row, 'multiple');
+                });
+            });
+
+            scope.$watch('row.isSelected', function (newValue, oldValue) {
+                if (newValue === true) {
+                    element.parent().addClass('st-selected');
+                } else {
+                    element.parent().removeClass('st-selected');
+                }
+            });
+        }
+    };
+});
 dmsApp.directive('ngConfirmBoxClick', [ function() {
         return {
             link: function (scope, element, attr) {
@@ -72,6 +97,7 @@ dmsApp.directive('bsDropdown', function ($compile) {
 });
 
 (function(ng){
+	
 dmsApp.directive('stSelectDistinct', [function() {
       return {
         restrict: 'E',
@@ -100,14 +126,12 @@ dmsApp.directive('stSelectDistinct', [function() {
 
               angular.forEach(scope.collection, function(item) {
                 var value = item[predicate];
-
-//              if (value && value.trim().length > 0 && temp.indexOf(value) === -1) {
-                if (value && value.length > 0 && temp.indexOf(value) === -1) {
+                if (value && value.trim().length > 0 && temp.indexOf(value) === -1) {
                   temp.push(value);
                 }
               });
               temp.sort();
-              
+
               scope.distinctItems = scope.distinctItems.concat(temp);
               scope.selectedOption = scope.distinctItems[0];
               scope.optionChanged(scope.selectedOption);

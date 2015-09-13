@@ -20,7 +20,6 @@ public class SourceDAOImpl implements SourceDAO {
 	@Override
 	@Transactional(propagation = Propagation.REQUIRED)
 	public Sources insert(Sources source) {
-		// TODO Auto-generated method stub
 		sessionFactory.getCurrentSession().save(source);
 		return source;
 	}
@@ -28,7 +27,6 @@ public class SourceDAOImpl implements SourceDAO {
 	@Override
 	@Transactional(propagation = Propagation.REQUIRED)
 	public Sources update(Sources source) {
-		// TODO Auto-generated method stub
 		this.sessionFactory.getCurrentSession().update(source);
 		return source;
 	}
@@ -36,14 +34,12 @@ public class SourceDAOImpl implements SourceDAO {
 	@Override
 	@Transactional(propagation = Propagation.REQUIRED)
 	public void delete(Sources source) {
-		// TODO Auto-generated method stub
 		sessionFactory.getCurrentSession().delete(source);;
 	}
 
 	@Override
 	@Transactional(propagation = Propagation.REQUIRED)
 	public Sources selectByID(int sourceID) {
-		// TODO Auto-generated method stub
 		Sources source = (Sources) sessionFactory.getCurrentSession().get(
 				Sources.class, sourceID);
 		return source;
@@ -52,7 +48,6 @@ public class SourceDAOImpl implements SourceDAO {
 	@Override
 	@Transactional(propagation = Propagation.REQUIRED)
 	public List<Sources> selectAll() {
-		// TODO Auto-generated method stub
 		@SuppressWarnings("unchecked")
 		List<Sources> sourceList = sessionFactory.getCurrentSession()
 				.createCriteria(Sources.class)

@@ -57,6 +57,12 @@ public class FishController {
 		return this.fishService.findAll();
 	}
 	
+	@RequestMapping(value = "/fishes/{id}", method = RequestMethod.GET)
+	public List<Fishes> findFishes(@PathVariable("id") List<Integer> fishIDList) {
+
+		logger.info("findAll() proces has been called.");
+		return this.fishService.findByIDs(fishIDList);
+	}	
 	
 	@RequestMapping(value = "/fish/feature/{id}", method = RequestMethod.GET)
 	public Fishes findFishByFeature(@PathVariable("id") int featureID) {

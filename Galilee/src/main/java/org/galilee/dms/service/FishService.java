@@ -11,5 +11,6 @@ public interface FishService {
 	public void delete(Fishes fish);
 	public Fishes findByID(int fishID);
 	public List<Fishes> findAll();
+	public List<Fishes> findByIDs(List<Integer> fishIDList);
 	
 }

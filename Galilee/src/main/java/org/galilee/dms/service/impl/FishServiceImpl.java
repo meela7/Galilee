@@ -45,4 +45,9 @@ public class FishServiceImpl implements FishService {
 		return this.fishDao.selectAll();
 	}
 
+	@Override
+	public List<Fishes> findByIDs(List<Integer> fishIDList) {
+		return this.fishDao.selectByIDs(fishIDList);
+	}
+
 }

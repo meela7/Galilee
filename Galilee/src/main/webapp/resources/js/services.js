@@ -12,8 +12,35 @@ dmsApp.factory('SiteByRiver', function($resource) {
 		}
 	})
 });
+
+dmsApp.factory('SiteInfoByRiver', function($resource) {
+	return $resource(contextRoot + '/siteInfos/river/:id', {}, {
+		find : {
+			method: 'GET',
+			params : {
+				id : '@id'
+			},
+			isArray : true
+		}
+	})
+});
+
 dmsApp.factory('TermValueBySite', function($resource) {
 	return $resource(contextRoot + '/values/term/:year/:term/site/:id', {}, {
+		find : {
+			method: 'GET',
+			params : {
+				year : '@year',
+				term : '@term',
+				id : '@id'
+			},
+			cache : true,
+			isArray : true
+		}
+	})
+});
+dmsApp.factory('TermSpatialDataBySite', function($resource) {
+	return $resource(contextRoot + '/values/fish/term/:year/:term/site/:id', {}, {
 		find : {
 			method: 'GET',
 			params : {
@@ -42,8 +69,22 @@ dmsApp.factory('ValueBySite', function($resource) {
 });
 
 
+dmsApp.factory('TermValueByFish', function($resource) {
+	return $resource(contextRoot + '/values/term/:year/:term/fish/:id', {}, {
+		find : {
+			method: 'GET',
+			params : {
+				year : '@year',
+				term : '@term',
+				id : '@id'
+			},
+			isArray : true
+		}
+	})
+});
+
 dmsApp.factory('ValueByFish', function($resource) {
-	return $resource(contextRoot + '/values/:year/:term/fish/:id', {}, {
+	return $resource(contextRoot + '/values/:start/:end/fish/:id', {}, {
 		find : {
 			method: 'GET',
 			params : {
@@ -78,6 +119,7 @@ dmsApp.factory('SourceFindAll', function($resource) {
 		}
 	})
 });
+
 dmsApp.factory('SourceFind', function($resource) {
 	return $resource(contextRoot + '/source/:id', {}, {
 		find : {
@@ -123,6 +165,16 @@ dmsApp.factory('SiteFindAll', function($resource) {
 		}
 	})
 });
+
+dmsApp.factory('SiteInfoFindAll', function($resource) {
+	return $resource(contextRoot + '/siteInfos', {}, {
+		findall : {
+			method : 'GET',
+			cache : true,
+			isArray : true
+		}
+	})
+});
 dmsApp.factory('SiteFind', function($resource) {
 	return $resource(contextRoot + '/site/:id', {}, {
 		find : {
@@ -145,6 +197,17 @@ dmsApp.factory('SiteListFind', function($resource) {
 	})
 });
 
+dmsApp.factory('SiteInfoListFind', function($resource) {
+	return $resource(contextRoot + '/siteInfos/:id', {}, {
+		find : {
+			method : 'GET',
+			params : {
+				id : '@id'
+			},
+			isArray : true
+		}
+	})
+});
 dmsApp.factory('SiteCreate', function($resource) {
 	return $resource(contextRoot + '/site/create', {}, {
 		create : {
@@ -342,6 +405,15 @@ dmsApp.factory('FishByFeature', function($resource) {
 dmsApp.factory('FishFindAll', function($resource) {
 	return $resource(contextRoot + '/fishes', {}, {
 		findall : {
+			method : 'GET',
+			cache : true,
+			isArray : true
+		}
+	})
+});
+dmsApp.factory('FishListFind', function($resource) {
+	return $resource(contextRoot + '/fishes/:id', {}, {
+		find : {
 			method : 'GET',
 			cache : true,
 			isArray : true
