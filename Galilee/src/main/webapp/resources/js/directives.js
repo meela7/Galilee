@@ -69,7 +69,7 @@ dmsApp.directive('bsDropdown', function ($compile) {
                     html += '<div class="dropdown"><a class="dropdown-toggle" role="button" data-toggle="dropdown"  href="javascript:;">Dropdown<b class="caret"></b></a>';
                     break;
             }
-            html += '<ul class="dropdown-menu"><li ng-repeat="item in items"><a tabindex="-1" data-ng-click="selectVal(item)">{{item.unitName}}</a></li></ul></div>';
+            html += '<ul class="dropdown-menu"><li ng-repeat="item in items"><a tabindex="-1" data-ng-click="selectVal(item.unitName)">{{item.unitName}}</a></li></ul></div>';
             element.append($compile(html)(scope));
             for (var i = 0; i < scope.items.length; i++) {
                 if (scope.items[i].unitName === scope.selectedItem) {
@@ -80,14 +80,14 @@ dmsApp.directive('bsDropdown', function ($compile) {
             scope.selectVal = function (item) {
                 switch (attrs.menuType) {
                     case "button":
-                        $('button.button-label', element).html(item.unitName);
+                        $('button.button-label', element).html(item);
                         break;
                     default:
-                        $('a.dropdown-toggle', element).html('<b class="caret"></b> ' + item.unitName);
+                        $('a.dropdown-toggle', element).html('<b class="caret"></b> ' + item);
                         break;
                 }
                 scope.doSelect({
-                    selectedVal: item.unitName
+                    selectedVal: item
                 });
             };
             

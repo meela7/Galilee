@@ -13,4 +13,6 @@ public interface FishService {
 	public List<Fishes> findAll();
 	public List<Fishes> findByIDs(List<Integer> fishIDList);
 	
+	public List<Fishes> findEndangered(List<Integer> fishIDList);
+	
 }

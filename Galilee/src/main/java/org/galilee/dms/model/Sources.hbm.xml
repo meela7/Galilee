@@ -1,27 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
-"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated 2015. 7. 26 ???? 12:24:43 by Hibernate Tools 3.4.0.CR1 -->
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015. 10. 1 ???? 2:01:30 by Hibernate Tools 3.4.0.CR1 -->
 <hibernate-mapping>
-    <class name="org.galilee.dms.model.Sources" table="Sources">
+    <class name="org.galilee.dms.model.Sources" table="SOURCES">
         <id name="SourceID" type="int">
-            <column name="SourceID" />
+            <column name="SOURCEID" />
             <generator class="assigned" />
         </id>
         <property name="Institution" type="java.lang.String">
-            <column name="Institution" />
+            <column name="INSTITUTION" />
         </property>
         <property name="Investigator" type="java.lang.String">
-            <column name="Investigator" />
+            <column name="INVESTIGATOR" />
         </property>
         <property name="Phone" type="java.lang.String">
-            <column name="Phone" />
+            <column name="PHONE" />
         </property>
         <property name="Email" type="java.lang.String">
-            <column name="Email" />
+            <column name="EMAIL" />
         </property>
         <property name="Description" type="java.lang.String">
-            <column name="Description" />
+            <column name="DESCRIPTION" />
         </property>
     </class>
 </hibernate-mapping>

@@ -4,9 +4,8 @@
  * 
  * Source Controller
  */
-dmsApp.controller('SourceListCtrl', [ '$scope', 'SourceFindAll',
-		'SourceDelete', '$location',
-		function($scope, SourceFindAll, SourceDelete, $location) {
+dmsApp.controller('SourceListCtrl', [ '$scope', 'SourcesService', 'SourcesService', '$location',
+		function($scope, SourcesService, SourcesService, $location) {
 	
 			$scope.cancel = function(){
 				$scope.search = "";
@@ -17,40 +16,40 @@ dmsApp.controller('SourceListCtrl', [ '$scope', 'SourceFindAll',
 			};
 			// callback for ng-click 'deleteSource':
 			$scope.deleteSource = function(source) {
-				SourceDelete.del(source);
+				SourceService.del(source);
 				$location.path('/source-list');
 			};
 			// callback for ng-click 'createSource':
 			$scope.createSource = function() {
 				$location.path('/source-creation');
 			};
-			$scope.sources = SourceFindAll.findall();
+			$scope.sources = SourcesService.findall();
 			// panination
 			$scope.currentPage = 1, $scope.numPerPage = 10,
 				$scope.maxSize = 10;
 		} ]);
 dmsApp.controller('SourceDetailCtrl', [ '$scope', '$routeParams',
-		'SourceUpdate', 'SourceFind', '$location',
-		function($scope, $routeParams, SourceUpdate, SourceFind, $location) {
+		'SourceService', '$location',
+		function($scope, $routeParams, SourceService, $location) {
 			// callback for ng-click 'updateSource':
 			$scope.updateSource = function() {
-				SourceUpdate.update($scope.source);
+				SourceService.update($scope.source);
 				$location.path('/source-list');
 			};
 			// callback for ng-click 'cancel':
 			$scope.cancel = function() {
 				$location.path('/source-list');
 			};
-			$scope.source = SourceFind.find({
+			$scope.source = SourceService.find({
 				id : $routeParams.id
 			});
 			
 		} ]);
-dmsApp.controller('SourceCreationCtrl', [ '$scope', 'SourceCreate','$location', 
-    function($scope, SourceCreate, $location) {
+dmsApp.controller('SourceCreationCtrl', [ '$scope', 'SourceService','$location', 
+    function($scope, SourceService, $location) {
 	// callback for ng-click 'createNewSource':
 	$scope.createSource = function() {
-		SourceCreate.create($scope.source);
+		SourceService.create($scope.source);
 		$location.path('/source-list');
 	};
 	$scope.cancel = function() {
@@ -61,8 +60,8 @@ dmsApp.controller('SourceCreationCtrl', [ '$scope', 'SourceCreate','$location',
 /**
  * Site Controller
  */
-dmsApp.controller('SiteListCtrl', ['$scope','SiteFindAll','SiteDelete','$location',
-	function($scope, SiteFindAll, SiteDelete, $location) {
+dmsApp.controller('SiteListCtrl', ['$scope','SitesService', 'SiteService','$location',
+	function($scope, SitesService, SiteService,$location) {
 	
 	// callback for ng-click 'editSite':
 	$scope.editSite = function(siteID) {
@@ -70,7 +69,7 @@ dmsApp.controller('SiteListCtrl', ['$scope','SiteFindAll','SiteDelete','$locatio
 	};
 	// callback for ng-click 'deleteSite':
 	$scope.deleteSite = function(site) {
-		SiteDelete.del(site);
+		SiteService.del(site);
 		$location.path('/site-list');
 	};
 	// callback for ng-click 'createSite':
@@ -82,25 +81,13 @@ dmsApp.controller('SiteListCtrl', ['$scope','SiteFindAll','SiteDelete','$locatio
 		$scope.search = "";
 	};
 	
-	$scope.sites = SiteFindAll.findall();
-
-	// cache
-	// var cache = dmsCache.get('siteList");
-	// if(cache){ // if there's something in the cache,
-	// use it!
-	// $scope.sites = cache;
-	// }esle{ // otherwise, let's generate a new
-	// instance!
-	// dmsCache.put('siteList', SiteFindAll.findall());
-	// $scope.sites = dmsCache.get('siteList');
-	// }
+	$scope.sites = SitesService.findall();
 
 	// panination
 	$scope.currentPage = 1, $scope.numPerPage = 10,
 			$scope.maxSize = 10;
 
-	$scope.$watch('currentPage + numPerPage',
-		function() {
+	$scope.$watch('currentPage + numPerPage',function() {
 		var begin = (($scope.currentPage - 1) * $scope.numPerPage), end = begin
 				+ $scope.numPerPage;
 		$scope.filteredSites = $scope.sites
@@ -108,39 +95,38 @@ dmsApp.controller('SiteListCtrl', ['$scope','SiteFindAll','SiteDelete','$locatio
 	});
 }]);
 
-dmsApp.controller('SiteDetailCtrl', [ '$scope', '$routeParams', 'SiteUpdate',
-		'SiteFind', '$location',
-	function($scope, $routeParams, SiteUpdate, SiteFind, $location) {
+dmsApp.controller('SiteDetailCtrl', [ '$scope', '$routeParams','SiteService', '$location',
+	function($scope, $routeParams, SiteService, $location) {
 		// callback for ng-click 'updateSite':
-	$scope.updateSite = function() {
-		SiteUpdate.update($scope.site);
-		$location.path('/site-list');
-	};
-	// callback for ng-click 'cancel':
-	$scope.cancel = function() {
-		$location.path('/site-list');
-	};
-	$scope.site = SiteFind.find({
-		id : $routeParams.id
-	});
+		$scope.updateSite = function() {
+			SiteService.update($scope.site);
+			$location.path('/site-list');
+		};
+		// callback for ng-click 'cancel':
+		$scope.cancel = function() {
+			$location.path('/site-list');
+		};
+		$scope.site = SiteService.find({
+			id : $routeParams.id
+		});
 } ]);
-dmsApp.controller('SiteCreationCtrl', [ '$scope', 'SiteCreate', '$location',
+dmsApp.controller('SiteCreationCtrl', [ '$scope', 'SiteService', '$location',
 	function($scope, SiteCreate, $location) {
 	// callback for ng-click 'createSite':
-	$scope.createSite = function() {
-		SiteCreate.create($scope.site);
-		$location.path('/site-list');
-	};
-	$scope.cancel = function() {
-		$location.path('/site-list');
-	};
+		$scope.createSite = function() {
+			SiteService.create($scope.site);
+			$location.path('/site-list');
+		};
+		$scope.cancel = function() {
+			$location.path('/site-list');
+		};
 } ]);
 
 /**
  * River Controller
  */
-dmsApp.controller('RiverListCtrl',['$scope','RiverFindAll','RiverDelete','$location',
-	function($scope, RiverFindAll, RiverDelete, $location) {
+dmsApp.controller('RiverListCtrl',['$scope','RiversService','RiverService','$location',
+	function($scope, RiversService, RiverService, $location) {
 
 		// callback for ng-click 'editRiver':
 		$scope.editRiver = function (riverID) {
@@ -148,7 +134,7 @@ dmsApp.controller('RiverListCtrl',['$scope','RiverFindAll','RiverDelete','$locat
 		};
 		// callback for ng-click 'deleteRiver':
 		$scope.deleteRiver = function (river) {
-			RiverDelete.del(river);
+			RiverService.del(river);
 			$location.path('/river-list');
 		};
 		// callback for ng-click 'createRiver':
@@ -161,7 +147,7 @@ dmsApp.controller('RiverListCtrl',['$scope','RiverFindAll','RiverDelete','$locat
 			$scope.search = "";
 		};
 
-		$scope.rivers = RiverFindAll.findall();
+		$scope.rivers = RiversService.findall();
 
 		// panination
 		$scope.currentPage = 1, $scope.numPerPage = 10,
@@ -171,33 +157,31 @@ dmsApp.controller('RiverListCtrl',['$scope','RiverFindAll','RiverDelete','$locat
 			var begin = (($scope.currentPage - 1) * $scope.numPerPage), end = begin
 				+ $scope.numPerPage;
 
-			$scope.filteredRivers = $scope.rivers
-				.slice(begin, end);
+			$scope.filteredRivers = $scope.rivers.slice(begin, end);
 		});
 	}
 ]);
 
-dmsApp.controller('RiverDetailCtrl', [ '$scope', '$routeParams', 'RiverUpdate',
-		'RiverFind', '$location',
-		function($scope, $routeParams, RiverUpdate, RiverFind, $location) {
+dmsApp.controller('RiverDetailCtrl', [ '$scope', '$routeParams', 'RiverService','$location',
+		function($scope, $routeParams, RiverService, $location) {
 			// callback for ng-click 'updateRiver':
 			$scope.updateRiver = function() {
-				RiverUpdate.update($scope.river);
+				RiverService.update($scope.river);
 				$location.path('/river-list');
 			};
 			// callback for ng-click 'cancel':
 			$scope.cancel = function() {
 				$location.path('/river-list');
 			};
-			$scope.river = RiverFind.find({
+			$scope.river = RiverService.find({
 				id : $routeParams.id
 			});
 		} ]);
-dmsApp.controller('RiverCreationCtrl', [ '$scope', 'RiverCreate', '$location',
-		function($scope, RiverCreate, $location) {
+dmsApp.controller('RiverCreationCtrl', [ '$scope', 'RiverService', '$location',
+		function($scope, RiverService, $location) {
 			// callback for ng-click 'createRiver':
 			$scope.createRiver = function() {
-				RiverCreate.create($scope.river);
+				RiverService.create($scope.river);
 				$location.path('/river-list');
 			};
 			$scope.cancel = function() {
@@ -281,10 +265,10 @@ dmsApp.controller('SiteCodeDetailCtrl',
 						id : $routeParams.id
 					});
 				} ]);
-dmsApp.controller('SiteCodeCreationCtrl', [ '$scope', 'SiteFindAll',
+dmsApp.controller('SiteCodeCreationCtrl', [ '$scope', 'SiteService',
 		'SiteCodeCreate', '$location',
-		function($scope, SiteFindAll, SiteCodeCreate, $location) {
-			$scope.sites = SiteFindAll.findall();
+		function($scope, SiteService, SiteCodeCreate, $location) {
+			$scope.sites = SiteService.findall();
 			var getSite;
 			$scope.getSelectedSite = function(site) {
 				getSite = $scope.ddlSites;
@@ -310,75 +294,62 @@ dmsApp.controller('SiteCodeCreationCtrl', [ '$scope', 'SiteFindAll',
  * Featrues
  */
 
-dmsApp
-		.controller(
-				'FeatureListCtrl',
-				[
-						'$scope',
-						'FeatureFindAll',
-						'FeatureDelete',
-						'$location',
-						function($scope, FeatureFindAll, FeatureDelete,
-								$location) {
-							$scope.cancel = function () {
-								
-								$scope.search = "";
-							};
-							// alert("FeatureListCtrl");
-							// callback for ng-click 'editFeature':
-							$scope.editFeature = function(featureID) {
-								$location.path('/feature-detail/' + featureID);
-							};
-							$scope.findFishByFeature = function(featureID) {
-								$location.path('/feature-fish/' + featureID);
-							};
-							// callback for ng-click 'deleteFeature':
-							$scope.deleteFeature = function(feature) {
-								FeatureDelete.del(feature);
-								$location.path('/feature-list');
-							};
-							// callback for ng-click 'createFeature':
-							$scope.createFeature = function() {
-								$location.path('/feature-creation');
-							};
-							$scope.features = FeatureFindAll.findall();
+dmsApp.controller('FeatureListCtrl',['$scope', 'FeaturesService', 'FeatureService', '$location',
+		function($scope, FeaturesService, FeatureService,$location) {
+			$scope.cancel = function () {
+				$scope.search = "";
+			};
+			// callback for ng-click 'editFeature':
+			$scope.editFeature = function(featureID) {
+				$location.path('/feature-detail/' + featureID);
+			};
+			$scope.findFishByFeature = function(featureID) {
+				$location.path('/feature-fish/' + featureID);
+			};
+			// callback for ng-click 'deleteFeature':
+			$scope.deleteFeature = function(feature) {
+				FeatureService.del(feature);
+				$location.path('/feature-list');
+			};
+			// callback for ng-click 'createFeature':
+			$scope.createFeature = function() {
+				$location.path('/feature-creation');
+			};
+			$scope.features = FeaturesService.findall();
 
-							// panination
-							$scope.currentPage = 1, $scope.numPerPage = 10,
-									$scope.maxSize = 10;
+			// panination
+			$scope.currentPage = 1, $scope.numPerPage = 10,
+					$scope.maxSize = 10;
 
-							$scope
-									.$watch(
-											'currentPage + numPerPage',
-											function() {
-												var begin = (($scope.currentPage - 1) * $scope.numPerPage), end = begin
-														+ $scope.numPerPage;
-												$scope.filteredFeatures = $scope.features
-														.slice(begin, end);
-											});
+			$scope.$watch('currentPage + numPerPage',
+						function() {
+							var begin = (($scope.currentPage - 1) * $scope.numPerPage), end = begin
+									+ $scope.numPerPage;
+							$scope.filteredFeatures = $scope.features
+									.slice(begin, end);
+						});
 
-						} ]);
-dmsApp.controller('FeatureDetailCtrl', [ '$scope', '$routeParams',
-		'FeatureUpdate', 'FeatureFind', '$location',
-		function($scope, $routeParams, FeatureUpdate, FeatureFind, $location) {
+		} ]);
+dmsApp.controller('FeatureDetailCtrl', [ '$scope', '$routeParams', 'FeatureService', '$location',
+		function($scope, $routeParams, FeatureService, $location) {
 			// callback for ng-click 'updateFeaturee':
 			$scope.updateFeature = function() {
-				FeatureUpdate.update($scope.feature);
+				FeatureService.update($scope.feature);
 				$location.path('/feature-list');
 			};
 			// callback for ng-click 'cancel':
 			$scope.cancel = function() {
 				$location.path('/feature-list');
 			};
-			$scope.feature = FeatureFind.find({
+			$scope.feature = FeatureService.find({
 				id : $routeParams.id
 			});
 		} ]);
-dmsApp.controller('FeatureCreationCtrl', [ '$scope', 'FeatureCreate',
-		'$location', function($scope, FeatureCreate, $location) {
+dmsApp.controller('FeatureCreationCtrl', [ '$scope', 'FeatureCreate','$location', 
+        function($scope, FeatureService, $location) {
 			// callback for ng-click 'createNewFeature':
 			$scope.createFeature = function() {
-				FeatureCreate.create($scope.feature);
+				FeatureService.create($scope.feature);
 				$location.path('/feature-list');
 			};
 			$scope.cancel = function() {
@@ -386,10 +357,8 @@ dmsApp.controller('FeatureCreationCtrl', [ '$scope', 'FeatureCreate',
 			};
 		} ]);
 
-dmsApp.controller('FeatureFishDetailCtrl', [ '$scope', '$routeParams',
-		'FishByFeature', '$location',
+dmsApp.controller('FeatureFishDetailCtrl', [ '$scope', '$routeParams','FishByFeature', '$location',
 		function($scope, $routeParams, FishByFeature, $location) {
-
 			$scope.updateFish = function() {
 				// FishUpdate.update($scope.fish);
 				$location.path('/feature-list');
@@ -408,68 +377,57 @@ dmsApp.controller('FeatureFishDetailCtrl', [ '$scope', '$routeParams',
  * Fishes
  */
 
-dmsApp
-		.controller(
-				'FishListCtrl',
-				[
-						'$scope',
-						'FishFindAll',
-						'FishDelete',
-						'$location',
-						function($scope, FishFindAll, FishDelete, $location) {
-							$scope.cancel = function(){
-								$scope.search = "";
-							};
-							// alert("FeatureListCtrl");
-							// callback for ng-click 'editFish':
-							$scope.editFish = function(fishID) {
-								$location.path('/fish-detail/' + fishID);
-							};
+dmsApp.controller('FishListCtrl',['$scope', 'FishesService', 'FishService', '$location',
+		function($scope, FishesService, FishService, $location) {
+			$scope.cancel = function(){
+				$scope.search = "";
+			};
+			// callback for ng-click 'editFish':
+			$scope.editFish = function(fishID) {
+				$location.path('/fish-detail/' + fishID);
+			};
+			// callback for ng-click 'deleteFish':
+			$scope.deleteFish = function(fish) {
+				FishService.del(fish);
+				$location.path('/fish-list');
+			};
+			// callback for ng-click 'createFish':
+			$scope.createFish = function() {
+				$location.path('/fish-creation');
+			};
+			$scope.fishes = FishesService.findall();
 
-							// callback for ng-click 'deleteFish':
-							$scope.deleteFish = function(fish) {
-								FishDelete.del(fish);
-								$location.path('/fish-list');
-							};
-							// callback for ng-click 'createFish':
-							$scope.createFish = function() {
-								$location.path('/fish-creation');
-							};
-							$scope.fishes = FishFindAll.findall();
+			// panination
+			$scope.currentPage = 1, $scope.numPerPage = 10,
+					$scope.maxSize = 10;
 
-							// panination
-							$scope.currentPage = 1, $scope.numPerPage = 10,
-									$scope.maxSize = 10;
+			$scope.$watch('currentPage + numPerPage',function() {
+				var begin = (($scope.currentPage - 1) * $scope.numPerPage), end = begin
+						+ $scope.numPerPage;
+				$scope.filteredFishes = $scope.fishes.slice(begin, end);
+			});
 
-							$scope.$watch('currentPage + numPerPage',function() {
-								var begin = (($scope.currentPage - 1) * $scope.numPerPage), end = begin
-										+ $scope.numPerPage;
-								$scope.filteredFishes = $scope.fishes
-										.slice(begin, end);
-							});
-
-						} ]);
-dmsApp.controller('FishDetailCtrl', [ '$scope', '$routeParams', 'FishUpdate',
-		'FishFind', '$location',
-		function($scope, $routeParams, FishUpdate, FishFind, $location) {
+		} ]);
+dmsApp.controller('FishDetailCtrl', [ '$scope', '$routeParams', 'FishService', '$location',
+		function($scope, $routeParams, FishService, $location) {
 			// callback for ng-click 'updateFish':
 			$scope.updateFish = function() {
-				FishUpdate.update($scope.fish);
+				FishService.update($scope.fish);
 				$location.path('/fish-list');
 			};
 			// callback for ng-click 'cancel':
 			$scope.cancel = function() {
 				$location.path('/fish-list');
 			};
-			$scope.fish = FishFind.find({
+			$scope.fish = FishService.find({
 				id : $routeParams.id
 			});
 		} ]);
-dmsApp.controller('FishCreationCtrl', [ '$scope', 'FishCreate', '$location',
-		function($scope, FishCreate, $location) {
+dmsApp.controller('FishCreationCtrl', [ '$scope', 'FishService', '$location',
+		function($scope, FishService, $location) {
 			// callback for ng-click 'createNewFish':
 			$scope.createFish = function() {
-				FishCreate.create($scope.fish);
+				FishService.create($scope.fish);
 				$location.path('/fish-list');
 			};
 			$scope.cancel = function() {
@@ -481,70 +439,59 @@ dmsApp.controller('FishCreationCtrl', [ '$scope', 'FishCreate', '$location',
  * Methods
  */
 
-dmsApp
-		.controller(
-				'MethodListCtrl',
-				[
-						'$scope',
-						'MethodFindAll',
-						'MethodDelete',
-						'$location',
-						function($scope, MethodFindAll, MethodDelete, $location) {
-							$scope.cancel = function(){
-								$scope.search = "";
-							}
-							// callback for ng-click 'editMethod':
-							$scope.editMethod = function(methodID) {
-								$location.path('/method-detail/' + methodID);
-							};
+dmsApp.controller('MethodListCtrl',['$scope', 'MethodsService', 'MethodService', '$location',
+		function($scope, MethodsService, MethodService, $location) {
+			$scope.cancel = function(){
+				$scope.search = "";
+			}
+			// callback for ng-click 'editMethod':
+			$scope.editMethod = function(methodID) {
+				$location.path('/method-detail/' + methodID);
+			};
 
-							// callback for ng-click 'deleteMethod':
-							$scope.deleteMethod = function(method) {
-								MethodDelete.del(method);
-								$location.path('/method-list');
-							};
-							// callback for ng-click 'createMethod':
-							$scope.createMethod = function() {
-								$location.path('/method-creation');
-							};
-							$scope.methods = MethodFindAll.findall();
+			// callback for ng-click 'deleteMethod':
+			$scope.deleteMethod = function(method) {
+				MethodService.del(method);
+				$location.path('/method-list');
+			};
+			// callback for ng-click 'createMethod':
+			$scope.createMethod = function() {
+				$location.path('/method-creation');
+			};
+			$scope.methods = MethodsService.findall();
 
-							// panination
-							$scope.currentPage = 1, $scope.numPerPage = 10,
-									$scope.maxSize = 10;
+			// panination
+			$scope.currentPage = 1, $scope.numPerPage = 10,
+					$scope.maxSize = 10;
 
-							$scope
-									.$watch(
-											'currentPage + numPerPage',
-											function() {
-												var begin = (($scope.currentPage - 1) * $scope.numPerPage), end = begin
-														+ $scope.numPerPage;
-												$scope.filteredMethods = $scope.methods
-														.slice(begin, end);
-											});
+			$scope.$watch('currentPage + numPerPage',function() {
+				var begin = (($scope.currentPage - 1) * $scope.numPerPage), end = begin
+						+ $scope.numPerPage;
+				$scope.filteredMethods = $scope.methods
+						.slice(begin, end);
+			});
 
-						} ]);
-dmsApp.controller('MethodDetailCtrl', [ '$scope', '$routeParams',
-		'MethodUpdate', 'MethodFind', '$location',
-		function($scope, $routeParams, MethodUpdate, MethodFind, $location) {
+		} ]);
+dmsApp.controller('MethodDetailCtrl', [ '$scope', '$routeParams', 'MethodService', '$location',
+		function($scope, $routeParams, MethodService, $location) {
 			// callback for ng-click 'updateFish':
 			$scope.updateMethod = function() {
-				MethodUpdate.update($scope.method);
+				MethodService.update($scope.method);
 				$location.path('/method-list');
 			};
 			// callback for ng-click 'cancel':
 			$scope.cancel = function() {
 				$location.path('/method-list');
 			};
-			$scope.method = MethodFind.find({
+			$scope.method = MethodService.find({
 				id : $routeParams.id
 			});
 		} ]);
-dmsApp.controller('MethodCreationCtrl', [ '$scope', 'MethodCreate',
-		'$location', function($scope, MethodCreate, $location) {
+dmsApp.controller('MethodCreationCtrl', [ '$scope', 'MethodService', '$location', 
+       function($scope, MethodCreate, $location) {
 			// callback for ng-click 'createNewFish':
 			$scope.createMethod = function() {
-				MethodCreate.create($scope.method);
+				MethodService.create($scope.method);
 				$location.path('/method-list');
 			};
 			$scope.cancel = function() {
@@ -555,81 +502,63 @@ dmsApp.controller('MethodCreationCtrl', [ '$scope', 'MethodCreate',
  * Variables
  */
 
-dmsApp
-		.controller(
-				'VariableListCtrl',
-				[
-						'$scope',
-						'VariableFindAll',
-						'VariableDelete',
-						'$location',
-						function($scope, VariableFindAll, VariableDelete,
-								$location) {
-							$scope.cancel = function(){
-								$scope.search = "";
-							}
-							// callback for ng-click 'editVariable':
-							$scope.editVariable = function(variableID) {
-								$location
-										.path('/variable-detail/' + variableID);
-							};
+dmsApp.controller('VariableListCtrl', ['$scope', 'VariablesService', 'VariableService', '$location',
+		function($scope, VariablesService, VariableService,
+				$location) {
+			$scope.cancel = function(){
+				$scope.search = "";
+			}
+			// callback for ng-click 'editVariable':
+			$scope.editVariable = function(variableID) {
+				$location.path('/variable-detail/' + variableID);
+			};
 
-							// callback for ng-click 'deleteVariable':
-							$scope.deleteVariable = function(variable) {
-								VariableDelete.del(variable);
-								$location.path('/variable-list');
-							};
-							// callback for ng-click 'createVariable':
-							$scope.createVariable = function() {
-								$location.path('/variable-creation');
-							};
-							$scope.variables = VariableFindAll.findall();
+			// callback for ng-click 'deleteVariable':
+			$scope.deleteVariable = function(variable) {
+				VariableService.del(variable);
+				$location.path('/variable-list');
+			};
+			// callback for ng-click 'createVariable':
+			$scope.createVariable = function() {
+				$location.path('/variable-creation');
+			};
+			$scope.variables = VariablesService.findall();
 
-							// panination
-							$scope.currentPage = 1, $scope.numPerPage = 10,
-									$scope.maxSize = 10;
+			// panination
+			$scope.currentPage = 1, $scope.numPerPage = 10,
+					$scope.maxSize = 10;
 
-							$scope
-									.$watch(
-											'currentPage + numPerPage',
-											function() {
-												var begin = (($scope.currentPage - 1) * $scope.numPerPage), end = begin
-														+ $scope.numPerPage;
-												$scope.filteredVariables = $scope.variables
-														.slice(begin, end);
-											});
+			$scope.$watch('currentPage + numPerPage',function() {
+				var begin = (($scope.currentPage - 1) * $scope.numPerPage), end = begin
+						+ $scope.numPerPage;
+				$scope.filteredVariables = $scope.variables
+						.slice(begin, end);
+			});
 
-						} ]);
-dmsApp.controller('VariableDetailCtrl',
-		[
-				'$scope',
-				'$routeParams',
-				'VariableUpdate',
-				'VariableFind',
-				'UnitFindAll',
-				'$location',
-				function($scope, $routeParams, VariableUpdate, VariableFind,UnitFindAll,
-						$location) {
-					// callback for ng-click 'updateFeaturee':
-					$scope.updateVariable = function() {
-						VariableUpdate.update($scope.variable);
-						$location.path('/variable-list');
-					};
-					// callback for ng-click 'cancel':
-					$scope.cancel = function() {
-						$location.path('/variable-list');
-					};
-					$scope.variable = VariableFind.find({
-						id : $routeParams.id
-					});
-					$scope.statuses = UnitFindAll.findall();
-					
-				} ]);
-dmsApp.controller('VariableCreationCtrl', [ '$scope', 'VariableCreate',
-		'$location', function($scope, VariableCreate, $location) {
+		} ]);
+dmsApp.controller('VariableDetailCtrl',['$scope', '$routeParams', 'VariableService', 'UnitsService', '$location',
+			function($scope, $routeParams, VariableService, UnitsService,
+					$location) {
+				// callback for ng-click 'updateFeaturee':
+				$scope.updateVariable = function() {
+					VariableService.update($scope.variable);
+					$location.path('/variable-list');
+				};
+				// callback for ng-click 'cancel':
+				$scope.cancel = function() {
+					$location.path('/variable-list');
+				};
+				$scope.variable = VariableService.find({
+					id : $routeParams.id
+				});
+				$scope.statuses = UnitsService.findall();
+				
+			} ]);
+dmsApp.controller('VariableCreationCtrl', [ '$scope', 'VariableService',
+		'$location', function($scope, VariableService, $location) {
 			// callback for ng-click 'createNewFeature':
 			$scope.createVariable = function() {
-				VariableCreate.create($scope.variable);
+				VariableService.create($scope.variable);
 				$location.path('/variable-list');
 			};
 			$scope.cancel = function() {
@@ -641,78 +570,59 @@ dmsApp.controller('VariableCreationCtrl', [ '$scope', 'VariableCreate',
  * Units
  */
 
-dmsApp
-		.controller(
-				'UnitListCtrl',
-				[
-						'$scope',
-						'UnitFindAll',
-						'UnitDelete',
-						'$location',
-						function($scope, UnitFindAll, UnitDelete,
-								$location) {
-							$scope.cancel = function(){
-								$scope.search = "";
-							}
-							// callback for ng-click 'editUnit':
-							$scope.editUnit = function(unitID) {
-								$location
-										.path('/unit-detail/' + unitID);
-							};
+dmsApp.controller('UnitListCtrl', ['$scope', 'UnitsService', 'UnitService', '$location',
+		function($scope, UnitsService, UnitService,	$location) {
+			$scope.cancel = function(){
+				$scope.search = "";
+			}
+			// callback for ng-click 'editUnit':
+			$scope.editUnit = function(unitID) {
+				$location.path('/unit-detail/' + unitID);
+			};
 
-							// callback for ng-click 'deleteUnit':
-							$scope.deleteUnit = function(unit) {
-								UnitDelete.del(unit);
-								$location.path('/unit-list');
-							};
-							// callback for ng-click 'createUnit':
-							$scope.createUnit = function() {
-								$location.path('/unit-creation');
-							};
-							$scope.units = UnitFindAll.findall();
+			// callback for ng-click 'deleteUnit':
+			$scope.deleteUnit = function(unit) {
+				UnitService.del(unit);
+				$location.path('/unit-list');
+			};
+			// callback for ng-click 'createUnit':
+			$scope.createUnit = function() {
+				$location.path('/unit-creation');
+			};
+			$scope.units = UnitsService.findall();
 
-							// panination
-							$scope.currentPage = 1, $scope.numPerPage = 10,
-									$scope.maxSize = 10;
+			// panination
+			$scope.currentPage = 1, $scope.numPerPage = 10,
+					$scope.maxSize = 10;
 
-							$scope
-									.$watch(
-											'currentPage + numPerPage',
-											function() {
-												var begin = (($scope.currentPage - 1) * $scope.numPerPage), end = begin
-														+ $scope.numPerPage;
-												$scope.filteredUnits = $scope.units
-														.slice(begin, end);
-											});
+			$scope.$watch('currentPage + numPerPage',function() {
+				var begin = (($scope.currentPage - 1) * $scope.numPerPage), end = begin
+						+ $scope.numPerPage;
+				$scope.filteredUnits = $scope.units
+						.slice(begin, end);
+			});
 
-						} ]);
-dmsApp.controller('UnitDetailCtrl',
-		[
-				'$scope',
-				'$routeParams',
-				'UnitUpdate',
-				'UnitFind',
-				'$location',
-				function($scope, $routeParams, UnitUpdate, UnitFind,
-						$location) {
-					// callback for ng-click 'updateFeaturee':
-					$scope.updateUnit = function() {
-						UnitUpdate.update($scope.unit);
-						$location.path('/unit-list');
-					};
-					// callback for ng-click 'cancel':
-					$scope.cancel = function() {
-						$location.path('/unit-list');
-					};
-					$scope.unit = UnitFind.find({
-						id : $routeParams.id
-					});
-				} ]);
-dmsApp.controller('UnitCreationCtrl', [ '$scope', 'UnitCreate',
-		'$location', function($scope, UnitCreate, $location) {
+		} ]);
+dmsApp.controller('UnitDetailCtrl', ['$scope', '$routeParams', 'UnitService', '$location',
+		function($scope, $routeParams, UnitService, $location) {
+			// callback for ng-click 'updateFeaturee':
+			$scope.updateUnit = function() {
+				UnitService.update($scope.unit);
+				$location.path('/unit-list');
+			};
+			// callback for ng-click 'cancel':
+			$scope.cancel = function() {
+				$location.path('/unit-list');
+			};
+			$scope.unit = UnitService.find({
+				id : $routeParams.id
+			});
+		} ]);
+dmsApp.controller('UnitCreationCtrl', [ '$scope', 'UnitService', '$location', 
+        function($scope, UnitService, $location) {
 			// callback for ng-click 'createNewFeature':
 			$scope.createUnit = function() {
-				UnitCreate.create($scope.unit);
+				UnitService.create($scope.unit);
 				$location.path('/unit-list');
 			};
 			$scope.cancel = function() {

@@ -50,4 +50,10 @@ public class FishServiceImpl implements FishService {
 		return this.fishDao.selectByIDs(fishIDList);
 	}
 
+	@Override
+	public List<Fishes> findEndangered(List<Integer> fishIDList) {
+		
+		return this.fishDao.selectEndangered(fishIDList);
+	}
+
 }

@@ -15,9 +15,12 @@ public interface SiteDAO {
 	
 	public List<Sites> selectByIDs(List<Integer> siteIDs);	
 	public List<Sites> selectByRiverIDs(List<Integer> riverIDs);
-	public List<Sites> selectByBasin(String basin);
 	
 	public List<SiteInfo> selectAllSiteInfo();
 	public List<SiteInfo> selectInfoByIDs(List<Integer> infoIDs);
-	public List<SiteInfo> selectInfoByRivers(List<Integer> riverIDs); 
+	
+	public List<Sites> selectByRiverColumn(String colName, String mid);
+	public List<Sites> selectByColumn(String colName, String mid);
+	public List<Sites> selectByBasinClass(String basin, String classification);
+	public List<Sites> selectByBasinOrder(String basin, int streamOrder);
 }

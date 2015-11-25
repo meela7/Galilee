@@ -69,4 +69,17 @@ public class FishDAOImpl implements FishDAO {
 		return fishList;
 	}
 
+	@Override
+	@Transactional(propagation = Propagation.REQUIRED)
+	public List<Fishes> selectEndangered(List<Integer> fishIDList) {
+		
+		@SuppressWarnings("unchecked")
+		List<Fishes> fishList = this.sessionFactory.getCurrentSession()
+				.createCriteria(Fishes.class)
+				.add(Restrictions.in("FishID", fishIDList))
+				.add(Restrictions.like("EndangeredSpecies", "멸종위기%"))
+				.addOrder(Order.asc("FishID")).list();
+		return fishList;
+	}
+
 }

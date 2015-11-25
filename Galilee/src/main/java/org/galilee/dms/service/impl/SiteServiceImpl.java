@@ -1,5 +1,6 @@
 package org.galilee.dms.service.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.galilee.dms.dao.SiteDAO;
@@ -48,6 +49,11 @@ public class SiteServiceImpl implements SiteService {
 	public Sites findByID(int siteID){
 		return this.siteDao.selectByID(siteID);
 	}
+	
+	@Override
+	public Sites findByName(String siteName) {
+		return this.siteDao.selectByColumn("SiteName", siteName).get(0);
+	}
 
 	@Override
 	public List<Sites> findByRivers(List<Integer> riverIDs) {
@@ -63,7 +69,37 @@ public class SiteServiceImpl implements SiteService {
 	@Override
 	public List<Sites> findByBasin(String basin) {
 		
-		return this.siteDao.selectByBasin(basin);
+		return this.siteDao.selectByRiverColumn("Basin", basin);
+	}	
+
+	@Override
+	public List<Sites> findByMid(String mid) {
+		
+		return this.siteDao.selectByRiverColumn("MidWatershed", mid);
+	}
+	
+	@Override
+	public List<Sites> findBySub(String sub) {
+		
+		return this.siteDao.selectByRiverColumn("SubWatershed", sub);
+	}
+	
+	@Override
+	public List<Sites> findByRiver(String river) {
+		
+		return this.siteDao.selectByRiverColumn("RiverName", river);
+	}
+	
+	@Override
+	public List<Sites> findByBasinClass(String basin, String classification) {
+		
+		return this.siteDao.selectByBasinClass(basin, classification);
+	}
+	
+	@Override
+	public List<Sites> findByBasinOrder(String basin, int streamOrder) {
+		
+		return this.siteDao.selectByBasinOrder(basin, streamOrder);
 	}
 
 	@Override
@@ -78,8 +114,22 @@ public class SiteServiceImpl implements SiteService {
 
 	@Override
 	public List<SiteInfo> findInfoByRivers(List<Integer> rIDList) {
-		// TODO Auto-generated method stub
-		return this.siteDao.selectInfoByRivers(rIDList);
+		
+		List<Sites> siteList = this.siteDao.selectByRiverIDs(rIDList);
+		List<Integer> sIDList = new ArrayList<Integer>();
+		for(Sites s: siteList)
+			sIDList.add(s.getSiteID());
+		return this.siteDao.selectInfoByIDs(sIDList);
 	}
+
+	@Override
+	public List<SiteInfo> findInfosByBasin(List<Integer> siIDs, String basin) {
+		List<Sites> siteList = this.siteDao.selectByRiverColumn("Basin", basin);
+		List<Integer> sIDList = new ArrayList<Integer>();
+		for(Sites s: siteList)
+			sIDList.add(s.getSiteID());
+		return this.siteDao.selectInfoByIDs(sIDList);
+	}
+
 
 }

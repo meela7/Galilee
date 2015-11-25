@@ -70,7 +70,9 @@ public class SiteDAOImpl implements SiteDAO {
 		
 		Session session = this.sessionFactory.getCurrentSession();
 		@SuppressWarnings("unchecked")
-		List<Sites> sites = session.createCriteria(Sites.class).add(Restrictions.in("River.RiverID", riverIDs)).addOrder(Order.asc("SiteID")).list();
+		List<Sites> sites = session.createCriteria(Sites.class)
+		.add(Restrictions.in("River.RiverID", riverIDs))
+		.addOrder(Order.asc("SiteID")).list();
 
 		return sites;
 	}
@@ -90,9 +92,24 @@ public class SiteDAOImpl implements SiteDAO {
 	@SuppressWarnings("unchecked")
 	@Override
 	@Transactional(propagation = Propagation.REQUIRED)
-	public List<Sites> selectByBasin(String basin) {
-		return this.sessionFactory.getCurrentSession().createCriteria(Sites.class)
-				.add(Restrictions.eq("Basin", basin)).addOrder(Order.asc("SiteID")).list();
+	public List<Sites> selectByColumn(String colName, String col) {
+		
+		return this.sessionFactory.getCurrentSession()
+				.createCriteria(Sites.class)
+				.add(Restrictions.eq(colName, col))
+				.addOrder(Order.asc("SiteID")).list();
+	}
+	
+	@SuppressWarnings("unchecked")
+	@Override
+	@Transactional(propagation = Propagation.REQUIRED)
+	public List<Sites> selectByRiverColumn(String colName, String col) {
+		
+		return this.sessionFactory.getCurrentSession()
+				.createCriteria(Sites.class, "site")
+				.setFetchMode("site.River", FetchMode.JOIN).createAlias("site.River", "river")
+				.add(Restrictions.eq("river."+colName, col))
+				.addOrder(Order.asc("SiteID")).list();
 	}
 
 	@SuppressWarnings("unchecked")
@@ -157,30 +174,25 @@ public class SiteDAOImpl implements SiteDAO {
 	@SuppressWarnings("unchecked")
 	@Override
 	@Transactional(propagation = Propagation.REQUIRED)
-	public List<SiteInfo> selectInfoByRivers(List<Integer> riverIDs) {
-		return this.sessionFactory.getCurrentSession().createCriteria(Sites.class, "site")
+	public List<Sites> selectByBasinClass(String basin, String classification) {
+		return this.sessionFactory.getCurrentSession()
+				.createCriteria(Sites.class, "site")
 				.setFetchMode("site.River", FetchMode.JOIN).createAlias("site.River", "river")
-				.setProjection(Projections.distinct(Projections.projectionList()
-						.add( Projections.property("SiteID"), "SiteID")
-						.add( Projections.property("SiteName"), "SiteName")
-						.add( Projections.property("river.RiverName"), "RiverName")
-						.add( Projections.property("river.Basin"), "Basin")
-						.add( Projections.property("river.WaterSystem"), "WaterSystem")
-						.add( Projections.property("river.MidWatershed"), "MidWatershed")
-						.add( Projections.property("river.SubWatershed"), "SubWatershed")
-						.add( Projections.property("river.Classification"), "Classification")
-						.add( Projections.property("river.Image"), "RiverImage")
-						.add( Projections.property("Latitude"), "Latitude")
-						.add( Projections.property("Longitude"), "Longitude")
-						.add( Projections.property("StreamOrder"), "StreamOrder")
-						.add( Projections.property("StreamGrade"), "StreamGrade")
-						.add( Projections.property("Address"), "Address")
-						.add( Projections.property("StandardStructure"), "StandardStructure")
-						.add( Projections.property("WQMN"), "WQMN")
-						.add( Projections.property("Image"), "Image")
-						.add( Projections.property("Description"), "Description")))
-				.add(Restrictions.in("river.RiverID", riverIDs))
-				.addOrder(Order.asc("SiteID"))
-				.setResultTransformer(Transformers.aliasToBean(SiteInfo.class)).list();
+				.add(Restrictions.eq("river.Basin", basin))
+				.add(Restrictions.eq("river.Classification", classification))
+				.addOrder(Order.asc("SiteID")).list();
 	}
+	
+	@SuppressWarnings("unchecked")
+	@Override
+	@Transactional(propagation = Propagation.REQUIRED)
+	public List<Sites> selectByBasinOrder(String basin, int streamOrder) {
+		return this.sessionFactory.getCurrentSession()
+				.createCriteria(Sites.class, "site")
+				.setFetchMode("site.River", FetchMode.JOIN).createAlias("site.River", "river")
+				.add(Restrictions.eq("river.Basin", basin))
+				.add(Restrictions.eq("StreamOrder", streamOrder))
+				.addOrder(Order.asc("SiteID")).list();
+	}
+
 }

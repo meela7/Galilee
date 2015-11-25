@@ -20,37 +20,37 @@ public class SourceController {
 	@Autowired
 	private SourceService sourceService;
 	
-	@RequestMapping(value="/source/create", method=RequestMethod.POST)
+	@RequestMapping(value="/sources", method=RequestMethod.POST)
 	public Sources create(@RequestBody Sources source){
 		sourceService.add(source);
-		logger.info("add() proces has been called.");
+		logger.debug("add() proces has been called.");
         return source;
 	}
 	
 	@RequestMapping(value="/sources", method=RequestMethod.GET)
 	public List<Sources> findAll(){
 		List<Sources> sourceList = sourceService.findAll();
-		logger.info("findAll() proces has been called.");
+		logger.debug("findAll() proces has been called.");
         return sourceList;
 	}
 	
-	@RequestMapping(value="/source/{id}", method=RequestMethod.GET)
+	@RequestMapping(value="/sources/{id}", method=RequestMethod.GET)
 	public Sources find(@PathVariable("id") int sourceID){
 		Sources source = sourceService.findByID(sourceID);
-		logger.info("find() proces has been called.");
+		logger.debug("find() proces has been called.");
 		return source;
 	}
 	
-	@RequestMapping(value="/source/update", method=RequestMethod.POST)
+	@RequestMapping(value="/sources", method=RequestMethod.PUT)
 	public Sources update(@RequestBody Sources source){
 		sourceService.update(source);
-		logger.info("update() proces has been called.");
+		logger.debug("update() proces has been called.");
         return source;
 	}
 	
-	@RequestMapping(value="/source/delete", method=RequestMethod.POST)
+	@RequestMapping(value="/sources", method=RequestMethod.DELETE)
 	public void delete(@RequestBody int sourceID){
 		this.sourceService.delete(sourceID);
-		logger.info("delete() proces has been called.");
+		logger.debug("delete() proces has been called.");
 	}
 }

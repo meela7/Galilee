@@ -7,10 +7,15 @@ import org.galilee.dms.service.FishService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -21,55 +26,67 @@ public class FishController {
 	@Autowired
 	private FishService fishService;
 
-	@RequestMapping(value = "/fish/create", method = RequestMethod.POST)
+	@RequestMapping(value = "/fishes", method = RequestMethod.POST)
 	public void create(@RequestBody Fishes fish) {
 
 		this.fishService.add(fish);
-		logger.info("add() proces has been called.");
+		logger.debug("add() proces has been called.");
 	}
 
-	@RequestMapping(value = "/fish/update", method = RequestMethod.POST)
+	@RequestMapping(value = "/fishes", method = RequestMethod.PUT)
 	public void update(@RequestBody Fishes fish) {
 
-		logger.info("update() proces has been called.");
-		logger.info("IMAGE:{}" + fish.getImageLink());
+		logger.debug("update() proces has been called.");
+		logger.debug("IMAGE:{}" + fish.getImageLink());
 		this.fishService.update(fish);
 	}
 
-	@RequestMapping(value = "/fish/delete", method = RequestMethod.POST)
+	@RequestMapping(value = "/fishes", method = RequestMethod.DELETE)
 	public void delete(@RequestBody Fishes fish) {
 
 		this.fishService.delete(fish);
-		logger.info("delete() proces has been called.");
+		logger.debug("delete() proces has been called.");
 	}
 
-	@RequestMapping(value = "/fish/{id}", method = RequestMethod.GET)
+	@RequestMapping(value = "/fishes/{id}", method = RequestMethod.GET)
 	public Fishes find(@PathVariable("id") int fishID) {
 
-		logger.info("find() proces has been called.");
+		logger.debug("find() proces has been called.");
 		return this.fishService.findByID(fishID);
 	}
 
-	@RequestMapping(value = "/fishes", method = RequestMethod.GET)
+	@RequestMapping(value = "/fishes", method = RequestMethod.GET, headers = "Accep=application/json")
+	@ResponseBody
 	public List<Fishes> findAll() {
 
-		logger.info("findAll() proces has been called.");
+		logger.debug("findAll() proces has been called.");
+		HttpHeaders headers = new HttpHeaders();
+		headers.add("Content-Type", "application/json); charset=utf-8");
+		
 		return this.fishService.findAll();
 	}
 	
-	@RequestMapping(value = "/fishes/{id}", method = RequestMethod.GET)
-	public List<Fishes> findFishes(@PathVariable("id") List<Integer> fishIDList) {
+	@RequestMapping(value = "/fishes", params = "ids",  method = RequestMethod.GET)
+	public List<Fishes> findFishes(@RequestParam("ids") List<Integer> fishIDList) {
 
-		logger.info("findAll() proces has been called.");
+		logger.debug("findFishes() proces has been called.");
 		return this.fishService.findByIDs(fishIDList);
 	}	
 	
-	@RequestMapping(value = "/fish/feature/{id}", method = RequestMethod.GET)
+//	@RequestMapping(value = "/fishes/feature/{id}", method = RequestMethod.GET)
+	@RequestMapping(value = "/features/{id}/fishes", method = RequestMethod.GET)
 	public Fishes findFishByFeature(@PathVariable("id") int featureID) {
 
-		logger.info("findFishByFeature() proces has been called.");
+		logger.debug("findFishByFeature() proces has been called.");
 		
 		return this.fishService.findByID(featureID);
+	}
+	
+	@RequestMapping(value = "/fishes/{id}/endangered", method = RequestMethod.GET)
+	public List<Fishes> findEndangered(@PathVariable("id") List<Integer> fishIDList) {
+		
+		logger.debug("findEndangered() proces has been called.");
+		return this.fishService.findEndangered(fishIDList);
 	}
 
 }

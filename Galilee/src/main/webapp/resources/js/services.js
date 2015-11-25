@@ -25,6 +25,21 @@ dmsApp.factory('SiteInfoByRiver', function($resource) {
 	})
 });
 
+dmsApp.factory('ValueService', function($resource) {
+	return $resource(contextRoot + '/values?start=:start&end=:end', {}, {
+		find : {
+			method: 'GET',
+			params : {
+				year : '@year',
+				term : '@term',
+				id : '@id'
+			},
+			cache : true,
+			isArray : true
+		}
+	})
+});
+
 dmsApp.factory('TermValueBySite', function($resource) {
 	return $resource(contextRoot + '/values/term/:year/:term/site/:id', {}, {
 		find : {
@@ -84,14 +99,15 @@ dmsApp.factory('TermValueByFish', function($resource) {
 });
 
 dmsApp.factory('ValueByFish', function($resource) {
-	return $resource(contextRoot + '/values/:start/:end/fish/:id', {}, {
+	return $resource(contextRoot + '/fishes/:id/values?start=:start&end=:end', {}, {
 		find : {
 			method: 'GET',
 			params : {
-				year : '@year',
-				term : '@term',
+				start : '@start',
+				end : '@end',
 				id : '@id'
 			},
+			cache : true,
 			isArray : true
 		}
 	})
@@ -111,43 +127,45 @@ dmsApp.factory('SurveyYear', function($resource) {
  * Data Management
  * Sources
  */
-dmsApp.factory('SourceFindAll', function($resource) {
+
+dmsApp.factory('SourcesService', function($resource) {
 	return $resource(contextRoot + '/sources', {}, {
 		findall : {
 			method : 'GET',
 			isArray : true
+		},
+		create : {
+			method : 'POST'
+		},
+		update : {
+			method : 'PUT'
+		},
+		del : {
+			method : 'DELETE'
 		}
 	})
 });
 
-dmsApp.factory('SourceFind', function($resource) {
-	return $resource(contextRoot + '/source/:id', {}, {
+dmsApp.factory('SourceService', function($resource) {
+	return $resource(contextRoot + '/sources/:id', {}, {
+		
 		find : {
 			method : 'GET',
 			params : {
 				id : '@id'
 			}
-		}
-	})
-});
-dmsApp.factory('SourceCreate', function($resource) {
-	return $resource(contextRoot + '/source/create', {}, {
-		create : {
-			method : 'POST'
-		}
-	})
-});
-dmsApp.factory('SourceUpdate', function($resource) {
-	return $resource(contextRoot + '/source/update', {}, {
+		},
 		update : {
-			method : 'POST'
-		}
-	})
-});
-dmsApp.factory('SourceDelete', function($resource) {
-	return $resource(contextRoot + '/source/delete', {}, {
+			method : 'PUT',
+			params : {
+				id : '@id'
+			}
+		},
 		del : {
-			method : 'POST'
+			method : 'DELETE',
+			params : {
+				id : '@id'
+			}
 		}
 	})
 });
@@ -156,17 +174,7 @@ dmsApp.factory('SourceDelete', function($resource) {
  * Sites
  */
 
-dmsApp.factory('SiteFindAll', function($resource) {
-	return $resource(contextRoot + '/sites', {}, {
-		findall : {
-			method : 'GET',
-			cache : true,
-			isArray : true
-		}
-	})
-});
-
-dmsApp.factory('SiteInfoFindAll', function($resource) {
+dmsApp.factory('SiteInfosService', function($resource) {
 	return $resource(contextRoot + '/siteInfos', {}, {
 		findall : {
 			method : 'GET',
@@ -175,18 +183,62 @@ dmsApp.factory('SiteInfoFindAll', function($resource) {
 		}
 	})
 });
-dmsApp.factory('SiteFind', function($resource) {
-	return $resource(contextRoot + '/site/:id', {}, {
+dmsApp.factory('SiteInfoListFind', function($resource) {
+	return $resource(contextRoot + '/siteInfos?ids=:id', {}, {
 		find : {
 			method : 'GET',
+			params : {
+				id : '@id'
+			},
+			isArray : true
+		}
+	})
+});
+dmsApp.factory('SitesService', function($resource) {
+	return $resource(contextRoot + '/sites', {}, {
+		create : {
+			method : 'POST'
+		},
+		findall : {
+			method : 'GET',
+			cache : true,
+			isArray : true
+		},
+		update : {
+			method : 'PUT'
+		},
+		del : {
+			method : 'DELETE'
+		}
+	})
+});
+dmsApp.factory('SiteService', function($resource) {
+	return $resource(contextRoot + '/sites/:id', {}, {
+		find : {
+			method : 'GET',
+			params : {
+				id : '@id'
+			}
+		},
+		update : {
+			method : 'PUT',
+			params : {
+				id : '@id'
+			}
+		},
+		del : {
+			method : 'DELETE',
 			params : {
 				id : '@id'
 			}
 		}
 	})
 })
+
+
 dmsApp.factory('SiteListFind', function($resource) {
-	return $resource(contextRoot + '/sites/:id', {}, {
+	
+	return $resource(contextRoot + '/sites?ids=:id', {}, {
 		find : {
 			method : 'GET',
 			params : {
@@ -197,40 +249,8 @@ dmsApp.factory('SiteListFind', function($resource) {
 	})
 });
 
-dmsApp.factory('SiteInfoListFind', function($resource) {
-	return $resource(contextRoot + '/siteInfos/:id', {}, {
-		find : {
-			method : 'GET',
-			params : {
-				id : '@id'
-			},
-			isArray : true
-		}
-	})
-});
-dmsApp.factory('SiteCreate', function($resource) {
-	return $resource(contextRoot + '/site/create', {}, {
-		create : {
-			method : 'POST'
-		}
-	})
-});
-dmsApp.factory('SiteUpdate', function($resource) {
-	return $resource(contextRoot + '/site/update', {}, {
-		update : {
-			method : 'POST'
-		}
-	})
-});
-dmsApp.factory('SiteDelete', function($resource) {
-	return $resource(contextRoot + '/site/delete', {}, {
-		del : {
-			method : 'POST'
-		}
-	})
-});
 dmsApp.factory('SiteByRiver', function($resource) {
-	return $resource(contextRoot + '/sites/river/:id', {}, {
+	return $resource(contextRoot + '/river/:id/sites', {}, {
 		find : {
 			method: 'GET',
 			params : {
@@ -246,18 +266,39 @@ dmsApp.factory('SiteByRiver', function($resource) {
  * Rivers
  */
 
-dmsApp.factory('RiverFindAll', function($resource) {
+dmsApp.factory('RiversService', function($resource) {
 	return $resource(contextRoot + '/rivers', {}, {
+		create : {
+			method : 'POST'
+		},
 		findall : {
 			method : 'GET',
 			isArray : true
+		},
+		update : {
+			method : 'PUT'
+		},
+		del : {
+			method : 'DELETE'
 		}
 	})
 });
-dmsApp.factory('RiverFind', function($resource) {
-	return $resource(contextRoot + '/river/:id', {}, {
+dmsApp.factory('RiverService', function($resource) {
+	return $resource(contextRoot + '/rivers/:id', {}, {
 		find : {
 			method : 'GET',
+			params : {
+				id : '@id'
+			}
+		},
+		update : {
+			method : 'PUT',
+			params : {
+				id : '@id'
+			}
+		},
+		del : {
+			method : 'DELETE',
 			params : {
 				id : '@id'
 			}
@@ -265,34 +306,13 @@ dmsApp.factory('RiverFind', function($resource) {
 	})
 });
 dmsApp.factory('RiverListFind', function($resource) {
-	return $resource(contextRoot + '/rivers/:id', {}, {
+	return $resource(contextRoot + '/rivers?id=:id', {}, {
 		find : {
 			method : 'GET',
 			params : {
 				id : '@id'
 			},
 			isArray : true
-		}
-	})
-});
-dmsApp.factory('RiverCreate', function($resource) {
-	return $resource(contextRoot + '/river/create', {}, {
-		create : {
-			method : 'POST'
-		}
-	})
-});
-dmsApp.factory('RiverUpdate', function($resource) {
-	return $resource(contextRoot + '/river/update', {}, {
-		update : {
-			method : 'POST'
-		}
-	})
-});
-dmsApp.factory('RiverDelete', function($resource) {
-	return $resource(contextRoot + '/river/delete', {}, {
-		del : {
-			method : 'POST'
 		}
 	})
 });
@@ -345,46 +365,48 @@ dmsApp.factory('SiteCodeDelete', function($resource) {
 /**
  * Features
  */
-
-dmsApp.factory('FeatureFindAll', function($resource) {
+dmsApp.factory('FeaturesService', function($resource) {
 	return $resource(contextRoot + '/features', {}, {
+		create : {
+			method : 'POST'
+		},
 		findall : {
 			method : 'GET',
 			isArray : true
+		},
+		update : {
+			method : 'PUT'
+		},
+		del : {
+			method : 'DELETE'
 		}
 	})
 });
-dmsApp.factory('FeatureFind', function($resource) {
-	return $resource(contextRoot + '/feature/:id', {}, {
+
+dmsApp.factory('FeatureService', function($resource) {
+	return $resource(contextRoot + '/features/:id', {}, {
 		find : {
 			method : 'GET',
+			params : {
+				id : '@id'
+			}
+		},
+		update : {
+			method : 'PUT',
+			params : {
+				id : '@id'
+			}
+		},
+		del : {
+			method : 'DELETE',
 			params : {
 				id : '@id'
 			}
 		}
 	})
 });
-dmsApp.factory('FeatureCreate', function($resource) {
-	return $resource(contextRoot + '/feature/create', {}, {
-		create : {
-			method : 'POST'
-		}
-	})
-});
-dmsApp.factory('FeatureUpdate', function($resource) {
-	return $resource(contextRoot + '/feature/update', {}, {
-		update : {
-			method : 'POST'
-		}
-	})
-});
-dmsApp.factory('FeatureDelete', function($resource) {
-	return $resource(contextRoot + '/feature/delete', {}, {
-		del : {
-			method : 'POST'
-		}
-	})
-});
+
+
 
 dmsApp.factory('FishByFeature', function($resource) {
 	return $resource(contextRoot + '/fish/feature/:id', {}, {
@@ -402,184 +424,192 @@ dmsApp.factory('FishByFeature', function($resource) {
  * Fishes
  */
 
-dmsApp.factory('FishFindAll', function($resource) {
+dmsApp.factory('FishesService', function($resource) {
 	return $resource(contextRoot + '/fishes', {}, {
+		create : {
+			method : 'POST'
+		},
 		findall : {
 			method : 'GET',
 			cache : true,
 			isArray : true
+		},
+		update : {
+			method : 'POST'
+		},
+		del : {
+			method : 'POST'
 		}
 	})
 });
-dmsApp.factory('FishListFind', function($resource) {
+
+dmsApp.factory('FishService', function($resource) {
 	return $resource(contextRoot + '/fishes/:id', {}, {
 		find : {
 			method : 'GET',
-			cache : true,
-			isArray : true
-		}
-	})
-});
-dmsApp.factory('FishFind', function($resource) {
-	return $resource(contextRoot + '/fish/:id', {}, {
-		find : {
-			method : 'GET',
+			params : {
+				id : '@id'
+			}
+		},
+		update : {
+			method : 'POST',
+			params : {
+				id : '@id'
+			}
+		},
+		del : {
+			method : 'POST',
 			params : {
 				id : '@id'
 			}
 		}
 	})
 });
-dmsApp.factory('FishCreate', function($resource) {
-	return $resource(contextRoot + '/fish/create', {}, {
-		create : {
-			method : 'POST'
+
+dmsApp.factory('FishListFind', function($resource) {
+	return $resource(contextRoot + '/fishes?ids=:id', {}, {
+		find : {
+			method : 'GET',
+			params : {
+				id : '@id'
+			},
+			cache : true,
+			isArray : true
 		}
 	})
 });
-dmsApp.factory('FishUpdate', function($resource) {
-	return $resource(contextRoot + '/fish/update', {}, {
-		update : {
-			method : 'POST'
-		}
-	})
-});
-dmsApp.factory('FishDelete', function($resource) {
-	return $resource(contextRoot + '/fish/delete', {}, {
-		del : {
-			method : 'POST'
-		}
-	})
-});
+
 
 /**
  * Methods
  */
 
-dmsApp.factory('MethodFindAll', function($resource) {
+dmsApp.factory('MethodsService', function($resource) {
 	return $resource(contextRoot + '/methods', {}, {
+		create : {
+			method : 'POST'
+		},
 		findall : {
 			method : 'GET',
 			isArray : true
+		},
+		update : {
+			method : 'POST'
+		},
+		del : {
+			method : 'POST'
 		}
 	})
 });
-dmsApp.factory('MethodFind', function($resource) {
-	return $resource(contextRoot + '/method/:id', {}, {
+dmsApp.factory('MethodService', function($resource) {
+	return $resource(contextRoot + '/methods/:id', {}, {
 		find : {
 			method : 'GET',
+			params : {
+				id : '@id'
+			}
+		},
+		update : {
+			method : 'POST',
+			params : {
+				id : '@id'
+			}
+		},
+		del : {
+			method : 'POST',
 			params : {
 				id : '@id'
 			}
 		}
 	})
 });
-dmsApp.factory('MethodCreate', function($resource) {
-	return $resource(contextRoot + '/method/create', {}, {
-		create : {
-			method : 'POST'
-		}
-	})
-});
-dmsApp.factory('MethodUpdate', function($resource) {
-	return $resource(contextRoot + '/method/update', {}, {
-		update : {
-			method : 'POST'
-		}
-	})
-});
-dmsApp.factory('MethodDelete', function($resource) {
-	return $resource(contextRoot + '/method/delete', {}, {
-		del : {
-			method : 'POST'
-		}
-	})
-});
+
 
 /**
  * Variables
  */
 
-dmsApp.factory('VariableFindAll', function($resource) {
+dmsApp.factory('VariablesService', function($resource) {
 	return $resource(contextRoot + '/variables', {}, {
+		create : {
+			method : 'POST'
+		},
 		findall : {
 			method : 'GET',
 			isArray : true
+		},
+		update : {
+			method : 'POST'
+		},
+		del : {
+			method : 'POST'
 		}
 	})
 });
-dmsApp.factory('VariableFind', function($resource) {
-	return $resource(contextRoot + '/variable/:id', {}, {
+dmsApp.factory('VariableService', function($resource) {
+	return $resource(contextRoot + '/variables/:id', {}, {
 		find : {
 			method : 'GET',
+			params : {
+				id : '@id'
+			}
+		},
+		update : {
+			method : 'POST',
+			params : {
+				id : '@id'
+			}
+		},
+		del : {
+			method : 'POST',
 			params : {
 				id : '@id'
 			}
 		}
 	})
 });
-dmsApp.factory('VariableCreate', function($resource) {
-	return $resource(contextRoot + '/variable/create', {}, {
-		create : {
-			method : 'POST'
-		}
-	})
-});
-dmsApp.factory('VariableUpdate', function($resource) {
-	return $resource(contextRoot + '/variable/update', {}, {
-		update : {
-			method : 'POST'
-		}
-	})
-});
-dmsApp.factory('VariableDelete', function($resource) {
-	return $resource(contextRoot + '/variable/delete', {}, {
-		del : {
-			method : 'POST'
-		}
-	})
-});
+
 
 /**
  * Units
  */
 
-dmsApp.factory('UnitFindAll', function($resource) {
+dmsApp.factory('UnitsService', function($resource) {
 	return $resource(contextRoot + '/units', {}, {
+		create : {
+			method : 'POST'
+		},
 		findall : {
 			method : 'GET',
 			isArray : true
+		},
+		update : {
+			method : 'POST'
+		},
+		del : {
+			method : 'POST'
 		}
 	})
 });
-dmsApp.factory('UnitFind', function($resource) {
-	return $resource(contextRoot + '/unit/:id', {}, {
+dmsApp.factory('UnitService', function($resource) {
+	return $resource(contextRoot + '/units/:id', {}, {
 		find : {
 			method : 'GET',
 			params : {
 				id : '@id'
 			}
-		}
-	})
-});
-dmsApp.factory('UnitCreate', function($resource) {
-	return $resource(contextRoot + '/unit/create', {}, {
-		create : {
-			method : 'POST'
-		}
-	})
-});
-dmsApp.factory('UnitUpdate', function($resource) {
-	return $resource(contextRoot + '/unit/update', {}, {
+		},
 		update : {
-			method : 'POST'
-		}
-	})
-});
-dmsApp.factory('UnitDelete', function($resource) {
-	return $resource(contextRoot + '/unit/delete', {}, {
+			method : 'POST',
+			params : {
+				id : '@id'
+			}
+		},
 		del : {
-			method : 'POST'
+			method : 'POST',
+			params : {
+				id : '@id'
+			}
 		}
 	})
 });

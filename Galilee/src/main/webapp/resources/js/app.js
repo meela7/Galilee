@@ -2,15 +2,31 @@
  * 
  */
 
-var dmsApp = angular.module("dmsApp", [ 'ngResource', 'ngRoute', 'ui.bootstrap', 'ui.map', 'smart-table', 'highcharts-ng']);
+var dmsApp = angular.module("dmsApp", [ 'ngResource', 'ngRoute', 'ui.bootstrap', 'ngMap', 'smart-table', 'highcharts-ng']);
 var contextRoot = "resources/template"; 
-// metadata search management
+// data analysis
 
+dmsApp.config(['$routeProvider', function($routeProvider) {
+	$routeProvider
+		.when('/site-fai?year:year&term=:term', {
+			templateUrl : 'resources/template/search/fai.html',
+			controller : 'FAICtrl'
+		});
+}]);
+// data search management
 dmsApp.config(['$routeProvider', function($routeProvider) {
 	$routeProvider
 		.when('/site-map/:id', {
 			templateUrl : 'resources/template/search/sitemap.html',
 			controller : 'MapCtrl'
+		})
+		.when('/site-map/:start/:end/:id', {
+			templateUrl : 'resources/template/search/sitemap.html',
+			controller : 'MapValueCtrl'
+		})
+		.when('/site-map/term/:year/:term/:id', {
+			templateUrl : 'resources/template/search/sitemap.html',
+			controller : 'MapTermValueCtrl'
 		})
 		.when('/river-search/', {
 			templateUrl : 'resources/template/search/riverlist.html',

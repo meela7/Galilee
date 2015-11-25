@@ -71,8 +71,9 @@ a.nodecoration {
 <script src="//code.angularjs.org/1.3.1/angular-cookies.min.js"></script>
 <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.1.js"></script>
 <script	src="//www.flocations.com/static/vendor/angular-ui/event/event.js"></script>
-<script	src="//www.flocations.com/static/vendor/angular-ui/map/ui-map.min.js"></script>
-<script src="//maps.googleapis.com/maps/api/js?sensor=false&.js"></script>
+<!-- <script	src="//www.flocations.com/static/vendor/angular-ui/map/ui-map.min.js"></script> -->
+<script	src="//rawgit.com/allenhwkim/angularjs-google-maps/master/build/scripts/ng-map.min.js"></script>
+<script src="//maps.googleapis.com/maps/api/js?v=3.exp&libraries=weather,visualization,panoramio"></script>
 <script	src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script>
 <script	src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.14.30/js/bootstrap-datetimepicker.min.js"></script>
 <!-- <script src="//angular-ui.github.io/ui-router/release/angular-ui-router.min.js"></script> -->
@@ -81,10 +82,12 @@ a.nodecoration {
 <script src="//code.highcharts.com/highcharts.js"></script>
 <script src="//rawgit.com/pablojim/highcharts-ng/master/dist/highcharts-ng.js"></script>
 <script src="//code.highcharts.com/modules/exporting.js"></script>
+<!--<script src="//code.highcharts.com/maps/highmaps.js"></script>
+<script src="//code.highcharts.com/mapdata/countries/kr/kr-all.js"></script> -->
 </head>
 <body>
 	<div class="container">
-		<nav class="navbar navbar-inverse navbar-static-top">
+		<nav class="navbar navbar-primary navbar-static-top">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -157,15 +160,15 @@ a.nodecoration {
 								<li class="col-sm-3">
 									<ul>
 										<li class="dropdown-header">FAI</li>
-										<li><a href="#river-search"> 법정보호종 </a></li>
-										<li><a href="#site-search"> 분류군도 </a></li>
+										<li><a href="#river-search">M1-M8</a></li>
+										<li><a href="#site-search">  </a></li>
 									</ul>
 								</li>
 								<li class="col-sm-3">
 									<ul>
 										<li class="dropdown-header"> Report </li>
-										<li><a href="#fish-search"> 대권역 </a></li>
-										<li><a href="#feature-search"> 어류</a></li>
+										<li><a href="#fish-search"> Basin </a></li>
+										<li><a href="#feature-search"> Fish </a></li>
 									</ul>
 								</li>
 
