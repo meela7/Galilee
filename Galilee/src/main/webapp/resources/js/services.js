@@ -1,7 +1,7 @@
 
-var contextRoot = '/dms';
+var contextRoot = '/naemp';
 
-dmsApp.factory('SiteByRiver', function($resource) {
+naempApp.factory('SiteByRiver', function($resource) {
 	return $resource(contextRoot + '/sites/river/:id', {}, {
 		find : {
 			method: 'GET',
@@ -13,7 +13,7 @@ dmsApp.factory('SiteByRiver', function($resource) {
 	})
 });
 
-dmsApp.factory('SiteInfoByRiver', function($resource) {
+naempApp.factory('SiteInfoByRiver', function($resource) {
 	return $resource(contextRoot + '/siteInfos/river/:id', {}, {
 		find : {
 			method: 'GET',
@@ -25,7 +25,7 @@ dmsApp.factory('SiteInfoByRiver', function($resource) {
 	})
 });
 
-dmsApp.factory('ValueService', function($resource) {
+naempApp.factory('ValueService', function($resource) {
 	return $resource(contextRoot + '/values?start=:start&end=:end', {}, {
 		find : {
 			method: 'GET',
@@ -40,7 +40,7 @@ dmsApp.factory('ValueService', function($resource) {
 	})
 });
 
-dmsApp.factory('TermValueBySite', function($resource) {
+naempApp.factory('TermValueBySite', function($resource) {
 	return $resource(contextRoot + '/values/term/:year/:term/site/:id', {}, {
 		find : {
 			method: 'GET',
@@ -54,7 +54,7 @@ dmsApp.factory('TermValueBySite', function($resource) {
 		}
 	})
 });
-dmsApp.factory('TermSpatialDataBySite', function($resource) {
+naempApp.factory('TermSpatialDataBySite', function($resource) {
 	return $resource(contextRoot + '/values/fish/term/:year/:term/site/:id', {}, {
 		find : {
 			method: 'GET',
@@ -68,7 +68,7 @@ dmsApp.factory('TermSpatialDataBySite', function($resource) {
 		}
 	})
 });
-dmsApp.factory('ValueBySite', function($resource) {
+naempApp.factory('ValueBySite', function($resource) {
 	return $resource(contextRoot + '/values/:start/:end/site/:id', {}, {
 		find : {
 			method: 'GET',
@@ -84,7 +84,7 @@ dmsApp.factory('ValueBySite', function($resource) {
 });
 
 
-dmsApp.factory('TermValueByFish', function($resource) {
+naempApp.factory('TermValueByFish', function($resource) {
 	return $resource(contextRoot + '/values/term/:year/:term/fish/:id', {}, {
 		find : {
 			method: 'GET',
@@ -98,7 +98,7 @@ dmsApp.factory('TermValueByFish', function($resource) {
 	})
 });
 
-dmsApp.factory('ValueByFish', function($resource) {
+naempApp.factory('ValueByFish', function($resource) {
 	return $resource(contextRoot + '/fishes/:id/values?start=:start&end=:end', {}, {
 		find : {
 			method: 'GET',
@@ -113,7 +113,7 @@ dmsApp.factory('ValueByFish', function($resource) {
 	})
 });
 
-dmsApp.factory('SurveyYear', function($resource) {
+naempApp.factory('SurveyYear', function($resource) {
 	return $resource(contextRoot + '/value/years', {}, {
 		find : {
 			method: 'GET',
@@ -128,7 +128,7 @@ dmsApp.factory('SurveyYear', function($resource) {
  * Sources
  */
 
-dmsApp.factory('SourcesService', function($resource) {
+naempApp.factory('SourcesService', function($resource) {
 	return $resource(contextRoot + '/sources', {}, {
 		findall : {
 			method : 'GET',
@@ -146,7 +146,7 @@ dmsApp.factory('SourcesService', function($resource) {
 	})
 });
 
-dmsApp.factory('SourceService', function($resource) {
+naempApp.factory('SourceService', function($resource) {
 	return $resource(contextRoot + '/sources/:id', {}, {
 		
 		find : {
@@ -174,7 +174,7 @@ dmsApp.factory('SourceService', function($resource) {
  * Sites
  */
 
-dmsApp.factory('SiteInfosService', function($resource) {
+naempApp.factory('SiteInfosService', function($resource) {
 	return $resource(contextRoot + '/siteInfos', {}, {
 		findall : {
 			method : 'GET',
@@ -183,7 +183,7 @@ dmsApp.factory('SiteInfosService', function($resource) {
 		}
 	})
 });
-dmsApp.factory('SiteInfoListFind', function($resource) {
+naempApp.factory('SiteInfoListFind', function($resource) {
 	return $resource(contextRoot + '/siteInfos?ids=:id', {}, {
 		find : {
 			method : 'GET',
@@ -194,7 +194,7 @@ dmsApp.factory('SiteInfoListFind', function($resource) {
 		}
 	})
 });
-dmsApp.factory('SitesService', function($resource) {
+naempApp.factory('SitesService', function($resource) {
 	return $resource(contextRoot + '/sites', {}, {
 		create : {
 			method : 'POST'
@@ -212,7 +212,7 @@ dmsApp.factory('SitesService', function($resource) {
 		}
 	})
 });
-dmsApp.factory('SiteService', function($resource) {
+naempApp.factory('SiteService', function($resource) {
 	return $resource(contextRoot + '/sites/:id', {}, {
 		find : {
 			method : 'GET',
@@ -236,7 +236,7 @@ dmsApp.factory('SiteService', function($resource) {
 })
 
 
-dmsApp.factory('SiteListFind', function($resource) {
+naempApp.factory('SiteListFind', function($resource) {
 	
 	return $resource(contextRoot + '/sites?ids=:id', {}, {
 		find : {
@@ -249,7 +249,7 @@ dmsApp.factory('SiteListFind', function($resource) {
 	})
 });
 
-dmsApp.factory('SiteByRiver', function($resource) {
+naempApp.factory('SiteByRiver', function($resource) {
 	return $resource(contextRoot + '/river/:id/sites', {}, {
 		find : {
 			method: 'GET',
@@ -266,7 +266,7 @@ dmsApp.factory('SiteByRiver', function($resource) {
  * Rivers
  */
 
-dmsApp.factory('RiversService', function($resource) {
+naempApp.factory('RiversService', function($resource) {
 	return $resource(contextRoot + '/rivers', {}, {
 		create : {
 			method : 'POST'
@@ -283,7 +283,7 @@ dmsApp.factory('RiversService', function($resource) {
 		}
 	})
 });
-dmsApp.factory('RiverService', function($resource) {
+naempApp.factory('RiverService', function($resource) {
 	return $resource(contextRoot + '/rivers/:id', {}, {
 		find : {
 			method : 'GET',
@@ -305,7 +305,7 @@ dmsApp.factory('RiverService', function($resource) {
 		}
 	})
 });
-dmsApp.factory('RiverListFind', function($resource) {
+naempApp.factory('RiverListFind', function($resource) {
 	return $resource(contextRoot + '/rivers?id=:id', {}, {
 		find : {
 			method : 'GET',
@@ -321,7 +321,7 @@ dmsApp.factory('RiverListFind', function($resource) {
  * SiteCode
  */
 
-dmsApp.factory('SiteCodeFindAll', function($resource) {
+naempApp.factory('SiteCodeFindAll', function($resource) {
 	return $resource(contextRoot + '/siteCodes', {}, {
 		findall : {
 			method : 'GET',
@@ -330,7 +330,7 @@ dmsApp.factory('SiteCodeFindAll', function($resource) {
 		}
 	})
 });
-dmsApp.factory('SiteCodeFind', function($resource) {
+naempApp.factory('SiteCodeFind', function($resource) {
 	return $resource(contextRoot + '/siteCode/:id', {}, {
 		find : {
 			method : 'GET',
@@ -340,21 +340,21 @@ dmsApp.factory('SiteCodeFind', function($resource) {
 		}
 	})
 });
-dmsApp.factory('SiteCodeCreate', function($resource) {
+naempApp.factory('SiteCodeCreate', function($resource) {
 	return $resource(contextRoot + '/siteCode/create', {}, {
 		create : {
 			method : 'POST'
 		}
 	})
 });
-dmsApp.factory('SiteCodeUpdate', function($resource) {
+naempApp.factory('SiteCodeUpdate', function($resource) {
 	return $resource(contextRoot + '/siteCode/update', {}, {
 		update : {
 			method : 'POST'
 		}
 	})
 });
-dmsApp.factory('SiteCodeDelete', function($resource) {
+naempApp.factory('SiteCodeDelete', function($resource) {
 	return $resource(contextRoot + '/siteCode/delete', {}, {
 		del : {
 			method : 'POST'
@@ -365,7 +365,7 @@ dmsApp.factory('SiteCodeDelete', function($resource) {
 /**
  * Features
  */
-dmsApp.factory('FeaturesService', function($resource) {
+naempApp.factory('FeaturesService', function($resource) {
 	return $resource(contextRoot + '/features', {}, {
 		create : {
 			method : 'POST'
@@ -383,7 +383,7 @@ dmsApp.factory('FeaturesService', function($resource) {
 	})
 });
 
-dmsApp.factory('FeatureService', function($resource) {
+naempApp.factory('FeatureService', function($resource) {
 	return $resource(contextRoot + '/features/:id', {}, {
 		find : {
 			method : 'GET',
@@ -408,7 +408,7 @@ dmsApp.factory('FeatureService', function($resource) {
 
 
 
-dmsApp.factory('FishByFeature', function($resource) {
+naempApp.factory('FishByFeature', function($resource) {
 	return $resource(contextRoot + '/fish/feature/:id', {}, {
 		find : {
 			method : 'GET',
@@ -424,7 +424,7 @@ dmsApp.factory('FishByFeature', function($resource) {
  * Fishes
  */
 
-dmsApp.factory('FishesService', function($resource) {
+naempApp.factory('FishesService', function($resource) {
 	return $resource(contextRoot + '/fishes', {}, {
 		create : {
 			method : 'POST'
@@ -443,7 +443,7 @@ dmsApp.factory('FishesService', function($resource) {
 	})
 });
 
-dmsApp.factory('FishService', function($resource) {
+naempApp.factory('FishService', function($resource) {
 	return $resource(contextRoot + '/fishes/:id', {}, {
 		find : {
 			method : 'GET',
@@ -466,7 +466,7 @@ dmsApp.factory('FishService', function($resource) {
 	})
 });
 
-dmsApp.factory('FishListFind', function($resource) {
+naempApp.factory('FishListFind', function($resource) {
 	return $resource(contextRoot + '/fishes?ids=:id', {}, {
 		find : {
 			method : 'GET',
@@ -484,7 +484,7 @@ dmsApp.factory('FishListFind', function($resource) {
  * Methods
  */
 
-dmsApp.factory('MethodsService', function($resource) {
+naempApp.factory('MethodsService', function($resource) {
 	return $resource(contextRoot + '/methods', {}, {
 		create : {
 			method : 'POST'
@@ -501,7 +501,7 @@ dmsApp.factory('MethodsService', function($resource) {
 		}
 	})
 });
-dmsApp.factory('MethodService', function($resource) {
+naempApp.factory('MethodService', function($resource) {
 	return $resource(contextRoot + '/methods/:id', {}, {
 		find : {
 			method : 'GET',
@@ -529,7 +529,7 @@ dmsApp.factory('MethodService', function($resource) {
  * Variables
  */
 
-dmsApp.factory('VariablesService', function($resource) {
+naempApp.factory('VariablesService', function($resource) {
 	return $resource(contextRoot + '/variables', {}, {
 		create : {
 			method : 'POST'
@@ -546,7 +546,7 @@ dmsApp.factory('VariablesService', function($resource) {
 		}
 	})
 });
-dmsApp.factory('VariableService', function($resource) {
+naempApp.factory('VariableService', function($resource) {
 	return $resource(contextRoot + '/variables/:id', {}, {
 		find : {
 			method : 'GET',
@@ -574,7 +574,7 @@ dmsApp.factory('VariableService', function($resource) {
  * Units
  */
 
-dmsApp.factory('UnitsService', function($resource) {
+naempApp.factory('UnitsService', function($resource) {
 	return $resource(contextRoot + '/units', {}, {
 		create : {
 			method : 'POST'
@@ -591,7 +591,7 @@ dmsApp.factory('UnitsService', function($resource) {
 		}
 	})
 });
-dmsApp.factory('UnitService', function($resource) {
+naempApp.factory('UnitService', function($resource) {
 	return $resource(contextRoot + '/units/:id', {}, {
 		find : {
 			method : 'GET',

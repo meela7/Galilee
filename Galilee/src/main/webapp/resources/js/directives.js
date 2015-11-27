@@ -2,7 +2,7 @@
  * 
  */
 
-dmsApp.directive('back', ['$window', function($window) {
+naempApp.directive('back', ['$window', function($window) {
 	return {
         restrict: 'A',
         link: function (scope, elem, attrs) {
@@ -13,7 +13,7 @@ dmsApp.directive('back', ['$window', function($window) {
     };
 }]);
 // smart table select button
-dmsApp.directive('csSelect', function () {
+naempApp.directive('csSelect', function () {
     return {
         require: '^stTable',
         template: '<input type="checkbox" >',
@@ -38,7 +38,7 @@ dmsApp.directive('csSelect', function () {
         }
     };
 });
-dmsApp.directive('ngConfirmBoxClick', [ function() {
+naempApp.directive('ngConfirmBoxClick', [ function() {
         return {
             link: function (scope, element, attr) {
                 var msg = attr.ngConfirmBoxClick;
@@ -51,7 +51,7 @@ dmsApp.directive('ngConfirmBoxClick', [ function() {
             }
         };
 } ]);
-dmsApp.directive('bsDropdown', function ($compile) {
+naempApp.directive('bsDropdown', function ($compile) {
     return {
         restrict: 'E',
         scope: {
@@ -98,7 +98,7 @@ dmsApp.directive('bsDropdown', function ($compile) {
 
 (function(ng){
 	
-dmsApp.directive('stSelectDistinct', [function() {
+naempApp.directive('stSelectDistinct', [function() {
       return {
         restrict: 'E',
         require: '^stTable',
@@ -154,7 +154,7 @@ dmsApp.directive('stSelectDistinct', [function() {
         }
       }
     }]);
-dmsApp.directive('stSelectMultiple', [function() {
+naempApp.directive('stSelectMultiple', [function() {
       return {
         restrict: 'E',
         require: '^stTable',
@@ -272,7 +272,7 @@ dmsApp.directive('stSelectMultiple', [function() {
         }
       }
     }]);
-dmsApp.directive('stNumberRange', ['$timeout', function ($timeout) {
+naempApp.directive('stNumberRange', ['$timeout', function ($timeout) {
     return {
         restrict: 'E',
         require: '^stTable',
@@ -310,7 +310,7 @@ dmsApp.directive('stNumberRange', ['$timeout', function ($timeout) {
 }]);
 })(angular);  
 /*
-dmsApp.directive('map',[ function () {
+naempApp.directive('map',[ function () {
 	return {
 	  template: '<div></div>',
 	  restrict: 'EA',

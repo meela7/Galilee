@@ -55,13 +55,11 @@ public class FishController {
 		return this.fishService.findByID(fishID);
 	}
 
-	@RequestMapping(value = "/fishes", method = RequestMethod.GET, headers = "Accep=application/json")
+	@RequestMapping(value = "/fishes", method = RequestMethod.GET)
 	@ResponseBody
 	public List<Fishes> findAll() {
 
 		logger.debug("findAll() proces has been called.");
-		HttpHeaders headers = new HttpHeaders();
-		headers.add("Content-Type", "application/json); charset=utf-8");
 		
 		return this.fishService.findAll();
 	}

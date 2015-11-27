@@ -4,7 +4,7 @@
  * 
  * Source Controller
  */
-dmsApp.controller('SourceListCtrl', [ '$scope', 'SourcesService', 'SourcesService', '$location',
+naempApp.controller('SourceListCtrl', [ '$scope', 'SourcesService', 'SourcesService', '$location',
 		function($scope, SourcesService, SourcesService, $location) {
 	
 			$scope.cancel = function(){
@@ -28,7 +28,7 @@ dmsApp.controller('SourceListCtrl', [ '$scope', 'SourcesService', 'SourcesServic
 			$scope.currentPage = 1, $scope.numPerPage = 10,
 				$scope.maxSize = 10;
 		} ]);
-dmsApp.controller('SourceDetailCtrl', [ '$scope', '$routeParams',
+naempApp.controller('SourceDetailCtrl', [ '$scope', '$routeParams',
 		'SourceService', '$location',
 		function($scope, $routeParams, SourceService, $location) {
 			// callback for ng-click 'updateSource':
@@ -45,7 +45,7 @@ dmsApp.controller('SourceDetailCtrl', [ '$scope', '$routeParams',
 			});
 			
 		} ]);
-dmsApp.controller('SourceCreationCtrl', [ '$scope', 'SourceService','$location', 
+naempApp.controller('SourceCreationCtrl', [ '$scope', 'SourceService','$location', 
     function($scope, SourceService, $location) {
 	// callback for ng-click 'createNewSource':
 	$scope.createSource = function() {
@@ -60,7 +60,7 @@ dmsApp.controller('SourceCreationCtrl', [ '$scope', 'SourceService','$location',
 /**
  * Site Controller
  */
-dmsApp.controller('SiteListCtrl', ['$scope','SitesService', 'SiteService','$location',
+naempApp.controller('SiteListCtrl', ['$scope','SitesService', 'SiteService','$location',
 	function($scope, SitesService, SiteService,$location) {
 	
 	// callback for ng-click 'editSite':
@@ -95,7 +95,7 @@ dmsApp.controller('SiteListCtrl', ['$scope','SitesService', 'SiteService','$loca
 	});
 }]);
 
-dmsApp.controller('SiteDetailCtrl', [ '$scope', '$routeParams','SiteService', '$location',
+naempApp.controller('SiteDetailCtrl', [ '$scope', '$routeParams','SiteService', '$location',
 	function($scope, $routeParams, SiteService, $location) {
 		// callback for ng-click 'updateSite':
 		$scope.updateSite = function() {
@@ -110,7 +110,7 @@ dmsApp.controller('SiteDetailCtrl', [ '$scope', '$routeParams','SiteService', '$
 			id : $routeParams.id
 		});
 } ]);
-dmsApp.controller('SiteCreationCtrl', [ '$scope', 'SiteService', '$location',
+naempApp.controller('SiteCreationCtrl', [ '$scope', 'SiteService', '$location',
 	function($scope, SiteCreate, $location) {
 	// callback for ng-click 'createSite':
 		$scope.createSite = function() {
@@ -125,7 +125,7 @@ dmsApp.controller('SiteCreationCtrl', [ '$scope', 'SiteService', '$location',
 /**
  * River Controller
  */
-dmsApp.controller('RiverListCtrl',['$scope','RiversService','RiverService','$location',
+naempApp.controller('RiverListCtrl',['$scope','RiversService','RiverService','$location',
 	function($scope, RiversService, RiverService, $location) {
 
 		// callback for ng-click 'editRiver':
@@ -162,7 +162,7 @@ dmsApp.controller('RiverListCtrl',['$scope','RiversService','RiverService','$loc
 	}
 ]);
 
-dmsApp.controller('RiverDetailCtrl', [ '$scope', '$routeParams', 'RiverService','$location',
+naempApp.controller('RiverDetailCtrl', [ '$scope', '$routeParams', 'RiverService','$location',
 		function($scope, $routeParams, RiverService, $location) {
 			// callback for ng-click 'updateRiver':
 			$scope.updateRiver = function() {
@@ -177,7 +177,7 @@ dmsApp.controller('RiverDetailCtrl', [ '$scope', '$routeParams', 'RiverService',
 				id : $routeParams.id
 			});
 		} ]);
-dmsApp.controller('RiverCreationCtrl', [ '$scope', 'RiverService', '$location',
+naempApp.controller('RiverCreationCtrl', [ '$scope', 'RiverService', '$location',
 		function($scope, RiverService, $location) {
 			// callback for ng-click 'createRiver':
 			$scope.createRiver = function() {
@@ -193,7 +193,7 @@ dmsApp.controller('RiverCreationCtrl', [ '$scope', 'RiverService', '$location',
 /**
  * SiteCode Controller
  */
-dmsApp.controller('SiteCodeListCtrl',['$scope','SiteCodeFindAll','SiteCodeDelete','$location',
+naempApp.controller('SiteCodeListCtrl',['$scope','SiteCodeFindAll','SiteCodeDelete','$location',
 		function($scope, SiteCodeFindAll, SiteCodeDelete,
 			$location) {
 	
@@ -243,7 +243,7 @@ dmsApp.controller('SiteCodeListCtrl',['$scope','SiteCodeFindAll','SiteCodeDelete
 		});
 } ]);
 
-dmsApp.controller('SiteCodeDetailCtrl',
+naempApp.controller('SiteCodeDetailCtrl',
 		[
 				'$scope',
 				'$routeParams',
@@ -265,7 +265,7 @@ dmsApp.controller('SiteCodeDetailCtrl',
 						id : $routeParams.id
 					});
 				} ]);
-dmsApp.controller('SiteCodeCreationCtrl', [ '$scope', 'SiteService',
+naempApp.controller('SiteCodeCreationCtrl', [ '$scope', 'SiteService',
 		'SiteCodeCreate', '$location',
 		function($scope, SiteService, SiteCodeCreate, $location) {
 			$scope.sites = SiteService.findall();
@@ -294,7 +294,7 @@ dmsApp.controller('SiteCodeCreationCtrl', [ '$scope', 'SiteService',
  * Featrues
  */
 
-dmsApp.controller('FeatureListCtrl',['$scope', 'FeaturesService', 'FeatureService', '$location',
+naempApp.controller('FeatureListCtrl',['$scope', 'FeaturesService', 'FeatureService', '$location',
 		function($scope, FeaturesService, FeatureService,$location) {
 			$scope.cancel = function () {
 				$scope.search = "";
@@ -330,7 +330,7 @@ dmsApp.controller('FeatureListCtrl',['$scope', 'FeaturesService', 'FeatureServic
 						});
 
 		} ]);
-dmsApp.controller('FeatureDetailCtrl', [ '$scope', '$routeParams', 'FeatureService', '$location',
+naempApp.controller('FeatureDetailCtrl', [ '$scope', '$routeParams', 'FeatureService', '$location',
 		function($scope, $routeParams, FeatureService, $location) {
 			// callback for ng-click 'updateFeaturee':
 			$scope.updateFeature = function() {
@@ -345,7 +345,7 @@ dmsApp.controller('FeatureDetailCtrl', [ '$scope', '$routeParams', 'FeatureServi
 				id : $routeParams.id
 			});
 		} ]);
-dmsApp.controller('FeatureCreationCtrl', [ '$scope', 'FeatureCreate','$location', 
+naempApp.controller('FeatureCreationCtrl', [ '$scope', 'FeatureCreate','$location', 
         function($scope, FeatureService, $location) {
 			// callback for ng-click 'createNewFeature':
 			$scope.createFeature = function() {
@@ -357,7 +357,7 @@ dmsApp.controller('FeatureCreationCtrl', [ '$scope', 'FeatureCreate','$location'
 			};
 		} ]);
 
-dmsApp.controller('FeatureFishDetailCtrl', [ '$scope', '$routeParams','FishByFeature', '$location',
+naempApp.controller('FeatureFishDetailCtrl', [ '$scope', '$routeParams','FishByFeature', '$location',
 		function($scope, $routeParams, FishByFeature, $location) {
 			$scope.updateFish = function() {
 				// FishUpdate.update($scope.fish);
@@ -377,7 +377,7 @@ dmsApp.controller('FeatureFishDetailCtrl', [ '$scope', '$routeParams','FishByFea
  * Fishes
  */
 
-dmsApp.controller('FishListCtrl',['$scope', 'FishesService', 'FishService', '$location',
+naempApp.controller('FishListCtrl',['$scope', 'FishesService', 'FishService', '$location',
 		function($scope, FishesService, FishService, $location) {
 			$scope.cancel = function(){
 				$scope.search = "";
@@ -408,7 +408,7 @@ dmsApp.controller('FishListCtrl',['$scope', 'FishesService', 'FishService', '$lo
 			});
 
 		} ]);
-dmsApp.controller('FishDetailCtrl', [ '$scope', '$routeParams', 'FishService', '$location',
+naempApp.controller('FishDetailCtrl', [ '$scope', '$routeParams', 'FishService', '$location',
 		function($scope, $routeParams, FishService, $location) {
 			// callback for ng-click 'updateFish':
 			$scope.updateFish = function() {
@@ -423,7 +423,7 @@ dmsApp.controller('FishDetailCtrl', [ '$scope', '$routeParams', 'FishService', '
 				id : $routeParams.id
 			});
 		} ]);
-dmsApp.controller('FishCreationCtrl', [ '$scope', 'FishService', '$location',
+naempApp.controller('FishCreationCtrl', [ '$scope', 'FishService', '$location',
 		function($scope, FishService, $location) {
 			// callback for ng-click 'createNewFish':
 			$scope.createFish = function() {
@@ -439,7 +439,7 @@ dmsApp.controller('FishCreationCtrl', [ '$scope', 'FishService', '$location',
  * Methods
  */
 
-dmsApp.controller('MethodListCtrl',['$scope', 'MethodsService', 'MethodService', '$location',
+naempApp.controller('MethodListCtrl',['$scope', 'MethodsService', 'MethodService', '$location',
 		function($scope, MethodsService, MethodService, $location) {
 			$scope.cancel = function(){
 				$scope.search = "";
@@ -472,7 +472,7 @@ dmsApp.controller('MethodListCtrl',['$scope', 'MethodsService', 'MethodService',
 			});
 
 		} ]);
-dmsApp.controller('MethodDetailCtrl', [ '$scope', '$routeParams', 'MethodService', '$location',
+naempApp.controller('MethodDetailCtrl', [ '$scope', '$routeParams', 'MethodService', '$location',
 		function($scope, $routeParams, MethodService, $location) {
 			// callback for ng-click 'updateFish':
 			$scope.updateMethod = function() {
@@ -487,7 +487,7 @@ dmsApp.controller('MethodDetailCtrl', [ '$scope', '$routeParams', 'MethodService
 				id : $routeParams.id
 			});
 		} ]);
-dmsApp.controller('MethodCreationCtrl', [ '$scope', 'MethodService', '$location', 
+naempApp.controller('MethodCreationCtrl', [ '$scope', 'MethodService', '$location', 
        function($scope, MethodCreate, $location) {
 			// callback for ng-click 'createNewFish':
 			$scope.createMethod = function() {
@@ -502,7 +502,7 @@ dmsApp.controller('MethodCreationCtrl', [ '$scope', 'MethodService', '$location'
  * Variables
  */
 
-dmsApp.controller('VariableListCtrl', ['$scope', 'VariablesService', 'VariableService', '$location',
+naempApp.controller('VariableListCtrl', ['$scope', 'VariablesService', 'VariableService', '$location',
 		function($scope, VariablesService, VariableService,
 				$location) {
 			$scope.cancel = function(){
@@ -536,7 +536,7 @@ dmsApp.controller('VariableListCtrl', ['$scope', 'VariablesService', 'VariableSe
 			});
 
 		} ]);
-dmsApp.controller('VariableDetailCtrl',['$scope', '$routeParams', 'VariableService', 'UnitsService', '$location',
+naempApp.controller('VariableDetailCtrl',['$scope', '$routeParams', 'VariableService', 'UnitsService', '$location',
 			function($scope, $routeParams, VariableService, UnitsService,
 					$location) {
 				// callback for ng-click 'updateFeaturee':
@@ -554,7 +554,7 @@ dmsApp.controller('VariableDetailCtrl',['$scope', '$routeParams', 'VariableServi
 				$scope.statuses = UnitsService.findall();
 				
 			} ]);
-dmsApp.controller('VariableCreationCtrl', [ '$scope', 'VariableService',
+naempApp.controller('VariableCreationCtrl', [ '$scope', 'VariableService',
 		'$location', function($scope, VariableService, $location) {
 			// callback for ng-click 'createNewFeature':
 			$scope.createVariable = function() {
@@ -570,7 +570,7 @@ dmsApp.controller('VariableCreationCtrl', [ '$scope', 'VariableService',
  * Units
  */
 
-dmsApp.controller('UnitListCtrl', ['$scope', 'UnitsService', 'UnitService', '$location',
+naempApp.controller('UnitListCtrl', ['$scope', 'UnitsService', 'UnitService', '$location',
 		function($scope, UnitsService, UnitService,	$location) {
 			$scope.cancel = function(){
 				$scope.search = "";
@@ -603,7 +603,7 @@ dmsApp.controller('UnitListCtrl', ['$scope', 'UnitsService', 'UnitService', '$lo
 			});
 
 		} ]);
-dmsApp.controller('UnitDetailCtrl', ['$scope', '$routeParams', 'UnitService', '$location',
+naempApp.controller('UnitDetailCtrl', ['$scope', '$routeParams', 'UnitService', '$location',
 		function($scope, $routeParams, UnitService, $location) {
 			// callback for ng-click 'updateFeaturee':
 			$scope.updateUnit = function() {
@@ -618,7 +618,7 @@ dmsApp.controller('UnitDetailCtrl', ['$scope', '$routeParams', 'UnitService', '$
 				id : $routeParams.id
 			});
 		} ]);
-dmsApp.controller('UnitCreationCtrl', [ '$scope', 'UnitService', '$location', 
+naempApp.controller('UnitCreationCtrl', [ '$scope', 'UnitService', '$location', 
         function($scope, UnitService, $location) {
 			// callback for ng-click 'createNewFeature':
 			$scope.createUnit = function() {

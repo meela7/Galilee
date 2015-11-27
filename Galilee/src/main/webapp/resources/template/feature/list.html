@@ -1,17 +1,17 @@
 <div class="panel panel-primary">
 	<div class="panel-heading">
-		<h3>Feature List</h3>
-		<hr class="divider">
-		<div class="form-inline">
-			<label for="type">Type:</label> <input type="text"
-				id="type" class="form-control" ng-model="search.featureType" placeholder="type "> <label
-				for="name">Feature:</label> <input type="text"
-				id="name" class="form-control"ng-model="search.featureName" placeholder="name">
-			<button type="button" ng-click="cancel()" class="btn btn-sm">Cancel</button>
-		</div>
+		<div class="row content">
+			<div class="col-sm-8 sideav">
+				<h4><strong>Feature List</strong></h4>
+			</div>
+			<div class="col-sm-4 form-inline text-right">
+				<label for="species">Search: </label> 
+				<input type="text" id="search" class="form-control" ng-model="search"
+				placeholder="search... ">
+			</div>
+		</div>						
 	</div>
 	<div class="panel-body">
-
 		<table class="table table-condensed table-striped">
 			<thead>
 				<tr class="paginationclass">
@@ -19,7 +19,7 @@
 					<th class="col-sm-1">Feature Type</th>
 					<th class="col-sm-1">Feature Name</th>
 					<th colspan="2" class="col-sm-2">
-						<button ng-click="createFeature()" class="btn btn-sm btn-info">
+						<button ng-click="createFeature()" class="btn btn-sm btn-info pull-right">
 							<span class="glyphicon glyphicon-plus"></span> Create Feature
 						</button>
 					</th>
@@ -31,21 +31,25 @@
 					<td>{{ feature.featureID }}</td>
 					<td>{{ feature.featureType }}</td>
 					<td>{{ feature.featureName }}</td>
-					<td><button type="button"
-							ng-click="editFeature(feature.featureID)"
-							class="btn btn-sm btn-info">
-							<span class="glyphicon glyphicon-edit"></span> Edit
-						</button></td>
-					<!-- <td><button type="button"
-							ng-click="findFishByFeature(feature.featureID)"
-							class="btn btn-sm btn-info">
-							<span class="glyphicon glyphicon-list-alt"></span> Detail
-						</button></td> -->
-					<td><button type="button"
-							ng-click="deleteFeature(feature.featrueID)"
-							class="btn btn-sm btn-warning">
-							<span class="glyphicon glyphicon-trash"></span> Delete
-						</button></td>
+					<td>
+						<div class="form-inline pull-right">
+							<button type="button"
+								ng-click="editFeature(feature.featureID)"
+								class="btn btn-sm btn-info">
+								<span class="glyphicon glyphicon-edit"></span> Edit
+							</button>
+						<!-- <td><button type="button"
+								ng-click="findFishByFeature(feature.featureID)"
+								class="btn btn-sm btn-info">
+								<span class="glyphicon glyphicon-list-alt"></span> Detail
+							</button></td> -->
+						<button type="button"
+								ng-click="deleteFeature(feature.featrueID)"
+								class="btn btn-sm btn-warning">
+								<span class="glyphicon glyphicon-trash"></span> Delete
+							</button>
+						</div>
+					</td>
 				</tr>
 			</tbody>
 		</table>

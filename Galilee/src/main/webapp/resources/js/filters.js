@@ -2,7 +2,7 @@
  * 
  */
 
-dmsApp.filter('pagination', function() {
+naempApp.filter('pagination', function() {
 	return function(input, start) {
 		if (input) {
 			start = +start;
@@ -13,7 +13,7 @@ dmsApp.filter('pagination', function() {
 	};
 });
 (function(ng){
-dmsApp.filter('customFilter', ['$filter', function($filter) {
+naempApp.filter('customFilter', ['$filter', function($filter) {
     var filterFilter = $filter('filter');
     var standardComparator = function standardComparator(obj, text) {
       text = ('' + text).toLowerCase();

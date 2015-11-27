@@ -2,11 +2,11 @@
  * 
  */
 
-var dmsApp = angular.module("dmsApp", [ 'ngResource', 'ngRoute', 'ui.bootstrap', 'ngMap', 'smart-table', 'highcharts-ng']);
+var naempApp = angular.module("naempApp", [ 'ngResource', 'ngRoute', 'ui.bootstrap', 'ngMap', 'smart-table', 'highcharts-ng']);
 var contextRoot = "resources/template"; 
 // data analysis
 
-dmsApp.config(['$routeProvider', function($routeProvider) {
+naempApp.config(['$routeProvider', function($routeProvider) {
 	$routeProvider
 		.when('/site-fai?year:year&term=:term', {
 			templateUrl : 'resources/template/search/fai.html',
@@ -14,8 +14,12 @@ dmsApp.config(['$routeProvider', function($routeProvider) {
 		});
 }]);
 // data search management
-dmsApp.config(['$routeProvider', function($routeProvider) {
+naempApp.config(['$routeProvider', function($routeProvider) {
 	$routeProvider
+		.when('/', {
+			templateUrl : 'resources/template/search/sitemap.html',
+			controller : 'MapAllCtrl'
+		})
 		.when('/site-map/:id', {
 			templateUrl : 'resources/template/search/sitemap.html',
 			controller : 'MapCtrl'
@@ -107,7 +111,7 @@ dmsApp.config(['$routeProvider', function($routeProvider) {
 }]);
 
 //data model management
-dmsApp.config([ '$routeProvider', function($routeProvider) {
+naempApp.config([ '$routeProvider', function($routeProvider) {
 	$routeProvider.
 	when('/source-list', {
 		templateUrl : 'resources/template/source/list.html',
