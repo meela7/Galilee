@@ -22,23 +22,23 @@
 						<h5></h5>
 					</div>
 					<form class="form">
-						<label for="basin" class="control-label">대권역: </label> <input
+						<label for="basin" class="control-label">Basin: </label> <input
 							type="text" id="basin" class="form-control hasclear"
 							ng-model="search.river.basin"> <label
-							for="river" class="control-label ">하천: </label> <input
+							for="river" class="control-label ">River: </label> <input
 							type="text" id="river" class="form-control hasclear"
 							ng-model="search.river.riverName"> <label
-							for="divition" class="control-label">구분: </label> <input
+							for="divition" class="control-label">Stream Type: </label> <input
 							type="text" id="divition" class="form-control hasclear"
 							ng-model="search.river.classification" placeholder="지류/본류/기타">
 						<p></p>
-						<label for="site" class="control-label">조사구간: </label> <input
+						<label for="site" class="control-label">Site: </label> <input
 							type="text" id="site" class="form-control hasclear"
 							ng-model="search.siteName"> <label
-							for="order" class="control-label">하천 차수: </label> <input
+							for="order" class="control-label">Stream Order: </label> <input
 							type="text" id="order" class="form-control hasclear"
-							ng-model="search.streamOrder" placeholder="하천 차수"> <label
-							for="sid" class="control-label">조사구간 ID: </label> <input
+							ng-model="search.streamOrder"> <label
+							for="sid" class="control-label">Site ID: </label> <input
 							type="text" id="sid" class="form-control hasclear"
 							ng-model="search.siteID">
 
@@ -49,12 +49,12 @@
 						<thead>
 							<tr class="paginationclass">
 								<th>ID</th>
-								<th>조사구간</th>
-								<th>대권역</th>
-								<th>하천</th>
-								<th>구분</th>
-								<th>차수</th>
-								<th>주소</th>
+								<th>Site</th>
+								<th>Basin</th>
+								<th>River</th>
+								<th>Stream Type</th>
+								<th>Stream Order</th>
+								<th>Address</th>
 								<th colspan="2">
 									<button ng-click="createSite()" class="btn btn-sm btn-info pull-right">
 										<span class="glyphicon glyphicon-plus"></span> Add New Site

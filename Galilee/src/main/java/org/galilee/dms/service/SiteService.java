@@ -19,12 +19,12 @@ public interface SiteService {
 	public List<Sites> findByBasin(String basin);
 	public List<Sites> findByMid(String mid);
 	public List<Sites> findBySub(String sub);
-	public List<Sites> findByRiver(String river);	
+	public List<Sites> findByRiver(int riverID);	
 	public List<Sites> findByBasinClass(String basin, String classification);
 	public List<Sites> findByBasinOrder(String basin, int streamOrder);
 	
 	public List<SiteInfo> findAllSiteInfo();
 	public List<SiteInfo> findInfoByIDs(List<Integer> siIDs);
 	public List<SiteInfo> findInfoByRivers(List<Integer> rIDList);	
-	public List<SiteInfo> findInfosByBasin(List<Integer> siIDs, String basin);	
+	public List<SiteInfo> findInfosByBasin(String basin);	
 }

@@ -25,30 +25,38 @@ public class SourceServiceImpl implements SourceService {
 
 	@Override
 	public void update(Sources source) {
-		// TODO Auto-generated method stub
 		
 		this.sourceDao.update(source);
 	}
 	
 	@Override
 	public void delete(int sourceID) {
-		// TODO Auto-generated method stub
+		
 		Sources source = this.sourceDao.selectByID(sourceID);
 		this.sourceDao.delete(source);
 	}
 
 	@Override
 	public Sources findByID(int sourceID) {
-		// TODO Auto-generated method stub
 		
 		return this.sourceDao.selectByID(sourceID);
 	}
 	
 	@Override
 	public List<Sources> findAll() {
-		// TODO Auto-generated method stub
 		
 		return this.sourceDao.selectAll();
 	}
+
+	@Override
+	public List<Sources> findByContact(String contact) {
+		
+		return this.sourceDao.selectByContact(contact);
+	}
 	
+	@Override
+	public List<Sources> findByInstitute(String institute) {
+		
+		return this.sourceDao.selectByInstitute(institute);
+	}
 }

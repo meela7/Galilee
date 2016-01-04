@@ -315,6 +315,11 @@ naempApp.controller('FeatureListCtrl',['$scope', 'FeaturesService', 'FeatureServ
 			$scope.createFeature = function() {
 				$location.path('/feature-creation');
 			};
+			
+			$scope.showDetail = function(featureID){
+				$location.path('/fish-detail/'+ featureID);
+			};
+			
 			$scope.features = FeaturesService.findall();
 
 			// panination

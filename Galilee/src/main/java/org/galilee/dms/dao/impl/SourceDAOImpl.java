@@ -6,6 +6,8 @@ import org.galilee.dms.dao.SourceDAO;
 import org.galilee.dms.model.Sources;
 import org.hibernate.Criteria;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Order;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -48,10 +50,35 @@ public class SourceDAOImpl implements SourceDAO {
 	@Override
 	@Transactional(propagation = Propagation.REQUIRED)
 	public List<Sources> selectAll() {
+		
 		@SuppressWarnings("unchecked")
 		List<Sources> sourceList = sessionFactory.getCurrentSession()
 				.createCriteria(Sources.class)
 				.setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY).list();
+		return sourceList;
+	}
+	
+	@Override
+	@Transactional(propagation = Propagation.REQUIRED)
+	public List<Sources> selectByInstitute(String institute) {
+		
+		@SuppressWarnings("unchecked")
+		List<Sources> sourceList = sessionFactory.getCurrentSession()
+				.createCriteria(Sources.class)
+				.add(Restrictions.like("Institution", "%"+institute+"%"))
+				.addOrder(Order.asc("SourceID")).list();
+		return sourceList;
+	}
+
+	@Override
+	@Transactional(propagation = Propagation.REQUIRED)
+	public List<Sources> selectByContact(String contact) {
+		
+		@SuppressWarnings("unchecked")
+		List<Sources> sourceList = sessionFactory.getCurrentSession()
+				.createCriteria(Sources.class)
+				.add(Restrictions.like("Investigator", "%"+contact))
+				.addOrder(Order.asc("SourceID")).list();
 		return sourceList;
 	}
 

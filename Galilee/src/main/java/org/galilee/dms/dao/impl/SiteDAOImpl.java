@@ -81,34 +81,38 @@ public class SiteDAOImpl implements SiteDAO {
 	@Transactional(propagation = Propagation.REQUIRED)
 	public List<Sites> selectByIDs(List<Integer> siteIDs) {
 		
-		Session session = this.sessionFactory.getCurrentSession();
+		
 		@SuppressWarnings("unchecked")
-		List<Sites> sites = session.createCriteria(Sites.class)
-		.add(Restrictions.in("SiteID", siteIDs)).addOrder(Order.asc("SiteID")).list();
+		List<Sites> sites = this.sessionFactory.getCurrentSession()
+		.createCriteria(Sites.class)
+		.add(Restrictions.in("SiteID", siteIDs))
+		.addOrder(Order.asc("SiteID")).list();
 		
 		return sites;
-	}
+	}	
 
 	@SuppressWarnings("unchecked")
 	@Override
 	@Transactional(propagation = Propagation.REQUIRED)
-	public List<Sites> selectByColumn(String colName, String col) {
+	public List<Sites> selectByRiverID(int riverID) {		
 		
-		return this.sessionFactory.getCurrentSession()
-				.createCriteria(Sites.class)
-				.add(Restrictions.eq(colName, col))
-				.addOrder(Order.asc("SiteID")).list();
+		List<Sites> sites = this.sessionFactory.getCurrentSession()
+		.createCriteria(Sites.class)
+		.add(Restrictions.eq("River.RiverID", riverID))
+		.addOrder(Order.asc("SiteID")).list();
+
+		return sites;
 	}
 	
 	@SuppressWarnings("unchecked")
 	@Override
 	@Transactional(propagation = Propagation.REQUIRED)
-	public List<Sites> selectByRiverColumn(String colName, String col) {
+	public List<Sites> selectByBasin(String basin) {
 		
 		return this.sessionFactory.getCurrentSession()
 				.createCriteria(Sites.class, "site")
 				.setFetchMode("site.River", FetchMode.JOIN).createAlias("site.River", "river")
-				.add(Restrictions.eq("river."+colName, col))
+				.add(Restrictions.eq("river.Basin", basin))
 				.addOrder(Order.asc("SiteID")).list();
 	}
 
@@ -187,6 +191,7 @@ public class SiteDAOImpl implements SiteDAO {
 	@Override
 	@Transactional(propagation = Propagation.REQUIRED)
 	public List<Sites> selectByBasinOrder(String basin, int streamOrder) {
+		
 		return this.sessionFactory.getCurrentSession()
 				.createCriteria(Sites.class, "site")
 				.setFetchMode("site.River", FetchMode.JOIN).createAlias("site.River", "river")
@@ -195,4 +200,37 @@ public class SiteDAOImpl implements SiteDAO {
 				.addOrder(Order.asc("SiteID")).list();
 	}
 
+	@SuppressWarnings("unchecked")
+	@Override
+	@Transactional(propagation = Propagation.REQUIRED)
+	public List<Sites> selectByMidWatershed(String mid) {
+		
+		return this.sessionFactory.getCurrentSession()
+				.createCriteria(Sites.class, "site")
+				.setFetchMode("site.River", FetchMode.JOIN).createAlias("site.River", "river")
+				.add(Restrictions.eq("river.MidWatershed", mid))
+				.addOrder(Order.asc("SiteID")).list();
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	@Transactional(propagation = Propagation.REQUIRED)
+	public List<Sites> selectBySubWatershed(String sub) {
+		
+		return this.sessionFactory.getCurrentSession()
+				.createCriteria(Sites.class, "site")
+				.setFetchMode("site.River", FetchMode.JOIN).createAlias("site.River", "river")
+				.add(Restrictions.eq("river.SubWatershed", sub))
+				.addOrder(Order.asc("SiteID")).list();
+	}
+
+	@Override
+	@Transactional(propagation = Propagation.REQUIRED)
+	public Sites selectByName(String siteName) {
+		
+		return (Sites) this.sessionFactory.getCurrentSession()
+				.createCriteria(Sites.class)
+				.add(Restrictions.eq("SiteName", siteName))
+				.addOrder(Order.asc("SiteID")).list().get(0);
+	}
 }

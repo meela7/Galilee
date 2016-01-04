@@ -58,9 +58,58 @@ private SessionFactory sessionFactory;
 	@Override
 	@Transactional(propagation = Propagation.REQUIRED)
 	public List<Rivers> selectByIDs(List<Integer> riverIDs) {
+		
 		return this.sessionFactory.getCurrentSession()
 				.createCriteria(Rivers.class)
 				.add(Restrictions.in("RiverID", riverIDs))
+				.addOrder(Order.asc("RiverName"))
+				.list();
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	@Transactional(propagation = Propagation.REQUIRED)
+	public List<Rivers> selectByClassification(String classification) {
+		
+		return this.sessionFactory.getCurrentSession()
+				.createCriteria(Rivers.class)
+				.add(Restrictions.eq("Classification", classification))
+				.addOrder(Order.asc("RiverName"))
+				.list();
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	@Transactional(propagation = Propagation.REQUIRED)
+	public List<Rivers> selectByBasin(String basin) {
+		
+		return this.sessionFactory.getCurrentSession()
+				.createCriteria(Rivers.class)
+				.add(Restrictions.eq("Basin", basin))
+				.addOrder(Order.asc("RiverName"))
+				.list();
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	@Transactional(propagation = Propagation.REQUIRED)
+	public List<Rivers> selectByMidWatershed(String mid) {
+
+		return this.sessionFactory.getCurrentSession()
+				.createCriteria(Rivers.class)
+				.add(Restrictions.eq("MidWatershed", mid))
+				.addOrder(Order.asc("RiverName"))
+				.list();
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	@Transactional(propagation = Propagation.REQUIRED)
+	public List<Rivers> selectBySubWatershed(String sub) {
+
+		return this.sessionFactory.getCurrentSession()
+				.createCriteria(Rivers.class)
+				.add(Restrictions.eq("SubWatershed", sub))
 				.addOrder(Order.asc("RiverName"))
 				.list();
 	}

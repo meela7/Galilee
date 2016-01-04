@@ -12,6 +12,14 @@ public interface FishDAO {
 	public Fishes selectByID(int fishID);
 	public List<Fishes> selectAll();
 	public List<Fishes> selectByIDs(List<Integer> fishIDList);
+		
+	public List<Fishes> selectByClass(String taxon);
+	public List<Fishes> selectByOrder(String taxon);
+	public List<Fishes> selectByFamily(String taxon);
 	
-	public List<Fishes> selectEndangered(List<Integer> fishIDList);	
+	public List<Fishes> selectByToleranceGuild(String query);
+	public List<Fishes> selectByTrophicGuild(String query);
+	public List<Fishes> selectByHabitatGuild(String query);
+	public List<Fishes> selectEndangered();
+	public List<Fishes> selectNative();
 }

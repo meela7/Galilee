@@ -52,9 +52,15 @@ public class SiteServiceImpl implements SiteService {
 	
 	@Override
 	public Sites findByName(String siteName) {
-		return this.siteDao.selectByColumn("SiteName", siteName).get(0);
+		return this.siteDao.selectByName(siteName);
 	}
 
+	@Override
+	public List<Sites> findByRiver(int riverID) {
+		
+		return this.siteDao.selectByRiverID(riverID);
+	}
+	
 	@Override
 	public List<Sites> findByRivers(List<Integer> riverIDs) {
 		// TODO Auto-generated method stub
@@ -69,25 +75,19 @@ public class SiteServiceImpl implements SiteService {
 	@Override
 	public List<Sites> findByBasin(String basin) {
 		
-		return this.siteDao.selectByRiverColumn("Basin", basin);
+		return this.siteDao.selectByBasin(basin);
 	}	
 
 	@Override
 	public List<Sites> findByMid(String mid) {
 		
-		return this.siteDao.selectByRiverColumn("MidWatershed", mid);
+		return this.siteDao.selectByMidWatershed(mid);
 	}
 	
 	@Override
 	public List<Sites> findBySub(String sub) {
 		
-		return this.siteDao.selectByRiverColumn("SubWatershed", sub);
-	}
-	
-	@Override
-	public List<Sites> findByRiver(String river) {
-		
-		return this.siteDao.selectByRiverColumn("RiverName", river);
+		return this.siteDao.selectBySubWatershed(sub);
 	}
 	
 	@Override
@@ -102,6 +102,10 @@ public class SiteServiceImpl implements SiteService {
 		return this.siteDao.selectByBasinOrder(basin, streamOrder);
 	}
 
+	/*
+	 * siteInfo
+	 * 
+	 */
 	@Override
 	public List<SiteInfo> findAllSiteInfo() {
 		return this.siteDao.selectAllSiteInfo();
@@ -123,13 +127,11 @@ public class SiteServiceImpl implements SiteService {
 	}
 
 	@Override
-	public List<SiteInfo> findInfosByBasin(List<Integer> siIDs, String basin) {
-		List<Sites> siteList = this.siteDao.selectByRiverColumn("Basin", basin);
+	public List<SiteInfo> findInfosByBasin(String basin) {
+		List<Sites> siteList = this.siteDao.selectByBasin(basin);
 		List<Integer> sIDList = new ArrayList<Integer>();
 		for(Sites s: siteList)
 			sIDList.add(s.getSiteID());
 		return this.siteDao.selectInfoByIDs(sIDList);
 	}
-
-
 }

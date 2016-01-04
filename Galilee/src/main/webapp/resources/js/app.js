@@ -26,6 +26,10 @@ naempApp.config(['$routeProvider', function($routeProvider) {
 		})
 		.when('/site-map/:start/:end/:id', {
 			templateUrl : 'resources/template/search/sitemap.html',
+			controller : 'MapSiteCtrl'
+		})
+		.when('/fish-map/:start/:end/:id', {
+			templateUrl : 'resources/template/search/sitemap.html',
 			controller : 'MapValueCtrl'
 		})
 		.when('/site-map/term/:year/:term/:id', {

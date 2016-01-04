@@ -1,8 +1,8 @@
 
-var contextRoot = '/naemp';
+var contextRoot = '/naemp/api/v1';
 
 naempApp.factory('SiteByRiver', function($resource) {
-	return $resource(contextRoot + '/sites/river/:id', {}, {
+	return $resource(contextRoot + '/rivers/:id/sites', {}, {
 		find : {
 			method: 'GET',
 			params : {
@@ -26,7 +26,7 @@ naempApp.factory('SiteInfoByRiver', function($resource) {
 });
 
 naempApp.factory('ValueService', function($resource) {
-	return $resource(contextRoot + '/values?start=:start&end=:end', {}, {
+	return $resource(contextRoot + '/observations?start=:start&end=:end', {}, {
 		find : {
 			method: 'GET',
 			params : {
@@ -39,9 +39,8 @@ naempApp.factory('ValueService', function($resource) {
 		}
 	})
 });
-
 naempApp.factory('TermValueBySite', function($resource) {
-	return $resource(contextRoot + '/values/term/:year/:term/site/:id', {}, {
+	return $resource(contextRoot + '/sites/:id/observations?year=year&term=:term', {}, {
 		find : {
 			method: 'GET',
 			params : {
@@ -54,6 +53,7 @@ naempApp.factory('TermValueBySite', function($resource) {
 		}
 	})
 });
+//unchecked
 naempApp.factory('TermSpatialDataBySite', function($resource) {
 	return $resource(contextRoot + '/values/fish/term/:year/:term/site/:id', {}, {
 		find : {

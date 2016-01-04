@@ -15,30 +15,27 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping(value = "/api/v1")
 public class RiverController {
 	private static final Logger logger = LoggerFactory.getLogger(RiverController.class);
 	
 	@Autowired
 	private RiverService riverService;
 	
+	/*
+	 * Services - basic river web resources
+	 */
 	@RequestMapping(value="/rivers", method=RequestMethod.POST)
 	public void create(@RequestBody Rivers river){
 		
 		this.riverService.add(river);
-		logger.info("add() proces has been called.");
-	}
-
-	@RequestMapping(value="/rivers", method=RequestMethod.GET)
-	public List<Rivers> findAll(){
-		
-		logger.info("findAll() proces has been called.");
-        return this.riverService.findAll();
+		logger.info("add() process has been called.");
 	}
 
 	@RequestMapping(value="/rivers/{id}", method=RequestMethod.GET)
 	public Rivers find(@PathVariable("id") int riverID){
 		
-		logger.info("find() proces has been called.");
+		logger.info("find() process has been called.");
 		return this.riverService.findByID(riverID);
 	}
 	
@@ -46,21 +43,66 @@ public class RiverController {
 	public void update(@RequestBody Rivers river){
 		
 		this.riverService.update(river);
-		logger.info("update() proces has been called.");
+		logger.info("update() process has been called.");
 	}
 	
 	@RequestMapping(value="/rivers", method=RequestMethod.DELETE)
 	public void delete(@RequestBody int riverID){
 		
 		this.riverService.delete(riverID);
-		logger.info("delete() proces has been called.");
-	}	
+		logger.info("delete() process has been called.");
+	}
 	
-	@RequestMapping(value="/rivers", params="id", method=RequestMethod.GET)
-	public List<Rivers> findRivers(@RequestParam("id") List<Integer> riverIDs){
+	/*
+	 * Services - river collection web resource
+	 */	
+
+	@RequestMapping(value="/rivers", method=RequestMethod.GET)
+	public List<Rivers> findAll(){
 		
-		logger.info("findRivers() proces has been called.");
+		logger.info("findAll() process has been called.");
+        return this.riverService.findAll();
+	}
+	
+	@RequestMapping(value="/rivers", params="list", method=RequestMethod.GET)
+	public List<Rivers> findByIDList(@RequestParam("list") List<Integer> riverIDs){
+		
+		logger.info("findByIDList() proces has been called.");
         return this.riverService.findByIDs(riverIDs);
 	}
 	
+	@RequestMapping(value="/rivers", params="basin", method=RequestMethod.GET)
+	public List<Rivers> findByBasin(@RequestParam("basin") String basin){
+		
+		logger.info("findByBasin() process has been called.");
+        return this.riverService.findByBasin(basin);
+	}
+	
+	@RequestMapping(value="/rivers", params="midWatershed", method=RequestMethod.GET)
+	public List<Rivers> findByMid(@RequestParam("midWatershed") String mid){
+		
+		logger.info("findByMid() process has been called.");
+        return this.riverService.findByMid(mid);
+	}
+	
+	@RequestMapping(value="/rivers", params="subWatershed", method=RequestMethod.GET)
+	public List<Rivers> findBySub(@RequestParam("subWatershed") String sub){
+		
+		logger.info("findBySub() process has been called.");
+        return this.riverService.findBySub(sub);
+	}
+	
+	@RequestMapping(value="/rivers", params="classification", method=RequestMethod.GET)
+	public List<Rivers> findByClass(@RequestParam("classification") String classification){
+		
+		logger.info("findByClass() process has been called.");
+        return this.riverService.findByClassification(classification);
+	}
+	
+	@RequestMapping(value="/rivers", params= {"basin", "classification"}, method=RequestMethod.GET)
+	public List<Rivers> findByBasinNClass(@RequestParam("basin") String basin, @RequestParam("classification") String classification){
+		
+		logger.info("findByBasinNClass() process has been called.");
+        return this.riverService.findByBasinNClass(basin, classification);
+	}
 }

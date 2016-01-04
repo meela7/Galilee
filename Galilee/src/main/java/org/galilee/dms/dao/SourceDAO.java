@@ -11,4 +11,6 @@ public interface SourceDAO {
 	public Sources update(Sources source);
 	public void delete(Sources source);
 	public Sources selectByID(int sourceID);
+	public List<Sources> selectByContact(String contact);
+	public List<Sources> selectByInstitute(String institute);
 }

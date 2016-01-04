@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.galilee.dms.dao.FishDAO;
 import org.galilee.dms.model.Fishes;
+import org.hibernate.FetchMode;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
@@ -71,15 +72,99 @@ public class FishDAOImpl implements FishDAO {
 
 	@Override
 	@Transactional(propagation = Propagation.REQUIRED)
-	public List<Fishes> selectEndangered(List<Integer> fishIDList) {
+	public List<Fishes> selectEndangered() {
 		
 		@SuppressWarnings("unchecked")
 		List<Fishes> fishList = this.sessionFactory.getCurrentSession()
 				.createCriteria(Fishes.class)
-				.add(Restrictions.in("FishID", fishIDList))
 				.add(Restrictions.like("EndangeredSpecies", "멸종위기%"))
 				.addOrder(Order.asc("FishID")).list();
 		return fishList;
 	}
 
+	@Override
+	@Transactional(propagation = Propagation.REQUIRED)
+	public List<Fishes> selectByClass(String taxon) {
+		
+		@SuppressWarnings("unchecked")
+		List<Fishes> fishList = this.sessionFactory.getCurrentSession()
+				.createCriteria(Fishes.class)
+				.add(Restrictions.like("FishClass", taxon))
+				.addOrder(Order.asc("FishID")).list();
+		return fishList;
+	}
+
+	@Override
+	@Transactional(propagation = Propagation.REQUIRED)
+	public List<Fishes> selectByOrder(String taxon) {
+		
+		@SuppressWarnings("unchecked")
+		List<Fishes> fishList = this.sessionFactory.getCurrentSession()
+				.createCriteria(Fishes.class)
+				.add(Restrictions.like("Order", taxon))
+				.addOrder(Order.asc("FishID")).list();
+		return fishList;
+	}
+
+	@Override
+	@Transactional(propagation = Propagation.REQUIRED)
+	public List<Fishes> selectByFamily(String taxon) {
+		
+		@SuppressWarnings("unchecked")
+		List<Fishes> fishList = this.sessionFactory.getCurrentSession()
+				.createCriteria(Fishes.class)
+				.add(Restrictions.like("Family", taxon))
+				.addOrder(Order.asc("FishID")).list();
+		return fishList;
+	}
+
+	@Override
+	@Transactional(propagation = Propagation.REQUIRED)
+	public List<Fishes> selectByToleranceGuild(String query) {
+		
+		@SuppressWarnings("unchecked")
+		List<Fishes> fishList = this.sessionFactory.getCurrentSession()
+				.createCriteria(Fishes.class, "fish")
+				.setFetchMode("fish.ToleranceGuild", FetchMode.JOIN).createAlias("fish.ToleranceGuild", "tolerance")
+				.add(Restrictions.like("tolerance.Term", query))
+				.addOrder(Order.asc("FishID")).list();
+		return fishList;
+	}
+
+	@Override
+	@Transactional(propagation = Propagation.REQUIRED)
+	public List<Fishes> selectByTrophicGuild(String query) {
+		
+		@SuppressWarnings("unchecked")
+		List<Fishes> fishList = this.sessionFactory.getCurrentSession()
+				.createCriteria(Fishes.class, "fish")
+				.setFetchMode("fish.TrophicGuild", FetchMode.JOIN).createAlias("fish.TrophicGuild", "trophic")
+				.add(Restrictions.like("trophic.Term", query))
+				.addOrder(Order.asc("FishID")).list();
+		return fishList;
+	}
+
+	@Override
+	@Transactional(propagation = Propagation.REQUIRED)
+	public List<Fishes> selectByHabitatGuild(String query) {
+		
+		@SuppressWarnings("unchecked")
+		List<Fishes> fishList = this.sessionFactory.getCurrentSession()
+				.createCriteria(Fishes.class, "fish")
+				.setFetchMode("fish.HabitatGuild", FetchMode.JOIN).createAlias("fish.HabitatGuild", "habitat")
+				.add(Restrictions.like("habitat.Term", query))
+				.addOrder(Order.asc("FishID")).list();
+		return fishList;
+	}
+
+	@Override
+	@Transactional(propagation = Propagation.REQUIRED)
+	public List<Fishes> selectNative() {
+		
+		@SuppressWarnings("unchecked")
+		List<Fishes> fishList = this.sessionFactory.getCurrentSession()
+				.createCriteria(Fishes.class)
+				.add(Restrictions.ne("InvasiveSpecies", "Y"))
+				.addOrder(Order.asc("FishID")).list();
+		return fishList;	}
 }

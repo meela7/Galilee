@@ -11,5 +11,7 @@ public interface SourceService {
 	public void delete(int sourceID);
 	public Sources findByID(int sourceID);
 	public List<Sources> findAll();
+	public List<Sources> findByContact(String contact);
+	public List<Sources> findByInstitute(String institute);
 	
 }

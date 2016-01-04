@@ -1,5 +1,6 @@
 package org.galilee.dms.service.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.galilee.dms.dao.RiverDAO;
@@ -16,40 +17,76 @@ public class RiverServiceImpl implements RiverService {
 	
 	@Override
 	public void add(Rivers river) {
-		// TODO Auto-generated method stub
+		
 		this.riverDao.insert(river);
 	}
 
 	@Override
 	public void update(Rivers river) {
-		// TODO Auto-generated method stub
+		
 		this.riverDao.update(river);
 	}
 
 	@Override
 	public void delete(int riverID) {
-		// TODO Auto-generated method stub
+		
 		Rivers river = this.riverDao.selectByID(riverID);
 		this.riverDao.delete(river);
 	}
 	
 	@Override
 	public Rivers findByID(int riverID) {
-		// TODO Auto-generated method stub
+		
 		return this.riverDao.selectByID(riverID);
 	}
 
 	@Override
 	public List<Rivers> findAll() {
-		// TODO Auto-generated method stub
+		
 		return this.riverDao.selectAll();
 	}
 
 	@Override
 	public List<Rivers> findByIDs(List<Integer> riverIDs) {
-		// TODO Auto-generated method stub
+		
 		return this.riverDao.selectByIDs(riverIDs);
 	}
 
+	@Override
+	public List<Rivers> findByClassification(String classification) {
+		
+		return this.riverDao.selectByClassification(classification);
+	}
 
+	@Override
+	public List<Rivers> findByBasin(String basin) {
+		
+		return this.riverDao.selectByBasin(basin);
+	}
+
+	@Override
+	public List<Rivers> findByMid(String mid) {
+		
+		return this.riverDao.selectByMidWatershed(mid);
+	}
+	
+	@Override
+	public List<Rivers> findBySub(String sub) {
+		
+		return this.riverDao.selectBySubWatershed(sub);
+	}
+	
+	@Override
+	public List<Rivers> findByBasinNClass(String basin, String classification) {
+		
+		List<Rivers> riverList = new ArrayList<Rivers>();
+		List<Rivers> rivers = this.riverDao.selectByBasin(basin);
+		System.out.println(classification);
+		for(Rivers river: rivers){
+			if(river.getClassification().equals(classification))
+				riverList.add(river);
+		}
+		return riverList;
+		
+	}
 }
